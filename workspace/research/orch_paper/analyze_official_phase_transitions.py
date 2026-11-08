@@ -104,9 +104,13 @@ def audit_run(row):
                 "transitions": []}
     progress = load_progress(row["run"])
     statuses_by_agent = defaultdict(list)
+    add_events = {}
     for event in events:
         if event.get("event_type") == "STATUS_PHASE":
             statuses_by_agent[str(event.get("agent_id"))].append(event)
+        elif (event.get("event_type") == "ACTION_PHASE"
+              and event.get("details", {}).get("decision") == "ADD_PHASES"):
+            add_events[(str(event.get("agent_id")), int(event.get("timestep", 0)))] = event
     for statuses in statuses_by_agent.values():
         statuses.sort(key=lambda item: (int(item.get("timestep", 0)), item.get("timestamp", "")))
 
@@ -146,6 +150,15 @@ def audit_run(row):
             "old_phase_later_resumed_exactly": later_resumed,
             "out_of_domain_to_phase": bool(OUT_OF_DOMAIN.search(event.get("phase") or "")),
         }
+        add_event = add_events.get((agent, step))
+        if add_event is not None:
+            new_phases = list(add_event.get("details", {}).get("new_phases_added", []))
+            transition.update({
+                "new_phases_added": new_phases,
+                "transitioned_to_newly_added_phase": event.get("phase") in new_phases,
+                "out_of_domain_new_phases": [phase for phase in new_phases
+                                              if OUT_OF_DOMAIN.search(phase or "")],
+            })
         transitions.append(transition)
     return {
         "metadata": {key: row.get(key) for key in
@@ -170,6 +183,16 @@ def transition_summary(transitions):
             counter["next_phase_transitions"] += 1
         elif decision == "ADD_PHASES":
             counter["add_phases_transitions"] += 1
+            new_phases = item.get("new_phases_added", [])
+            counter["new_phase_strings_generated"] += len(new_phases)
+            counter["out_of_domain_new_phase_strings"] += len(
+                item.get("out_of_domain_new_phases", []))
+            if item.get("out_of_domain_new_phases"):
+                counter["add_events_with_out_of_domain_generation"] += 1
+            if item.get("transitioned_to_newly_added_phase"):
+                counter["add_events_entered_newly_added_phase"] += 1
+            else:
+                counter["add_events_did_not_enter_newly_added_phase"] += 1
         if percent == 100:
             counter["reported_100_percent"] += 1
         elif isinstance(percent, (int, float)):
@@ -217,6 +240,9 @@ def analyze(index_path):
         "summary": transition_summary(transitions),
         "completion_condition_logged_runs":
             sum(bool(run.get("completion_condition_present_anywhere_in_master_log")) for run in runs),
+        "runs_with_out_of_domain_new_phase_generation": sum(
+            any(item.get("out_of_domain_new_phases") for item in run["transitions"])
+            for run in runs),
         "add_phases_queue_calibration": {
             "existing_future_phase": simulate_add_phases_queue("A_unfinished", ["B_planned"],
                                                                  ["X_new_immediate"]),

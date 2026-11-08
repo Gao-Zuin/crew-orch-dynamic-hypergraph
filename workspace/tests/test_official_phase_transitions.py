@@ -25,10 +25,13 @@ class OfficialPhaseTransitionTests(unittest.TestCase):
             {"reported_phase_percent": 40, "status_decision": "NEXT_PHASE",
              "old_phase_later_resumed_exactly": False},
             {"reported_phase_percent": 0, "status_decision": "ADD_PHASES",
-             "old_phase_later_resumed_exactly": False},
+             "old_phase_later_resumed_exactly": False,
+             "new_phases_added": ["urgent"],
+             "transitioned_to_newly_added_phase": False},
         ])
         self.assertEqual(summary["next_phase_while_reported_below_100"], 1)
         self.assertEqual(summary["unfinished_add_phase_never_resumed_exactly"], 1)
+        self.assertEqual(summary["add_events_did_not_enter_newly_added_phase"], 1)
 
     def test_add_phases_appends_new_work_behind_existing_future(self):
         state = simulate_add_phases_queue("A", ["B"], ["X"])

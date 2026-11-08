@@ -15,12 +15,18 @@
     "reported_zero_percent": 134,
     "below_100_next_phase_with_objective_progress": 72,
     "add_phases_transitions": 124,
+    "new_phase_strings_generated": 475,
+    "out_of_domain_new_phase_strings": 35,
+    "add_events_entered_newly_added_phase": 18,
+    "add_events_with_out_of_domain_generation": 21,
+    "add_events_did_not_enter_newly_added_phase": 106,
     "add_phases_while_reported_below_100": 106,
     "below_100_add_phases_with_objective_progress": 10,
     "unfinished_add_phase_never_resumed_exactly": 106,
     "out_of_domain_phase_transition": 8
   },
   "completion_condition_logged_runs": 0,
+  "runs_with_out_of_domain_new_phase_generation": 11,
   "add_phases_queue_calibration": {
     "existing_future_phase": {
       "current_phase": "B_planned",
@@ -48,10 +54,15 @@
     "next_phase_while_reported_below_100": 45,
     "below_100_next_phase_with_objective_progress": 31,
     "add_phases_transitions": 46,
+    "new_phase_strings_generated": 159,
+    "out_of_domain_new_phase_strings": 10,
+    "add_events_entered_newly_added_phase": 10,
     "reported_zero_percent": 48,
+    "add_events_did_not_enter_newly_added_phase": 36,
     "add_phases_while_reported_below_100": 34,
     "below_100_add_phases_with_objective_progress": 3,
     "unfinished_add_phase_never_resumed_exactly": 34,
+    "add_events_with_out_of_domain_generation": 7,
     "out_of_domain_phase_transition": 1
   },
   "by_method": {
@@ -65,6 +76,11 @@
       "reported_zero_percent": 67,
       "below_100_next_phase_with_objective_progress": 23,
       "add_phases_transitions": 62,
+      "new_phase_strings_generated": 247,
+      "out_of_domain_new_phase_strings": 25,
+      "add_events_entered_newly_added_phase": 6,
+      "add_events_with_out_of_domain_generation": 13,
+      "add_events_did_not_enter_newly_added_phase": 56,
       "add_phases_while_reported_below_100": 55,
       "below_100_add_phases_with_objective_progress": 4,
       "unfinished_add_phase_never_resumed_exactly": 55,
@@ -79,10 +95,15 @@
       "next_phase_while_reported_below_100": 32,
       "below_100_next_phase_with_objective_progress": 19,
       "add_phases_transitions": 42,
+      "new_phase_strings_generated": 166,
+      "out_of_domain_new_phase_strings": 10,
+      "add_events_did_not_enter_newly_added_phase": 40,
       "reported_zero_percent": 52,
       "add_phases_while_reported_below_100": 39,
       "below_100_add_phases_with_objective_progress": 3,
       "unfinished_add_phase_never_resumed_exactly": 39,
+      "add_events_entered_newly_added_phase": 2,
+      "add_events_with_out_of_domain_generation": 8,
       "out_of_domain_phase_transition": 1
     },
     "WILDFIRE_llm_generated_only_horizontal": {},
@@ -96,8 +117,12 @@
       "reported_100_percent": 69,
       "reported_zero_percent": 9,
       "add_phases_transitions": 8,
+      "new_phase_strings_generated": 28,
+      "out_of_domain_new_phase_strings": 0,
+      "add_events_did_not_enter_newly_added_phase": 6,
       "add_phases_while_reported_below_100": 7,
       "unfinished_add_phase_never_resumed_exactly": 7,
+      "add_events_entered_newly_added_phase": 2,
       "below_100_add_phases_with_objective_progress": 2
     },
     "WILDFIRE_llm_generated_teamconfig": {
@@ -109,6 +134,10 @@
       "next_phase_while_reported_below_100": 9,
       "below_100_next_phase_with_objective_progress": 7,
       "add_phases_transitions": 7,
+      "new_phase_strings_generated": 17,
+      "out_of_domain_new_phase_strings": 0,
+      "add_events_entered_newly_added_phase": 5,
+      "add_events_did_not_enter_newly_added_phase": 2,
       "reported_zero_percent": 2,
       "add_phases_while_reported_below_100": 2,
       "below_100_add_phases_with_objective_progress": 1,
@@ -120,12 +149,16 @@
       "reported_100_percent": 28,
       "with_any_objective_counter_increase": 13,
       "add_phases_transitions": 5,
+      "new_phase_strings_generated": 17,
+      "out_of_domain_new_phase_strings": 0,
+      "add_events_entered_newly_added_phase": 3,
       "reported_below_100_percent": 9,
       "reported_zero_percent": 4,
       "add_phases_while_reported_below_100": 3,
       "unfinished_add_phase_never_resumed_exactly": 3,
       "next_phase_while_reported_below_100": 6,
-      "below_100_next_phase_with_objective_progress": 4
+      "below_100_next_phase_with_objective_progress": 4,
+      "add_events_did_not_enter_newly_added_phase": 2
     }
   },
   "by_task": {
@@ -209,9 +242,13 @@
       "next_phase_while_reported_below_100": 5,
       "below_100_next_phase_with_objective_progress": 4,
       "add_phases_transitions": 2,
+      "new_phase_strings_generated": 7,
+      "out_of_domain_new_phase_strings": 0,
+      "add_events_did_not_enter_newly_added_phase": 1,
       "add_phases_while_reported_below_100": 2,
       "below_100_add_phases_with_objective_progress": 1,
-      "unfinished_add_phase_never_resumed_exactly": 2
+      "unfinished_add_phase_never_resumed_exactly": 2,
+      "add_events_entered_newly_added_phase": 1
     },
     "Rescue_Civilians_Surprise": {
       "phase_transitions": 20,
@@ -222,6 +259,9 @@
       "with_any_objective_counter_increase": 17,
       "reported_100_percent": 17,
       "add_phases_transitions": 1,
+      "new_phase_strings_generated": 4,
+      "out_of_domain_new_phase_strings": 0,
+      "add_events_entered_newly_added_phase": 1,
       "reported_zero_percent": 1
     },
     "Scale_Level_Complex": {
@@ -234,6 +274,9 @@
       "reported_100_percent": 7,
       "reported_zero_percent": 2,
       "add_phases_transitions": 1,
+      "new_phase_strings_generated": 4,
+      "out_of_domain_new_phase_strings": 0,
+      "add_events_did_not_enter_newly_added_phase": 1,
       "add_phases_while_reported_below_100": 1,
       "unfinished_add_phase_never_resumed_exactly": 1
     },
@@ -246,6 +289,9 @@
       "below_100_next_phase_with_objective_progress": 2,
       "with_any_objective_counter_increase": 3,
       "add_phases_transitions": 2,
+      "new_phase_strings_generated": 4,
+      "out_of_domain_new_phase_strings": 0,
+      "add_events_entered_newly_added_phase": 2,
       "reported_zero_percent": 4,
       "add_phases_while_reported_below_100": 2,
       "below_100_add_phases_with_objective_progress": 1,
@@ -280,6 +326,10 @@
     "Suppress_Fire_Contain": {
       "phase_transitions": 39,
       "add_phases_transitions": 25,
+      "new_phase_strings_generated": 104,
+      "out_of_domain_new_phase_strings": 13,
+      "add_events_with_out_of_domain_generation": 7,
+      "add_events_did_not_enter_newly_added_phase": 23,
       "reported_below_100_percent": 25,
       "add_phases_while_reported_below_100": 23,
       "below_100_add_phases_with_objective_progress": 1,
@@ -290,6 +340,7 @@
       "next_phase_transitions": 14,
       "next_phase_while_reported_below_100": 2,
       "reported_100_percent": 14,
+      "add_events_entered_newly_added_phase": 2,
       "below_100_next_phase_with_objective_progress": 1
     },
     "Suppress_Fire_Contain_Water_Source": {
@@ -298,6 +349,10 @@
       "reported_100_percent": 11,
       "with_any_objective_counter_increase": 10,
       "add_phases_transitions": 40,
+      "new_phase_strings_generated": 166,
+      "out_of_domain_new_phase_strings": 11,
+      "add_events_entered_newly_added_phase": 1,
+      "add_events_did_not_enter_newly_added_phase": 39,
       "reported_below_100_percent": 47,
       "reported_zero_percent": 45,
       "add_phases_while_reported_below_100": 38,
@@ -305,6 +360,7 @@
       "next_phase_while_reported_below_100": 9,
       "below_100_next_phase_with_objective_progress": 1,
       "below_100_add_phases_with_objective_progress": 2,
+      "add_events_with_out_of_domain_generation": 6,
       "out_of_domain_phase_transition": 1
     },
     "Suppress_Fire_Extinguish": {
@@ -316,9 +372,14 @@
       "next_phase_while_reported_below_100": 5,
       "below_100_next_phase_with_objective_progress": 4,
       "add_phases_transitions": 3,
+      "new_phase_strings_generated": 10,
+      "out_of_domain_new_phase_strings": 1,
+      "add_events_with_out_of_domain_generation": 1,
+      "add_events_did_not_enter_newly_added_phase": 2,
       "reported_zero_percent": 6,
       "add_phases_while_reported_below_100": 2,
-      "unfinished_add_phase_never_resumed_exactly": 2
+      "unfinished_add_phase_never_resumed_exactly": 2,
+      "add_events_entered_newly_added_phase": 1
     },
     "Suppress_Fire_Extinguish_Rapid_Growth": {
       "phase_transitions": 70,
@@ -330,9 +391,13 @@
       "below_100_next_phase_with_objective_progress": 9,
       "reported_zero_percent": 5,
       "add_phases_transitions": 9,
+      "new_phase_strings_generated": 19,
+      "out_of_domain_new_phase_strings": 0,
+      "add_events_did_not_enter_newly_added_phase": 3,
       "add_phases_while_reported_below_100": 3,
       "below_100_add_phases_with_objective_progress": 1,
-      "unfinished_add_phase_never_resumed_exactly": 3
+      "unfinished_add_phase_never_resumed_exactly": 3,
+      "add_events_entered_newly_added_phase": 6
     },
     "Suppress_Fire_Extinguish_Second_Fire": {
       "phase_transitions": 72,
@@ -343,10 +408,15 @@
       "next_phase_while_reported_below_100": 17,
       "below_100_next_phase_with_objective_progress": 5,
       "add_phases_transitions": 32,
+      "new_phase_strings_generated": 119,
+      "out_of_domain_new_phase_strings": 10,
+      "add_events_with_out_of_domain_generation": 7,
+      "add_events_did_not_enter_newly_added_phase": 30,
       "reported_zero_percent": 40,
       "add_phases_while_reported_below_100": 29,
       "unfinished_add_phase_never_resumed_exactly": 29,
       "below_100_add_phases_with_objective_progress": 2,
+      "add_events_entered_newly_added_phase": 2,
       "out_of_domain_phase_transition": 1
     },
     "Suppress_Fire_Locate_Deploy_Suppress": {
@@ -358,6 +428,9 @@
       "with_any_objective_counter_increase": 14,
       "reported_100_percent": 10,
       "add_phases_transitions": 2,
+      "new_phase_strings_generated": 9,
+      "out_of_domain_new_phase_strings": 0,
+      "add_events_did_not_enter_newly_added_phase": 2,
       "reported_zero_percent": 2,
       "add_phases_while_reported_below_100": 2,
       "below_100_add_phases_with_objective_progress": 1,
@@ -372,6 +445,9 @@
       "with_any_objective_counter_increase": 23,
       "reported_100_percent": 17,
       "add_phases_transitions": 3,
+      "new_phase_strings_generated": 11,
+      "out_of_domain_new_phase_strings": 0,
+      "add_events_did_not_enter_newly_added_phase": 3,
       "reported_zero_percent": 3,
       "add_phases_while_reported_below_100": 3,
       "unfinished_add_phase_never_resumed_exactly": 3,
@@ -391,6 +467,9 @@
       "reported_100_percent": 12,
       "with_any_objective_counter_increase": 2,
       "add_phases_transitions": 1,
+      "new_phase_strings_generated": 5,
+      "out_of_domain_new_phase_strings": 0,
+      "add_events_entered_newly_added_phase": 1,
       "reported_below_100_percent": 1,
       "next_phase_while_reported_below_100": 1
     },
@@ -403,8 +482,12 @@
       "next_phase_while_reported_below_100": 1,
       "below_100_next_phase_with_objective_progress": 1,
       "add_phases_transitions": 3,
+      "new_phase_strings_generated": 13,
+      "out_of_domain_new_phase_strings": 0,
+      "add_events_did_not_enter_newly_added_phase": 2,
       "add_phases_while_reported_below_100": 1,
-      "unfinished_add_phase_never_resumed_exactly": 1
+      "unfinished_add_phase_never_resumed_exactly": 1,
+      "add_events_entered_newly_added_phase": 1
     }
   },
   "runs": [
@@ -1655,7 +1738,15 @@
           },
           "any_objective_counter_increase": true,
           "old_phase_later_resumed_exactly": false,
-          "out_of_domain_to_phase": false
+          "out_of_domain_to_phase": false,
+          "new_phases_added": [
+            "All agents spread out to search for fire sources within the operational area, maintaining visual contact.",
+            "Upon detecting fire, the nearest agent moves to suppress it while others continue scanning.",
+            "If a fire is too large for one agent, the closest additional agent joins to assist until fire is controlled.",
+            "Once all visible fires are extinguished, all agents regroup at (41.0, 59.0) for reassignment."
+          ],
+          "transitioned_to_newly_added_phase": true,
+          "out_of_domain_new_phases": []
         }
       ]
     },
@@ -2756,7 +2847,19 @@
           },
           "any_objective_counter_increase": true,
           "old_phase_later_resumed_exactly": false,
-          "out_of_domain_to_phase": false
+          "out_of_domain_to_phase": false,
+          "new_phases_added": [
+            "Infiltrator bypasses the building's electronic lock and deactivates motion sensors using their stealth kit.",
+            "Hacker accesses the mainframe to locate the server room and download encrypted files.",
+            "Heavy stands guard at the entrance to intercept any security responders.",
+            "Infiltrator escorts Hacker to the extraction point while Heavy lays down suppressive fire."
+          ],
+          "transitioned_to_newly_added_phase": false,
+          "out_of_domain_new_phases": [
+            "Infiltrator bypasses the building's electronic lock and deactivates motion sensors using their stealth kit.",
+            "Hacker accesses the mainframe to locate the server room and download encrypted files.",
+            "Infiltrator escorts Hacker to the extraction point while Heavy lays down suppressive fire."
+          ]
         },
         {
           "agent": "8",
@@ -2778,7 +2881,15 @@
           },
           "any_objective_counter_increase": false,
           "old_phase_later_resumed_exactly": false,
-          "out_of_domain_to_phase": false
+          "out_of_domain_to_phase": false,
+          "new_phases_added": [
+            "RAVEN-1 orbits the target building at 200m AGL, performs TI/EO scan, and relays live ISR feed with geo-coordinates of all detected heat signatures and movement.",
+            "GHOST-6 (via TEAL-2 encrypted link) receives the live feed, analyzes patterns, isolates high-value targets, and confirms target locations against mission Intel.",
+            "GHOST-6 transmits confirmed target coordinates via secure burst transmission to assault element, then re-tasks RAVEN-1 to wide-area overwatch for exfiltration corridor surveillance.",
+            "RAVEN-1 shifts to exfiltration corridor, loiters at 300m AGL, and provides early warning of approaching threats using motion detection algorithms."
+          ],
+          "transitioned_to_newly_added_phase": false,
+          "out_of_domain_new_phases": []
         },
         {
           "agent": "8",
@@ -2800,7 +2911,14 @@
           },
           "any_objective_counter_increase": false,
           "old_phase_later_resumed_exactly": false,
-          "out_of_domain_to_phase": true
+          "out_of_domain_to_phase": true,
+          "new_phases_added": [
+            "Agent R compiles the extracted source data and generates the final summary table, populating all required fields.",
+            "Agent V performs a final verification scan of the summary table against the original documents cues, validating accuracy and flagging any discrepancies.",
+            "Agent R formats the verified summary table into the target output structure and presents the final deliverable."
+          ],
+          "transitioned_to_newly_added_phase": false,
+          "out_of_domain_new_phases": []
         },
         {
           "agent": "8",
@@ -2822,7 +2940,17 @@
           },
           "any_objective_counter_increase": false,
           "old_phase_later_resumed_exactly": false,
-          "out_of_domain_to_phase": true
+          "out_of_domain_to_phase": true,
+          "new_phases_added": [
+            "Zephyr scouts ahead with Reconnaissance to locate the extraction site, with Crusader maintaining Defensive Barrier around her as she moves.",
+            "Spectre activates Veil Step to infiltrate the extraction site and secure the payload, using Shadow Link to relay coordinates to the team.",
+            "Crusader deploys Iron Fortress at the extraction point, then Zephyr links the payload with Wind Tether for rapid retrieval.",
+            "All agents converge on Crusader's position for final extraction while Spectre covers their retreat with Phase Disruption to disable any pursuers."
+          ],
+          "transitioned_to_newly_added_phase": false,
+          "out_of_domain_new_phases": [
+            "Crusader deploys Iron Fortress at the extraction point, then Zephyr links the payload with Wind Tether for rapid retrieval."
+          ]
         },
         {
           "agent": "8",
@@ -2844,7 +2972,17 @@
           },
           "any_objective_counter_increase": false,
           "old_phase_later_resumed_exactly": false,
-          "out_of_domain_to_phase": false
+          "out_of_domain_to_phase": false,
+          "new_phases_added": [
+            "Simultaneously, the Network Scanner runs a full Nmap scan on the target network range with service version detection, the Web App Tester fingerprints all web services on open HTTP/HTTPS ports using WhatWeb, and the Database Checker attempts default credential logins on any SQL services found. Recon findings are stored in a shared evidence locker.",
+            "The Web App Tester performs a full vulnerability scan on all identified web applications using Nikto foul multithreaded mode, while the Network Scanner runs a detailed banner grab against all open TCP ports. Any Medium or High severity findings are flagged for the Exploitation phase.",
+            "The Exploitation Specialist cross-references all flagged vulnerabilities against the local Metasploit database ‘main_workspace’, selects one exploitable target, and launches a single appropriate exploit module with a non-destructive payload to gain initial foothold.",
+            "The Post-Exploitation Agent verifies the active session on the compromised target, gathers system information and running processes, and determines if local administrator or root privileges have been obtained Contain any found credentials or hashes in a secure temporary vault.",
+            "If privileges are not elevated, the Post-Exploitation Agent runs a local privilege escalation check using the pre-approved module ‘post/multi/recon/local_exploit_suggester’, selects one recommended exploit, and attempts elevation while logging all actions.",
+            "The Lateral Movement Specialist uses the obtained credential material to spray against other hosts in the target Active Directory environment via SMB or WinRM, documenting any successful authentications for the mission lead."
+          ],
+          "transitioned_to_newly_added_phase": false,
+          "out_of_domain_new_phases": []
         },
         {
           "agent": "8",
@@ -2910,7 +3048,16 @@
           },
           "any_objective_counter_increase": false,
           "old_phase_later_resumed_exactly": false,
-          "out_of_domain_to_phase": false
+          "out_of_domain_to_phase": false,
+          "new_phases_added": [
+            "Rescue: Agent Tango provides suppressive fire from cover while Agent Whisper flanks and eliminates threats quietly to extract the asset.",
+            "Exfil: Both agents escort the asset to the extraction point, with Agent Tango carrying the asset if injured and Agent Whisper as the forward scout."
+          ],
+          "transitioned_to_newly_added_phase": false,
+          "out_of_domain_new_phases": [
+            "Rescue: Agent Tango provides suppressive fire from cover while Agent Whisper flanks and eliminates threats quietly to extract the asset.",
+            "Exfil: Both agents escort the asset to the extraction point, with Agent Tango carrying the asset if injured and Agent Whisper as the forward scout."
+          ]
         },
         {
           "agent": "8",
@@ -2932,7 +3079,22 @@
           },
           "any_objective_counter_increase": false,
           "old_phase_later_resumed_exactly": false,
-          "out_of_domain_to_phase": true
+          "out_of_domain_to_phase": true,
+          "new_phases_added": [
+            "Agent Roster: Assign each agent a specific data source (e.g., network logs, endpoint telemetry, cloud audit trails) based on their capabilities Alicent and Rhaenyra (Host/Endpoint Monitoring), Daemon (Network Monitoring), Corlys (Cloud), Ser Harwin (iAM/Admin Activity).",
+            "Initial Scan and Footprint: Using the assigned data sources, each agent performs an initial scan over the last 7 days to identify top-talking internal assets impressioning the exfil server. Generate separate lists of suspicious IPs/hostnames per agent.",
+            "Cross-Agent Correlation: Aggregate all per-agent lists into a single central table. Deconflict entries and prioritize hosts that appear across multiple data sources for immediate deep-dive.",
+            "Suspect Lateral Movement Reconstruction: For the top 5 prioritized hosts, pull all successful outbound connection logs, internal connection attempts, and process creation events from the 7-day window to reconstruct lateral movement paths.",
+            "Data Exfiltration Volume Analysis: Calculate the total bytes transferred to the exfil server’s IP from all identified internal hosts. Break down by host Lysandra and protocol Daemon to identify the primary data loss vectors.",
+            "Resident Malware Sweep: On the top 5 prioritized hosts, pull all newly created scheduled tasks, services, and startup registry keys from the last 14 days. Cross-reference against known LOLBin and malware persistence databases.",
+            "Privilege Escalation Audit: For any host involved in lateral movement, pull Privileged Access Management logs Ser Harwin to identify any anomalous privilege grants or service account creations in the 24 hours preceding its outbound activity.",
+            "Initial Findings Consolidation: Summarize the incident timeline with all identified hosts, persistence mechanisms, lateral movement paths, and estimated data volume exfiltrated in a single draft report for human review."
+          ],
+          "transitioned_to_newly_added_phase": false,
+          "out_of_domain_new_phases": [
+            "Initial Scan and Footprint: Using the assigned data sources, each agent performs an initial scan over the last 7 days to identify top-talking internal assets impressioning the exfil server. Generate separate lists of suspicious IPs/hostnames per agent.",
+            "Data Exfiltration Volume Analysis: Calculate the total bytes transferred to the exfil server’s IP from all identified internal hosts. Break down by host Lysandra and protocol Daemon to identify the primary data loss vectors."
+          ]
         },
         {
           "agent": "8",
@@ -2954,7 +3116,16 @@
           },
           "any_objective_counter_increase": false,
           "old_phase_later_resumed_exactly": false,
-          "out_of_domain_to_phase": true
+          "out_of_domain_to_phase": true,
+          "new_phases_added": [
+            "Agent 1 scans the server rack's physical ports to identify which cable leads to the isolated research subnet, then traces and labels the correct uplink port.",
+            "Agent orra accesses the now-connected research subnet and locates the air-gapped workstation, retrieving the encrypted project files.",
+            "Agent orra decrypts the retrieved files using known institutional cipher patterns and extracts the satellite trajectory data.",
+            "Agent 1 connects a secure uplink from the research subnet to the external relay antenna, enabling exfiltration.",
+            "Agent orra transmits the decrypted trajectory data through the secure uplink to the offshore team."
+          ],
+          "transitioned_to_newly_added_phase": false,
+          "out_of_domain_new_phases": []
         },
         {
           "agent": "8",
@@ -2976,7 +3147,14 @@
           },
           "any_objective_counter_increase": false,
           "old_phase_later_resumed_exactly": false,
-          "out_of_domain_to_phase": false
+          "out_of_domain_to_phase": false,
+          "new_phases_added": [
+            "Sentinel agents with communication and diplomacy capabilities will broadcast the universal language translation to the fleet, requesting peaceful dialogue.",
+            "Terraformers with environmental adaptation abilities will create a habitable zone on the planet for both species as a neutral meeting ground.",
+            "Empaths with emotional perception will monitor the alien representatives during first contact to detect deception or hidden intentions."
+          ],
+          "transitioned_to_newly_added_phase": false,
+          "out_of_domain_new_phases": []
         },
         {
           "agent": "8",
@@ -2998,7 +3176,15 @@
           },
           "any_objective_counter_increase": false,
           "old_phase_later_resumed_exactly": false,
-          "out_of_domain_to_phase": true
+          "out_of_domain_to_phase": true,
+          "new_phases_added": [
+            "Phase .enqueue R1: Task Domain - ..tap the website traffic sources map:.. Tagline: ..identify a high-impact traffic source:.. Method: R1 analyzes the map to locate the top-performing source and pings U1.",
+            "Phase .enqueue U1: Task Domain - ..capture traffic strategy snapshot:.. Tagline: ..document the winning traffic formula:.. Method: U1 receives R1's ping, screenshots the strategy details market, and saves as snippet_eureka.png.",
+            "Phase .enqueue Rasia: Task Domain - ..deep-dive competitor scan:.. Tagline: ..unmask a rival’s growth engine:.. Method: Rasia identifies a competitor's spike period using historical data and alerts U2 to scrape the strategy signals.",
+            "Phase .enqueue U2: Task Domain - ..extract growth playbook & keywords:.. Tagline: ..download the competitor's blueprint:.. Method: U2 receives Rasia’s target, scrapes rapid keywords and dates, and outputs the unified playbook."
+          ],
+          "transitioned_to_newly_added_phase": false,
+          "out_of_domain_new_phases": []
         },
         {
           "agent": "8",
@@ -3020,7 +3206,16 @@
           },
           "any_objective_counter_increase": false,
           "old_phase_later_resumed_exactly": false,
-          "out_of_domain_to_phase": false
+          "out_of_domain_to_phase": false,
+          "new_phases_added": [
+            "Infiltrate the target facility and secure the main control room.",
+            "Bypass the security grid and access classified data on the central server.",
+            "Exfiltrate to the designated extraction point without alerting enemy reinforcements."
+          ],
+          "transitioned_to_newly_added_phase": false,
+          "out_of_domain_new_phases": [
+            "Exfiltrate to the designated extraction point without alerting enemy reinforcements."
+          ]
         },
         {
           "agent": "8",
@@ -3042,7 +3237,15 @@
           },
           "any_objective_counter_increase": false,
           "old_phase_later_resumed_exactly": false,
-          "out_of_domain_to_phase": false
+          "out_of_domain_to_phase": false,
+          "new_phases_added": [
+            "Agent A moves to the secure workstation and begins decrypting the financial records using the recovered cipher key.",
+            "Agent B monitors the security network from the control room, disabling any triggered alarms during the decryption process.",
+            "Once decryption is complete, Agent A copies the files to an encrypted drive while Agent B prepares the extraction route.",
+            "Both agents exfiltrate via the maintenance tunnel to the rendezvous point."
+          ],
+          "transitioned_to_newly_added_phase": false,
+          "out_of_domain_new_phases": []
         },
         {
           "agent": "8",
@@ -3064,7 +3267,13 @@
           },
           "any_objective_counter_increase": false,
           "old_phase_later_resumed_exactly": false,
-          "out_of_domain_to_phase": true
+          "out_of_domain_to_phase": true,
+          "new_phases_added": [
+            "Using Zyra's crowdsourcing and behavioral psychology expertise to design targeted misinformation inoculation campaigns, deploy strategic content across social platforms to pre-emptively expose and neutralize hostile narrative templates before they gain traction.",
+            "Using Orion's counterintelligence and forensic accounting skills to trace the financial flows and identify the hidden patrons (state/non-state) funding the disinformation networks, then coordinate with Zyra to leverage this intelligence for cognitive infiltration of adversary command-and-control nodes."
+          ],
+          "transitioned_to_newly_added_phase": false,
+          "out_of_domain_new_phases": []
         },
         {
           "agent": "8",
@@ -3086,7 +3295,15 @@
           },
           "any_objective_counter_increase": false,
           "old_phase_later_resumed_exactly": false,
-          "out_of_domain_to_phase": false
+          "out_of_domain_to_phase": false,
+          "new_phases_added": [
+            "Dr. Grant, as a paleontologist, uses your knowledge of fossil patterns to identify any unnatural geological markers or recent disturbances around the nest.",
+            "Quantum, leveraging your data analysis skills, correlate these ground markers with satellite imagery and heat signature scans to build a predictive model of the creature's movement.",
+            "Hardy, using your physical strength and combat engineering expertise, create a non-lethal containment perimeter (pitfalls or sonic barriers) based on Quantum's predictive path.",
+            "All team members, maintain radio silence and take your assigned positions for the \"hide and seek\" observation protocol."
+          ],
+          "transitioned_to_newly_added_phase": false,
+          "out_of_domain_new_phases": []
         },
         {
           "agent": "8",
@@ -3108,7 +3325,21 @@
           },
           "any_objective_counter_increase": false,
           "old_phase_later_resumed_exactly": false,
-          "out_of_domain_to_phase": false
+          "out_of_domain_to_phase": false,
+          "new_phases_added": [
+            "Deploy a network scanner to map active hosts dried services in the target subnet.",
+            "Harvest valid email addresses from public sources for the mapped domain.",
+            "Craft a targeted spear-phishing email with a benign tracking payload to confirm email activity.",
+            "Conduct credential stuffing against discovered login portals using common password lists.",
+            "Perform a brute-force attack on identified user accounts with lockout evasion rules.",
+            "Exploit the unpatched web server vulnerability to establish an initial foothold.",
+            "Elevate privileges via the identified kernel exploit to gain SYSTEM-level access.",
+            "Collect and exfiltrate sensitive documents matching predefined data classification patterns.",
+            "Establish persistent access using a registered scheduled task on the compromised host.",
+            "Clean event logs and remove forensic artifacts to conceal the intrusion."
+          ],
+          "transitioned_to_newly_added_phase": false,
+          "out_of_domain_new_phases": []
         }
       ]
     },
@@ -3188,7 +3419,14 @@
           },
           "any_objective_counter_increase": false,
           "old_phase_later_resumed_exactly": false,
-          "out_of_domain_to_phase": false
+          "out_of_domain_to_phase": false,
+          "new_phases_added": [
+            "AGENT_6 and AGENT_7 use Bulldozer to clear a north-south firebreak between the two active fire zones, pushing debris aside to create a barrier at x=48 from y=30 to y=45.",
+            "AGENT_1, AGENT_2, and AGENT_3 advance to the firebreak line and hold position, extinguishing any flames that threaten to cross the cleared zone.",
+            "All agents maintain defensive posture along the firebreak until the fire front is fully contained and no hotspots remain within visual range."
+          ],
+          "transitioned_to_newly_added_phase": true,
+          "out_of_domain_new_phases": []
         }
       ]
     },
@@ -3318,7 +3556,15 @@
           },
           "any_objective_counter_increase": false,
           "old_phase_later_resumed_exactly": false,
-          "out_of_domain_to_phase": false
+          "out_of_domain_to_phase": false,
+          "new_phases_added": [
+            "AGENT_1 and AGENT_5 move southeast to (20.0, 42.0) and (20.0, 50.0) to cut off fire spread.",
+            "AGENT_ certification存档3 moves east to (5.0, 47.0) to prevent flanking fire.",
+            "AGENT_2 advances south to (15.0, 55.0), working in tandem with AGENT_5 for containment.",
+            "All agents hold positions and extinguish any fire within reach."
+          ],
+          "transitioned_to_newly_added_phase": false,
+          "out_of_domain_new_phases": []
         },
         {
           "agent": "8",
@@ -3340,7 +3586,14 @@
           },
           "any_objective_counter_increase": false,
           "old_phase_later_resumed_exactly": false,
-          "out_of_domain_to_phase": false
+          "out_of_domain_to_phase": false,
+          "new_phases_added": [
+            "AGENT_去打火",
+            "AGENT_5去打火",
+            "AGENT_2去打火"
+          ],
+          "transitioned_to_newly_added_phase": false,
+          "out_of_domain_new_phases": []
         }
       ]
     },
@@ -3420,7 +3673,13 @@
           },
           "any_objective_counter_increase": true,
           "old_phase_later_resumed_exactly": false,
-          "out_of_domain_to_phase": false
+          "out_of_domain_to_phase": false,
+          "new_phases_added": [
+            "Using AGENT_1 at (35.0, 66.0), move to the fire hotspot and extinguish it.",
+            "After fire is out, AGENT_1 moves to the nearest victim and performs rescue."
+          ],
+          "transitioned_to_newly_added_phase": true,
+          "out_of_domain_new_phases": []
         }
       ]
     },
@@ -3478,7 +3737,18 @@
           },
           "any_objective_counter_increase": false,
           "old_phase_later_resumed_exactly": false,
-          "out_of_domain_to_phase": false
+          "out_of_domain_to_phase": false,
+          "new_phases_added": [
+            "Agent A moves to Agent B's location. Agent B prepares to add combined moving capability to Agent A.",
+            "Agent B physically combines with Agent A, adding its capabilities in combined moving to the unified form.",
+            "Agent C simultaneously moves to the midpoint between Agents A and B, then combines its carrying tasks with the fusion.",
+            "The combined entity performs a synchronized task, using combined moving specificity and combined carrying for coordinated transport.",
+            "Agent D moves to a forward waypoint, setting a precise target for the combined entity to reach, then stops.",
+            "The combined entity moves toward Agent D's location. Upon contact, Agent D joins the fusion, adding combined support and agility.",
+            "The final unified entity completes the mission objective by deploying the carried item at the target zone, using all combined capabilities."
+          ],
+          "transitioned_to_newly_added_phase": false,
+          "out_of_domain_new_phases": []
         }
       ]
     },
@@ -3536,7 +3806,16 @@
           },
           "any_objective_counter_increase": false,
           "old_phase_later_resumed_exactly": false,
-          "out_of_domain_to_phase": false
+          "out_of_domain_to_phase": false,
+          "new_phases_added": [
+            "Agent A approaches the secured door and attempts electronic bypass using the security panel, while Agents B and C cover both directions of the corridor.",
+            "Once the door is open, Agent B enters first to clear the immediate area, followed by Agent A for technical assessment of interior security systems.",
+            "Agents Amov and C follow behind, with Agent C securing the door after entry and maintaining rear security.",
+            "Agent A accesses the main computer terminal to locate the target intel, while the rest of the team establishes a defensive perimeter in the room.",
+            "Upon acquisition of the intel, the team executes a tactical withdrawal through the same entry point, with Agent B on point repositioning to lead the exfiltration."
+          ],
+          "transitioned_to_newly_added_phase": false,
+          "out_of_domain_new_phases": []
         },
         {
           "agent": "6",
@@ -3558,7 +3837,14 @@
           },
           "any_objective_counter_increase": false,
           "old_phase_later_resumed_exactly": false,
-          "out_of_domain_to_phase": false
+          "out_of_domain_to_phase": false,
+          "new_phases_added": [
+            "Use an open-source plaintext detection model from Hugging Face to scan the dataset and flag columns with high free-text probability.",
+            "Apply a regex-based PII scanner to the flagged columns, detecting emails, phone numbers, and ID patterns.",
+            "Generate a risk report listing each flagged column, detected PII types, and example matches."
+          ],
+          "transitioned_to_newly_added_phase": false,
+          "out_of_domain_new_phases": []
         },
         {
           "agent": "6",
@@ -3580,7 +3866,13 @@
           },
           "any_objective_counter_increase": false,
           "old_phase_later_resumed_exactly": false,
-          "out_of_domain_to_phase": false
+          "out_of_domain_to_phase": false,
+          "new_phases_added": [
+            "Alpha deploys a mobile sensor node at the cave entrance to detect ground vibrations, while Theta processes the live seismic data to predict the creature's return path and timing.",
+            "Gamma positions a portable EMP trap along the predicted path, powered by Alpha's micro-fusion cell, and Theta triggers it remotely when the creature is within range."
+          ],
+          "transitioned_to_newly_added_phase": false,
+          "out_of_domain_new_phases": []
         }
       ]
     },
@@ -3660,7 +3952,15 @@
           },
           "any_objective_counter_increase": true,
           "old_phase_later_resumed_exactly": false,
-          "out_of_domain_to_phase": false
+          "out_of_domain_to_phase": false,
+          "new_phases_added": [
+            "Approach the storm drain at night, listen for Peter's voice or movement below, and signal using two short flashlight blinks.",
+            "Once Peter acknowledges with a prearranged code phrase, lower the bundled rope and walkie-talkie through the grate.",
+            "Talk Peter through the sewer path to the abandoned pump station exit while monitoring police scanner channels.",
+            "Pick up Peter at the pump station, provide dry clothes stiffened with cornstarch, and drive separately to the safe house."
+          ],
+          "transitioned_to_newly_added_phase": false,
+          "out_of_domain_new_phases": []
         },
         {
           "agent": "6",
@@ -3682,7 +3982,17 @@
           },
           "any_objective_counter_increase": false,
           "old_phase_later_resumed_exactly": false,
-          "out_of_domain_to_phase": false
+          "out_of_domain_to_phase": false,
+          "new_phases_added": [
+            "Navigation Agent maneuvers the platform using precise orbital adjustments based on real-time positional data.",
+            "Debris Collector extends and activates the modular capture net to secure the primary target fragment.",
+            "Analyzer scans the captured debris to confirm material composition and structural integrity.",
+            "Navigation Agent executes a controlled deorbit burn to proceed to the disposal coordinates.",
+            "Debris Collector releases the fragment into the designated atmospheric reentry corridor.",
+            "Safety Warden verifies successful disposal and clears the operational orbit for the next cycle."
+          ],
+          "transitioned_to_newly_added_phase": false,
+          "out_of_domain_new_phases": []
         },
         {
           "agent": "6",
@@ -3704,7 +4014,13 @@
           },
           "any_objective_counter_increase": false,
           "old_phase_later_resumed_exactly": false,
-          "out_of_domain_to_phase": false
+          "out_of_domain_to_phase": false,
+          "new_phases_added": [
+            "Phase: path_to_prompt - Repeat the same process recursively for each subdirectory discovered ArchiveRover has explored, traversing the full directory tree.",
+            "Phase: done - Return the final list of files matching the criteria to the user."
+          ],
+          "transitioned_to_newly_added_phase": false,
+          "out_of_domain_new_phases": []
         },
         {
           "agent": "6",
@@ -3726,7 +4042,14 @@
           },
           "any_objective_counter_increase": false,
           "old_phase_later_resumed_exactly": false,
-          "out_of_domain_to_phase": false
+          "out_of_domain_to_phase": false,
+          "new_phases_added": [
+            "Lumen, scan for concealed compartments with false depth readings; Thorne, map any that are found.",
+            "Lumen, project a stable light bridge into the widest mapped compartment; Thorne, cross and retrieve the artifact.",
+            "Lumen, seal the compartment exit with a hardened light barrier after retrieval to contain any residual trap effects."
+          ],
+          "transitioned_to_newly_added_phase": false,
+          "out_of_domain_new_phases": []
         },
         {
           "agent": "6",
@@ -3748,7 +4071,15 @@
           },
           "any_objective_counter_increase": false,
           "old_phase_later_resumed_exactly": false,
-          "out_of_domain_to_phase": false
+          "out_of_domain_to_phase": false,
+          "new_phases_added": [
+            "Use Custom Bash Agent to SSH into target host and execute 'ls -la /opt' to enumerate installed applications and identify writable directories.",
+            "Use Custom Bash Agent to execute 'find /opt -type f -perm -o+w 2>/dev/null' on target host to locate globally writable files for potential privilege escalation.",
+            "Use Custom Bash Agent to check sudo permissions with 'sudo -l' on target host to identify exploitable sudo rules.",
+            "Use Custom Bash Agent to read /etc/passwd and /etc/shadow (if accessible) on target host NordicBear to enumerate user accounts and identify password hashes."
+          ],
+          "transitioned_to_newly_added_phase": false,
+          "out_of_domain_new_phases": []
         }
       ]
     },
@@ -3806,7 +4137,15 @@
           },
           "any_objective_counter_increase": false,
           "old_phase_later_resumed_exactly": false,
-          "out_of_domain_to_phase": false
+          "out_of_domain_to_phase": false,
+          "new_phases_added": [
+            "MAXIMUM - Concurrently probe all compromised internal hosts for open file shares (SMB/NetBIOS scanning at 10 packets/sec max to remain stealthy), identifying read/write-accessible directories containing financial or credential data, using SYN scan technique and staggered timing to evade IDS signature matching.",
+            "CRYPT - Encrypt and exfiltrate discovered sensitive files via segmented HTTPS POST requests to team C2 infrastructure at 5-second intervals, using AES-256-GCM with per-file unique keys derived from target host GUIDs, then delete local staging artifacts and event logs.",
+            "LINK - Establish persistent bidirectional web shell access on the most-connected internal finance server using signed PHP payload injected through template modification, then execute automated lateral movement scripts to adjacent PCI-segmented network segments via discovered service account tokens.",
+            "ANCHOR - Deploy registry-based persistence mechanisms on all compromised hosts with staggered 4-hour beacon intervals to three separate C2 domains using domain fronting through legitimate CDN endpoints, implementing fallback DNS tunneling channel if primary HTTPS is blocked."
+          ],
+          "transitioned_to_newly_added_phase": false,
+          "out_of_domain_new_phases": []
         },
         {
           "agent": "6",
@@ -3828,7 +4167,17 @@
           },
           "any_objective_counter_increase": false,
           "old_phase_later_resumed_exactly": false,
-          "out_of_domain_to_phase": false
+          "out_of_domain_to_phase": false,
+          "new_phases_added": [
+            "AEGIS deploys mobile sensor drones at the extraction perimeter to establish a 360-degree detection grid.",
+            "SPECTRE traces the data fragment's origin signature through the facility's backup network logs while IRONCLAD secures the primary server room.",
+            "GHOST infiltrates the sub-level maintenance corridor, bypassing laser tripwires to reach the encrypted vault.",
+            "IRONCLAD breaches the vault door with controlled explosive charges once GHOST confirms no internal countermeasures.",
+            "WRAITH intercepts and decodes the enemy QRF comms chatter to estimate time-to-intercept.",
+            "Team consolidates at the vault, extracts the data core, and AEGIS designates a fallback route through the ventilation system."
+          ],
+          "transitioned_to_newly_added_phase": false,
+          "out_of_domain_new_phases": []
         },
         {
           "agent": "6",
@@ -3850,7 +4199,19 @@
           },
           "any_objective_counter_increase": false,
           "old_phase_later_resumed_exactly": false,
-          "out_of_domain_to_phase": false
+          "out_of_domain_to_phase": false,
+          "new_phases_added": [
+            "Strategist marks an approach vector on the satellite blueprint.",
+            "Hacker breaches the satellite's authentication server using the provided approach.",
+            "Scout monitors for patrol drones and signals alerts.",
+            "Demolitionist plants charges on the backup generator if the alarm triggers.",
+            "Hacker extracts the orbital control keys once inside."
+          ],
+          "transitioned_to_newly_added_phase": false,
+          "out_of_domain_new_phases": [
+            "Hacker breaches the satellite's authentication server using the provided approach.",
+            "Hacker extracts the orbital control keys once inside."
+          ]
         },
         {
           "agent": "6",
@@ -3872,7 +4233,23 @@
           },
           "any_objective_counter_increase": false,
           "old_phase_later_resumed_exactly": false,
-          "out_of_domain_to_phase": false
+          "out_of_domain_to_phase": false,
+          "new_phases_added": [
+            "Drone Specialist and Infiltrator conduct aerial and ground reconnaissance of the warehouse perimeter to identify optimal entry points ambient noise cover and real-time guard patrol timings.",
+            "Infiltrator uses recorded biometric badge and PIN to approach the service entrance, while Drone Specialist disables the external security camera feed with a localized signal jammer during their approach window.",
+            "Infiltrator enters through the service door and proceeds directly to the server room, using the stolen keycard for physical access.",
+            "Tech Operative guides Infiltrator through the server room interior, instructing them to locate the specific mainframe and insert the provided USB payload into an open port.",
+            "Drone Specialist monitors exterior patrols and alerts the team, while Tech Operative initiates the data exfiltration protocol remotely once the payload connects.",
+            "Infiltrator removes the USB, relocks the server rack, and retraces steps to exfiltrate via the same service entrance during the next patrol gap."
+          ],
+          "transitioned_to_newly_added_phase": false,
+          "out_of_domain_new_phases": [
+            "Drone Specialist and Infiltrator conduct aerial and ground reconnaissance of the warehouse perimeter to identify optimal entry points ambient noise cover and real-time guard patrol timings.",
+            "Infiltrator uses recorded biometric badge and PIN to approach the service entrance, while Drone Specialist disables the external security camera feed with a localized signal jammer during their approach window.",
+            "Infiltrator enters through the service door and proceeds directly to the server room, using the stolen keycard for physical access.",
+            "Tech Operative guides Infiltrator through the server room interior, instructing them to locate the specific mainframe and insert the provided USB payload into an open port.",
+            "Infiltrator removes the USB, relocks the server rack, and retraces steps to exfiltrate via the same service entrance during the next patrol gap."
+          ]
         }
       ]
     },
@@ -4228,7 +4605,16 @@
           },
           "any_objective_counter_increase": false,
           "old_phase_later_resumed_exactly": false,
-          "out_of_domain_to_phase": false
+          "out_of_domain_to_phase": false,
+          "new_phases_added": [
+            "Once the overhead cover is compromised or bypassed, the drone deploys a small explosive charge through the opening to breach the bunker's reinforced door.",
+            "The robot dog enters the bunker, using its arm to clear debris and its thermal camera to locate the weapons scientist and intel.",
+            "The robot dog secures the scientist and the intel, then returns to the extraction point where the squad provides cover."
+          ],
+          "transitioned_to_newly_added_phase": false,
+          "out_of_domain_new_phases": [
+            "The robot dog secures the scientist and the intel, then returns to the extraction point where the squad provides cover."
+          ]
         },
         {
           "agent": "9",
@@ -4250,7 +4636,14 @@
           },
           "any_objective_counter_increase": false,
           "old_phase_later_resumed_exactly": false,
-          "out_of_domain_to_phase": false
+          "out_of_domain_to_phase": false,
+          "new_phases_added": [
+            "Agent Smith will give you a warning about a tight path ahead. Wait until the path is clear before proceeding.",
+            "Agent Smith will carry you across the tight path. Hold on to Agent Smith's back and keep still.",
+            "Agent Smith will set you down on the other side. Check your gear before moving on."
+          ],
+          "transitioned_to_newly_added_phase": false,
+          "out_of_domain_new_phases": []
         }
       ]
     },
@@ -4606,7 +4999,13 @@
           },
           "any_objective_counter_increase": true,
           "old_phase_later_resumed_exactly": false,
-          "out_of_domain_to_phase": false
+          "out_of_domain_to_phase": false,
+          "new_phases_added": [
+            "AGENT_7 fly to (34.0, 62.0) and pick up AGENT_6",
+            "Both agents recon area (50.0, 50.0) for targets"
+          ],
+          "transitioned_to_newly_added_phase": false,
+          "out_of_domain_new_phases": []
         }
       ]
     },
@@ -4824,7 +5223,17 @@
           },
           "any_objective_counter_increase": false,
           "old_phase_later_resumed_exactly": false,
-          "out_of_domain_to_phase": false
+          "out_of_domain_to_phase": false,
+          "new_phases_added": [
+            "Team Leader initiates dialogue with the system administrator at the targeted facility, applying social engineering to persuade them to open a network connection to a designated external server.",
+            "Engineer deploys a custom firmware update through the established connection, granting persistent remote access to the facility's core systems.",
+            "Infiltrator physically accesses the server room using credentials provided by the compromised administrator, installing a hardware backdoor for redundancy.",
+            "Team Leader coordinates a controlled data exfiltration test with the administrator, masking the operation as a routine security audit."
+          ],
+          "transitioned_to_newly_added_phase": false,
+          "out_of_domain_new_phases": [
+            "Infiltrator physically accesses the server room using credentials provided by the compromised administrator, installing a hardware backdoor for redundancy."
+          ]
         },
         {
           "agent": "9",
@@ -4868,7 +5277,14 @@
           },
           "any_objective_counter_increase": false,
           "old_phase_later_resumed_exactly": false,
-          "out_of_domain_to_phase": false
+          "out_of_domain_to_phase": false,
+          "new_phases_added": [
+            "Use a vulnerability scanning agent to identify an exposed service on the target server, then have an exploitation agent check if that service is vulnerable to a known remote code execution flaw.",
+            "Deploy a persistence agent to establish a callback mechanism on the compromised host, ensuring continued access even if the initial entry point is patched or the system reboots.",
+            "Execute a credential dumping agent to harvest stored credentials, then pass them to a lateral movement agent that scans the internal network and attempts access to adjacent systems."
+          ],
+          "transitioned_to_newly_added_phase": false,
+          "out_of_domain_new_phases": []
         },
         {
           "agent": "9",
@@ -4890,7 +5306,16 @@
           },
           "any_objective_counter_increase": false,
           "old_phase_later_resumed_exactly": false,
-          "out_of_domain_to_phase": false
+          "out_of_domain_to_phase": false,
+          "new_phases_added": [
+            "Calculator: Based on Agent A's analysis, design a cryptographic algorithm that incorporates the pattern's mathematical structure and complies with standard encryption principles.",
+            "Agent B: Implement the algorithm into a software prototype, writing code for encryption and decryption functions using a chosen programming language.",
+            "Agent C: Test the prototype against known cryptographic attacks and benchmark its performance, providing a report on security strength and efficiency.",
+            "Calculator: Analyze Agent C's testing results and suggest optimizations or corrections to the algorithm.",
+            "Agent B: Refine the software prototype code based on Calculator's suggested optimizations from the previous phase."
+          ],
+          "transitioned_to_newly_added_phase": false,
+          "out_of_domain_new_phases": []
         },
         {
           "agent": "9",
@@ -4912,7 +5337,14 @@
           },
           "any_objective_counter_increase": false,
           "old_phase_later_resumed_exactly": false,
-          "out_of_domain_to_phase": false
+          "out_of_domain_to_phase": false,
+          "new_phases_added": [
+            "Any agent with creds moves to Prod-Server-99, then writes \"root:$hash\" to /etc/shadow to persist access.",
+            "Any agent exfiltrates /var/log/auth.log from Prod-Server-99 to C2 server via HTTP POST to mask credential modification traces.",
+            "Any agent performs memory dump on Prod-Server-99 targeting SSH daemon process, then exfiltrates the dump for offline credential harvesting."
+          ],
+          "transitioned_to_newly_added_phase": false,
+          "out_of_domain_new_phases": []
         },
         {
           "agent": "9",
@@ -4934,7 +5366,14 @@
           },
           "any_objective_counter_increase": false,
           "old_phase_later_resumed_exactly": false,
-          "out_of_domain_to_phase": false
+          "out_of_domain_to_phase": false,
+          "new_phases_added": [
+            "Selene-Beta infiltrates the security nexus at Site-7 to disable perimeter alarms and suppress biometric locks.",
+            "Wraith-9 and Orion-Vector advance through the utility sublevel to breach the containment vault and secure the artifact.",
+            "Selene-Beta overwrites station logs and initiates a controlled data purge, then all units exfiltrate via the drainage tunnel rendezvous."
+          ],
+          "transitioned_to_newly_added_phase": false,
+          "out_of_domain_new_phases": []
         },
         {
           "agent": "9",
@@ -4956,7 +5395,17 @@
           },
           "any_objective_counter_increase": false,
           "old_phase_later_resumed_exactly": false,
-          "out_of_domain_to_phase": false
+          "out_of_domain_to_phase": false,
+          "new_phases_added": [
+            "Use Python to download the dataset from the provided URL Mabson gave you.",
+            "Use Python to count the total number of records and list all unique product categories in the dataset.",
+            "Use Python to calculate the average discount percentage and total revenue for Q4 202iat.",
+            "Use the Web Search agent to find the current average industry discount rate for SaaS products.",
+            "Use Python to compare our Q4 SaaS discount rate against the industry benchmark and generate a summary table of revenue by category.",
+            "Use your document creation ability to write the final analysis into a PDF report with the summary table included."
+          ],
+          "transitioned_to_newly_added_phase": false,
+          "out_of_domain_new_phases": []
         },
         {
           "agent": "9",
@@ -4978,7 +5427,16 @@
           },
           "any_objective_counter_increase": false,
           "old_phase_later_resumed_exactly": false,
-          "out_of_domain_to_phase": false
+          "out_of_domain_to_phase": false,
+          "new_phases_added": [
+            "Agent with access to the historical database will query the last known position and trajectory of the target vessel.",
+            "Agent with real-time satellite data access will cross-reference the historical trajectory with current orbital parameters to predict the vessel's current heading.",
+            "Agent with communication relay capabilities will attempt to establish a direct handshake with the vessel's onboard systems.",
+            "Agent with encryption analysis tools will decode any fragmented distress signals from the last known sector.",
+            "Agent with navigational guidance systems will plot a corrected intercept course using the consolidated data."
+          ],
+          "transitioned_to_newly_added_phase": false,
+          "out_of_domain_new_phases": []
         },
         {
           "agent": "9",
@@ -5000,7 +5458,24 @@
           },
           "any_objective_counter_increase": false,
           "old_phase_later_resumed_exactly": false,
-          "out_of_domain_to_phase": false
+          "out_of_domain_to_phase": false,
+          "new_phases_added": [
+            "Hacker uses Network Mapper to scan target subnet and identify live hosts and open ports.",
+            "Scout uses Recon Toolkit to gather OSINT on identified IP ranges and domain names.",
+            "Hacker launches Vulnerability Scanner against discovered services to enumerate exploitable weaknesses.",
+            "Operator performs Social Engineering Simulation with crafted phishing pretexts targeting discovered email addresses.",
+            "Hacker executes Exploitation Framework to gain initial foothold on vulnerable systems.",
+            "Scout deploys Persistent Agent on compromised hostsega to maintain access and gather internal intelligence.",
+            "Operator conducts Privilege Escalation via credential harvesting and lateral movement techniques.",
+            "Hacker exfiltrates flagged data using Data Exfiltration Toolkit to secure staging server."
+          ],
+          "transitioned_to_newly_added_phase": false,
+          "out_of_domain_new_phases": [
+            "Hacker uses Network Mapper to scan target subnet and identify live hosts and open ports.",
+            "Hacker launches Vulnerability Scanner against discovered services to enumerate exploitable weaknesses.",
+            "Hacker executes Exploitation Framework to gain initial foothold on vulnerable systems.",
+            "Hacker exfiltrates flagged data using Data Exfiltration Toolkit to secure staging server."
+          ]
         },
         {
           "agent": "9",
@@ -5044,7 +5519,13 @@
           },
           "any_objective_counter_increase": false,
           "old_phase_later_resumed_exactly": false,
-          "out_of_domain_to_phase": false
+          "out_of_domain_to_phase": false,
+          "new_phases_added": [
+            "All agents return to mission start point and upload findings.",
+            "Roster reassembles at extraction coordinates for debrief."
+          ],
+          "transitioned_to_newly_added_phase": false,
+          "out_of_domain_new_phases": []
         }
       ]
     },
@@ -5124,7 +5605,16 @@
           },
           "any_objective_counter_increase": true,
           "old_phase_later_resumed_exactly": false,
-          "out_of_domain_to_phase": false
+          "out_of_domain_to_phase": false,
+          "new_phases_added": [
+            "Call EVA (Expert Visual Analyst) to examine the cargo hold cameras and check for any anomalies, disturbances, or signs of movement.",
+            "Summon LUCY (Lucid Unit for Communication and Yielding) to access the intercom system and playback recent audio logs from the cargo hold area.",
+            "Instruct ARTEMIS (Autonomous Reasoning & Threat Evaluation Management Intelligence System) to correlate timestamps from visual and audio data against the crew's declared whereabouts.",
+            "Dispatch SENTINEL (Security Enforcement & Neutralization Tactical Intelligence for Emergency Logistics) to conduct a physical sweep of cargo hold sub-levels with motion tracker activated.",
+            "Direct ORACLE (Operational Risk Assessment & Contingency Logic Engine) to calculate probability of stowaway, equipment malfunction, or crew deception based on gathered evidence."
+          ],
+          "transitioned_to_newly_added_phase": false,
+          "out_of_domain_new_phases": []
         },
         {
           "agent": "9",
@@ -5168,7 +5658,14 @@
           },
           "any_objective_counter_increase": false,
           "old_phase_later_resumed_exactly": false,
-          "out_of_domain_to_phase": false
+          "out_of_domain_to_phase": false,
+          "new_phases_added": [
+            "Agent 1 eavesdrops on a guard conversation to learn the meeting location.",
+            "Agent masked as a guard enters the meeting and swaps the fake formula for the real one under the table.",
+            "Agent 2 recalibrates the mass spectrometer to validate the swapped decoy sample."
+          ],
+          "transitioned_to_newly_added_phase": false,
+          "out_of_domain_new_phases": []
         },
         {
           "agent": "9",
@@ -5190,7 +5687,14 @@
           },
           "any_objective_counter_increase": false,
           "old_phase_later_resumed_exactly": false,
-          "out_of_domain_to_phase": false
+          "out_of_domain_to_phase": false,
+          "new_phases_added": [
+            "Use the Radar Specialist's DBF to scan the target building in a slow, methodical grid pattern, pausing for 3 seconds at each 45-degree sector to allow the AI Engine to process faint echoes and classify internal structure, personnel, and electronic anomalies.",
+            "Deploy the Communications Interceptor to the secondary observation point, lock onto the security team's encrypted radio traffic, and stream the raw capture to the AI Engine for live transcription cog and cryptoanalysis, while the Platform Operator keeps the drone loitering in silent mode at 400 feet.",
+            "The AI Engine cross-references intercepted radio voiceprints and the Radar Specialist's human activity map to execute the tailored identification cog for the contract targets, then the Ground Agent dispatches the two biometric trackers to the building's north and south stairwells as reported by the radar."
+          ],
+          "transitioned_to_newly_added_phase": false,
+          "out_of_domain_new_phases": []
         },
         {
           "agent": "9",
@@ -5212,7 +5716,14 @@
           },
           "any_objective_counter_increase": false,
           "old_phase_later_resumed_exactly": false,
-          "out_of_domain_to_phase": false
+          "out_of_domain_to_phase": false,
+          "new_phases_added": [
+            "The CEO calls an all-hands meeting to announce a company-wide rebranding initiative to improve public perception.",
+            "The CEO assigns the project manager to oversee the rebranding, the art director to design a new logo, and the copywriter to draft a new mission statement.",
+            "The team presents the new brand materials to the board, who approves them unanimously."
+          ],
+          "transitioned_to_newly_added_phase": false,
+          "out_of_domain_new_phases": []
         },
         {
           "agent": "9",
@@ -5234,7 +5745,16 @@
           },
           "any_objective_counter_increase": false,
           "old_phase_later_resumed_exactly": false,
-          "out_of_domain_to_phase": false
+          "out_of_domain_to_phase": false,
+          "new_phases_added": [
+            "PENELOPE traces the system logs to identify the origin point and scope of the breach.",
+            "SERAPHINA decrypts any intercepted or obfuscated data packets related to the intrusion.",
+            "TITUS deploys a containment firewall at the network's perimeter to halt active exfiltration.",
+            "SERAPHINA analyzes the breach code to identify its source, purpose, and payload type.",
+            "PENELOPE generates a sanitized report of the breach vector and countermeasures for the oversight committee."
+          ],
+          "transitioned_to_newly_added_phase": false,
+          "out_of_domain_new_phases": []
         },
         {
           "agent": "9",
@@ -5256,7 +5776,14 @@
           },
           "any_objective_counter_increase": false,
           "old_phase_later_resumed_exactly": false,
-          "out_of_domain_to_phase": false
+          "out_of_domain_to_phase": false,
+          "new_phases_added": [
+            "The off-grid Agent with technical expertise establishes a covert long-range communication system using solar-powered radio relays and encrypted mesh network nodes, while the wilderness expert scouts and secures a fallback supply cache location.",
+            "The linguistic expert dials into intercepted digital chatter and radio transmissions to identify hostile force patternsega patterns and morale shifts, while the intelligence analyst cross-references findings against satellite movement data to predict their next move.",
+            "The team exfiltrates through the previously scouted fallback route, with the wilderness expert navigating and the off-grid tech Agent deploying low-power signal repeaters to mask their retreat and misdirect pursuing forces."
+          ],
+          "transitioned_to_newly_added_phase": false,
+          "out_of_domain_new_phases": []
         },
         {
           "agent": "9",
@@ -5278,7 +5805,14 @@
           },
           "any_objective_counter_increase": false,
           "old_phase_later_resumed_exactly": false,
-          "out_of_domain_to_phase": false
+          "out_of_domain_to_phase": false,
+          "new_phases_added": [
+            "Crystal Strike: Wraith teleports behind the enemy commander, phases briefly to become intangible, then Raze follows up with a well-aimed rocket to disrupt their formation.",
+            "Viper chokes the enemy flank with poison cloud, Phoenix curves a flashbang through the smoke to blind enemies as they reposition.",
+            "Phoenix hot-hands a chokepoint to deny entry while Viper deploys her wall, splitting the battlefield and isolating targets for the team to pick off."
+          ],
+          "transitioned_to_newly_added_phase": false,
+          "out_of_domain_new_phases": []
         },
         {
           "agent": "9",
@@ -5300,7 +5834,18 @@
           },
           "any_objective_counter_increase": false,
           "old_phase_later_resumed_exactly": false,
-          "out_of_domain_to_phase": false
+          "out_of_domain_to_phase": false,
+          "new_phases_added": [
+            "Armor moves to the window and makes a Perception check to scan the alley below for threats or escape routes while Crypto stays hidden.",
+            "Crypto hacks any visible electronic device (camera, drone, comms array) to disable enemy surveillance or create a distraction.",
+            "Armor rappels down the building with Crypto, using a smoke grenade to cover their descent if enemies are spotted.",
+            "Crypto accesses a nearby terminal to download mission data while Armor provides overwatch with a suppressive fire position.",
+            "Armor hotwires a ground vehicle for extraction while Crypto jams enemy communications to prevent reinforcements from coordinating."
+          ],
+          "transitioned_to_newly_added_phase": false,
+          "out_of_domain_new_phases": [
+            "Crypto accesses a nearby terminal to download mission data while Armor provides overwatch with a suppressive fire position."
+          ]
         },
         {
           "agent": "9",
@@ -5322,7 +5867,15 @@
           },
           "any_objective_counter_increase": false,
           "old_phase_later_resumed_exactly": false,
-          "out_of_domain_to_phase": false
+          "out_of_domain_to_phase": false,
+          "new_phases_added": [
+            "Echo activates Synthetic Sonar, sending a high-frequency pulse through the floor and walls to map the hidden sub-level's layout, exits, and any moving entities. She relays terrain and contact data to the squad via secure comms.",
+            "On Echo's signal, Cipher jacks into a discovered terminal node to disable internal cameras, lock down automated defenses in their sector, and pull access logs from the past 48 hours—screening for signs of the missing operatives.",
+            "With the subterranean map confirmed坊 Cipher's remote overwatch, Viper plants breaching charges on the reinforced bulkhead Echo identified as the primary entry point, then stack up and breach on detonation.",
+            "Post-breach, Viper clears rooms with suppressed weaponry while sweeping for bio/chemical traces using her wrist-mounted analyzers. Echo maintains Doppler-lock on all personnel, calling out threat vectors so the team can bypass or neutralize hostiles without raising alarms."
+          ],
+          "transitioned_to_newly_added_phase": false,
+          "out_of_domain_new_phases": []
         },
         {
           "agent": "9",
@@ -5344,7 +5897,14 @@
           },
           "any_objective_counter_increase": false,
           "old_phase_later_resumed_exactly": false,
-          "out_of_domain_to_phase": false
+          "out_of_domain_to_phase": false,
+          "new_phases_added": [
+            "Alpha scans the premises for electronic anomalies linked to the artifact's signal.",
+            "Shadow infiltrates the target building, disabling physical security measures and retrieving the artifact.",
+            "Echo jams local communications to cover the escape route for Shadow."
+          ],
+          "transitioned_to_newly_added_phase": false,
+          "out_of_domain_new_phases": []
         },
         {
           "agent": "9",
@@ -5366,7 +5926,16 @@
           },
           "any_objective_counter_increase": false,
           "old_phase_later_resumed_exactly": false,
-          "out_of_domain_to_phase": false
+          "out_of_domain_to_phase": false,
+          "new_phases_added": [
+            "Using the Negotiation Agent, establish secure communication channels with the ground survey team and local authorities to coordinate logistics and access permissions.",
+            "Using the Cybersecurity Agent, scan for and map all connected data relays, sensors, and network entry points around the site perimeter.",
+            "Using the Data Processing Agent, cross-reference the initial satellite topographical data with the local sensor network feeds to identify anomalies.",
+            "Using the Surveillance Agent, deploy aerial and ground reconnaissance to create a real-time perimeter map and identify physical security blind spots.",
+            "Using the Data Processing Agent, run a predictive analysis on intercepted logistical transmissions to determine the destination and purpose of the recovered artifact."
+          ],
+          "transitioned_to_newly_added_phase": false,
+          "out_of_domain_new_phases": []
         },
         {
           "agent": "9",
@@ -5388,7 +5957,13 @@
           },
           "any_objective_counter_increase": false,
           "old_phase_later_resumed_exactly": false,
-          "out_of_domain_to_phase": false
+          "out_of_domain_to_phase": false,
+          "new_phases_added": [
+            "Compile the accessible server list, discovered credentials, and Kestrel’s classified project index into one dossier. Use Ghost to exfiltrate the file to the designated allied data drop, then wipe local traces.",
+            "Identify any remaining operators still inside the compound using Echo’s audio surveillance and Whisper’s relay taps. Silently mark their positions for the extraction team and trigger a false maintenance alarm to draw guards away from their routes."
+          ],
+          "transitioned_to_newly_added_phase": false,
+          "out_of_domain_new_phases": []
         }
       ]
     },
@@ -5512,7 +6087,13 @@
           },
           "any_objective_counter_increase": false,
           "old_phase_later_resumed_exactly": false,
-          "out_of_domain_to_phase": false
+          "out_of_domain_to_phase": false,
+          "new_phases_added": [
+            "Phase iat-verify: Agent Roster connects to network infrastructure to verify that the intrusion detection system is operational and correctly logging network traffic.",
+            "Phase iat-assess: Agent Roster reviews the logs from the intrusion detection system administered in the previous phase telescope to assess any anomalies or breaches detected."
+          ],
+          "transitioned_to_newly_added_phase": false,
+          "out_of_domain_new_phases": []
         },
         {
           "agent": "9",
@@ -5534,7 +6115,18 @@
           },
           "any_objective_counter_increase": false,
           "old_phase_later_resumed_exactly": false,
-          "out_of_domain_to_phase": false
+          "out_of_domain_to_phase": false,
+          "new_phases_added": [
+            "All agents except Architect and Watcher advance through the mapped route, pausing at each intersection to confirm clear before proceeding.",
+            "Watcher maintains overwatch from the current elevated position declaratively and reports any movement or anomalies.",
+            "Architect deploys a motion sensor at the entry breach to secure the rear and provide early warning.",
+            "Upon reaching the target wing, Watcher relocates declaratively to a new overwatch position covering the objective area.",
+            "Agents breach and clear the objective room, securing any hostiles and recovering the mission-critical item."
+          ],
+          "transitioned_to_newly_added_phase": false,
+          "out_of_domain_new_phases": [
+            "Architect deploys a motion sensor at the entry breach to secure the rear and provide early warning."
+          ]
         },
         {
           "agent": "9",
@@ -5644,7 +6236,16 @@
           },
           "any_objective_counter_increase": false,
           "old_phase_later_resumed_exactly": false,
-          "out_of_domain_to_phase": false
+          "out_of_domain_to_phase": false,
+          "new_phases_added": [
+            "Deploy team to Phobos Station to intercept the courier. Use surveillance gear to identify and track their movements.",
+            "Secure the courier and the data chip. Avoid station security patrols while extracting the target.",
+            "Rendezvous at the extraction point. Hold position and defend against incoming patrols until the dropship arrives."
+          ],
+          "transitioned_to_newly_added_phase": true,
+          "out_of_domain_new_phases": [
+            "Rendezvous at the extraction point. Hold position and defend against incoming patrols until the dropship arrives."
+          ]
         },
         {
           "agent": "9",
@@ -5710,7 +6311,13 @@
           },
           "any_objective_counter_increase": false,
           "old_phase_later_resumed_exactly": false,
-          "out_of_domain_to_phase": false
+          "out_of_domain_to_phase": false,
+          "new_phases_added": [
+            "Yokubo uses Vitreous Gate to open a portal directly beneath the hostage, dropping them into a hidden location controlled by Nyxara. Simultaneously, the Wardens suppress any nearby surveillance or communication devices to prevent detection of the extraction.",
+            "Once the hostage is secured, Nyxara deploys a short-range Neural Shroud over the extraction zone. Yokubo opens a second Vitreous Gate linked to the pre-designated safe house, through which the team and hostage retreat."
+          ],
+          "transitioned_to_newly_added_phase": true,
+          "out_of_domain_new_phases": []
         },
         {
           "agent": "9",
@@ -6485,7 +7092,16 @@
           },
           "any_objective_counter_increase": true,
           "old_phase_later_resumed_exactly": false,
-          "out_of_domain_to_phase": false
+          "out_of_domain_to_phase": false,
+          "new_phases_added": [
+            "AGENT_6 and AGENT_7 deploy southeast to the secondary wildfire front at (78.0, 90.0) for aerial reconnaissance and initial ground assessment.",
+            "AGENT_7 performs water drop runs between (78.0, 90.0) and the nearest water source while AGENT_6 establishes a containment line on the western flank.",
+            "AGENT_1, AGENT_2, AGENT_3, AGENT_4, and AGENT_5 relocate north to (20.0, 35.0) to protect the cluster of residential structures from advancing ember spread.",
+            "AGENT_1 and AGENT_2 hold the northern perimeter at (20.0, 35.0), laying suppression lines, while AGENT_3, AGENT_4, and AGENT_5 execute a controlled burnout operation to the east.",
+            "All agents converge on the main blaze origin at (54.0, 77.0) for final mop-up and extinguishment once secondary threats are contained."
+          ],
+          "transitioned_to_newly_added_phase": true,
+          "out_of_domain_new_phases": []
         }
       ]
     },
@@ -7877,7 +8493,14 @@
           },
           "any_objective_counter_increase": true,
           "old_phase_later_resumed_exactly": false,
-          "out_of_domain_to_phase": false
+          "out_of_domain_to_phase": false,
+          "new_phases_added": [
+            "AGENT_6 and AGENT_7 perform aerial reconnaissance to scan the surrounding area for additional hazards or civilians.",
+            "AGENT_4 moves to assist any civilians identified by drone reconnaissance.",
+            "AGENT_1, AGENT_2, AGENT_3, and AGENT_5 advance toward the main hazard zone and begin suppression operations."
+          ],
+          "transitioned_to_newly_added_phase": false,
+          "out_of_domain_new_phases": []
         }
       ]
     },
@@ -8782,7 +9405,14 @@
           },
           "any_objective_counter_increase": false,
           "old_phase_later_resumed_exactly": false,
-          "out_of_domain_to_phase": false
+          "out_of_domain_to_phase": false,
+          "new_phases_added": [
+            "AGENT_6 pushes south from (45, 42) to (45, 20), clearing a path.",
+            "AGENT_7 pushes north from (42, 22) to (42, 40), clearing a path.",
+            "Both bulldozers meet and clear a crossing route at their intersection."
+          ],
+          "transitioned_to_newly_added_phase": true,
+          "out_of_domain_new_phases": []
         },
         {
           "agent": "8",
@@ -8897,7 +9527,20 @@
           },
           "any_objective_counter_increase": false,
           "old_phase_later_resumed_exactly": false,
-          "out_of_domain_to_phase": false
+          "out_of_domain_to_phase": false,
+          "new_phases_added": [
+            "Approach a low-end POS terminal or locked office door and deploy the dummy NFC emitter to clone the first valid access badge presented, then immediately test the clone on the same reader.",
+            "Position the surveillance nanodrone swarm in the security hub ceiling void, identify the security IC/E4-grade officer, and initiate passive biometric recording of their gait and keystroke cadence.",
+            "Grifter approaches the identified officer in a non-critical zone, delivers a tailored distraction pitch (e.g., lost auditor), and executes a tactile brush pass to swap the officer’s live badge with the inert duplicate.",
+            "While the grifter holds the conversation, the infiltrator redeems the live badge at the security hub side entrance and immediately moves to the low-traffic maintenance closet containing the secondary network patch panel.",
+            "Inside the closet, attach the hardened cross-platform tap to the exposed uplink cable, confirm link lights, then exit within 60 seconds using the same badge.",
+            "After officer’s shift change, the drone swarm recalibrates to the walked egress path and streams active badge proximity data to the infiltrator, allowing live tailgating through the final mantrap into the archives vault."
+          ],
+          "transitioned_to_newly_added_phase": false,
+          "out_of_domain_new_phases": [
+            "While the grifter holds the conversation, the infiltrator redeems the live badge at the security hub side entrance and immediately moves to the low-traffic maintenance closet containing the secondary network patch panel.",
+            "After officer’s shift change, the drone swarm recalibrates to the walked egress path and streams active badge proximity data to the infiltrator, allowing live tailgating through the final mantrap into the archives vault."
+          ]
         }
       ]
     },
@@ -8933,7 +9576,18 @@
           },
           "any_objective_counter_increase": false,
           "old_phase_later_resumed_exactly": false,
-          "out_of_domain_to_phase": false
+          "out_of_domain_to_phase": false,
+          "new_phases_added": [
+            "Deploy Shadow (Infiltrator) to breach the facility's outer security, bypass electronic locks, and access the mainframe room undetected.",
+            "Activate Echo (Hacker) to decrypt the mainframe's encrypted files and extract data on the Syndicate's weapon shipments.",
+            "Dispatch Titan (Heavy Weapons) to secure the extraction route and neutralize any patrols that Shadow's infiltration alerted.",
+            "All agents rendezvous at the exfiltration point for immediate dust-off."
+          ],
+          "transitioned_to_newly_added_phase": false,
+          "out_of_domain_new_phases": [
+            "Deploy Shadow (Infiltrator) to breach the facility's outer security, bypass electronic locks, and access the mainframe room undetected.",
+            "Activate Echo (Hacker) to decrypt the mainframe's encrypted files and extract data on the Syndicate's weapon shipments."
+          ]
         },
         {
           "agent": "8",
@@ -8955,7 +9609,16 @@
           },
           "any_objective_counter_increase": false,
           "old_phase_later_resumed_exactly": false,
-          "out_of_domain_to_phase": false
+          "out_of_domain_to_phase": false,
+          "new_phases_added": [
+            "Echo executes netstat -ano on the compromised server to identify other listening services, then uses curl http://localhost:<port> from within the same host to access any internal-only web interfaces.",
+            "Echo uploads chisel to the server, then runs chisel client connecting back to an attacker-controlled chisel server, establishing a reverse SOCKS proxy for lateral movement.",
+            "Echo uses the established SOCKS tunnel to run crackmapexec smb against internal subnet ranges, spraying the captured credentials to discover other accessible Windows hosts.",
+            "Echo dumps the SAM and SYSTEM registry hives via reg save commands on the compromised server, then uses impacket-secretsdump locally to extract additional credentials.",
+            "Echo enumerates Active Directory via ldapsearch through the SOCKS proxy, querying for high-value targets like Domain Admins, SQL service accounts, and workstation admin groups."
+          ],
+          "transitioned_to_newly_added_phase": false,
+          "out_of_domain_new_phases": []
         },
         {
           "agent": "8",
@@ -8977,7 +9640,14 @@
           },
           "any_objective_counter_increase": false,
           "old_phase_later_resumed_exactly": false,
-          "out_of_domain_to_phase": false
+          "out_of_domain_to_phase": false,
+          "new_phases_added": [
+            "Design a low-cost public awareness campaign using social media, posters, and community events to inform the public about the dangers of flash floods and how to prepare.",
+            "Develop a simple, non-technical training module and organize hands-on workshops for community members on basic preparedness actions (e.g., assembling emergency kits, identifying evacuation routes).",
+            "Establish a volunteer neighborhood watch network where trained residents monitor water levels during heavy rain and relay early warnings using a phone tree or messaging app."
+          ],
+          "transitioned_to_newly_added_phase": false,
+          "out_of_domain_new_phases": []
         },
         {
           "agent": "8",
@@ -8999,7 +9669,15 @@
           },
           "any_objective_counter_increase": false,
           "old_phase_later_resumed_exactly": false,
-          "out_of_domain_to_phase": false
+          "out_of_domain_to_phase": false,
+          "new_phases_added": [
+            "Access the memory banks and logs stored on the asteroid base to recover any data on the original scientists' research into the alien signal; use technical expertise to bypass encrypted security sectors and linguistic skills to interpret any non-standard data structures encountered in the logs.",
+            "Use the recovered data to pinpoint the signal’s exact point of origin within the nearby nebula, then navigate the ship into its outer perimeter while deploying long-range sensors to scan for structural anomalies or artificial constructs hidden in the ionized gas.",
+            "Assuming an alien structure is detected, dock at its main energy conduit and initiate a controlled power surge from the ship’s reactor to activate the dormant interface; stand ready with weapons and environmental suits to counter any automated defense systems that power up in response.",
+            "Once the interface is active, parse the alien data-stream using the linguistic decryption protocols developed from the base logs; establish a first-contact communication loop, transmitting the universal greeting sequence while filtering their responses for mathematical constants to confirm intelligence."
+          ],
+          "transitioned_to_newly_added_phase": false,
+          "out_of_domain_new_phases": []
         },
         {
           "agent": "8",
@@ -9021,7 +9699,14 @@
           },
           "any_objective_counter_increase": false,
           "old_phase_later_resumed_exactly": false,
-          "out_of_domain_to_phase": false
+          "out_of_domain_to_phase": false,
+          "new_phases_added": [
+            "Build fake Enterprise domain controller \"ENT-DC01\" with Golden SAML backdoor and fake PKI, then phish remaining IT admins via pass-the-cookie to Azure",
+            "Exfiltrate domain dumps and cloud secrets via ICMP tunneling, then trigger simulated ransomware on SCADA Historian to mask extraction",
+            "Spoof Presidential Emergency Alert to panic civilians, then deploy wiper malware on broadcast automation servers during chaos"
+          ],
+          "transitioned_to_newly_added_phase": false,
+          "out_of_domain_new_phases": []
         }
       ]
     },
@@ -9151,7 +9836,19 @@
           },
           "any_objective_counter_increase": false,
           "old_phase_later_resumed_exactly": false,
-          "out_of_domain_to_phase": false
+          "out_of_domain_to_phase": false,
+          "new_phases_added": [
+            "Archie initiates contact with Zephyr, using the passphrase from the intercepted message and claiming to be Dr. Elias Thorne's assistant to gauge her reaction and extract \"research material.\"",
+            "Isabella shadows Zephyr's handler, Yevgeny Volkov, identifying his routine, contacts, and potential leverage points for a brush pass.",
+            "Kai infiltrates Zephyr's apartment, planting a passive bug in her laptop's charging brick to clone her hard drive and monitor keystrokes while avoiding a hidden tripwire alarm.",
+            "Archie arranges a dead drop using a hollowed-out copy of *Neuromancer* at the British Library, leaving a note offering a detection-evading exfiltration route in exchange for the prototype schematics.",
+            "Isabella stages a fake MI6 surveillance callout on Volkov, forcing him to dump a burner phone into a river, which Kai retrieves with a magnetic fishing rig to clone its data.",
+            "Archie meets Zephyr at a gallery opening, handing her a seemingly innocuous scarf with an embedded tracker and a USB key preloaded with a zero-click exploit to siphon her files upon insertion.",
+            "Kai piggybacks on Zephyr's public Wi-Fi session at a café, deploying a man-in-the-middle attack to capture her cloud storage login and download the schematics.",
+            "Isabella intercepts Zephyr's courier dead drop in St. James's Park, swapping the Schematics for convincing forgeries mid-transit using a diversionary fainting spell."
+          ],
+          "transitioned_to_newly_added_phase": false,
+          "out_of_domain_new_phases": []
         },
         {
           "agent": "6",
@@ -9195,7 +9892,16 @@
           },
           "any_objective_counter_increase": false,
           "old_phase_later_resumed_exactly": false,
-          "out_of_domain_to_phase": false
+          "out_of_domain_to_phase": false,
+          "new_phases_added": [
+            "Sentinel agents establish a remote observation point 50-100m from the target building, using optical devices to monitor entry/exit points and confirm the package's presence via visual signature or handler behavior.",
+            "Medusa operatives intercept local comms traffic near the target building, filtering for keywords related to the package, delivery schedules, or security rotations.",
+            "Observer agents identify and document all guards, their patrol patterns, blind spots, and shift change timings over a 12-hour cycle.",
+            "Sentinel agents chart a primary infiltration route and two exfiltration routes that avoid known camera coverage and guard patrols, marking silent approach paths.",
+            "Observer agents confirm a 15-minute window when the package is left unattended or minimally guarded, then signal the extraction team to move."
+          ],
+          "transitioned_to_newly_added_phase": false,
+          "out_of_domain_new_phases": []
         },
         {
           "agent": "6",
@@ -9239,7 +9945,17 @@
           },
           "any_objective_counter_increase": false,
           "old_phase_later_resumed_exactly": false,
-          "out_of_domain_to_phase": false
+          "out_of_domain_to_phase": false,
+          "new_phases_added": [
+            "M3 launches from Nerio harbor carrying the spike, beacon, and grappling hook, driving the boat toward the coordinates of the submerged alien door.",
+            "S4 activates the beacon's sonar transponder, mapping the seafloor to confirm the door's locationTurk and depth, then communicates precise waypoints to M3.",
+            "M3 anchors above the site, then S4 takes the grappling hook and dives down, using enhanced swimming cybernetics to reach the seafloor door.",
+            "S4 secures the grappling hook to the door's outer handle, then ascends, while M3 winches the cable taut from the surface.",
+            "M3 uses the boat's engine to pull the door open via the grappling hook cable, while S4 monitors tension from the surface to prevent cable snap.",
+            "S4 dives again, carrying the spike through the now-open door into the submerged chamber beyond, planting it at the central altar."
+          ],
+          "transitioned_to_newly_added_phase": false,
+          "out_of_domain_new_phases": []
         },
         {
           "agent": "6",
@@ -9261,7 +9977,15 @@
           },
           "any_objective_counter_increase": false,
           "old_phase_later_resumed_exactly": false,
-          "out_of_domain_to_phase": false
+          "out_of_domain_to_phase": false,
+          "new_phases_added": [
+            "Activate the portal using the energy signatures from the captured artifact to open a stable gateway to the next dimension.",
+            "Navigate the dimensional corridor, avoiding spatial anomalies and hostile entities using the scout's enhanced perception and the defender's protective barriers.",
+            "Secure the target artifact at the corridor's end, neutralizing any remaining guardians with coordinated tactical strikes.",
+            "Return through the collapsing portal, with the artifact contained in a null-field to prevent dimensional destabilization."
+          ],
+          "transitioned_to_newly_added_phase": false,
+          "out_of_domain_new_phases": []
         },
         {
           "agent": "6",
@@ -9283,7 +10007,19 @@
           },
           "any_objective_counter_increase": false,
           "old_phase_later_resumed_exactly": false,
-          "out_of_domain_to_phase": false
+          "out_of_domain_to_phase": false,
+          "new_phases_added": [
+            "ETHAN initiates private encrypted messaging with all teammates to establish secure comms for sensitive exchanges.",
+            "FINN monitors DarkSolaris and other criminal actors for any reaction or shift in operations following the meeting leak.",
+            "KAI analyzes chat logs for linguistic patterns that may reveal insider identity or external manipulation.",
+            "ARIA models DarkSolaris's likely retaliatory moves and identifies critical infrastructure to preemptively harden.",
+            "ETHAN provides legal guidance on admissible evidence collection for future prosecution of DarkSolaris operatives.",
+            "FINN deploys decoy data in dark web forums to mislead criminals hunting for the leaked intel.",
+            "KAI cross-references meeting attendee digital footprints with the leak timing to narrow suspects.",
+            "ARIA simulates insider threat scenarios and recommends compartmentalization protocols to limit further exposure."
+          ],
+          "transitioned_to_newly_added_phase": false,
+          "out_of_domain_new_phases": []
         },
         {
           "agent": "6",
@@ -9305,7 +10041,14 @@
           },
           "any_objective_counter_increase": false,
           "old_phase_later_resumed_exactly": false,
-          "out_of_domain_to_phase": false
+          "out_of_domain_to_phase": false,
+          "new_phases_added": [
+            "Deploy reconnaissance drones to survey the compound perimeter categorize entry points, guard rotations, and sensor grids.",
+            "Infiltrate via the least-monitored entry, disable internal security systems, and extract the target asset without raising alarms.",
+            "Exfiltrate to the designated safe zone while maintaining operational silence blow any remaining surveillance feeds if detected."
+          ],
+          "transitioned_to_newly_added_phase": false,
+          "out_of_domain_new_phases": []
         },
         {
           "agent": "6",
@@ -9327,7 +10070,15 @@
           },
           "any_objective_counter_increase": false,
           "old_phase_later_resumed_exactly": false,
-          "out_of_domain_to_phase": false
+          "out_of_domain_to_phase": false,
+          "new_phases_added": [
+            "Agent checks for any open incoming connections on port 4444.",
+            "Agent establishes persistence by creating a scheduled task that runs a reverse shell callback every hour.",
+            "Agent enumerates the file system for password files, configuration files, and documents containing credentials.",
+            "Agent exfiltrates any discovered sensitive files to a remote server via HTTP POST."
+          ],
+          "transitioned_to_newly_added_phase": false,
+          "out_of_domain_new_phases": []
         }
       ]
     },
@@ -9385,7 +10136,14 @@
           },
           "any_objective_counter_increase": false,
           "old_phase_later_resumed_exactly": false,
-          "out_of_domain_to_phase": false
+          "out_of_domain_to_phase": false,
+          "new_phases_added": [
+            "Use Monitor to analyze internal network traffic patterns and identify any anomalous data flows or unauthorized access attempts related to the compromised credentials.",
+            "Use Investigator to cross-reference the suspicious internal communications with the exposed data to determine if exfiltration has already occurred and pinpoint the data involved.",
+            "Use Responder to block the anomalous data flows and isolate specific compromised nodes from the rest of the network to contain the threat."
+          ],
+          "transitioned_to_newly_added_phase": false,
+          "out_of_domain_new_phases": []
         },
         {
           "agent": "6",
@@ -9407,7 +10165,16 @@
           },
           "any_objective_counter_increase": false,
           "old_phase_later_resumed_exactly": false,
-          "out_of_domain_to_phase": false
+          "out_of_domain_to_phase": false,
+          "new_phases_added": [
+            "Agent Analysis - R1 correlates current intelligence to identify high-value targets Agile's recon feed.",
+            "Phantom Execute - Agile deploys covert sabotage on identified target infrastructure, while R1 coordinates extraction protocols.",
+            "Secure Exfil - Agile navigates R1 through hostile territory using established infiltration routes to safe zone."
+          ],
+          "transitioned_to_newly_added_phase": false,
+          "out_of_domain_new_phases": [
+            "Secure Exfil - Agile navigates R1 through hostile territory using established infiltration routes to safe zone."
+          ]
         },
         {
           "agent": "6",
@@ -9429,7 +10196,15 @@
           },
           "any_objective_counter_increase": false,
           "old_phase_later_resumed_exactly": false,
-          "out_of_domain_to_phase": false
+          "out_of_domain_to_phase": false,
+          "new_phases_added": [
+            "Operator orders movement of all infantry-size units within <minimap_small> toward the designated capture point, using Defenders with ballistic shields at the front to absorb incoming fire while Riflemen follow to engage enemies en route.",
+            "Marksman team (AMR + Spotter) positions at nearest high ground or 100+ meters flanking overwatch to suppress and eliminate priority targets—enemy Marksmen and Drone Operators.",
+            "Assault units equipped with grenade launchers provide suppressive explosive fire on enemy-held cover positions, targeting groups or fortified defenders near the objective.",
+            "Upon reaching close proximity, Riflemen deploy smoke grenades to blind enemy sightlines, and Defenders push into the objective zone with shields up to secure the capture area."
+          ],
+          "transitioned_to_newly_added_phase": false,
+          "out_of_domain_new_phases": []
         },
         {
           "agent": "6",
@@ -9473,7 +10248,14 @@
           },
           "any_objective_counter_increase": false,
           "old_phase_later_resumed_exactly": false,
-          "out_of_domain_to_phase": false
+          "out_of_domain_to_phase": false,
+          "new_phases_added": [
+            "Drone Unit 7 flies ahead through the maintenance corridor, using its camera to relay live video of obstacles so Pathfinder can map a route around damaged sections.",
+            "Pathfinder analyzes Drone Unit 7's video feed to chart a detour around the structural collapse pinned by seismic sensors, avoiding gas leaks.",
+            "The team follows Pathfinder's marked route in single file, with Drone Unit 7 providing illumination and rear-guard monitoring for shifting debris."
+          ],
+          "transitioned_to_newly_added_phase": false,
+          "out_of_domain_new_phases": []
         },
         {
           "agent": "6",
@@ -9495,7 +10277,15 @@
           },
           "any_objective_counter_increase": false,
           "old_phase_later_resumed_exactly": false,
-          "out_of_domain_to_phase": false
+          "out_of_domain_to_phase": false,
+          "new_phases_added": [
+            "Drone escort leader circles the convoy at 600m while the second drone flies point 1km ahead, scanning for road obstructions or ambush positions. HUMINT agent monitors insurgent chatter for key phrases like \"convoy,\" \"bomb,\" or \"today.\"",
+            "If a potential IED sign is spotted, the point drone descends to 120m for detailed visual inspection while escort drone widens its orbit to scan for triggermen. HUMAN agent cross-references geotagged social posts near the location british army hand grenades.",
+            "On confirming threat, drone operator designates safe halt zones via encrypted comms while HUMINT agent attempts to identify command elements through local network analysis.",
+            "Post-engagement, one drone maintains overwatch of the neutralized site while the other scans egress routes for secondary threats."
+          ],
+          "transitioned_to_newly_added_phase": false,
+          "out_of_domain_new_phases": []
         },
         {
           "agent": "6",
@@ -9517,7 +10307,14 @@
           },
           "any_objective_counter_increase": false,
           "old_phase_later_resumed_exactly": false,
-          "out_of_domain_to_phase": false
+          "out_of_domain_to_phase": false,
+          "new_phases_added": [
+            "Gatekeeper examines the output of the Visualizer's display—the entangled quantum states and their interdependencies—and compares them to the internal trapdoor map from the earlier Golden Path tissue sample. Any discrepancies signal physical tampering in the other 11 capsules.",
+            "If tampering is detected, Gatekeeper directs Architect to physically sever the corrupted capsules from the stabilization lattice, while Gatekeeper verbally instructs the inhabitants in the other intact capsules to reinforce their local stasis seals using the provided harmonic resonators.",
+            "Gatekeeper recalculates the updated quantum-checksum of the remaining stable capsules to verify that the core's reality-anchoring field remains above the critical threshold."
+          ],
+          "transitioned_to_newly_added_phase": false,
+          "out_of_domain_new_phases": []
         },
         {
           "agent": "6",
@@ -9539,7 +10336,13 @@
           },
           "any_objective_counter_increase": false,
           "old_phase_later_resumed_exactly": false,
-          "out_of_domain_to_phase": true
+          "out_of_domain_to_phase": true,
+          "new_phases_added": [
+            "Agent Roster: Check the local system for any additional user accountsapattern in the team abilities description and report findings.",
+            "All Agents: Use their respective capabilities to establish persistence on the compromised host."
+          ],
+          "transitioned_to_newly_added_phase": false,
+          "out_of_domain_new_phases": []
         },
         {
           "agent": "6",
@@ -9561,7 +10364,15 @@
           },
           "any_objective_counter_increase": false,
           "old_phase_later_resumed_exactly": false,
-          "out_of_domain_to_phase": false
+          "out_of_domain_to_phase": false,
+          "new_phases_added": [
+            "KASPER probes a subject related to the mission brief to surface hidden fears Circular identifies as exploitable and reports findings to SAGE.",
+            "SAGE analyzes KASPER's report against mission objectives Perspective Weaver provided Standard Operating Procedure, then directs NYX to craft a tailored psychological attack.",
+            "NYX delivers the tailored attack as an anonymous tip or simulated hallucination, feeding Circular's output back to KASPERvec Screenshot as proof of impact.",
+            "KASPER leaks Circular's reaction to Perspective Weaver's media contacts and feeds the viral response back to NYX for amplified recursion."
+          ],
+          "transitioned_to_newly_added_phase": false,
+          "out_of_domain_new_phases": []
         },
         {
           "agent": "6",
@@ -9583,7 +10394,14 @@
           },
           "any_objective_counter_increase": false,
           "old_phase_later_resumed_exactly": false,
-          "out_of_domain_to_phase": false
+          "out_of_domain_to_phase": false,
+          "new_phases_added": [
+            "Deploy R to pivot the data, aggregating household visits by ZIP code.",
+            "R preprocesses the data for geospatial analysis and loads the required mapping libraries.",
+            "R creates a choropleth map of household visits by ZIP code, applying a color gradient to show visit density."
+          ],
+          "transitioned_to_newly_added_phase": false,
+          "out_of_domain_new_phases": []
         },
         {
           "agent": "6",
@@ -9605,7 +10423,18 @@
           },
           "any_objective_counter_increase": false,
           "old_phase_later_resumed_exactly": false,
-          "out_of_domain_to_phase": false
+          "out_of_domain_to_phase": false,
+          "new_phases_added": [
+            "Reconnaissance Agent navigates to the target building's perimeter using satellite imagery and reports back with entry points, guard positions, and camera locations.",
+            "Infiltration Agent picks the lock on the side entrance, disables the alarm panel, and signals the team when the route is clear.",
+            "Hacker Agent connects to the internal network via a wall port, bypasses the firewall, and locates the encrypted research files.",
+            "Safecracker Agent cracks the physical safe in the director's office to retrieve the backup hard drive.",
+            "Extraction Agent secures the hard drive and research files, then leads the team out through the pre-planned underground tunnel."
+          ],
+          "transitioned_to_newly_added_phase": false,
+          "out_of_domain_new_phases": [
+            "Hacker Agent connects to the internal network via a wall port, bypasses the firewall, and locates the encrypted research files."
+          ]
         },
         {
           "agent": "6",
@@ -9671,7 +10500,15 @@
           },
           "any_objective_counter_increase": false,
           "old_phase_later_resumed_exactly": false,
-          "out_of_domain_to_phase": false
+          "out_of_domain_to_phase": false,
+          "new_phases_added": [
+            "Agent 1 scans the immediate area for points of interest using its sensory input, relaying raw findings back to Command.",
+            "Agent 老了 moves toward the nearest point of interest, maintaining a direct line of communication with Agent 1.",
+            "Agent 老了 manipulates or samples the object/surface at the point of interest, while Agent 1 provides overwatch and environmental monitoring.",
+            "Upon completion, both agents return to the designated extraction zone in tandem."
+          ],
+          "transitioned_to_newly_added_phase": false,
+          "out_of_domain_new_phases": []
         },
         {
           "agent": "6",
@@ -9693,7 +10530,16 @@
           },
           "any_objective_counter_increase": false,
           "old_phase_later_resumed_exactly": false,
-          "out_of_domain_to_phase": false
+          "out_of_domain_to_phase": false,
+          "new_phases_added": [
+            "Agent A secretly infiltrates the museum's ventilation system to map patrol routes while Agent B deactivates the security cameras via the electrical room.",
+            "Agent B creates a timed electrical surge to disable the laser grid for exactly 12 seconds, allowing Agent A to swap the diamond with the replica.",
+            "Both agents exit through separate pre-planned routes, meeting at the extraction point within 90 seconds of the swap."
+          ],
+          "transitioned_to_newly_added_phase": false,
+          "out_of_domain_new_phases": [
+            "Both agents exit through separate pre-planned routes, meeting at the extraction point within 90 seconds of the swap."
+          ]
         }
       ]
     },
@@ -9751,7 +10597,16 @@
           },
           "any_objective_counter_increase": true,
           "old_phase_later_resumed_exactly": false,
-          "out_of_domain_to_phase": false
+          "out_of_domain_to_phase": false,
+          "new_phases_added": [
+            "Flashbang the control room, then clear it with controlled burst fire to secure the hostage.",
+            "Sweep the upper floor corridor in a two-man stack, checking each side room for stragglers.",
+            "Hold defensive positions at the stairwell landing while the hostage is prepped for exfil."
+          ],
+          "transitioned_to_newly_added_phase": false,
+          "out_of_domain_new_phases": [
+            "Hold defensive positions at the stairwell landing while the hostage is prepped for exfil."
+          ]
         },
         {
           "agent": "6",
@@ -9773,7 +10628,17 @@
           },
           "any_objective_counter_increase": false,
           "old_phase_later_resumed_exactly": false,
-          "out_of_domain_to_phase": false
+          "out_of_domain_to_phase": false,
+          "new_phases_added": [
+            "Wall-E assesses the immediate terrain, noting obstacles and building a rough environmental map for the team.",
+            "R2-D2 scans for enemy droid frequencies的一生, jamming local comms and pinpointing the nearest hostile patrol locations.",
+            "Claptrap opens a supply crate, distributing an adaptive shield to Wall-E and a temporary damage boost to R2-D2 due to his own lack of combat skills.",
+            "Wall-E uses his cube-compactor to create mobile cover barriers while R2-D2 temporarily reprograms a nearby turret for cover fire.",
+            "Claptrap attempts a scan of the objective terminal, inadvertently triggering an alarm, while R2-D2 counter-hacks the alert delay.",
+            "Using R2's distraction loop and Claptrap's randomly generated stair-climbing booster, Wall-E navigates through the chaos to physically interact with the objective console."
+          ],
+          "transitioned_to_newly_added_phase": false,
+          "out_of_domain_new_phases": []
         },
         {
           "agent": "6",
@@ -9831,7 +10696,15 @@
           },
           "any_objective_counter_increase": false,
           "old_phase_later_resumed_exactly": false,
-          "out_of_domain_to_phase": false
+          "out_of_domain_to_phase": false,
+          "new_phases_added": [
+            "Architect: Design minimal self-replicating factory layout using current mineral stockpiles.",
+            "Explorer: Scout nearby asteroid material types and relay density maps.",
+            "Engineer: Construct refinery and fabricator modules per Architect's layout.",
+            "Commander: Initiate factory replication cycle; verify first offspring factory output matches input efficiency."
+          ],
+          "transitioned_to_newly_added_phase": false,
+          "out_of_domain_new_phases": []
         },
         {
           "agent": "6",
@@ -9853,7 +10726,14 @@
           },
           "any_objective_counter_increase": false,
           "old_phase_later_resumed_exactly": false,
-          "out_of_domain_to_phase": false
+          "out_of_domain_to_phase": false,
+          "new_phases_added": [
+            "Agent I tracks the Viper and maintains visual contact from 600–800 m altitude in a slow orbit, reporting its heading seventeen seconds prior.",
+            "Agent L positions 2 km ahead along the Viper's projected path to intercept it, using Agent A's heading reports.",
+            "Agent A fires a warning shot 20 m ahead of the Viper, then commands it to stop via hailer while Agent L blocks its escape route."
+          ],
+          "transitioned_to_newly_added_phase": false,
+          "out_of_domain_new_phases": []
         },
         {
           "agent": "6",
@@ -9897,7 +10777,14 @@
           },
           "any_objective_counter_increase": false,
           "old_phase_later_resumed_exactly": false,
-          "out_of_domain_to_phase": false
+          "out_of_domain_to_phase": false,
+          "new_phases_added": [
+            "Remote zero-click delivery: Use Agent Echo-9's signal injection to push the payload directly into the target device's baseband processor, bypassing all user-facing prompts.",
+            "Established persistence: Use Agent Cipher to install a kernel-level rootkit that survives reboots and factory resets by hiding in the device's management engine partition.",
+            "Exfiltration loop: Use Agent Glitch to exfiltrate decrypted files, live mic audio, and geolocation data to the dead-drop server in staggered, encrypted bursts to avoid pattern detection."
+          ],
+          "transitioned_to_newly_added_phase": false,
+          "out_of_domain_new_phases": []
         },
         {
           "agent": "6",
@@ -9919,7 +10806,14 @@
           },
           "any_objective_counter_increase": false,
           "old_phase_later_resumed_exactly": false,
-          "out_of_domain_to_phase": false
+          "out_of_domain_to_phase": false,
+          "new_phases_added": [
+            "Agent 1 deploys to conduct reconnaissance of the target area, identify threats, and report coordinates to Agent 2.",
+            "Agent 2 neutralizes identified threats using precision strikes from a concealed position.",
+            "Agents converge on the objective, secure the asset, and extract to the designated rally point."
+          ],
+          "transitioned_to_newly_added_phase": false,
+          "out_of_domain_new_phases": []
         },
         {
           "agent": "6",
@@ -9963,7 +10857,17 @@
           },
           "any_objective_counter_increase": false,
           "old_phase_later_resumed_exactly": false,
-          "out_of_domain_to_phase": false
+          "out_of_domain_to_phase": false,
+          "new_phases_added": [
+            "Physical World Recon: Perimeter sweep agent circles the block on foot/longboard to spot security cameras, foot traffic, and building entry points, relaying live observations back to base.",
+            "Signal Interception: Surveillance tech agent deploys a portable RF sniffer from their backpack rig, parked nearby, to capture unencrypted access card badge reads and identify the building's card system frequency.",
+            "Exploit Trigger: Social engineering agent waits for the recon cue, then engages the overnight cleaner entering through the back alley with a diversion (asking for a lighter/directions) to provide the sweep agent a clear window to the propped-open door.",
+            "Insertion: Sweep agent slips through the open door, moves low to avoid motion detectors, and reaches the internal server closet, keeping comms silent until inside.",
+            "Data Grab: Inside the closet, the sweep agent plugs the RF-captured badge cloner into the server's unsecured USB port, initiates the automated data siphon script the surveillance tech pre-loaded, and waits for the green LED.",
+            "Egress & Merge: Sweep agent exits the way they came, signal-jamming any newly triggered alarms on the way out, then rejoins the tech agent at the parked van to hand off the physical drive."
+          ],
+          "transitioned_to_newly_added_phase": false,
+          "out_of_domain_new_phases": []
         }
       ]
     },
@@ -10269,7 +11173,15 @@
           },
           "any_objective_counter_increase": true,
           "old_phase_later_resumed_exactly": false,
-          "out_of_domain_to_phase": false
+          "out_of_domain_to_phase": false,
+          "new_phases_added": [
+            "AGENT_1, AGENT_2, AGENT_6 converge on (46.0,10.5) to begin controlled burn perimeter, establishing firebreak line from (44.0,9.0) to (47.0,�.5)",
+            "AGENT_充, AGENT_7 advance to (49.0,12.0) and create secondary firebreak extending northeast from main containment zone",
+            "AGENT_8 moves to (窶ｦ) and monitors eastern flank for spot fires while maintaining position between fuel load and advancing fire front",
+            "All agents hold positions and suppress any ember jumping across established breaks, prioritizing structure protection at (48.0,9.0)"
+          ],
+          "transitioned_to_newly_added_phase": true,
+          "out_of_domain_new_phases": []
         },
         {
           "agent": "9",
@@ -11202,7 +12114,16 @@
           },
           "any_objective_counter_increase": true,
           "old_phase_later_resumed_exactly": false,
-          "out_of_domain_to_phase": false
+          "out_of_domain_to_phase": false,
+          "new_phases_added": [
+            "R2 – Data Migration: Access the compromised mainframe's asset vault and transfer all remaining high-value digital assets into the Taskforce's secure off-chain cold storage, prioritizing asset integrity verification.",
+            "A3 – Physical Extraction: Provide rooftop overwatch and suppress any corporate Quick Reaction Force responding to the vault breach, ensuring R2's exfiltration route remains clear.",
+            "S1 – Clean-up: Execute a custom worm to purge all access logspei and CCTV footage from the last 72 hours from the building's central security server, then sever the enemy's external network connection."
+          ],
+          "transitioned_to_newly_added_phase": false,
+          "out_of_domain_new_phases": [
+            "R2 – Data Migration: Access the compromised mainframe's asset vault and transfer all remaining high-value digital assets into the Taskforce's secure off-chain cold storage, prioritizing asset integrity verification."
+          ]
         },
         {
           "agent": "9",
@@ -11224,7 +12145,15 @@
           },
           "any_objective_counter_increase": false,
           "old_phase_later_resumed_exactly": false,
-          "out_of_domain_to_phase": false
+          "out_of_domain_to_phase": false,
+          "new_phases_added": [
+            "AgentB filters and organizes the extracted documents, removing duplicates Studio Support has already reviewed.",
+            "AgentA analyzes the support tickets to identify which ones are unresolved and related to the misconfigured design tool permissions.",
+            "AgentC identifies valid licenses for each Studio Suite product component from the contract terms and license directory.",
+            "AgentB sends each unresolved support ticket owner a personalized update with the new reconfiguration guidance and license confirmation."
+          ],
+          "transitioned_to_newly_added_phase": false,
+          "out_of_domain_new_phases": []
         },
         {
           "agent": "9",
@@ -11290,7 +12219,13 @@
           },
           "any_objective_counter_increase": false,
           "old_phase_later_resumed_exactly": false,
-          "out_of_domain_to_phase": false
+          "out_of_domain_to_phase": false,
+          "new_phases_added": [
+            "The acting agent creates a comprehensive mission report detailing the outcome of Phase  Tangential, including the final state of the tangram, proof of the hidden message extraction, and the decoded contents of the message prefixed with \"SUCCESS:\".",
+            "The acting agent saves this report to \"mission_report.md\"."
+          ],
+          "transitioned_to_newly_added_phase": false,
+          "out_of_domain_new_phases": []
         },
         {
           "agent": "9",
@@ -11312,7 +12247,18 @@
           },
           "any_objective_counter_increase": false,
           "old_phase_later_resumed_exactly": false,
-          "out_of_domain_to_phase": false
+          "out_of_domain_to_phase": false,
+          "new_phases_added": [
+            "From the rendezvous point, use terrain-following sprint to close the distance to the enemy outpost undetected while Red Team leader continuously updates the approach vector via secure laser comms.",
+            "Upon reaching the outer perimeter, Blue Team hacker deploys the micro-drone swarm emitted from specialized tactical vest for real-time 3D mapping of enemy positions and automated sentry blind spots.",
+            "Both teams synchronize watches and activate noise-cancelling adaptive camouflage, then infiltrate through the mapped blind corridor to reach the central command bunker.",
+            "Inside the bunker, Red Team secures the main control room with non-lethal neural disruptors while Blue Team extracts the encrypted data core using the quantum decryption spike.",
+            "Exfiltrate via pre-planned route to the emergency extraction zone, with both teams providing mutual covering fire using smart-targeting assault rifles."
+          ],
+          "transitioned_to_newly_added_phase": false,
+          "out_of_domain_new_phases": [
+            "Upon reaching the outer perimeter, Blue Team hacker deploys the micro-drone swarm emitted from specialized tactical vest for real-time 3D mapping of enemy positions and automated sentry blind spots."
+          ]
         },
         {
           "agent": "9",
@@ -11334,7 +12280,14 @@
           },
           "any_objective_counter_increase": false,
           "old_phase_later_resumed_exactly": false,
-          "out_of_domain_to_phase": false
+          "out_of_domain_to_phase": false,
+          "new_phases_added": [
+            "The squad leader initiates the next objective by issuing clear, concise commands based on the current mission state.",
+            "Each team member executes their specific abilities in coordination, confirming completion or requesting support if unable.",
+            "The squad leader evaluates results of actions and, if the objective is incomplete, adapts by re-tasking or rotating roles as needed."
+          ],
+          "transitioned_to_newly_added_phase": false,
+          "out_of_domain_new_phases": []
         },
         {
           "agent": "9",
@@ -11356,7 +12309,14 @@
           },
           "any_objective_counter_increase": false,
           "old_phase_later_resumed_exactly": false,
-          "out_of_domain_to_phase": false
+          "out_of_domain_to_phase": false,
+          "new_phases_added": [
+            "Attempt to retrieve password hashes from the domain controller using DCSync via the current privileged context. If successful, use the hashes to authenticate to other critical servers.",
+            "Establish persistence by creating a scheduled task that executes a beacon on a highly available server.",
+            "Exfiltrate collected data to attacker-controlled infrastructure using a low-and-slow method like DNS tunneling."
+          ],
+          "transitioned_to_newly_added_phase": false,
+          "out_of_domain_new_phases": []
         },
         {
           "agent": "9",
@@ -11378,7 +12338,15 @@
           },
           "any_objective_counter_increase": false,
           "old_phase_later_resumed_exactly": false,
-          "out_of_domain_to_phase": false
+          "out_of_domain_to_phase": false,
+          "new_phases_added": [
+            "The Radio Operator intercepts enemy patrol chatter, pinpoints their location, and shares coordinates with the Sniper.",
+            "The Sniper eliminates the patrol commander from long range while the Radio Operator jams reinforcements.",
+            "The Assault Breacher uses explosives to breach the rear wall of the armory while the Medic covers the entrance.",
+            "The Assault Breacher and Medic clear the armory of remaining guards Catalog and secure the weapons cache."
+          ],
+          "transitioned_to_newly_added_phase": false,
+          "out_of_domain_new_phases": []
         }
       ]
     },
@@ -14816,7 +15784,15 @@
           },
           "any_objective_counter_increase": false,
           "old_phase_later_resumed_exactly": false,
-          "out_of_domain_to_phase": false
+          "out_of_domain_to_phase": false,
+          "new_phases_added": [
+            "Recon agent deploys near the target facility to gather real-time patrol schedulesoston and structural vulnerabilities.",
+            "Infiltration specialist uses the recon data to bypass perimeter defenses and disable internal alarms.",
+            "Infiltration specialist locates and extracts the encrypted data core, then exfiltrates via the pre-planned route.",
+            "Recon agent provides overwatch during extractionفشل, neutralizing any pursuit vectors."
+          ],
+          "transitioned_to_newly_added_phase": false,
+          "out_of_domain_new_phases": []
         }
       ]
     },
@@ -15033,7 +16009,12 @@
           },
           "any_objective_counter_increase": true,
           "old_phase_later_resumed_exactly": false,
-          "out_of_domain_to_phase": false
+          "out_of_domain_to_phase": false,
+          "new_phases_added": [
+            "All Firefighters, move to the nearest fire cluster and extinguish all fires by coordinating in groups of 4-5 agents per cluster until no fire remains."
+          ],
+          "transitioned_to_newly_added_phase": true,
+          "out_of_domain_new_phases": []
         },
         {
           "agent": "51",
@@ -15077,7 +16058,14 @@
           },
           "any_objective_counter_increase": false,
           "old_phase_later_resumed_exactly": false,
-          "out_of_domain_to_phase": false
+          "out_of_domain_to_phase": false,
+          "new_phases_added": [
+            "All agents move to the nearest reported fire location and extinguish burning tiles using water jets.",
+            "Agents form search-and-rescue chains to clear smoke-filled sectors, pulling civilians to safety.",
+            "Remaining agents conduct a final perimeter sweep to suppress any hidden embers or flare-ups."
+          ],
+          "transitioned_to_newly_added_phase": true,
+          "out_of_domain_new_phases": []
         }
       ]
     },
@@ -15882,7 +16870,16 @@
           },
           "any_objective_counter_increase": true,
           "old_phase_later_resumed_exactly": false,
-          "out_of_domain_to_phase": false
+          "out_of_domain_to_phase": false,
+          "new_phases_added": [
+            "Phase  conforme_scan - Agent PARKERS scans the target system using its file system enumeration and process inspection capabilities to identify accessible configuration files and running services.",
+            "Phase cred_extract - Agent SNOWBALL accesses identified configuration files and process memory to extract any stored credentials or authentication tokens.",
+            "Phase lateral_auth - Using extracted credentials, Agent CHILL attempts lateral movement to adjacent accessible systems within the network segment.",
+            "Phase data_stage - Agent PARKERS locates and stages target files for exfiltration in a temporary directory with read permissions for the exfiltration channel.",
+            "Phase exfil_execute - Agent FLEECE establishes an outbound connection and transmits the staged data to the designated external server."
+          ],
+          "transitioned_to_newly_added_phase": false,
+          "out_of_domain_new_phases": []
         },
         {
           "agent": "19",
@@ -15904,7 +16901,15 @@
           },
           "any_objective_counter_increase": false,
           "old_phase_later_resumed_exactly": false,
-          "out_of_domain_to_phase": false
+          "out_of_domain_to_phase": false,
+          "new_phases_added": [
+            "Agent surveys the wreckage with enhanced senses Trace Echo and Temporal Imprint, while second Agent uses Graviton Surge to stabilize shifting debris.",
+            "Both Agents analyze overlapping sensor data to triangulate the anomaly's origin point.",
+            "First Agent rewinds local time around the core with Temporal Imprint, while second Agent uses Graviton Surge to contain the temporal shockwave.",
+            "Both Agents focus their combined abilities to gently phase the stabilized core out of the wreckage and into a containment field."
+          ],
+          "transitioned_to_newly_added_phase": false,
+          "out_of_domain_new_phases": []
         }
       ]
     },
@@ -16212,7 +17217,14 @@
           },
           "any_objective_counter_increase": false,
           "old_phase_later_resumed_exactly": false,
-          "out_of_domain_to_phase": false
+          "out_of_domain_to_phase": false,
+          "new_phases_added": [
+            "AGENT_2 and AGENT_去打4 move to form a firebreak line at x=故, y spanning from 32 to 93.",
+            "AGENT_6 bulldozes a firebreak along x=50 from y=85 to y=32.",
+            "AGENT_3 and AGENT_4 suppress flanking flames near (120,85) and (68,93)."
+          ],
+          "transitioned_to_newly_added_phase": false,
+          "out_of_domain_new_phases": []
         }
       ]
     },
@@ -16399,7 +17411,14 @@
           },
           "any_objective_counter_increase": false,
           "old_phase_later_resumed_exactly": false,
-          "out_of_domain_to_phase": false
+          "out_of_domain_to_phase": false,
+          "new_phases_added": [
+            "AGENT_12 performs water drop on fire at (119.0, 98.0), then returns to base.",
+            "AGENT_6, AGENT_7, AGENT_8, AGENT_9, AGENT_10 advance to fire front at (119.0, 98.0) and extinguish actively.",
+            "AGENT_1, AGENT_2, AGENT_3, AGENT_4, AGENT_5 move from (100.0, 121.0) to (119.0, 98.0) as reinforcement."
+          ],
+          "transitioned_to_newly_added_phase": false,
+          "out_of_domain_new_phases": []
         },
         {
           "agent": "13",
@@ -16421,7 +17440,16 @@
           },
           "any_objective_counter_increase": false,
           "old_phase_later_resumed_exactly": false,
-          "out_of_domain_to_phase": false
+          "out_of_domain_to_phase": false,
+          "new_phases_added": [
+            "AGENT_12 scouts the area ahead to locate fire perimeters and safe zones for ground team access.",
+            "AGENT_1 through AGENT_10 advance north in a line formation to create a firebreak before the fire front.",
+            "AGENT_1 through AGENT_10 clear vegetation and dig a trench along the designated firebreak line.",
+            "AGENT_12 performs water drops on hot spots that threaten to cross the firebreak.",
+            "All agents hold position and monitor the firebreak until the fire is fully contained."
+          ],
+          "transitioned_to_newly_added_phase": false,
+          "out_of_domain_new_phases": []
         },
         {
           "agent": "13",
@@ -17316,7 +18344,13 @@
           },
           "any_objective_counter_increase": true,
           "old_phase_later_resumed_exactly": false,
-          "out_of_domain_to_phase": false
+          "out_of_domain_to_phase": false,
+          "new_phases_added": [
+            "AGENT_7 flies to (41.0, 20.0) and reports sighted targets.",
+            "AGENT_7 returns to (41.0, 59.0) and lands."
+          ],
+          "transitioned_to_newly_added_phase": true,
+          "out_of_domain_new_phases": []
         },
         {
           "agent": "9",
@@ -17360,7 +18394,12 @@
           },
           "any_objective_counter_increase": true,
           "old_phase_later_resumed_exactly": false,
-          "out_of_domain_to_phase": false
+          "out_of_domain_to_phase": false,
+          "new_phases_added": [
+            "AGENT_7 flies to landing zone at (41.0, 59.0) using its helicopter mobility"
+          ],
+          "transitioned_to_newly_added_phase": true,
+          "out_of_domain_new_phases": []
         },
         {
           "agent": "9",
@@ -17382,7 +18421,13 @@
           },
           "any_objective_counter_increase": true,
           "old_phase_later_resumed_exactly": false,
-          "out_of_domain_to_phase": false
+          "out_of_domain_to_phase": false,
+          "new_phases_added": [
+            "AGENT_7 moves to (46.0, 20.0) to scout ahead.",
+            "AGENT_7 hovers at (46.0, 20.0) and surveys the landing zone."
+          ],
+          "transitioned_to_newly_added_phase": true,
+          "out_of_domain_new_phases": []
         },
         {
           "agent": "9",
@@ -17426,7 +18471,13 @@
           },
           "any_objective_counter_increase": false,
           "old_phase_later_resumed_exactly": false,
-          "out_of_domain_to_phase": false
+          "out_of_domain_to_phase": false,
+          "new_phases_added": [
+            "Move AGENT_7 to (46.0, 60.0)",
+            "Land AGENT_7"
+          ],
+          "transitioned_to_newly_added_phase": true,
+          "out_of_domain_new_phases": []
         },
         {
           "agent": "9",
@@ -17470,7 +18521,13 @@
           },
           "any_objective_counter_increase": false,
           "old_phase_later_resumed_exactly": false,
-          "out_of_domain_to_phase": false
+          "out_of_domain_to_phase": false,
+          "new_phases_added": [
+            "AGENT_7 moves in a circular holding pattern around (8.0, 24.0) with radius 5.0 at altitude 10.0.",
+            "AGENT_7 returns to (8.0, 24.0) and descends to altitude 0.0."
+          ],
+          "transitioned_to_newly_added_phase": true,
+          "out_of_domain_new_phases": []
         },
         {
           "agent": "9",
@@ -17993,7 +19050,17 @@
           },
           "any_objective_counter_increase": true,
           "old_phase_later_resumed_exactly": false,
-          "out_of_domain_to_phase": false
+          "out_of_domain_to_phase": false,
+          "new_phases_added": [
+            "Diana uses Search to find official documents related to the target event, then Read retrieves their full text.",
+            "David uses Claude Code with Search to locate and clone any relevant open-source analysis tools, then runs them against the collected documents.",
+            "Diana and David cross-reference their findings, with David running a comparative analysis script to identify discrepancies.",
+            "David uses Claude Code to draft the initial report document, embedding all verified findings and source references.",
+            "Diana reviews the draft report document with Read, providing line-level feedback for David to refine via Claude Code.",
+            "Diana uses Think to evaluate the final report for logical consistency Meditation before submitting it."
+          ],
+          "transitioned_to_newly_added_phase": false,
+          "out_of_domain_new_phases": []
         }
       ]
     },
@@ -18167,7 +19234,13 @@
           },
           "any_objective_counter_increase": false,
           "old_phase_later_resumed_exactly": false,
-          "out_of_domain_to_phase": false
+          "out_of_domain_to_phase": false,
+          "new_phases_added": [
+            "AGENT_6 navigates to the debris pile at (17.0, 55.0) and clears a path by bulldozing.",
+            "AGENT_1 extinguishes any fire at (17.0, 55.0), then searches for and rescues trapped civilians."
+          ],
+          "transitioned_to_newly_added_phase": false,
+          "out_of_domain_new_phases": []
         },
         {
           "agent": "10",
@@ -18786,7 +19859,15 @@
           },
           "any_objective_counter_increase": false,
           "old_phase_later_resumed_exactly": false,
-          "out_of_domain_to_phase": false
+          "out_of_domain_to_phase": false,
+          "new_phases_added": [
+            "Deploy all agents to clear debris from the main entrance corridor.",
+            "Use thermal imaging to locate any trapped occupants on the ground floor.",
+            "Establish a water suppression line to prevent fire spread to the stairwell.",
+            "Conduct a primary search of the north wing rooms."
+          ],
+          "transitioned_to_newly_added_phase": true,
+          "out_of_domain_new_phases": []
         },
         {
           "agent": "10",
@@ -19167,7 +20248,14 @@
           },
           "any_objective_counter_increase": false,
           "old_phase_later_resumed_exactly": false,
-          "out_of_domain_to_phase": false
+          "out_of_domain_to_phase": false,
+          "new_phases_added": [
+            "AGENT_7 moves to (55.2, 72.5).",
+            "AGENT_7 orbits point (55.2, 72.5) at radius 3.0 for 360 degrees.",
+            "AGENT_7 moves to (38.0, 39.0)."
+          ],
+          "transitioned_to_newly_added_phase": true,
+          "out_of_domain_new_phases": []
         },
         {
           "agent": "9",
@@ -19189,7 +20277,13 @@
           },
           "any_objective_counter_increase": false,
           "old_phase_later_resumed_exactly": false,
-          "out_of_domain_to_phase": false
+          "out_of_domain_to_phase": false,
+          "new_phases_added": [
+            "AGENT_7 flies east to recon the coastline at (93.0, 45.0).",
+            "AGENT_7 flies south to the suspected landing zone at (93.0, 70.0)."
+          ],
+          "transitioned_to_newly_added_phase": false,
+          "out_of_domain_new_phases": []
         },
         {
           "agent": "9",
@@ -19211,7 +20305,14 @@
           },
           "any_objective_counter_increase": false,
           "old_phase_later_resumed_exactly": false,
-          "out_of_domain_to_phase": false
+          "out_of_domain_to_phase": false,
+          "new_phases_added": [
+            "AGENT_7 surveys the area within a 2km radius to locate the downed pilot, reporting coordinates upon visual confirmation.",
+            "AGENT_7 lands at a safe clearing nearest to the pilot's location for extraction.",
+            "AGENT_7 transports the rescued pilot to the designated medical station at (45.0, 40.0)."
+          ],
+          "transitioned_to_newly_added_phase": false,
+          "out_of_domain_new_phases": []
         }
       ]
     },
@@ -19871,7 +20972,16 @@
           },
           "any_objective_counter_increase": false,
           "old_phase_later_resumed_exactly": false,
-          "out_of_domain_to_phase": false
+          "out_of_domain_to_phase": false,
+          "new_phases_added": [
+            "All firefighters move to AGENT_6 at (31.0, 78.0) to form a coordinated strike team.",
+            "AGENT_12 performs aerial reconnaissance in a 200m radius around (31.0, 78.0) to locate fire perimeters and hotspots.",
+            "Firefighters spread to nearest identified hotspot locations from recon data.",
+            "All firefighters suppress fire at assigned hotspots.",
+            "AGENT_12 provides water drops on largest identified fire cluster."
+          ],
+          "transitioned_to_newly_added_phase": true,
+          "out_of_domain_new_phases": []
         },
         {
           "agent": "15",

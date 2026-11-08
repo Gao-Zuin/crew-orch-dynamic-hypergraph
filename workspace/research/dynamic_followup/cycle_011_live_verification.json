@@ -1,0 +1,215 @@
+{
+  "checked": "2026-10-25T11:48:33.209902+08:00",
+  "kind": "verified live wait and deployment verification, not terminal audit",
+  "batch": "/data1/gzy/crew_dynamic_followup_20261025_cycle010",
+  "live_supervisor_pid": 4084244,
+  "live_unity_pid": 4084345,
+  "source_files_checked": 185,
+  "source_mismatches": [],
+  "assembly_sha256": "3cfe67173b32cef32b34d400720b7751c61f8482f669e88efef2034c6ba317fa",
+  "latest_snapshot": {
+    "step": 1,
+    "phase": "before_action"
+  },
+  "event_counts": {
+    "RUN_STARTED": 1,
+    "TASK_HYPERGRAPH_STARTED": 1,
+    "NODE_JOINED": 8,
+    "STATE_OBSERVED": 24,
+    "TASK_WORLD_SNAPSHOT": 3,
+    "TASK_VALIDATED": 3,
+    "TASK_ORGANIZER_REQUEST": 1,
+    "TASK_ORGANIZER_RESPONSE": 1,
+    "TASK_GRAPH_COMMITTED": 1,
+    "TASK_EXECUTION_REBOUND": 8,
+    "COMMUNICATION_GENERATED": 16,
+    "TASK_MESSAGE_SUPPRESSED": 10,
+    "TASK_MESSAGE_DELIVERED": 26,
+    "TASK_ACTION_AUTHORIZED": 8,
+    "ACTION_STARTED": 8,
+    "ACTION_COMPLETED": 8,
+    "LLM_USAGE": 1
+  },
+  "actual_contexts": [
+    {
+      "agent": "Agent_4",
+      "step": 0,
+      "history_steps": [
+        0
+      ]
+    },
+    {
+      "agent": "Agent_4",
+      "step": 0,
+      "history_steps": [
+        0
+      ]
+    },
+    {
+      "agent": "Agent_4",
+      "step": 1,
+      "history_steps": [
+        0,
+        1
+      ]
+    },
+    {
+      "agent": "Agent_1",
+      "step": 0,
+      "history_steps": []
+    },
+    {
+      "agent": "Agent_1",
+      "step": 0,
+      "history_steps": [
+        0
+      ]
+    },
+    {
+      "agent": "Agent_1",
+      "step": 1,
+      "history_steps": [
+        0
+      ]
+    },
+    {
+      "agent": "Agent_1",
+      "step": 1,
+      "history_steps": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "agent": "Agent_3",
+      "step": 0,
+      "history_steps": []
+    },
+    {
+      "agent": "Agent_3",
+      "step": 0,
+      "history_steps": [
+        0
+      ]
+    },
+    {
+      "agent": "Agent_3",
+      "step": 1,
+      "history_steps": [
+        0,
+        1
+      ]
+    },
+    {
+      "agent": "Agent_7",
+      "step": 0,
+      "history_steps": [
+        0
+      ]
+    },
+    {
+      "agent": "Agent_7",
+      "step": 0,
+      "history_steps": [
+        0
+      ]
+    },
+    {
+      "agent": "Agent_7",
+      "step": 1,
+      "history_steps": [
+        0,
+        1
+      ]
+    },
+    {
+      "agent": "Agent_2",
+      "step": 0,
+      "history_steps": []
+    },
+    {
+      "agent": "Agent_2",
+      "step": 0,
+      "history_steps": [
+        0
+      ]
+    },
+    {
+      "agent": "Agent_2",
+      "step": 1,
+      "history_steps": [
+        0,
+        1
+      ]
+    },
+    {
+      "agent": "Agent_5",
+      "step": 0,
+      "history_steps": []
+    },
+    {
+      "agent": "Agent_5",
+      "step": 0,
+      "history_steps": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "agent": "Agent_5",
+      "step": 1,
+      "history_steps": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "agent": "Agent_6",
+      "step": 0,
+      "history_steps": [
+        0
+      ]
+    },
+    {
+      "agent": "Agent_6",
+      "step": 0,
+      "history_steps": [
+        0
+      ]
+    },
+    {
+      "agent": "Agent_6",
+      "step": 1,
+      "history_steps": [
+        0,
+        1
+      ]
+    },
+    {
+      "agent": "Agent_8",
+      "step": 0,
+      "history_steps": [
+        0
+      ]
+    },
+    {
+      "agent": "Agent_8",
+      "step": 0,
+      "history_steps": [
+        0
+      ]
+    },
+    {
+      "agent": "Agent_8",
+      "step": 1,
+      "history_steps": [
+        0,
+        1,
+        1
+      ]
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "active_package_removed_only": [
+    "ORCH/crew-algorithms/crew_algorithms/wildfire_alg/coordination/task_policy.py",
+    "ORCH/crew-algorithms/crew_algorithms/wildfire_alg/coordination/task_hypergraph.py"
+  ],
+  "active_remaining_source_files_changed": [],
+  "archived_core_byte_identical": true,
+  "protected_historical_artifacts_unchanged": 15,
+  "current_audit_does_not_import_legacy": true,
+  "current_audit_replay_core_AST_unchanged": true,
+  "current_source_freezing_paths_valid": 182,
+  "current_pair_audits": {
+    "dynamic_seed42": {
+      "passed": true,
+      "entire_audit_equal_to_before": true,
+      "action_count": 300
+    },
+    "fixed_seed42": {
+      "passed": true,
+      "entire_audit_equal_to_before": true,
+      "action_count": 300
+    }
+  },
+  "archived_full_trace_audit_equal": true,
+  "wrong_profile_rejected_in_both_auditors": true,
+  "CLI_import_checks": 5,
+  "LLM_calls": 0,
+  "Unity_runs": 0,
+  "current_tests_passed": 74,
+  "archived_tests_passed": 36,
+  "test_fixture_updates": [
+    "original refill prompt expectation",
+    "early finish fixture step/tokens_before"
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "version": 1,
+  "suite": "benchmark_faithful_exploratory_paired",
+  "model": "deepseek-chat",
+  "url": "https://api.deepseek.com",
+  "timeout_seconds": 2400,
+  "arms": [
+    {"id": "P", "arm": "P", "intervention": "none"},
+    {"id": "HA", "arm": "HA", "intervention": "none"},
+    {"id": "HR", "arm": "HR", "intervention": "none"},
+    {"id": "HR_projector_off", "arm": "HR", "intervention": "projector_off"}
+  ],
+  "task_seed_pairs": [
+    {"level": "Scout_Fire_small", "seed": 4651, "max_steps": 30, "target_reward_index": 8, "target_units": 2},
+    {"level": "Transport_Firefighters_small", "seed": 283, "max_steps": 15, "target_reward_index": 6, "target_units": 6},
+    {"level": "Scout_Fire_small", "seed": 6841, "max_steps": 30, "target_reward_index": 8, "target_units": 2},
+    {"level": "Transport_Firefighters_small", "seed": 2461, "max_steps": 15, "target_reward_index": 6, "target_units": 6}
+  ],
+  "order": "For pair i, rotate arms left by i modulo 4. Complete all four arms before next pair.",
+  "freeze_rules": [
+    "Gate excluded from efficacy analysis; behavior and metric definitions frozen before first case.",
+    "Use original preset horizon and validator. Keep failure, timeout and missing evidence in denominator.",
+    "No outcome-based seed/task/threshold changes. Code or prompt changes require a new version and manifest.",
+    "Two seeds per task are exploratory repetitions, not a powered or held-out benchmark.",
+    "Projector-off intervenes on evidence injection with the same topology policy; realized closed-loop topologies need not match.",
+    "No stage contracts/semantic guards/manual task decomposition in any arm. No claim of subtask VMCR without metadata."
+  ]
+}

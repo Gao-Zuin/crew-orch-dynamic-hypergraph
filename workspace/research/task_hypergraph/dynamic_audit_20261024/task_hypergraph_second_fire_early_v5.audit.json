@@ -1,0 +1,92 @@
+{
+  "passed": true,
+  "failures": [],
+  "event_counts": {
+    "RUN_STARTED": 1,
+    "TASK_HYPERGRAPH_STARTED": 1,
+    "NODE_JOINED": 8,
+    "STATE_OBSERVED": 112,
+    "TASK_WORLD_SNAPSHOT": 14,
+    "TASK_VALIDATED": 15,
+    "TASK_ORGANIZER_REQUEST": 13,
+    "TASK_ORGANIZER_RESPONSE": 13,
+    "TASK_VERIFIER_REQUEST": 7,
+    "TASK_VERIFIER_RESPONSE": 7,
+    "TASK_GRAPH_COMMITTED": 7,
+    "TASK_EXECUTION_REBOUND": 56,
+    "COMMUNICATION_GENERATED": 56,
+    "TASK_MESSAGE_DELIVERED": 94,
+    "TASK_MESSAGE_SUPPRESSED": 16,
+    "TASK_ACTION_AUTHORIZED": 56,
+    "ACTION_STARTED": 56,
+    "ACTION_COMPLETED": 56,
+    "LLM_USAGE": 8,
+    "TASK_PROPOSAL_REJECTED": 6,
+    "TASK_REVIEW_LABEL_NORMALIZED": 1,
+    "TASK_PENDING_NORMALIZED": 4,
+    "TASK_HANDOFF_PENDING_NORMALIZED": 2,
+    "TASK_HANDOFF_RECEIVER_NORMALIZED": 2,
+    "TASK_VERIFIER_EXTRA_REVIEWS_IGNORED": 1,
+    "TASK_EDGE_HANDOFF": 1,
+    "TASK_ORGANIZATION_HOLD": 1,
+    "TASK_HYPERGRAPH_FINISHED": 1,
+    "RUN_FINISHED": 1
+  },
+  "graph_version": 7,
+  "stage_changes": [
+    {
+      "event_id": 453,
+      "retired": [
+        "E1_water_and_stage"
+      ],
+      "created": [
+        "E1_original_fire_stage",
+        "E2_second_fire_response"
+      ]
+    }
+  ],
+  "overlap_commit_events": [],
+  "cross_edge_message_events": [
+    467,
+    478,
+    547,
+    555
+  ],
+  "action_count": 56,
+  "retired_edges": [
+    {
+      "id": "E1_water_and_stage",
+      "verdict": "revise"
+    }
+  ],
+  "LLM_semantic_completion_checks": [],
+  "last_validation": {
+    "timestep": 6,
+    "observation_phase": "episode_end",
+    "success": false,
+    "rewards": [
+      787,
+      2,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      4,
+      1,
+      0,
+      0,
+      0
+    ],
+    "fire_active": true,
+    "validator": "core.alg_utils.check_game_done (unchanged)",
+    "source_observation_phase": "after_action"
+  },
+  "usage": {
+    "input_tokens": 1057063,
+    "output_tokens": 79077,
+    "api_calls": 244
+  },
+  "qualification": "mechanism replay, not independent proof of semantic LLM verdicts"
+}

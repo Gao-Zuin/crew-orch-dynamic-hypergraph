@@ -1,0 +1,118 @@
+[
+  {
+    "label": "transport_schema_only",
+    "case_directory": "/data1/gzy/crew_dynamic_followup_20261024_cycle001/runs/transport_seed2461",
+    "events": "/data1/gzy/crew_dynamic_followup_20261024_cycle001/runs/transport_seed2461/run/events.jsonl",
+    "status": {
+      "exit_code": 0,
+      "error": null,
+      "elapsed_seconds": 410.79225361160934,
+      "run_finished": true,
+      "graph_commits": 3,
+      "handoffs": 0,
+      "authorized_actions": 52,
+      "held_actions": 18,
+      "proposal_rejections": 0,
+      "frozen_sources_unchanged": true,
+      "usage": {
+        "input_tokens": 385393,
+        "output_tokens": 28572,
+        "api_calls": 247
+      },
+      "mechanism_audit_passed": false
+    },
+    "worker_logs_directory": "/data1/gzy/crew_dynamic_followup_20261024_cycle001/workspace/ORCH/crew-algorithms/crew_algorithms/wildfire_alg/results/logs/Embodied/deepseek-chat/Transport_Firefighters_small/2461/2026-10-25-10-25-16",
+    "metrics_csv": "/data1/gzy/crew_dynamic_followup_20261024_cycle001/workspace/ORCH/crew-algorithms/crew_algorithms/wildfire_alg/results/logs/Embodied/deepseek-chat/Transport_Firefighters_small/2461/2026-10-25-10-25-16/data.csv",
+    "source_workspace": "/data1/gzy/crew_dynamic_followup_20261024_cycle001/workspace",
+    "source_archive": "/data1/gzy/crew_dynamic_followup_20261024_cycle001/runs/transport_seed2461/frozen_sources.tar.gz",
+    "manifest": "/data1/gzy/crew_dynamic_followup_20261024_cycle001/runs/transport_seed2461/manifest.json",
+    "native_logs_available": false
+  },
+  {
+    "label": "fire_original_137",
+    "case_directory": "/data1/gzy/crew_dynamic_followup_20261025_cycle003/runs/second_fire_seed137",
+    "events": "/data1/gzy/crew_dynamic_followup_20261025_cycle003/runs/second_fire_seed137/run/events.jsonl",
+    "status": {
+      "exit_code": 0,
+      "error": null,
+      "elapsed_seconds": 2495.1270636431873,
+      "run_finished": true,
+      "graph_commits": 24,
+      "handoffs": 0,
+      "authorized_actions": 280,
+      "held_actions": 0,
+      "proposal_rejections": 1,
+      "frozen_sources_unchanged": true,
+      "usage": {
+        "input_tokens": 1816355,
+        "output_tokens": 207495,
+        "api_calls": 1144
+      },
+      "mechanism_audit_passed": true
+    },
+    "worker_logs_directory": "/data1/gzy/crew_dynamic_followup_20261025_cycle003/workspace/ORCH/crew-algorithms/crew_algorithms/wildfire_alg/results/logs/Embodied/deepseek-chat/Suppress_Fire_Extinguish_Second_Fire/137/2026-10-25-10-34-58",
+    "metrics_csv": "/data1/gzy/crew_dynamic_followup_20261025_cycle003/workspace/ORCH/crew-algorithms/crew_algorithms/wildfire_alg/results/logs/Embodied/deepseek-chat/Suppress_Fire_Extinguish_Second_Fire/137/2026-10-25-10-34-58/data.csv",
+    "source_workspace": "/data1/gzy/crew_dynamic_followup_20261025_cycle003/workspace",
+    "source_archive": "/data1/gzy/crew_dynamic_followup_20261025_cycle003/runs/second_fire_seed137/frozen_sources.tar.gz",
+    "manifest": "/data1/gzy/crew_dynamic_followup_20261025_cycle003/runs/second_fire_seed137/manifest.json",
+    "native_logs_available": false
+  },
+  {
+    "label": "fire_original_256",
+    "case_directory": "/data1/gzy/crew_dynamic_followup_20261025_cycle003/runs/second_fire_seed256",
+    "events": "/data1/gzy/crew_dynamic_followup_20261025_cycle003/runs/second_fire_seed256/run/events.jsonl",
+    "status": {
+      "exit_code": 0,
+      "error": null,
+      "elapsed_seconds": 1589.3205082379282,
+      "run_finished": true,
+      "graph_commits": 76,
+      "handoffs": 0,
+      "authorized_actions": 167,
+      "held_actions": 0,
+      "proposal_rejections": 1,
+      "frozen_sources_unchanged": true,
+      "usage": {
+        "input_tokens": 1327943,
+        "output_tokens": 127499,
+        "api_calls": 744
+      },
+      "mechanism_audit_passed": true
+    },
+    "worker_logs_directory": "/data1/gzy/crew_dynamic_followup_20261025_cycle003/workspace/ORCH/crew-algorithms/crew_algorithms/wildfire_alg/results/logs/Embodied/deepseek-chat/Suppress_Fire_Extinguish_Second_Fire/256/2026-10-25-11-16-34",
+    "metrics_csv": "/data1/gzy/crew_dynamic_followup_20261025_cycle003/workspace/ORCH/crew-algorithms/crew_algorithms/wildfire_alg/results/logs/Embodied/deepseek-chat/Suppress_Fire_Extinguish_Second_Fire/256/2026-10-25-11-16-34/data.csv",
+    "source_workspace": "/data1/gzy/crew_dynamic_followup_20261025_cycle003/workspace",
+    "source_archive": "/data1/gzy/crew_dynamic_followup_20261025_cycle003/runs/second_fire_seed256/frozen_sources.tar.gz",
+    "manifest": "/data1/gzy/crew_dynamic_followup_20261025_cycle003/runs/second_fire_seed256/manifest.json",
+    "native_logs_available": true
+  },
+  {
+    "label": "fire_repaired_137",
+    "case_directory": "/data1/gzy/crew_dynamic_followup_20261025_cycle010/runs/second_fire_seed137",
+    "events": "/data1/gzy/crew_dynamic_followup_20261025_cycle010/runs/second_fire_seed137/run/events.jsonl",
+    "status": {
+      "exit_code": 0,
+      "error": null,
+      "elapsed_seconds": 2295.787041252479,
+      "run_finished": true,
+      "graph_commits": 16,
+      "handoffs": 0,
+      "authorized_actions": 263,
+      "held_actions": 0,
+      "proposal_rejections": 1,
+      "frozen_sources_unchanged": true,
+      "usage": {
+        "input_tokens": 1763932,
+        "output_tokens": 195720,
+        "api_calls": 1067
+      },
+      "mechanism_audit_passed": true
+    },
+    "worker_logs_directory": "/data1/gzy/crew_dynamic_followup_20261025_cycle010/workspace/ORCH/crew-algorithms/crew_algorithms/wildfire_alg/results/logs/Embodied/deepseek-chat/Suppress_Fire_Extinguish_Second_Fire/137/2026-10-25-11-46-45",
+    "metrics_csv": "/data1/gzy/crew_dynamic_followup_20261025_cycle010/workspace/ORCH/crew-algorithms/crew_algorithms/wildfire_alg/results/logs/Embodied/deepseek-chat/Suppress_Fire_Extinguish_Second_Fire/137/2026-10-25-11-46-45/data.csv",
+    "source_workspace": "/data1/gzy/crew_dynamic_followup_20261025_cycle010/workspace",
+    "source_archive": "/data1/gzy/crew_dynamic_followup_20261025_cycle010/runs/second_fire_seed137/frozen_sources.tar.gz",
+    "manifest": "/data1/gzy/crew_dynamic_followup_20261025_cycle010/runs/second_fire_seed137/manifest.json",
+    "native_logs_available": true
+  }
+]

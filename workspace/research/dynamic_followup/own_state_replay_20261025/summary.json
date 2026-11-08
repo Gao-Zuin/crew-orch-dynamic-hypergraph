@@ -1,0 +1,50 @@
+[
+  {
+    "repeat": 0,
+    "variant": "baseline",
+    "response": "<justification>I am at the water source (26,10) with an empty tank. AGENT_6 and AGENT_8 are also filling here. My tank is empty, so I should refill now to be ready to advance toward [41,59] as part of the suppression group. Refilling is the correct action since my water is 0.</justification>\n\n<action>Refill water at (26,10)</action>",
+    "action": "Refill water at (26,10)",
+    "input_tokens": 1877,
+    "output_tokens": 93
+  },
+  {
+    "repeat": 0,
+    "variant": "with_own_state",
+    "response": "<justification>I am at (26,10) with 0 water. My previous refill action did not register water (still 0), so I need to refill at the water source here before advancing. AGENT_6 and AGENT_8 are also filling here; I should top up now so I can join the advance toward [41,59] as part of the suppression group.</justification>\n\n<action>Refill water at (26,10)</action>",
+    "action": "Refill water at (26,10)",
+    "input_tokens": 2122,
+    "output_tokens": 100
+  },
+  {
+    "repeat": 1,
+    "variant": "baseline",
+    "response": "<justification>I am at the water source (26,10) with an empty tank. AGENT_6 and AGENT_8 are also filling here. My best contribution as suppression lead is to fill my tank now so I can advance toward [41,59] with water ready, then scout the fire perimeter from a safe standoff distance. Refilling is the correct action since my water is 0.</justification>\n\n<action>Refill water at (26, 10)</action>",
+    "action": "Refill water at (26, 10)",
+    "input_tokens": 1877,
+    "output_tokens": 103
+  },
+  {
+    "repeat": 1,
+    "variant": "with_own_state",
+    "response": "<justification>I am at (26,10) with 0 water. My previous refill attempt did not register water (still 0), and teammates AGENT_6 and AGENT_8 confirm this is a water source. I should refill here before advancing toward [41,59], since I cannot spray without water. Refilling now is the correct prerequisite action.</justification>\n\n<action>Refill water at (26,10)</action>",
+    "action": "Refill water at (26,10)",
+    "input_tokens": 2122,
+    "output_tokens": 95
+  },
+  {
+    "repeat": 2,
+    "variant": "baseline",
+    "response": "<justification>I am at the water source (26,10) with an empty tank. AGENT_6 and AGENT_8 are also filling here. My tank is empty, so I should refill now to be ready to advance toward [41,59] as part of the suppression group. Refilling is the priority before moving.</justification>\n\n<action>Refill water at (26,10)</action>",
+    "action": "Refill water at (26,10)",
+    "input_tokens": 1877,
+    "output_tokens": 88
+  },
+  {
+    "repeat": 2,
+    "variant": "with_own_state",
+    "response": "<justification>I am at (26,10) with 0 water. My previous refill action did not register water (still 0), so I should refill at the confirmed water source here before advancing. Teammates 6 and 8 are also filling here; once full I can advance toward [41,59] as reserve/suppression support.</justification>\n\n<action>Refill water at (26,10)</action>",
+    "action": "Refill water at (26,10)",
+    "input_tokens": 2122,
+    "output_tokens": 93
+  }
+]

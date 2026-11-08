@@ -1,0 +1,24 @@
+{
+  "members": {
+    "pickup": [
+      "1",
+      "5",
+      "3",
+      "7"
+    ],
+    "reserve": [
+      "4",
+      "2",
+      "6"
+    ]
+  },
+  "active": {
+    "1": "pickup",
+    "2": "reserve",
+    "3": "pickup",
+    "4": "reserve",
+    "5": "pickup",
+    "6": "reserve",
+    "7": "pickup"
+  }
+}

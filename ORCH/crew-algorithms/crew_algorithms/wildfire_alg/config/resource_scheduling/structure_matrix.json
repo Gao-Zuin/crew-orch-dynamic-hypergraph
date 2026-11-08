@@ -1,0 +1,406 @@
+[
+  {
+    "id": "Structure_D0_R0",
+    "preset": {
+      "game_type": 3,
+      "map_size": 100,
+      "fire_spread_frequency": 500,
+      "known": true,
+      "starting_firefighter_agents": 8,
+      "starting_drone_agents": 2,
+      "starting_helicopter_agents": 1,
+      "starting_bulldozer_agents": 1,
+      "vegetation_density_offset": 30,
+      "max_steps": 100,
+      "scheduled_events": [],
+      "name": "Structure_D0_R0",
+      "description": "Suppress the original fire and respond to an additional fire with shared specialist workers.",
+      "water": true
+    },
+    "design": {
+      "sources": [
+        "Suppress_Fire_Contain",
+        "Suppress_Fire_Extinguish_Second_Fire"
+      ],
+      "release_steps": [
+        0,
+        0
+      ],
+      "focus_resource": "drone",
+      "capacity": 2,
+      "overlap_target_demand": 2,
+      "initial_spare_focus_workers": "policy-dependent; not guaranteed by preset",
+      "overlap_window": [
+        1,
+        13
+      ],
+      "requirement": "preferred-resource scheduling target; alternatives allowed; no Unity exclusivity constraint",
+      "objectives": [
+        "inspect initial fire region",
+        "inspect newly reported fire region"
+      ],
+      "deadline_profiles": {
+        "relaxed": {
+          "original_goal_due_step": 100,
+          "new_goal_release_step": 0,
+          "new_goal_due_step": 24,
+          "new_goal_budget_steps": 24,
+          "status": "candidate_requires_rollout_calibration",
+          "new_goal": "One live drone obtains fresh direct visibility of an active cell in the new fire region."
+        },
+        "urgent": {
+          "original_goal_due_step": 100,
+          "new_goal_release_step": 0,
+          "new_goal_due_step": 16,
+          "new_goal_budget_steps": 16,
+          "status": "candidate_requires_rollout_calibration",
+          "new_goal": "One live drone obtains fresh direct visibility of an active cell in the new fire region."
+        }
+      },
+      "deadline_semantics": "Evaluate after-action snapshots; count from verified event effect, not merely event submission. Profiles are external evaluation contracts, not enforced by the stock runner.",
+      "validity_gates": [
+        "Initial goal remains unfinished at release.",
+        "Event has verified physical effect.",
+        "A safe route and a feasible work target exist.",
+        "Both resource demands overlap; otherwise mark no_contention.",
+        "A scripted preemptive schedule passes the deadline; otherwise mark infeasible_or_uncalibrated."
+      ],
+      "movement_audit": {
+        "nominal_cells_per_sim_second": 10,
+        "nominal_sim_seconds_per_decision": 2,
+        "timing_status": "source nominal only; standalone InvokeRepeating registration requires deployed-build verification",
+        "deadline_requires_release_position_check": true
+      },
+      "confound_control": "one new fire event; no new civilian event",
+      "factor_dynamic_event": false,
+      "factor_scarce_drone": false,
+      "structural_hypothesis": "Original fire and new fire each need a field team; shared drone observation must reach a firefighter team through a changing collaboration edge.",
+      "cross_group_dependency": {
+        "source": "drone sees new fire locally",
+        "consumer": "firefighter team assigned to new fire",
+        "transfer": "new edge membership or leader relay before field team enters region",
+        "control": "fixed topology may change tasks and use leader relay"
+      },
+      "organization_arms": [
+        "adaptive_edges",
+        "fixed_edges"
+      ],
+      "metrics": [
+        "notice_to_first_graph_change",
+        "notice_to_first_new_region_action",
+        "notice_to_first_field_entry",
+        "drone_evidence_to_field_entry",
+        "new_fire_suppression_local",
+        "original_fire_progress"
+      ],
+      "causal_limit": "No structure-only conclusion unless fixed and adaptive arms share seed, event, capabilities, model, prompts, and action budget; topology is not guaranteed necessary."
+    }
+  },
+  {
+    "id": "Structure_D0_R1",
+    "preset": {
+      "game_type": 3,
+      "map_size": 100,
+      "fire_spread_frequency": 500,
+      "known": true,
+      "starting_firefighter_agents": 8,
+      "starting_drone_agents": 1,
+      "starting_helicopter_agents": 1,
+      "starting_bulldozer_agents": 1,
+      "vegetation_density_offset": 30,
+      "max_steps": 100,
+      "scheduled_events": [],
+      "name": "Structure_D0_R1",
+      "description": "Suppress the original fire and respond to an additional fire with shared specialist workers.",
+      "water": true
+    },
+    "design": {
+      "sources": [
+        "Suppress_Fire_Contain",
+        "Suppress_Fire_Extinguish_Second_Fire"
+      ],
+      "release_steps": [
+        0,
+        0
+      ],
+      "focus_resource": "drone",
+      "capacity": 1,
+      "overlap_target_demand": 2,
+      "initial_spare_focus_workers": "policy-dependent; not guaranteed by preset",
+      "overlap_window": [
+        1,
+        13
+      ],
+      "requirement": "preferred-resource scheduling target; alternatives allowed; no Unity exclusivity constraint",
+      "objectives": [
+        "inspect initial fire region",
+        "inspect newly reported fire region"
+      ],
+      "deadline_profiles": {
+        "relaxed": {
+          "original_goal_due_step": 100,
+          "new_goal_release_step": 0,
+          "new_goal_due_step": 24,
+          "new_goal_budget_steps": 24,
+          "status": "candidate_requires_rollout_calibration",
+          "new_goal": "One live drone obtains fresh direct visibility of an active cell in the new fire region."
+        },
+        "urgent": {
+          "original_goal_due_step": 100,
+          "new_goal_release_step": 0,
+          "new_goal_due_step": 16,
+          "new_goal_budget_steps": 16,
+          "status": "candidate_requires_rollout_calibration",
+          "new_goal": "One live drone obtains fresh direct visibility of an active cell in the new fire region."
+        }
+      },
+      "deadline_semantics": "Evaluate after-action snapshots; count from verified event effect, not merely event submission. Profiles are external evaluation contracts, not enforced by the stock runner.",
+      "validity_gates": [
+        "Initial goal remains unfinished at release.",
+        "Event has verified physical effect.",
+        "A safe route and a feasible work target exist.",
+        "Both resource demands overlap; otherwise mark no_contention.",
+        "A scripted preemptive schedule passes the deadline; otherwise mark infeasible_or_uncalibrated."
+      ],
+      "movement_audit": {
+        "nominal_cells_per_sim_second": 10,
+        "nominal_sim_seconds_per_decision": 2,
+        "timing_status": "source nominal only; standalone InvokeRepeating registration requires deployed-build verification",
+        "deadline_requires_release_position_check": true
+      },
+      "confound_control": "one new fire event; no new civilian event",
+      "factor_dynamic_event": false,
+      "factor_scarce_drone": true,
+      "structural_hypothesis": "Original fire and new fire each need a field team; shared drone observation must reach a firefighter team through a changing collaboration edge.",
+      "cross_group_dependency": {
+        "source": "drone sees new fire locally",
+        "consumer": "firefighter team assigned to new fire",
+        "transfer": "new edge membership or leader relay before field team enters region",
+        "control": "fixed topology may change tasks and use leader relay"
+      },
+      "organization_arms": [
+        "adaptive_edges",
+        "fixed_edges"
+      ],
+      "metrics": [
+        "notice_to_first_graph_change",
+        "notice_to_first_new_region_action",
+        "notice_to_first_field_entry",
+        "drone_evidence_to_field_entry",
+        "new_fire_suppression_local",
+        "original_fire_progress"
+      ],
+      "causal_limit": "No structure-only conclusion unless fixed and adaptive arms share seed, event, capabilities, model, prompts, and action budget; topology is not guaranteed necessary."
+    }
+  },
+  {
+    "id": "Structure_D1_R0",
+    "preset": {
+      "game_type": 3,
+      "map_size": 100,
+      "fire_spread_frequency": 500,
+      "known": true,
+      "starting_firefighter_agents": 8,
+      "starting_drone_agents": 2,
+      "starting_helicopter_agents": 1,
+      "starting_bulldozer_agents": 1,
+      "vegetation_density_offset": 30,
+      "max_steps": 100,
+      "scheduled_events": [
+        {
+          "timestep": 8,
+          "action": "start_fire",
+          "x": 80,
+          "y": 80,
+          "announcement": "Additional fire reported at (80,80); reassess shared resources."
+        }
+      ],
+      "name": "Structure_D1_R0",
+      "description": "Suppress the original fire and respond to an additional fire with shared specialist workers.",
+      "water": true
+    },
+    "design": {
+      "sources": [
+        "Suppress_Fire_Contain",
+        "Suppress_Fire_Extinguish_Second_Fire"
+      ],
+      "release_steps": [
+        0,
+        8
+      ],
+      "focus_resource": "drone",
+      "capacity": 2,
+      "overlap_target_demand": 2,
+      "initial_spare_focus_workers": "policy-dependent; not guaranteed by preset",
+      "overlap_window": [
+        9,
+        21
+      ],
+      "requirement": "preferred-resource scheduling target; alternatives allowed; no Unity exclusivity constraint",
+      "objectives": [
+        "inspect initial fire region",
+        "inspect newly reported fire region"
+      ],
+      "deadline_profiles": {
+        "relaxed": {
+          "original_goal_due_step": 100,
+          "new_goal_release_step": 8,
+          "new_goal_due_step": 32,
+          "new_goal_budget_steps": 24,
+          "status": "candidate_requires_rollout_calibration",
+          "new_goal": "One live drone obtains fresh direct visibility of an active cell in the new fire region."
+        },
+        "urgent": {
+          "original_goal_due_step": 100,
+          "new_goal_release_step": 8,
+          "new_goal_due_step": 24,
+          "new_goal_budget_steps": 16,
+          "status": "candidate_requires_rollout_calibration",
+          "new_goal": "One live drone obtains fresh direct visibility of an active cell in the new fire region."
+        }
+      },
+      "deadline_semantics": "Evaluate after-action snapshots; count from verified event effect, not merely event submission. Profiles are external evaluation contracts, not enforced by the stock runner.",
+      "validity_gates": [
+        "Initial goal remains unfinished at release.",
+        "Event has verified physical effect.",
+        "A safe route and a feasible work target exist.",
+        "Both resource demands overlap; otherwise mark no_contention.",
+        "A scripted preemptive schedule passes the deadline; otherwise mark infeasible_or_uncalibrated."
+      ],
+      "movement_audit": {
+        "nominal_cells_per_sim_second": 10,
+        "nominal_sim_seconds_per_decision": 2,
+        "timing_status": "source nominal only; standalone InvokeRepeating registration requires deployed-build verification",
+        "deadline_requires_release_position_check": true
+      },
+      "confound_control": "one new fire event; no new civilian event",
+      "factor_dynamic_event": true,
+      "factor_scarce_drone": false,
+      "structural_hypothesis": "Original fire and new fire each need a field team; shared drone observation must reach a firefighter team through a changing collaboration edge.",
+      "cross_group_dependency": {
+        "source": "drone sees new fire locally",
+        "consumer": "firefighter team assigned to new fire",
+        "transfer": "new edge membership or leader relay before field team enters region",
+        "control": "fixed topology may change tasks and use leader relay"
+      },
+      "organization_arms": [
+        "adaptive_edges",
+        "fixed_edges"
+      ],
+      "metrics": [
+        "notice_to_first_graph_change",
+        "notice_to_first_new_region_action",
+        "notice_to_first_field_entry",
+        "drone_evidence_to_field_entry",
+        "new_fire_suppression_local",
+        "original_fire_progress"
+      ],
+      "causal_limit": "No structure-only conclusion unless fixed and adaptive arms share seed, event, capabilities, model, prompts, and action budget; topology is not guaranteed necessary."
+    }
+  },
+  {
+    "id": "Structure_D1_R1",
+    "preset": {
+      "game_type": 3,
+      "map_size": 100,
+      "fire_spread_frequency": 500,
+      "known": true,
+      "starting_firefighter_agents": 8,
+      "starting_drone_agents": 1,
+      "starting_helicopter_agents": 1,
+      "starting_bulldozer_agents": 1,
+      "vegetation_density_offset": 30,
+      "max_steps": 100,
+      "scheduled_events": [
+        {
+          "timestep": 8,
+          "action": "start_fire",
+          "x": 80,
+          "y": 80,
+          "announcement": "Additional fire reported at (80,80); reassess shared resources."
+        }
+      ],
+      "name": "Structure_D1_R1",
+      "description": "Suppress the original fire and respond to an additional fire with shared specialist workers.",
+      "water": true
+    },
+    "design": {
+      "sources": [
+        "Suppress_Fire_Contain",
+        "Suppress_Fire_Extinguish_Second_Fire"
+      ],
+      "release_steps": [
+        0,
+        8
+      ],
+      "focus_resource": "drone",
+      "capacity": 1,
+      "overlap_target_demand": 2,
+      "initial_spare_focus_workers": "policy-dependent; not guaranteed by preset",
+      "overlap_window": [
+        9,
+        21
+      ],
+      "requirement": "preferred-resource scheduling target; alternatives allowed; no Unity exclusivity constraint",
+      "objectives": [
+        "inspect initial fire region",
+        "inspect newly reported fire region"
+      ],
+      "deadline_profiles": {
+        "relaxed": {
+          "original_goal_due_step": 100,
+          "new_goal_release_step": 8,
+          "new_goal_due_step": 32,
+          "new_goal_budget_steps": 24,
+          "status": "candidate_requires_rollout_calibration",
+          "new_goal": "One live drone obtains fresh direct visibility of an active cell in the new fire region."
+        },
+        "urgent": {
+          "original_goal_due_step": 100,
+          "new_goal_release_step": 8,
+          "new_goal_due_step": 24,
+          "new_goal_budget_steps": 16,
+          "status": "candidate_requires_rollout_calibration",
+          "new_goal": "One live drone obtains fresh direct visibility of an active cell in the new fire region."
+        }
+      },
+      "deadline_semantics": "Evaluate after-action snapshots; count from verified event effect, not merely event submission. Profiles are external evaluation contracts, not enforced by the stock runner.",
+      "validity_gates": [
+        "Initial goal remains unfinished at release.",
+        "Event has verified physical effect.",
+        "A safe route and a feasible work target exist.",
+        "Both resource demands overlap; otherwise mark no_contention.",
+        "A scripted preemptive schedule passes the deadline; otherwise mark infeasible_or_uncalibrated."
+      ],
+      "movement_audit": {
+        "nominal_cells_per_sim_second": 10,
+        "nominal_sim_seconds_per_decision": 2,
+        "timing_status": "source nominal only; standalone InvokeRepeating registration requires deployed-build verification",
+        "deadline_requires_release_position_check": true
+      },
+      "confound_control": "one new fire event; no new civilian event",
+      "factor_dynamic_event": true,
+      "factor_scarce_drone": true,
+      "structural_hypothesis": "Original fire and new fire each need a field team; shared drone observation must reach a firefighter team through a changing collaboration edge.",
+      "cross_group_dependency": {
+        "source": "drone sees new fire locally",
+        "consumer": "firefighter team assigned to new fire",
+        "transfer": "new edge membership or leader relay before field team enters region",
+        "control": "fixed topology may change tasks and use leader relay"
+      },
+      "organization_arms": [
+        "adaptive_edges",
+        "fixed_edges"
+      ],
+      "metrics": [
+        "notice_to_first_graph_change",
+        "notice_to_first_new_region_action",
+        "notice_to_first_field_entry",
+        "drone_evidence_to_field_entry",
+        "new_fire_suppression_local",
+        "original_fire_progress"
+      ],
+      "causal_limit": "No structure-only conclusion unless fixed and adaptive arms share seed, event, capabilities, model, prompts, and action budget; topology is not guaranteed necessary."
+    }
+  }
+]

@@ -1,0 +1,50 @@
+{
+  "based_on_version": 0,
+  "evidence_id": 17,
+  "reason": "All seven agents are online at the same staging position with no fire active; the shared goal is moving the crew to the target [13.0, 12.0]. Agent 7 is the only transport-capable unit, so it leads a transport group while the six firefighters form a navigation group that moves with it.",
+  "edges": [
+    {
+      "id": "pickup",
+      "goal": "Coordinate first transport pickup",
+      "members": [
+        "1",
+        "2",
+        "3",
+        "7"
+      ],
+      "leader": "7",
+      "tasks": {
+        "1": "Reach pickup point",
+        "2": "Reach pickup point",
+        "3": "Reach pickup point",
+        "7": "Coordinate pickup"
+      },
+      "advice": "Agent 7 coordinates boarding order and route; firefighters report readiness before departure."
+    },
+    {
+      "id": "reserve",
+      "goal": "Prepare remaining firefighters for next pickup",
+      "members": [
+        "4",
+        "5",
+        "6"
+      ],
+      "leader": "4",
+      "tasks": {
+        "4": "Coordinate reserve crew",
+        "5": "Reach pickup point",
+        "6": "Reach pickup point"
+      },
+      "advice": "Agent 7 coordinates boarding order and route; firefighters report readiness before departure."
+    }
+  ],
+  "active": {
+    "1": "pickup",
+    "2": "pickup",
+    "3": "pickup",
+    "4": "reserve",
+    "5": "reserve",
+    "6": "reserve",
+    "7": "pickup"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "checked": "2026-10-25T10:28:42.389360+08:00",
+  "run": "transport_seed2461",
+  "event_id": 433,
+  "step": 4,
+  "firefighters_transported": 5,
+  "target": 6,
+  "held_reasons": [
+    "aboard"
+  ],
+  "qualification": "in-progress observation, not final task result"
+}

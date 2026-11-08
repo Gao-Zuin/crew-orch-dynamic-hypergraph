@@ -1,0 +1,8 @@
+{
+  "source_archive_sha256": "4095f770d6791af96ca33280a16a9bb6658575a39b007c48242a30fb84875bd7",
+  "old_graph_sha256": "656fd088f68dbeed6e73511f9532a01ce8e8c290424f28c21411ebb550595aba",
+  "old_policy_sha256": "47a2fb0a079dc3edb4694f84f4156a280d01d521a2b18dbbba06a2535c7553aa",
+  "active_profile": "task_hypergraph_soft_v1",
+  "current_runtime_changed": false,
+  "historical_results_modified": false
+}

@@ -1,0 +1,109 @@
+{
+  "prefix_only": true,
+  "graphs": [
+    {
+      "step": 19,
+      "event_id": 1510,
+      "edges": [
+        [
+          "water-logistics",
+          [
+            "1",
+            "2"
+          ]
+        ],
+        [
+          "suppression-main",
+          [
+            "3",
+            "4",
+            "5"
+          ]
+        ],
+        [
+          "suppression-second",
+          [
+            "6",
+            "8"
+          ]
+        ]
+      ],
+      "reason": "Second fire at (70,70) needs a separate containment effort; existing suppression near (41,59) and water logistics remain valid. Split suppression into two groups so the new fire is covered without abandoning the original objective."
+    },
+    {
+      "step": 20,
+      "event_id": 1578,
+      "edges": [
+        [
+          "water-logistics",
+          [
+            "1",
+            "2"
+          ]
+        ],
+        [
+          "suppression-main",
+          [
+            "3",
+            "4"
+          ]
+        ],
+        [
+          "suppression-second",
+          [
+            "6",
+            "8"
+          ]
+        ]
+      ],
+      "reason": "Second fire at (70,70) needs a dedicated containment group; existing main-fire and water-logistics groups remain stable. Agent 5 is offline so leader role for suppression-main shifts to an online member."
+    },
+    {
+      "step": 21,
+      "event_id": 1634,
+      "edges": [
+        [
+          "water-logistics",
+          [
+            "1",
+            "2"
+          ]
+        ],
+        [
+          "suppression-main",
+          [
+            "3",
+            "4"
+          ]
+        ],
+        [
+          "suppression-second",
+          [
+            "8"
+          ]
+        ]
+      ],
+      "reason": "Second fire at (70,70) needs a dedicated group; only online agents 1,2,3,4,8 are assignable, so 8 joins the second-fire group while 1 and 2 keep water logistics feeding both fire lines."
+    }
+  ],
+  "last_snapshot": {
+    "step": 24,
+    "phase": "before_action",
+    "rewards": [
+      1620,
+      84,
+      0,
+      10,
+      0,
+      0,
+      0,
+      0,
+      4,
+      1,
+      3,
+      0,
+      0
+    ]
+  },
+  "qualification": "new event response observed, no task-success or local-fire-clear claim"
+}

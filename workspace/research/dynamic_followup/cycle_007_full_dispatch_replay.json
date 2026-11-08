@@ -1,0 +1,47 @@
+{
+  "source_events": "/data1/gzy/crew_dynamic_followup_20261025_cycle003/runs/second_fire_seed137/run/events.jsonl",
+  "original_deliveries": 505,
+  "patched_deliveries": 509,
+  "restored_deliveries": 4,
+  "lost_original_deliveries": 0,
+  "outputs_with_restored_delivery": 2,
+  "extra": [
+    {
+      "source_output_event": 44,
+      "sender": "5",
+      "recipient": "6",
+      "source": "suppression",
+      "target": "suppression",
+      "content": "Suppression group: I'm leading. AGENT_6 scouts fire perimeter with me toward [41,59]; AGENT_7 and AGENT_8 secure water at [8,24]. All others: report your position and any fire/water sightings. Maintain safe standoff from fire.",
+      "count": 1
+    },
+    {
+      "source_output_event": 44,
+      "sender": "5",
+      "recipient": "7",
+      "source": "suppression",
+      "target": "suppression",
+      "content": "Suppression group: I'm leading. AGENT_6 scouts fire perimeter with me toward [41,59]; AGENT_7 and AGENT_8 secure water at [8,24]. All others: report your position and any fire/water sightings. Maintain safe standoff from fire.",
+      "count": 1
+    },
+    {
+      "source_output_event": 44,
+      "sender": "5",
+      "recipient": "8",
+      "source": "suppression",
+      "target": "suppression",
+      "content": "Suppression group: I'm leading. AGENT_6 scouts fire perimeter with me toward [41,59]; AGENT_7 and AGENT_8 secure water at [8,24]. All others: report your position and any fire/water sightings. Maintain safe standoff from fire.",
+      "count": 1
+    },
+    {
+      "source_output_event": 1940,
+      "sender": "1",
+      "recipient": "2",
+      "source": "water-logistics",
+      "target": "water-logistics",
+      "content": "AGENT_1: Fire front still active S/SE of (39,55) — ignited cells around (40-44,60-62) and on-fire cells around (41-43,61-62) in dense forest. I have 4 water units and am moving to suppress. AGENT_3 and AGENT_4 near (43,61)/(41,60): report your water levels so we can coordinate spray coverage and avoid gaps.",
+      "count": 1
+    }
+  ],
+  "qualification": "offline replay of fixed recorded model outputs and world snapshots; does not show downstream action or task benefit"
+}

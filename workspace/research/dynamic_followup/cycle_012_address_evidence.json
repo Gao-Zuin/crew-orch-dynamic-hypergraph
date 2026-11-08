@@ -1,0 +1,14 @@
+{
+  "checked": "2026-10-25T11:49:54.160215+08:00",
+  "source": "/data1/gzy/crew_dynamic_followup_20261025_cycle003/runs/second_fire_seed137/run/events.jsonl",
+  "original_actual_prompt_contexts": 560,
+  "contexts_with_directory": 0,
+  "delivered": 505,
+  "cross_group_delivered": 0,
+  "suppression_reasons": {
+    "outside stated groups": 17
+  },
+  "finding": "Worker context supplies own group only; scoped cross-group dispatch requires destination edge ID and leader. Existing valid route is undiscoverable from this context alone. Other chat text may incidentally mention it.",
+  "fix": "Add only current group IDs, members, leaders; no hidden resources/positions or route-policy changes.",
+  "qualification": "Missing address metadata is verified; impact on model route choice and task success remains unproven. Current Cycle010 remains frozen without this change."
+}

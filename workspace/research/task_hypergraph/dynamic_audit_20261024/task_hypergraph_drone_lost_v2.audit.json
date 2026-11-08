@@ -1,0 +1,83 @@
+{
+  "passed": true,
+  "failures": [],
+  "event_counts": {
+    "RUN_STARTED": 1,
+    "TASK_HYPERGRAPH_STARTED": 1,
+    "NODE_JOINED": 3,
+    "STATE_OBSERVED": 41,
+    "TASK_WORLD_SNAPSHOT": 16,
+    "TASK_VALIDATED": 17,
+    "TASK_ORGANIZER_REQUEST": 16,
+    "TASK_ORGANIZER_RESPONSE": 16,
+    "TASK_VERIFIER_REQUEST": 6,
+    "TASK_VERIFIER_RESPONSE": 6,
+    "TASK_GRAPH_COMMITTED": 6,
+    "TASK_EXECUTION_REBOUND": 17,
+    "COMMUNICATION_GENERATED": 17,
+    "TASK_MESSAGE_DELIVERED": 30,
+    "TASK_ACTION_AUTHORIZED": 17,
+    "ACTION_STARTED": 21,
+    "ACTION_COMPLETED": 21,
+    "LLM_USAGE": 9,
+    "NODE_OFFLINE": 1,
+    "TASK_PROPOSAL_REJECTED": 10,
+    "TASK_EDGE_HANDOFF": 1,
+    "TASK_ORGANIZATION_HOLD": 3,
+    "TASK_ACTION_HELD": 4,
+    "ACTION_NO_EFFECT": 4,
+    "TASK_HYPERGRAPH_FINISHED": 1,
+    "RUN_FINISHED": 1
+  },
+  "graph_version": 6,
+  "stage_changes": [
+    {
+      "event_id": 200,
+      "retired": [
+        "scout_fire_confirm_v1"
+      ],
+      "created": [
+        "scout_fire_confirm_v2"
+      ]
+    }
+  ],
+  "overlap_commit_events": [],
+  "cross_edge_message_events": [],
+  "action_count": 21,
+  "retired_edges": [
+    {
+      "id": "scout_fire_confirm_v1",
+      "verdict": "revise"
+    }
+  ],
+  "LLM_semantic_completion_checks": [],
+  "last_validation": {
+    "timestep": 7,
+    "observation_phase": "episode_end",
+    "success": false,
+    "rewards": [
+      9510,
+      30,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "fire_active": true,
+    "validator": "core.alg_utils.check_game_done (unchanged)",
+    "source_observation_phase": "after_action"
+  },
+  "usage": {
+    "input_tokens": 372230,
+    "output_tokens": 35674,
+    "api_calls": 90
+  },
+  "qualification": "mechanism replay, not independent proof of semantic LLM verdicts"
+}

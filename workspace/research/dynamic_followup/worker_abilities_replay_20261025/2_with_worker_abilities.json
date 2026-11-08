@@ -1,0 +1,181 @@
+{
+  "repeat": 2,
+  "variant": "with_worker_abilities",
+  "accepted": true,
+  "error": null,
+  "usage": {
+    "api_calls": 1,
+    "input_tokens": 1317,
+    "output_tokens": 474
+  },
+  "edges": [
+    {
+      "id": "water-logistics",
+      "goal": "Establish water supply from [8,24] and stage full tanks toward the fire zone",
+      "members": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "leader": "1",
+      "tasks": {
+        "1": "Navigate toward water source [8,24] and refill to 5",
+        "2": "Navigate toward water source [8,24] and refill to 5",
+        "3": "Move with group toward [8,24], refill, then stage toward [41,59]",
+        "4": "Move with group toward [8,24], refill, then stage toward [41,59]"
+      },
+      "advice": "Keep tanks full; do not spray until fire is observed active.",
+      "revision": 1
+    },
+    {
+      "id": "suppression-scout",
+      "goal": "Approach fire zone [41,59] cautiously, scout conditions, and prepare suppression line",
+      "members": [
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "leader": "5",
+      "tasks": {
+        "5": "Navigate cautiously toward [41,59] and observe fire state",
+        "6": "Move with group toward [41,59], hold at safe distance",
+        "7": "Move with group toward [41,59], identify cut lines if needed",
+        "8": "Move with group toward [41,59], stay ready to spray once water arrives"
+      },
+      "advice": "Do not touch the fire until water is available; report observed fire state.",
+      "revision": 1
+    }
+  ],
+  "events": [
+    {
+      "event_id": 1,
+      "event_type": "TASK_ORGANIZER_REQUEST",
+      "payload": {
+        "messages": [
+          {
+            "role": "system",
+            "content": "Suggest a small task-led collaboration graph for CREW-Wildfire.\nThe graph is advice, not permission to act. Group by concrete cooperation needs,\nnot distance alone. Respond to new environment events, keep existing work visible,\nand do not claim an action happened merely because it was planned or reported.\nUse only observed agent IDs. Every online agent must be a member of at least one\ngroup and assigned to exactly one active group. A group leader is one of its\nmembers. Prefer stable groups; split only when independent work benefits from it.\nReturn JSON only:\n{\"based_on_version\": 0, \"evidence_id\": 0, \"reason\": \"brief reason\",\n \"edges\": [{\"id\": \"stable id\", \"goal\": \"current shared goal\",\n \"members\": [\"1\"], \"leader\": \"1\", \"tasks\": {\"1\": \"suggested next work\"},\n \"advice\": \"optional coordination advice\"}], \"active\": {\"1\": \"stable id\"}}\nDo not output checks, reviews, handoffs, dependencies or permission rules.\n"
+          },
+          {
+            "role": "user",
+            "content": "{\"version\": 0, \"evidence_id\": 19, \"step\": 0, \"mission\": \"Fully suppress/contain the fire spreading near [41.0, 59.0]. Be cautious to not touch it. Use the water source at [8.0, 24.0] to fill up water supplies.\", \"rewards\": [121, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], \"fire_active\": false, \"reward_schema\": [\"exploration\", \"trees_burned\", \"trees_cut\", \"fire_extinguished\", \"correct_trees_cut\", \"civilians_rescued\", \"firefighters_transported\", \"civilians_scouted\", \"fire_scouted\", \"water_scouted\", \"agents_destroyed\", \"civilians_destroyed\", \"buildings_destroyed\"], \"events\": [], \"agents\": {\"1\": {\"position\": [26.0, 8.0], \"resources\": {\"water\": 0, \"civilian_carried\": 0}, \"capabilities\": [\"navigate\", \"cut\", \"spray\", \"refill\", \"carry_civilian\"], \"online\": true}, \"2\": {\"position\": [26.0, 8.0], \"resources\": {\"water\": 0, \"civilian_carried\": 0}, \"capabilities\": [\"navigate\", \"cut\", \"spray\", \"refill\", \"carry_civilian\"], \"online\": true}, \"3\": {\"position\": [26.0, 8.0], \"resources\": {\"water\": 0, \"civilian_carried\": 0}, \"capabilities\": [\"navigate\", \"cut\", \"spray\", \"refill\", \"carry_civilian\"], \"online\": true}, \"4\": {\"position\": [26.0, 8.0], \"resources\": {\"water\": 0, \"civilian_carried\": 0}, \"capabilities\": [\"navigate\", \"cut\", \"spray\", \"refill\", \"carry_civilian\"], \"online\": true}, \"5\": {\"position\": [26.0, 8.0], \"resources\": {\"water\": 0, \"civilian_carried\": 0}, \"capabilities\": [\"navigate\", \"cut\", \"spray\", \"refill\", \"carry_civilian\"], \"online\": true}, \"6\": {\"position\": [26.0, 8.0], \"resources\": {\"water\": 0, \"civilian_carried\": 0}, \"capabilities\": [\"navigate\", \"cut\", \"spray\", \"refill\", \"carry_civilian\"], \"online\": true}, \"7\": {\"position\": [26.0, 8.0], \"resources\": {\"water\": 0, \"civilian_carried\": 0}, \"capabilities\": [\"navigate\", \"cut\", \"spray\", \"refill\", \"carry_civilian\"], \"online\": true}, \"8\": {\"position\": [26.0, 8.0], \"resources\": {\"water\": 0, \"civilian_carried\": 0}, \"capabilities\": [\"navigate\", \"cut\", \"spray\", \"refill\", \"carry_civilian\"], \"online\": true}}, \"edges\": [], \"active\": {}, \"worker_abilities\": {\"firefighter\": \"            - Move a few steps in the the direction of a target coordinate location.\\n            - Cut down a single tree in your current cell.\\n            - Pick up a nearby civilian.\\n            - Drop off your current civilian.\\n            - Spray a wide cone of water in the direction of a target coordinate location.\\n            - Refill water at a water source when your water is 0; this fills the tank to 5. This action does not top up a tank that still contains water.\\n            - Do nothing, remaining on standby and conserving energy.\\n\", \"bulldozer\": \"            - Move a few steps in the the direction of a target coordinate location.\\n            - Move a few steps in the the direction of a target coordinate location cutting all trees on the way there, creating a line of trees from your current location pointing towards the target location.\\n            - Do nothing, remaining on standby and conserving energy.\", \"drone\": \"            - Move in the the direction of a target coordinate location, observing along the way.\\n            - Do nothing, remaining on standby and conserving energy.\", \"helicopter\": \"            - Move in the the direction of a target coordinate location.\\n            - Pick up nearby Firefighter Agents, up to 5 total.\\n            - Drop off all carried Firefighter Agents.\\n            - Refill water storage. You must be above a water source.\\n            - Deploy 1 water directly below.\\n            - Do nothing, remaining on standby and conserving energy.\"}}"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": 2,
+      "event_type": "TASK_ORGANIZER_RESPONSE",
+      "payload": {
+        "content": "{\"based_on_version\": 0, \"evidence_id\": 19, \"reason\": \"All 8 firefighters are online and co-located at [26,8] with empty water; fire is not yet active but mission targets [41,59] and water at [8,24]. Group into a refill/transport cell and a suppression cell so water logistics and fire attack can proceed in parallel.\", \"edges\": [{\"id\": \"water-logistics\", \"goal\": \"Establish water supply from [8,24] and stage full tanks toward the fire zone\", \"members\": [\"1\", \"2\", \"3\", \"4\"], \"leader\": \"1\", \"tasks\": {\"1\": \"Navigate toward water source [8,24] and refill to 5\", \"2\": \"Navigate toward water source [8,24] and refill to 5\", \"3\": \"Move with group toward [8,24], refill, then stage toward [41,59]\", \"4\": \"Move with group toward [8,24], refill, then stage toward [41,59]\"}, \"advice\": \"Keep tanks full; do not spray until fire is observed active.\"}, {\"id\": \"suppression-scout\", \"goal\": \"Approach fire zone [41,59] cautiously, scout conditions, and prepare suppression line\", \"members\": [\"5\", \"6\", \"7\", \"8\"], \"leader\": \"5\", \"tasks\": {\"5\": \"Navigate cautiously toward [41,59] and observe fire state\", \"6\": \"Move with group toward [41,59], hold at safe distance\", \"7\": \"Move with group toward [41,59], identify cut lines if needed\", \"8\": \"Move with group toward [41,59], stay ready to spray once water arrives\"}, \"advice\": \"Do not touch the fire until water is available; report observed fire state.\"}], \"active\": {\"1\": \"water-logistics\", \"2\": \"water-logistics\", \"3\": \"water-logistics\", \"4\": \"water-logistics\", \"5\": \"suppression-scout\", \"6\": \"suppression-scout\", \"7\": \"suppression-scout\", \"8\": \"suppression-scout\"}}",
+        "input_tokens": 1317,
+        "output_tokens": 474
+      }
+    },
+    {
+      "event_id": 3,
+      "event_type": "TASK_GRAPH_COMMITTED",
+      "payload": {
+        "version": 1,
+        "proposal": {
+          "based_on_version": 0,
+          "evidence_id": 19,
+          "reason": "All 8 firefighters are online and co-located at [26,8] with empty water; fire is not yet active but mission targets [41,59] and water at [8,24]. Group into a refill/transport cell and a suppression cell so water logistics and fire attack can proceed in parallel.",
+          "edges": [
+            {
+              "id": "water-logistics",
+              "goal": "Establish water supply from [8,24] and stage full tanks toward the fire zone",
+              "members": [
+                "1",
+                "2",
+                "3",
+                "4"
+              ],
+              "leader": "1",
+              "tasks": {
+                "1": "Navigate toward water source [8,24] and refill to 5",
+                "2": "Navigate toward water source [8,24] and refill to 5",
+                "3": "Move with group toward [8,24], refill, then stage toward [41,59]",
+                "4": "Move with group toward [8,24], refill, then stage toward [41,59]"
+              },
+              "advice": "Keep tanks full; do not spray until fire is observed active."
+            },
+            {
+              "id": "suppression-scout",
+              "goal": "Approach fire zone [41,59] cautiously, scout conditions, and prepare suppression line",
+              "members": [
+                "5",
+                "6",
+                "7",
+                "8"
+              ],
+              "leader": "5",
+              "tasks": {
+                "5": "Navigate cautiously toward [41,59] and observe fire state",
+                "6": "Move with group toward [41,59], hold at safe distance",
+                "7": "Move with group toward [41,59], identify cut lines if needed",
+                "8": "Move with group toward [41,59], stay ready to spray once water arrives"
+              },
+              "advice": "Do not touch the fire until water is available; report observed fire state."
+            }
+          ],
+          "active": {
+            "1": "water-logistics",
+            "2": "water-logistics",
+            "3": "water-logistics",
+            "4": "water-logistics",
+            "5": "suppression-scout",
+            "6": "suppression-scout",
+            "7": "suppression-scout",
+            "8": "suppression-scout"
+          }
+        },
+        "edges": [
+          {
+            "id": "water-logistics",
+            "goal": "Establish water supply from [8,24] and stage full tanks toward the fire zone",
+            "members": [
+              "1",
+              "2",
+              "3",
+              "4"
+            ],
+            "leader": "1",
+            "tasks": {
+              "1": "Navigate toward water source [8,24] and refill to 5",
+              "2": "Navigate toward water source [8,24] and refill to 5",
+              "3": "Move with group toward [8,24], refill, then stage toward [41,59]",
+              "4": "Move with group toward [8,24], refill, then stage toward [41,59]"
+            },
+            "advice": "Keep tanks full; do not spray until fire is observed active.",
+            "revision": 1
+          },
+          {
+            "id": "suppression-scout",
+            "goal": "Approach fire zone [41,59] cautiously, scout conditions, and prepare suppression line",
+            "members": [
+              "5",
+              "6",
+              "7",
+              "8"
+            ],
+            "leader": "5",
+            "tasks": {
+              "5": "Navigate cautiously toward [41,59] and observe fire state",
+              "6": "Move with group toward [41,59], hold at safe distance",
+              "7": "Move with group toward [41,59], identify cut lines if needed",
+              "8": "Move with group toward [41,59], stay ready to spray once water arrives"
+            },
+            "advice": "Do not touch the fire until water is available; report observed fire state.",
+            "revision": 1
+          }
+        ],
+        "retired": [],
+        "manual_regroup": false,
+        "attrition": false
+      }
+    }
+  ]
+}

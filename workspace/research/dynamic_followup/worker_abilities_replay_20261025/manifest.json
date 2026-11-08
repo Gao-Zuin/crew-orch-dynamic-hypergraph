@@ -1,0 +1,9 @@
+{
+  "source_events": "/data1/gzy/crew_dynamic_followup_20261025_cycle003/runs/second_fire_seed137/run/events.jsonl",
+  "snapshot_event": 19,
+  "request_event": 21,
+  "repeats": 3,
+  "source_request_sha256": "52cbc68674dac88902043220ba7950e076c233652e374bef6bf2e29a3f69dfad",
+  "qualification": "same recorded input, new model samples; control-only replay; no physical outcome",
+  "only_input_difference": "candidate adds worker_abilities from recorded world"
+}

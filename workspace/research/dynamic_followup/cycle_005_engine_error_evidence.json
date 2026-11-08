@@ -1,0 +1,11 @@
+{
+  "checked": "2026-10-25T10:57:01.678794+08:00",
+  "source_log": "/data1/gzy/crew_dynamic_followup_20261025_cycle003/workspace/ORCH/UnityLogs/Player-0.log",
+  "saved_prefix": "CREW/research/dynamic_followup/cycle_005_unity_log_prefix.txt",
+  "qualification": "live log prefix, not final complete log",
+  "exception": "NullReferenceException in MapManager.SprayWater at IL_00f7",
+  "stack_mvid": "256a5b92637c4cf2991f167dd098582a",
+  "assembly_mvid": "256a5b92-637c-4cf2-991f-167dd098582a",
+  "assembly_sha256": "c27099d25f0413594792fe05f4b6c75f6464a8b78a2ca40b2b259f159ec96591",
+  "binary_operations": "Cell.fire.GetComponent<ParticleSystem>(); ParticleSystem.Stop() without null checks; state/reward update precedes this optional rendering block"
+}

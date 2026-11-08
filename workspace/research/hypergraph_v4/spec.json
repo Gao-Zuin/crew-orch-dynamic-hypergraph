@@ -1,0 +1,27 @@
+{
+  "version": 4,
+  "suite": "additional_rescue_and_longer_suppression_window",
+  "model": "deepseek-chat",
+  "url": "https://api.deepseek.com",
+  "timeout_seconds": 3000,
+  "arms": [
+    {"id": "P", "arm": "P", "intervention": "none"},
+    {"id": "HA", "arm": "HA", "intervention": "none"},
+    {"id": "HR", "arm": "HR", "intervention": "none"},
+    {"id": "HR_projector_off", "arm": "HR", "intervention": "projector_off"}
+  ],
+  "task_seed_pairs": [
+    {"level": "Rescue_Civilians_Known_Location_small", "seed": 9502, "max_steps": 25, "target_reward_index": 5, "target_units": 3},
+    {"level": "Suppress_Fire_Extinguish", "seed": 6216, "max_steps": 30, "target_reward_index": null, "target_units": null}
+  ],
+  "order": "Rotate four arms left by task-seed pair index; sequential single Unity slot.",
+  "freeze_rules": [
+    "New task-seed pairs; no reruns or replacement of v3 failures. Identical runtime source to v3; new spec/horizon requires separate manifest.",
+    "Rescue uses original 25-step horizon. Suppression uses declared 30-step window, NOT original 100 steps; not directly paired against v3 seed4936/15 steps.",
+    "Original validator unchanged, including containment burned-tree>0 condition. Record observed ignition then fire_active=false separately as post-hoc descriptive diagnostic, not relabeled task success.",
+    "No fixed fire denominator. Preserve goal fraction/AUC as null for suppression.",
+    "Keep every failure, timeout and unknown outcome; no adaptive prompt, capacity planner, guards or manual workflow.",
+    "No pooling different source versions, task families or time windows as evidence of universal superiority.",
+    "All raw logs, action-boundary snapshots, recipient delivery feedback, PNGs and returned usage retained; automatic evidence timelines and resource/communication reports added."
+  ]
+}

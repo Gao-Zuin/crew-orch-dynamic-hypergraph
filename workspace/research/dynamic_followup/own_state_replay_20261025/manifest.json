@@ -1,0 +1,11 @@
+{
+  "source_run": "/data1/gzy/crew_dynamic_followup_20261025_cycle003/runs/second_fire_seed137",
+  "agent": "5",
+  "step": 2,
+  "snapshot_event": 173,
+  "previous_action_event": 138,
+  "recorded_response": "<justification>I am at the water source (26,10) with no water. AGENT_6 and AGENT_8 are also filling here. I should refill my tank to 5 before advancing toward [41,59] to support suppression. Refilling now ensures I'm ready to move with the group.</justification>\n\n<action>Refill water at (26, 10)</action>",
+  "baseline_prompt_sha256": "e553a49c23b2fe478970ed56d453de8ad4b7d53d2e80dcde633f7edc97294882",
+  "only_difference": "append existing own-state and previous-action evidence; no instruction, veto or teammate private state",
+  "qualification": "control-only action choice replay; no translation or Unity execution"
+}

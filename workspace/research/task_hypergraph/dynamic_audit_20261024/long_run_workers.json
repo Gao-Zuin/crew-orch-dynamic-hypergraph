@@ -1,0 +1,268 @@
+[
+  {
+    "agent": "1",
+    "post_split_action_counts": {
+      "0": 50,
+      "4": 12,
+      "3": 9
+    },
+    "closest_second_fire": {
+      "step": 88,
+      "event_id": 8141,
+      "agent": "1",
+      "position": [
+        17.0,
+        40.0
+      ],
+      "water": 1,
+      "rewards": [
+        1331,
+        778,
+        0,
+        18,
+        0,
+        0,
+        0,
+        0,
+        2,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    "closest_distance": 60.90155991434045
+  },
+  {
+    "agent": "2",
+    "post_split_action_counts": {
+      "4": 27,
+      "0": 44
+    },
+    "closest_second_fire": {
+      "step": 74,
+      "event_id": 7022,
+      "agent": "2",
+      "position": [
+        18.0,
+        41.0
+      ],
+      "water": 1,
+      "rewards": [
+        1331,
+        630,
+        0,
+        18,
+        0,
+        0,
+        0,
+        0,
+        2,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    "closest_distance": 59.53990258641679
+  },
+  {
+    "agent": "3",
+    "post_split_action_counts": {
+      "4": 13,
+      "0": 45,
+      "3": 13
+    },
+    "closest_second_fire": {
+      "step": 35,
+      "event_id": 3840,
+      "agent": "3",
+      "position": [
+        22.0,
+        40.0
+      ],
+      "water": 2,
+      "rewards": [
+        873,
+        140,
+        0,
+        5,
+        0,
+        0,
+        0,
+        0,
+        2,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    "closest_distance": 56.60388679233962
+  },
+  {
+    "agent": "4",
+    "post_split_action_counts": {
+      "3": 8,
+      "0": 44,
+      "4": 19
+    },
+    "closest_second_fire": {
+      "step": 42,
+      "event_id": 4406,
+      "agent": "4",
+      "position": [
+        21.0,
+        37.0
+      ],
+      "water": 1,
+      "rewards": [
+        916,
+        225,
+        0,
+        13,
+        0,
+        0,
+        0,
+        0,
+        2,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    "closest_distance": 59.07622195096772
+  },
+  {
+    "agent": "5",
+    "post_split_action_counts": {
+      "4": 35,
+      "0": 36
+    },
+    "closest_second_fire": {
+      "step": 43,
+      "event_id": 4484,
+      "agent": "5",
+      "position": [
+        26.0,
+        32.0
+      ],
+      "water": 1,
+      "rewards": [
+        966,
+        225,
+        0,
+        13,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    "closest_distance": 58.137767414994535
+  },
+  {
+    "agent": "6",
+    "post_split_action_counts": {
+      "4": 42,
+      "0": 29
+    },
+    "closest_second_fire": {
+      "step": 38,
+      "event_id": 4080,
+      "agent": "6",
+      "position": [
+        20.0,
+        26.0
+      ],
+      "water": 2,
+      "rewards": [
+        877,
+        180,
+        0,
+        13,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    "closest_distance": 66.60330322138685
+  },
+  {
+    "agent": "7",
+    "post_split_action_counts": {
+      "0": 71
+    },
+    "closest_second_fire": {
+      "step": 60,
+      "event_id": 5880,
+      "agent": "7",
+      "position": [
+        45.0,
+        49.0
+      ],
+      "water": 4,
+      "rewards": [
+        1326,
+        460,
+        0,
+        18,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    "closest_distance": 32.64965543462902
+  },
+  {
+    "agent": "8",
+    "post_split_action_counts": {
+      "4": 31,
+      "0": 40
+    },
+    "closest_second_fire": {
+      "step": 44,
+      "event_id": 4565,
+      "agent": "8",
+      "position": [
+        27.0,
+        33.0
+      ],
+      "water": 1,
+      "rewards": [
+        1025,
+        225,
+        0,
+        13,
+        0,
+        0,
+        0,
+        0,
+        2,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    "closest_distance": 56.72741841473134
+  }
+]

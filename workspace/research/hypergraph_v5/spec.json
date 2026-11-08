@@ -1,0 +1,31 @@
+{
+  "version": 5,
+  "suite": "compact_coordination_large_teams_20step_windows",
+  "model": "deepseek-chat",
+  "url": "https://api.deepseek.com",
+  "timeout_seconds": 6000,
+  "arms": [
+    {"id": "P", "arm": "P", "intervention": "none"},
+    {"id": "HA", "arm": "HA", "intervention": "none"},
+    {"id": "HR", "arm": "HR", "intervention": "none"},
+    {"id": "HR_projector_off", "arm": "HR", "intervention": "projector_off"}
+  ],
+  "task_seed_pairs": [
+    {"level": "Cut_Trees_Sparse_large", "seed": 212, "max_steps": 20, "agent_count": 10, "target_reward_index": 4, "target_units": 75},
+    {"level": "Transport_Firefighters_large", "seed": 741, "max_steps": 20, "agent_count": 14, "target_reward_index": 6, "target_units": 12},
+    {"level": "Full_Game", "seed": 6434, "max_steps": 20, "agent_count": 15, "target_reward_index": null, "target_units": null}
+  ],
+  "freeze_rules": [
+    "Three predeclared task-seed pairs, four settings each, sequential single Unity environment.",
+    "All use fixed 20-step windows: preset horizons are 50,35,120 respectively. Report partial progress and window success, not full-horizon failure.",
+    "New compact context source, no peer map-cache duplication or empty stage fields. HA has state only, no leader instruction. HR lists allowed recipients and aggregates feedback.",
+    "Ordinary local-no-delta remains logged but does not trigger leader messages. No new capacity planner, semantic guard or workflow.",
+    "P baseline prompt/delivery unchanged. HG experimental library retained but excluded from this batch.",
+    "Original validators unchanged. Full_Game game_type5 validator is fire-based, not a conjunction of every narrative objective; report fire/civilian/transport/damage counters separately.",
+    "No fixed fire denominator, goal fraction/AUC null for Full_Game. Tree score reports initial value and delta.",
+    "Gate uses separate 2-step runs with actual 10/14/15 counts; excluded from task comparisons.",
+    "Include all failures/timeouts and unknown outcomes. No outcome-driven retries or behavior changes within batch.",
+    "Compare settings within each task-seed. This is not a controlled scaling curve, since task/map/workload also differ. No old-vs-compact efficacy claim without matched old-source trials.",
+    "Raw prompts/chats, observations, action results, recipient delivery/suppression, PNGs and returned usage retained."
+  ]
+}

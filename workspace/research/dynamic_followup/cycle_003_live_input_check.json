@@ -1,0 +1,39 @@
+{
+  "checked": "2026-10-25T10:37:36.973979+08:00",
+  "pid": 4027781,
+  "live": true,
+  "case": "second_fire_seed137",
+  "organizer_request_event": 21,
+  "reward_schema_count": 13,
+  "corrected_worker_prompts": [
+    "Agent_1",
+    "Agent_2",
+    "Agent_3",
+    "Agent_4",
+    "Agent_5",
+    "Agent_6",
+    "Agent_7",
+    "Agent_8"
+  ],
+  "result_path": "/data1/gzy/crew_dynamic_followup_20261025_cycle003/workspace/ORCH/crew-algorithms/crew_algorithms/wildfire_alg/results/logs/Embodied/deepseek-chat/Suppress_Fire_Extinguish_Second_Fire/137/2026-10-25-10-34-58",
+  "latest_snapshot": {
+    "step": 2,
+    "phase": "before_action",
+    "rewards": [
+      374,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "qualification": "in-progress interface verification; no task-effect inference"
+}

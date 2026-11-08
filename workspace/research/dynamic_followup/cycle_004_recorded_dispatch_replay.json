@@ -1,0 +1,52 @@
+{
+  "source_events": "/data1/gzy/crew_dynamic_followup_20261025_cycle003/runs/second_fire_seed137/run/events.jsonl",
+  "source_message_event": 44,
+  "qualification": "offline dispatch replay only; source message and original events unchanged; not a physical trajectory or task-effect claim",
+  "expected_policy": "valid local GLOBAL reaches 6/7/8; invalid numeric EDGE IDs remain suppressed",
+  "patched_deliveries": [
+    {
+      "sender": "5",
+      "recipient": "6",
+      "source": "suppression",
+      "target": "suppression",
+      "content": "Suppression group: I'm leading. AGENT_6 scouts fire perimeter with me toward [41,59]; AGENT_7 and AGENT_8 secure water at [8,24]. All others: report your position and any fire/water sightings. Maintain safe standoff from fire.",
+      "graph_version": 1
+    },
+    {
+      "sender": "5",
+      "recipient": "7",
+      "source": "suppression",
+      "target": "suppression",
+      "content": "Suppression group: I'm leading. AGENT_6 scouts fire perimeter with me toward [41,59]; AGENT_7 and AGENT_8 secure water at [8,24]. All others: report your position and any fire/water sightings. Maintain safe standoff from fire.",
+      "graph_version": 1
+    },
+    {
+      "sender": "5",
+      "recipient": "8",
+      "source": "suppression",
+      "target": "suppression",
+      "content": "Suppression group: I'm leading. AGENT_6 scouts fire perimeter with me toward [41,59]; AGENT_7 and AGENT_8 secure water at [8,24]. All others: report your position and any fire/water sightings. Maintain safe standoff from fire.",
+      "graph_version": 1
+    }
+  ],
+  "patched_suppressed": [
+    {
+      "source": "5",
+      "target": "6",
+      "recipient": "6",
+      "reason": "outside stated groups"
+    },
+    {
+      "source": "5",
+      "target": "7",
+      "recipient": "7",
+      "reason": "outside stated groups"
+    },
+    {
+      "source": "5",
+      "target": "8",
+      "recipient": "8",
+      "reason": "outside stated groups"
+    }
+  ]
+}

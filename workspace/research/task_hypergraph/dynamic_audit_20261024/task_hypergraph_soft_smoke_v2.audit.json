@@ -1,0 +1,59 @@
+{
+  "passed": true,
+  "failures": [],
+  "event_counts": {
+    "RUN_STARTED": 1,
+    "TASK_HYPERGRAPH_STARTED": 1,
+    "NODE_JOINED": 3,
+    "STATE_OBSERVED": 6,
+    "TASK_WORLD_SNAPSHOT": 2,
+    "TASK_VALIDATED": 3,
+    "TASK_ORGANIZER_REQUEST": 1,
+    "TASK_ORGANIZER_RESPONSE": 1,
+    "TASK_GRAPH_COMMITTED": 1,
+    "TASK_EXECUTION_REBOUND": 3,
+    "COMMUNICATION_GENERATED": 3,
+    "TASK_MESSAGE_DELIVERED": 6,
+    "TASK_ACTION_AUTHORIZED": 3,
+    "ACTION_STARTED": 3,
+    "ACTION_COMPLETED": 3,
+    "LLM_USAGE": 1,
+    "TASK_HYPERGRAPH_FINISHED": 1,
+    "RUN_FINISHED": 1
+  },
+  "graph_version": 1,
+  "stage_changes": [],
+  "overlap_commit_events": [],
+  "cross_edge_message_events": [],
+  "action_count": 3,
+  "retired_edges": [],
+  "last_validation": {
+    "timestep": 0,
+    "observation_phase": "episode_end",
+    "success": false,
+    "rewards": [
+      2541,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "fire_active": true,
+    "validator": "core.alg_utils.check_game_done (unchanged)",
+    "source_observation_phase": "after_action"
+  },
+  "usage": {
+    "input_tokens": 22280,
+    "output_tokens": 2400,
+    "api_calls": 13
+  },
+  "qualification": "advisory graph replay; task success uses original validator"
+}

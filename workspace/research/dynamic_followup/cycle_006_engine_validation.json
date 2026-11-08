@@ -1,0 +1,56 @@
+{
+  "checked": "2026-10-25T11:10:15.614745+08:00",
+  "official_sha256": "c27099d25f0413594792fe05f4b6c75f6464a8b78a2ca40b2b259f159ec96591",
+  "guarded_sha256": "3cfe67173b32cef32b34d400720b7751c61f8482f669e88efef2034c6ba317fa",
+  "patch_tool_sha256": "44001a35051fd050f65802ca89015f7dfd48d19a07e6c4f5ce266cf70f2d8df8",
+  "other_method_bodies_verified_unchanged": 1864,
+  "runtime_checks": {
+    "original": {
+      "completed_steps": 17,
+      "llm_calls": 0,
+      "exception_count": 1,
+      "exception_headings": [
+        "NullReferenceException: Object reference not set to an instance of an object"
+      ],
+      "last_rewards": [
+        1559,
+        33,
+        0,
+        4,
+        0,
+        0,
+        0,
+        0,
+        5,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    "guarded": {
+      "completed_steps": 17,
+      "llm_calls": 0,
+      "exception_count": 0,
+      "exception_headings": [],
+      "last_rewards": [
+        1559,
+        33,
+        0,
+        4,
+        0,
+        0,
+        0,
+        0,
+        5,
+        1,
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  "different_sampled_steps": [],
+  "guarded_build": "/data1/gzy/crew_engine_visual_guard_20261025/runtime_check/guarded_build",
+  "qualification": "17-step fresh-seed command replay; no LLM and no policy-efficacy evidence; original 1 exception versus guarded 0; not yet used in active full batch"
+}

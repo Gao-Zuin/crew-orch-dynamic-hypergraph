@@ -1,0 +1,33 @@
+{
+  "version": 3,
+  "suite": "expanded_exploratory_new_seeds_mixed_horizons",
+  "model": "deepseek-chat",
+  "url": "https://api.deepseek.com",
+  "timeout_seconds": 2400,
+  "arms": [
+    {"id": "P", "arm": "P", "intervention": "none"},
+    {"id": "HA", "arm": "HA", "intervention": "none"},
+    {"id": "HR", "arm": "HR", "intervention": "none"},
+    {"id": "HR_projector_off", "arm": "HR", "intervention": "projector_off"}
+  ],
+  "task_seed_pairs": [
+    {"level": "Scout_Fire_small", "seed": 7593, "max_steps": 30, "target_reward_index": 8, "target_units": 2},
+    {"level": "Cut_Trees_Lines_small", "seed": 4881, "max_steps": 30, "target_reward_index": 4, "target_units": 30},
+    {"level": "Transport_Firefighters_small", "seed": 2478, "max_steps": 15, "target_reward_index": 6, "target_units": 6},
+    {"level": "Suppress_Fire_Extinguish", "seed": 4936, "max_steps": 15, "target_reward_index": null, "target_units": null},
+    {"level": "Scout_Fire_small", "seed": 1012, "max_steps": 30, "target_reward_index": 8, "target_units": 2},
+    {"level": "Transport_Firefighters_small", "seed": 7622, "max_steps": 15, "target_reward_index": 6, "target_units": 6}
+  ],
+  "order": "Rotate arms left by task-seed pair index modulo 4; run sequentially in one Unity slot.",
+  "freeze_rules": [
+    "All seeds predeclared from checked-in experiment_presets_backup.json; no outcome-based replacement or retuning.",
+    "Current provenance-aware source only; v2 old-source results remain separate.",
+    "Tree/scout/transport use preset horizons. Suppression is explicitly a 15-step window, NOT the preset 100-step full task.",
+    "Suppression progress fraction/AUC unsupported: dynamic fire population has no trustworthy fixed denominator. Report original validator, fire_active, extinguished/burned counts and water changes separately.",
+    "Tree progress includes initial clear cells: report initial reward and delta, not only final fraction.",
+    "Include task failures, timeouts, infrastructure failures and unknown outcomes; no selective retry.",
+    "Gate excluded. No manual stage contracts, capacity planner or semantic action guards in any arm.",
+    "Projector-off retains topology policy, not necessarily realized closed-loop trajectories. No causal usefulness or significance claims.",
+    "Record raw chats, generated communication, sent/delivered/suppressed feedback, action-boundary snapshots, original validator, complete returned usage and PNGs. Derived reports do not alter raw data."
+  ]
+}

@@ -1,0 +1,308 @@
+[
+  {
+    "repeat": 0,
+    "variant": "baseline",
+    "accepted": true,
+    "error": null,
+    "usage": {
+      "api_calls": 1,
+      "input_tokens": 992,
+      "output_tokens": 445
+    },
+    "edges": [
+      {
+        "id": "water-logistics",
+        "goal": "Fill water supplies from the source at [8,24] and stage full-water agents for containment",
+        "members": [
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "leader": "1",
+        "tasks": {
+          "1": "Navigate toward water source [8,24] and refill",
+          "2": "Navigate toward water source [8,24] and refill",
+          "3": "Refill at [8,24] then hold ready near staging",
+          "4": "Refill at [8,24] then hold ready near staging"
+        },
+        "advice": "Keep water carriers grouped; report refill completion before moving toward the fire area.",
+        "revision": 1
+      },
+      {
+        "id": "containment-prep",
+        "goal": "Approach the [41,59] area cautiously, scout fire state, and prepare containment without touching the fire",
+        "members": [
+          "5",
+          "6",
+          "7",
+          "8"
+        ],
+        "leader": "5",
+        "tasks": {
+          "5": "Move cautiously toward [41,59] and observe fire state",
+          "6": "Scout approach routes and report obstacles",
+          "7": "Stage cutting/spray readiness at safe distance",
+          "8": "Maintain safe spacing and report any civilians or hazards"
+        },
+        "advice": "Do not engage the fire until water is available; keep observation-only until refill group arrives.",
+        "revision": 1
+      }
+    ]
+  },
+  {
+    "repeat": 0,
+    "variant": "with_worker_abilities",
+    "accepted": true,
+    "error": null,
+    "usage": {
+      "api_calls": 1,
+      "input_tokens": 1317,
+      "output_tokens": 505
+    },
+    "edges": [
+      {
+        "id": "g-refill-logistics",
+        "goal": "Establish water supply from source [8,24] and stage full tanks for forward crews",
+        "members": [
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "leader": "1",
+        "tasks": {
+          "1": "Navigate toward water source [8,24] and refill tank to 5",
+          "2": "Navigate toward water source [8,24] and refill tank to 5",
+          "3": "Move with group toward [8,24], refill, then hold ready to relay water forward",
+          "4": "Move with group toward [8,24], refill, then hold ready to relay water forward"
+        },
+        "advice": "Keep tanks full; do not spray until fire is observed. Report refill completion so forward crew knows supply is staged.",
+        "revision": 1
+      },
+      {
+        "id": "g-forward-containment",
+        "goal": "Position near [41,59] to suppress fire if it becomes active, without touching it prematurely",
+        "members": [
+          "5",
+          "6",
+          "7",
+          "8"
+        ],
+        "leader": "5",
+        "tasks": {
+          "5": "Navigate toward [41,59] staging distance and observe for fire activity",
+          "6": "Navigate with leader toward [41,59], maintain spacing, observe for fire",
+          "7": "Navigate with group toward [41,59], scout for civilians and fire edge",
+          "8": "Navigate with group toward [41,59], scout for civilians and fire edge"
+        },
+        "advice": "Hold at a cautious standoff distance; only spray once fire is confirmed active. Coordinate with refill group before committing water.",
+        "revision": 1
+      }
+    ]
+  },
+  {
+    "repeat": 1,
+    "variant": "baseline",
+    "accepted": true,
+    "error": null,
+    "usage": {
+      "api_calls": 1,
+      "input_tokens": 992,
+      "output_tokens": 445
+    },
+    "edges": [
+      {
+        "id": "water-logistics",
+        "goal": "Fill water supplies from the source at [8,24] and stage full-water agents for containment",
+        "members": [
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "leader": "1",
+        "tasks": {
+          "1": "Navigate toward water source [8,24] and refill",
+          "2": "Navigate toward water source [8,24] and refill",
+          "3": "Refill at [8,24] then hold ready near staging",
+          "4": "Refill at [8,24] then hold ready near staging"
+        },
+        "advice": "Keep water levels visible; report refill completion before moving toward the fire area.",
+        "revision": 1
+      },
+      {
+        "id": "containment-prep",
+        "goal": "Approach the [41,59] area cautiously, scout fire state, and prepare containment without touching the fire",
+        "members": [
+          "5",
+          "6",
+          "7",
+          "8"
+        ],
+        "leader": "5",
+        "tasks": {
+          "5": "Move cautiously toward [41,59] and observe fire state",
+          "6": "Scout approach routes and report obstacles",
+          "7": "Stage cutting/spray readiness short of the fire perimeter",
+          "8": "Maintain overwatch and report any fire spread"
+        },
+        "advice": "Do not contact the fire until water is available; report observed conditions rather than assumed actions.",
+        "revision": 1
+      }
+    ]
+  },
+  {
+    "repeat": 1,
+    "variant": "with_worker_abilities",
+    "accepted": true,
+    "error": null,
+    "usage": {
+      "api_calls": 1,
+      "input_tokens": 1317,
+      "output_tokens": 465
+    },
+    "edges": [
+      {
+        "id": "g-refill-logistics",
+        "goal": "Establish water supply from source [8,24] and stage full tanks for forward crews",
+        "members": [
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "leader": "1",
+        "tasks": {
+          "1": "Navigate toward water source [8,24] and refill tank to 5",
+          "2": "Navigate toward water source [8,24] and refill tank to 5",
+          "3": "Move with group toward [8,24], refill on arrival",
+          "4": "Move with group toward [8,24], refill on arrival"
+        },
+        "advice": "Keep tanks full; do not spray until forward group signals need or fire is observed.",
+        "revision": 1
+      },
+      {
+        "id": "g-forward-containment",
+        "goal": "Approach containment area near [41,59] and prepare to suppress fire without touching it",
+        "members": [
+          "5",
+          "6",
+          "7",
+          "8"
+        ],
+        "leader": "5",
+        "tasks": {
+          "5": "Navigate toward [41,59] staging distance, scout for fire presence",
+          "6": "Move with group toward [41,59], maintain spacing",
+          "7": "Move with group toward [41,59], maintain spacing",
+          "8": "Move with group toward [41,59], maintain spacing"
+        },
+        "advice": "Hold at safe distance until fire is observed; coordinate with refill group before spraying.",
+        "revision": 1
+      }
+    ]
+  },
+  {
+    "repeat": 2,
+    "variant": "baseline",
+    "accepted": true,
+    "error": null,
+    "usage": {
+      "api_calls": 1,
+      "input_tokens": 992,
+      "output_tokens": 455
+    },
+    "edges": [
+      {
+        "id": "water-logistics",
+        "goal": "Fill water supplies from source at [8,24] and stage water for suppression crews",
+        "members": [
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "leader": "1",
+        "tasks": {
+          "1": "Navigate to water source [8,24] and refill",
+          "2": "Navigate to water source [8,24] and refill",
+          "3": "Refill then return toward staging near [41,59] with water",
+          "4": "Refill then return toward staging near [41,59] with water"
+        },
+        "advice": "Keep water carriers cycling between [8,24] and the suppression staging area; report refill status when tanks are full.",
+        "revision": 1
+      },
+      {
+        "id": "suppression-line",
+        "goal": "Contain fire spread near [41,59] without touching active fire until water is available",
+        "members": [
+          "5",
+          "6",
+          "7",
+          "8"
+        ],
+        "leader": "5",
+        "tasks": {
+          "5": "Scout approach to [41,59] and identify containment line",
+          "6": "Prepare cut line on safe side of fire perimeter",
+          "7": "Hold position with spray readiness pending water delivery",
+          "8": "Scout for civilians or fire spread near [41,59]"
+        },
+        "advice": "Do not engage fire without water; coordinate with water-logistics group for refill handoffs.",
+        "revision": 1
+      }
+    ]
+  },
+  {
+    "repeat": 2,
+    "variant": "with_worker_abilities",
+    "accepted": true,
+    "error": null,
+    "usage": {
+      "api_calls": 1,
+      "input_tokens": 1317,
+      "output_tokens": 474
+    },
+    "edges": [
+      {
+        "id": "water-logistics",
+        "goal": "Establish water supply from [8,24] and stage full tanks toward the fire zone",
+        "members": [
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "leader": "1",
+        "tasks": {
+          "1": "Navigate toward water source [8,24] and refill to 5",
+          "2": "Navigate toward water source [8,24] and refill to 5",
+          "3": "Move with group toward [8,24], refill, then stage toward [41,59]",
+          "4": "Move with group toward [8,24], refill, then stage toward [41,59]"
+        },
+        "advice": "Keep tanks full; do not spray until fire is observed active.",
+        "revision": 1
+      },
+      {
+        "id": "suppression-scout",
+        "goal": "Approach fire zone [41,59] cautiously, scout conditions, and prepare suppression line",
+        "members": [
+          "5",
+          "6",
+          "7",
+          "8"
+        ],
+        "leader": "5",
+        "tasks": {
+          "5": "Navigate cautiously toward [41,59] and observe fire state",
+          "6": "Move with group toward [41,59], hold at safe distance",
+          "7": "Move with group toward [41,59], identify cut lines if needed",
+          "8": "Move with group toward [41,59], stay ready to spray once water arrives"
+        },
+        "advice": "Do not touch the fire until water is available; report observed fire state.",
+        "revision": 1
+      }
+    ]
+  }
+]

@@ -1,0 +1,20 @@
+diff --git a/crew-dojo/Unity/Assets/Examples/Wildfire/Scripts/MapManager.cs b/crew-dojo/Unity/Assets/Examples/Wildfire/Scripts/MapManager.cs
+index 401174b..145b402 100644
+--- a/crew-dojo/Unity/Assets/Examples/Wildfire/Scripts/MapManager.cs
++++ b/crew-dojo/Unity/Assets/Examples/Wildfire/Scripts/MapManager.cs
+@@ -1330,8 +1330,13 @@ namespace Examples.Wildfire
+ 						currCell.SetState(CellState.fully_extenguished);
+ 						MapManager.fire_extinguished += 1;
+ 						//GameObject.Destroy(currCell.fire);
+-						ParticleSystem fire = currCell.fire.GetComponent<ParticleSystem>();
+-						fire.Stop();
++						// A valid burning cell may not have a live visual object.
++						if (currCell.fire != null)
++						{
++							ParticleSystem fire = currCell.fire.GetComponent<ParticleSystem>();
++							if (fire != null)
++								fire.Stop();
++						}
+ 						
+ 
+ 						mapData.colourMap[texture_coordinate] = new Color(22f / 255, 26f / 255, 29f / 255);

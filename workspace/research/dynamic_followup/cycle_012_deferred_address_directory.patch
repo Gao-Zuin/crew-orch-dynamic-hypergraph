@@ -1,0 +1,51 @@
+--- a/CREW/ORCH/crew-algorithms/crew_algorithms/wildfire_alg/coordination/soft_task_graph.py
++++ b/CREW/ORCH/crew-algorithms/crew_algorithms/wildfire_alg/coordination/soft_task_graph.py
+@@ -223,4 +223,6 @@
+                 "group": edge_id, "goal": edge["goal"], "leader": edge["leader"],
+                 "members": edge["members"], "suggestion": edge["tasks"].get(agent, ""),
+                 "advice": edge["advice"],
++                "group_directory": [{"id": e["id"], "members": list(e["members"]),
++                                     "leader": e["leader"]} for e in self.edges.values()],
+                 "message_history": [m for m in self.messages[-20:] if m["recipient"] == agent][-5:]}
+--- a/CREW/ORCH/crew-algorithms/crew_algorithms/wildfire_alg/coordination/task_runtime.py
++++ b/CREW/ORCH/crew-algorithms/crew_algorithms/wildfire_alg/coordination/task_runtime.py
+@@ -171,6 +171,7 @@
+ changes, act on current observations and report the discrepancy. A sent report
+ is not a completed world action. Group messages may use:
+ <EDGE id="source-edge" target="target-edge"><AGENT_2>message</AGENT_2></EDGE>
++Use the exact group IDs and coordinator IDs in group_directory for addressing.
+ Omit target for within-group messages. Bare legacy AGENT/GLOBAL tags reach
+ members of your active group. Contact another group through a shared member or
+ the two group coordinators.
+--- a/CREW/tests/test_task_runtime.py
++++ b/CREW/tests/test_task_runtime.py
+@@ -90,6 +90,29 @@
+         self.assertIn("scan north", prompt)
+         self.assertNotIn("authorized_routes", prompt)
+ 
++    def test_prompt_supplies_current_addresses_for_cross_group_dispatch(self):
++        # Discover a destination from the real worker prompt, not test-only IDs.
++        prompt = self.bridge.prompt("1", "original")
++        context, _ = json.JSONDecoder().raw_decode(
++            prompt.split("[TASK GROUP — ADVISORY]\n", 1)[1])
++        directory = context["group_directory"]
++        target = next(group for group in directory if group["id"] != context["group"])
++        self.assertEqual(set(target), {"id", "members", "leader"})
++        self.bridge.dispatch(self.agents["1"],
++            f'<EDGE id="{context["group"]}" target="{target["id"]}">'
++            f'<AGENT_{target["leader"]}>Need support</AGENT_{target["leader"]}></EDGE>', {})
++        self.assertIn("Need support", self.agents[target["leader"]].chat_history["GLOBAL"][-1][1])
++        # The directory follows retirement/reassignment instead of retaining old IDs.
++        revised = {"based_on_version": 1, "evidence_id": 1,
++                   "edges": [{"id": "merged", "goal": "Search together",
++                              "members": ["1", "2", "3"], "leader": "2"}],
++                   "active": {aid: "merged" for aid in self.agents}}
++        self.bridge.graph.apply(revised)
++        updated, _ = json.JSONDecoder().raw_decode(
++            self.bridge.prompt("1", "original").split("[TASK GROUP — ADVISORY]\n", 1)[1])
++        self.assertEqual(updated["group_directory"], [
++            {"id": "merged", "members": ["1", "2", "3"], "leader": "2"}])
++
+     def test_prompt_distinguishes_historical_message_time_from_current_step(self):
+         self.bridge.dispatch(self.agents["1"], "<GLOBAL>status at the old stage</GLOBAL>", {})
+         self.world["step"] = 99

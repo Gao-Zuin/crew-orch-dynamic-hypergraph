@@ -1,0 +1,71 @@
+{
+  "passed": true,
+  "failures": [],
+  "event_counts": {
+    "RUN_STARTED": 1,
+    "TASK_HYPERGRAPH_STARTED": 1,
+    "NODE_JOINED": 7,
+    "STATE_OBSERVED": 168,
+    "TASK_WORLD_SNAPSHOT": 24,
+    "TASK_VALIDATED": 25,
+    "TASK_ORGANIZER_REQUEST": 35,
+    "TASK_ORGANIZER_RESPONSE": 35,
+    "TASK_VERIFIER_REQUEST": 4,
+    "TASK_VERIFIER_RESPONSE": 4,
+    "TASK_GRAPH_COMMITTED": 4,
+    "TASK_EXECUTION_REBOUND": 20,
+    "COMMUNICATION_GENERATED": 24,
+    "TASK_MESSAGE_DELIVERED": 35,
+    "TASK_ACTION_AUTHORIZED": 9,
+    "ACTION_STARTED": 84,
+    "TASK_ACTION_HELD": 75,
+    "ACTION_COMPLETED": 84,
+    "ACTION_NO_EFFECT": 60,
+    "LLM_USAGE": 13,
+    "TASK_PROPOSAL_REJECTED": 31,
+    "TASK_ORGANIZATION_HOLD": 9,
+    "TASK_HYPERGRAPH_FINISHED": 1,
+    "RUN_FINISHED": 1
+  },
+  "graph_version": 4,
+  "stage_changes": [],
+  "overlap_commit_events": [
+    23,
+    548,
+    623,
+    688
+  ],
+  "cross_edge_message_events": [],
+  "action_count": 84,
+  "retired_edges": [],
+  "LLM_semantic_completion_checks": [],
+  "last_validation": {
+    "timestep": 11,
+    "observation_phase": "episode_end",
+    "success": false,
+    "rewards": [
+      5342,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "fire_active": false,
+    "validator": "core.alg_utils.check_game_done (unchanged)",
+    "source_observation_phase": "after_action"
+  },
+  "usage": {
+    "input_tokens": 492020,
+    "output_tokens": 75021,
+    "api_calls": 105
+  },
+  "qualification": "mechanism replay, not independent proof of semantic LLM verdicts"
+}

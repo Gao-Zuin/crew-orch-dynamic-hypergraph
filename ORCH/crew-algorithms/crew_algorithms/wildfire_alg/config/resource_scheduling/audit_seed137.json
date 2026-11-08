@@ -1,0 +1,339 @@
+{
+  "presets": [
+    {
+      "id": "Early_drone_Sufficient",
+      "resource": "drone",
+      "capacity": 2,
+      "nominal_full_map_travel_steps": 8,
+      "urgent_budget": 16,
+      "errors": [],
+      "confounds": [
+        "fire and five civilians added together",
+        "source scenario has no fixed initial goal location"
+      ],
+      "completion_observability": "insufficient_from_existing_global_rewards",
+      "feasibility": "unverified_requires_release_state_and_scripted_schedule"
+    },
+    {
+      "id": "Early_drone_Contended",
+      "resource": "drone",
+      "capacity": 1,
+      "nominal_full_map_travel_steps": 8,
+      "urgent_budget": 16,
+      "errors": [],
+      "confounds": [
+        "fire and five civilians added together",
+        "source scenario has no fixed initial goal location"
+      ],
+      "completion_observability": "insufficient_from_existing_global_rewards",
+      "feasibility": "unverified_requires_release_state_and_scripted_schedule"
+    },
+    {
+      "id": "Early_helicopter_Sufficient",
+      "resource": "helicopter",
+      "capacity": 2,
+      "nominal_full_map_travel_steps": 5,
+      "urgent_budget": 20,
+      "errors": [],
+      "confounds": [
+        "fire and five civilians added together",
+        "source scenario has no fixed initial goal location"
+      ],
+      "completion_observability": "insufficient_from_existing_global_rewards",
+      "feasibility": "unverified_requires_release_state_and_scripted_schedule"
+    },
+    {
+      "id": "Early_helicopter_Contended",
+      "resource": "helicopter",
+      "capacity": 1,
+      "nominal_full_map_travel_steps": 5,
+      "urgent_budget": 20,
+      "errors": [],
+      "confounds": [
+        "fire and five civilians added together",
+        "source scenario has no fixed initial goal location"
+      ],
+      "completion_observability": "insufficient_from_existing_global_rewards",
+      "feasibility": "unverified_requires_release_state_and_scripted_schedule"
+    },
+    {
+      "id": "Early_bulldozer_Sufficient",
+      "resource": "bulldozer",
+      "capacity": 2,
+      "nominal_full_map_travel_steps": 18,
+      "urgent_budget": 32,
+      "errors": [],
+      "confounds": [
+        "fire and five civilians added together",
+        "source scenario has no fixed initial goal location"
+      ],
+      "completion_observability": "insufficient_from_existing_global_rewards",
+      "feasibility": "unverified_requires_release_state_and_scripted_schedule"
+    },
+    {
+      "id": "Early_bulldozer_Contended",
+      "resource": "bulldozer",
+      "capacity": 1,
+      "nominal_full_map_travel_steps": 18,
+      "urgent_budget": 32,
+      "errors": [],
+      "confounds": [
+        "fire and five civilians added together",
+        "source scenario has no fixed initial goal location"
+      ],
+      "completion_observability": "insufficient_from_existing_global_rewards",
+      "feasibility": "unverified_requires_release_state_and_scripted_schedule"
+    },
+    {
+      "id": "Late_drone_Sufficient",
+      "resource": "drone",
+      "capacity": 2,
+      "nominal_full_map_travel_steps": 8,
+      "urgent_budget": 16,
+      "errors": [],
+      "confounds": [
+        "fire and five civilians added together",
+        "source scenario has no fixed initial goal location"
+      ],
+      "completion_observability": "insufficient_from_existing_global_rewards",
+      "feasibility": "unverified_requires_release_state_and_scripted_schedule"
+    },
+    {
+      "id": "Late_drone_Contended",
+      "resource": "drone",
+      "capacity": 1,
+      "nominal_full_map_travel_steps": 8,
+      "urgent_budget": 16,
+      "errors": [],
+      "confounds": [
+        "fire and five civilians added together",
+        "source scenario has no fixed initial goal location"
+      ],
+      "completion_observability": "insufficient_from_existing_global_rewards",
+      "feasibility": "unverified_requires_release_state_and_scripted_schedule"
+    },
+    {
+      "id": "Late_helicopter_Sufficient",
+      "resource": "helicopter",
+      "capacity": 2,
+      "nominal_full_map_travel_steps": 5,
+      "urgent_budget": 20,
+      "errors": [],
+      "confounds": [
+        "fire and five civilians added together",
+        "source scenario has no fixed initial goal location"
+      ],
+      "completion_observability": "insufficient_from_existing_global_rewards",
+      "feasibility": "unverified_requires_release_state_and_scripted_schedule"
+    },
+    {
+      "id": "Late_helicopter_Contended",
+      "resource": "helicopter",
+      "capacity": 1,
+      "nominal_full_map_travel_steps": 5,
+      "urgent_budget": 20,
+      "errors": [],
+      "confounds": [
+        "fire and five civilians added together",
+        "source scenario has no fixed initial goal location"
+      ],
+      "completion_observability": "insufficient_from_existing_global_rewards",
+      "feasibility": "unverified_requires_release_state_and_scripted_schedule"
+    },
+    {
+      "id": "Late_bulldozer_Sufficient",
+      "resource": "bulldozer",
+      "capacity": 2,
+      "nominal_full_map_travel_steps": 18,
+      "urgent_budget": 32,
+      "errors": [],
+      "confounds": [
+        "fire and five civilians added together",
+        "source scenario has no fixed initial goal location"
+      ],
+      "completion_observability": "insufficient_from_existing_global_rewards",
+      "feasibility": "unverified_requires_release_state_and_scripted_schedule"
+    },
+    {
+      "id": "Late_bulldozer_Contended",
+      "resource": "bulldozer",
+      "capacity": 1,
+      "nominal_full_map_travel_steps": 18,
+      "urgent_budget": 32,
+      "errors": [],
+      "confounds": [
+        "fire and five civilians added together",
+        "source scenario has no fixed initial goal location"
+      ],
+      "completion_observability": "insufficient_from_existing_global_rewards",
+      "feasibility": "unverified_requires_release_state_and_scripted_schedule"
+    },
+    {
+      "id": "Focused_Early_drone_Sufficient",
+      "resource": "drone",
+      "capacity": 2,
+      "nominal_full_map_travel_steps": 8,
+      "urgent_budget": 16,
+      "errors": [],
+      "confounds": [
+        "source scenario has no fixed initial goal location"
+      ],
+      "completion_observability": "insufficient_from_existing_global_rewards",
+      "feasibility": "unverified_requires_release_state_and_scripted_schedule"
+    },
+    {
+      "id": "Focused_Early_drone_Contended",
+      "resource": "drone",
+      "capacity": 1,
+      "nominal_full_map_travel_steps": 8,
+      "urgent_budget": 16,
+      "errors": [],
+      "confounds": [
+        "source scenario has no fixed initial goal location"
+      ],
+      "completion_observability": "insufficient_from_existing_global_rewards",
+      "feasibility": "unverified_requires_release_state_and_scripted_schedule"
+    },
+    {
+      "id": "Focused_Early_helicopter_Sufficient",
+      "resource": "helicopter",
+      "capacity": 2,
+      "nominal_full_map_travel_steps": 5,
+      "urgent_budget": 20,
+      "errors": [],
+      "confounds": [
+        "source scenario has no fixed initial goal location"
+      ],
+      "completion_observability": "insufficient_from_existing_global_rewards",
+      "feasibility": "unverified_requires_release_state_and_scripted_schedule"
+    },
+    {
+      "id": "Focused_Early_helicopter_Contended",
+      "resource": "helicopter",
+      "capacity": 1,
+      "nominal_full_map_travel_steps": 5,
+      "urgent_budget": 20,
+      "errors": [],
+      "confounds": [
+        "source scenario has no fixed initial goal location"
+      ],
+      "completion_observability": "insufficient_from_existing_global_rewards",
+      "feasibility": "unverified_requires_release_state_and_scripted_schedule"
+    },
+    {
+      "id": "Focused_Early_bulldozer_Sufficient",
+      "resource": "bulldozer",
+      "capacity": 2,
+      "nominal_full_map_travel_steps": 18,
+      "urgent_budget": 32,
+      "errors": [],
+      "confounds": [
+        "source scenario has no fixed initial goal location"
+      ],
+      "completion_observability": "insufficient_from_existing_global_rewards",
+      "feasibility": "unverified_requires_release_state_and_scripted_schedule"
+    },
+    {
+      "id": "Focused_Early_bulldozer_Contended",
+      "resource": "bulldozer",
+      "capacity": 1,
+      "nominal_full_map_travel_steps": 18,
+      "urgent_budget": 32,
+      "errors": [],
+      "confounds": [
+        "source scenario has no fixed initial goal location"
+      ],
+      "completion_observability": "insufficient_from_existing_global_rewards",
+      "feasibility": "unverified_requires_release_state_and_scripted_schedule"
+    },
+    {
+      "id": "Focused_Late_drone_Sufficient",
+      "resource": "drone",
+      "capacity": 2,
+      "nominal_full_map_travel_steps": 8,
+      "urgent_budget": 16,
+      "errors": [],
+      "confounds": [
+        "source scenario has no fixed initial goal location"
+      ],
+      "completion_observability": "insufficient_from_existing_global_rewards",
+      "feasibility": "unverified_requires_release_state_and_scripted_schedule"
+    },
+    {
+      "id": "Focused_Late_drone_Contended",
+      "resource": "drone",
+      "capacity": 1,
+      "nominal_full_map_travel_steps": 8,
+      "urgent_budget": 16,
+      "errors": [],
+      "confounds": [
+        "source scenario has no fixed initial goal location"
+      ],
+      "completion_observability": "insufficient_from_existing_global_rewards",
+      "feasibility": "unverified_requires_release_state_and_scripted_schedule"
+    },
+    {
+      "id": "Focused_Late_helicopter_Sufficient",
+      "resource": "helicopter",
+      "capacity": 2,
+      "nominal_full_map_travel_steps": 5,
+      "urgent_budget": 20,
+      "errors": [],
+      "confounds": [
+        "source scenario has no fixed initial goal location"
+      ],
+      "completion_observability": "insufficient_from_existing_global_rewards",
+      "feasibility": "unverified_requires_release_state_and_scripted_schedule"
+    },
+    {
+      "id": "Focused_Late_helicopter_Contended",
+      "resource": "helicopter",
+      "capacity": 1,
+      "nominal_full_map_travel_steps": 5,
+      "urgent_budget": 20,
+      "errors": [],
+      "confounds": [
+        "source scenario has no fixed initial goal location"
+      ],
+      "completion_observability": "insufficient_from_existing_global_rewards",
+      "feasibility": "unverified_requires_release_state_and_scripted_schedule"
+    },
+    {
+      "id": "Focused_Late_bulldozer_Sufficient",
+      "resource": "bulldozer",
+      "capacity": 2,
+      "nominal_full_map_travel_steps": 18,
+      "urgent_budget": 32,
+      "errors": [],
+      "confounds": [
+        "source scenario has no fixed initial goal location"
+      ],
+      "completion_observability": "insufficient_from_existing_global_rewards",
+      "feasibility": "unverified_requires_release_state_and_scripted_schedule"
+    },
+    {
+      "id": "Focused_Late_bulldozer_Contended",
+      "resource": "bulldozer",
+      "capacity": 1,
+      "nominal_full_map_travel_steps": 18,
+      "urgent_budget": 32,
+      "errors": [],
+      "confounds": [
+        "source scenario has no fixed initial goal location"
+      ],
+      "completion_observability": "insufficient_from_existing_global_rewards",
+      "feasibility": "unverified_requires_release_state_and_scripted_schedule"
+    }
+  ],
+  "error_count": 0,
+  "trajectory": {
+    "snapshots": 200,
+    "completed_actions": 280,
+    "event_announced_in_snapshot": true,
+    "new_fire_physical_effect": "unknown",
+    "drone_direct_observation": "unknown",
+    "new_goal_completion": "unknown",
+    "shared_map_candidates": [],
+    "reason": "event announcement is not ignition proof; cached map has no observer or freshness"
+  }
+}

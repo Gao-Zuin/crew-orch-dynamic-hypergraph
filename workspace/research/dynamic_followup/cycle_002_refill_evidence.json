@@ -1,0 +1,2388 @@
+{
+  "source": "CREW/benchmark_runs/task_hypergraph_second_fire_soft_full_seed42_v1/run/events.jsonl",
+  "source_sha256": "bc601fdd65039f177421be269c440d59898f6de5dd6b3a0933284c26a182abdd",
+  "all_refills_at_known_source": true,
+  "counts": {
+    "empty/increased": 16,
+    "nonempty/unchanged": 200
+  },
+  "samples": [
+    {
+      "event_id": 521,
+      "step": 4,
+      "agent": "1",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 0,
+      "water_after": 5
+    },
+    {
+      "event_id": 523,
+      "step": 4,
+      "agent": "2",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 0,
+      "water_after": 5
+    },
+    {
+      "event_id": 525,
+      "step": 4,
+      "agent": "3",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 0,
+      "water_after": 5
+    },
+    {
+      "event_id": 527,
+      "step": 4,
+      "agent": "4",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 0,
+      "water_after": 5
+    },
+    {
+      "event_id": 529,
+      "step": 4,
+      "agent": "5",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 0,
+      "water_after": 5
+    },
+    {
+      "event_id": 531,
+      "step": 4,
+      "agent": "6",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 0,
+      "water_after": 5
+    },
+    {
+      "event_id": 533,
+      "step": 4,
+      "agent": "7",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 0,
+      "water_after": 5
+    },
+    {
+      "event_id": 535,
+      "step": 4,
+      "agent": "8",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 0,
+      "water_after": 5
+    },
+    {
+      "event_id": 1307,
+      "step": 11,
+      "agent": "3",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 3,
+      "water_after": 3
+    },
+    {
+      "event_id": 1864,
+      "step": 16,
+      "agent": "6",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 2,
+      "water_after": 2
+    },
+    {
+      "event_id": 1967,
+      "step": 17,
+      "agent": "1",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 2,
+      "water_after": 2
+    },
+    {
+      "event_id": 1977,
+      "step": 17,
+      "agent": "6",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 2,
+      "water_after": 2
+    },
+    {
+      "event_id": 2078,
+      "step": 18,
+      "agent": "1",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 2,
+      "water_after": 2
+    },
+    {
+      "event_id": 2199,
+      "step": 19,
+      "agent": "4",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 0,
+      "water_after": 5
+    },
+    {
+      "event_id": 2307,
+      "step": 20,
+      "agent": "2",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 1,
+      "water_after": 1
+    },
+    {
+      "event_id": 2311,
+      "step": 20,
+      "agent": "4",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 5,
+      "water_after": 5
+    },
+    {
+      "event_id": 2315,
+      "step": 20,
+      "agent": "6",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 2,
+      "water_after": 2
+    },
+    {
+      "event_id": 2419,
+      "step": 21,
+      "agent": "1",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 2,
+      "water_after": 2
+    },
+    {
+      "event_id": 2427,
+      "step": 21,
+      "agent": "5",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 1,
+      "water_after": 1
+    },
+    {
+      "event_id": 2429,
+      "step": 21,
+      "agent": "6",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 2,
+      "water_after": 2
+    },
+    {
+      "event_id": 2533,
+      "step": 22,
+      "agent": "1",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 2,
+      "water_after": 2
+    },
+    {
+      "event_id": 2541,
+      "step": 22,
+      "agent": "5",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 1,
+      "water_after": 1
+    },
+    {
+      "event_id": 2543,
+      "step": 22,
+      "agent": "6",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 2,
+      "water_after": 2
+    },
+    {
+      "event_id": 2655,
+      "step": 23,
+      "agent": "5",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 1,
+      "water_after": 1
+    },
+    {
+      "event_id": 2659,
+      "step": 23,
+      "agent": "7",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 0,
+      "water_after": 5
+    },
+    {
+      "event_id": 2661,
+      "step": 23,
+      "agent": "8",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 1,
+      "water_after": 1
+    },
+    {
+      "event_id": 2771,
+      "step": 24,
+      "agent": "5",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 1,
+      "water_after": 1
+    },
+    {
+      "event_id": 2777,
+      "step": 24,
+      "agent": "8",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 1,
+      "water_after": 1
+    },
+    {
+      "event_id": 2879,
+      "step": 25,
+      "agent": "1",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 2,
+      "water_after": 2
+    },
+    {
+      "event_id": 2881,
+      "step": 25,
+      "agent": "2",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 1,
+      "water_after": 1
+    },
+    {
+      "event_id": 2893,
+      "step": 25,
+      "agent": "8",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 1,
+      "water_after": 1
+    },
+    {
+      "event_id": 3001,
+      "step": 26,
+      "agent": "1",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 2,
+      "water_after": 2
+    },
+    {
+      "event_id": 3003,
+      "step": 26,
+      "agent": "2",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 1,
+      "water_after": 1
+    },
+    {
+      "event_id": 3118,
+      "step": 27,
+      "agent": "1",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 2,
+      "water_after": 2
+    },
+    {
+      "event_id": 3126,
+      "step": 27,
+      "agent": "5",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 1,
+      "water_after": 1
+    },
+    {
+      "event_id": 3238,
+      "step": 28,
+      "agent": "5",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 1,
+      "water_after": 1
+    },
+    {
+      "event_id": 3244,
+      "step": 28,
+      "agent": "8",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 1,
+      "water_after": 1
+    },
+    {
+      "event_id": 3326,
+      "step": 29,
+      "agent": "2",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 1,
+      "water_after": 1
+    },
+    {
+      "event_id": 3328,
+      "step": 29,
+      "agent": "3",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 2,
+      "water_after": 2
+    },
+    {
+      "event_id": 3332,
+      "step": 29,
+      "agent": "5",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 1,
+      "water_after": 1
+    },
+    {
+      "event_id": 3334,
+      "step": 29,
+      "agent": "6",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 2,
+      "water_after": 2
+    },
+    {
+      "event_id": 3338,
+      "step": 29,
+      "agent": "8",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 1,
+      "water_after": 1
+    },
+    {
+      "event_id": 3407,
+      "step": 30,
+      "agent": "1",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 2,
+      "water_after": 2
+    },
+    {
+      "event_id": 3411,
+      "step": 30,
+      "agent": "3",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 2,
+      "water_after": 2
+    },
+    {
+      "event_id": 3417,
+      "step": 30,
+      "agent": "6",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 2,
+      "water_after": 2
+    },
+    {
+      "event_id": 3487,
+      "step": 31,
+      "agent": "1",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 2,
+      "water_after": 2
+    },
+    {
+      "event_id": 3497,
+      "step": 31,
+      "agent": "6",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 2,
+      "water_after": 2
+    },
+    {
+      "event_id": 3570,
+      "step": 32,
+      "agent": "1",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 2,
+      "water_after": 2
+    },
+    {
+      "event_id": 3572,
+      "step": 32,
+      "agent": "2",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 1,
+      "water_after": 1
+    },
+    {
+      "event_id": 3580,
+      "step": 32,
+      "agent": "6",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 2,
+      "water_after": 2
+    },
+    {
+      "event_id": 3652,
+      "step": 33,
+      "agent": "1",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 2,
+      "water_after": 2
+    },
+    {
+      "event_id": 3660,
+      "step": 33,
+      "agent": "5",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 1,
+      "water_after": 1
+    },
+    {
+      "event_id": 3662,
+      "step": 33,
+      "agent": "6",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 2,
+      "water_after": 2
+    },
+    {
+      "event_id": 3748,
+      "step": 34,
+      "agent": "6",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 2,
+      "water_after": 2
+    },
+    {
+      "event_id": 3752,
+      "step": 34,
+      "agent": "8",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 1,
+      "water_after": 1
+    },
+    {
+      "event_id": 3819,
+      "step": 35,
+      "agent": "2",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 1,
+      "water_after": 1
+    },
+    {
+      "event_id": 3823,
+      "step": 35,
+      "agent": "4",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 1,
+      "water_after": 1
+    },
+    {
+      "event_id": 3831,
+      "step": 35,
+      "agent": "8",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 1,
+      "water_after": 1
+    },
+    {
+      "event_id": 3903,
+      "step": 36,
+      "agent": "4",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 1,
+      "water_after": 1
+    },
+    {
+      "event_id": 3905,
+      "step": 36,
+      "agent": "5",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 1,
+      "water_after": 1
+    },
+    {
+      "event_id": 3985,
+      "step": 37,
+      "agent": "5",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 1,
+      "water_after": 1
+    },
+    {
+      "event_id": 3987,
+      "step": 37,
+      "agent": "6",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 2,
+      "water_after": 2
+    },
+    {
+      "event_id": 3991,
+      "step": 37,
+      "agent": "8",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 1,
+      "water_after": 1
+    },
+    {
+      "event_id": 4059,
+      "step": 38,
+      "agent": "2",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 1,
+      "water_after": 1
+    },
+    {
+      "event_id": 4065,
+      "step": 38,
+      "agent": "5",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 1,
+      "water_after": 1
+    },
+    {
+      "event_id": 4145,
+      "step": 39,
+      "agent": "2",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 1,
+      "water_after": 1
+    },
+    {
+      "event_id": 4149,
+      "step": 39,
+      "agent": "4",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 1,
+      "water_after": 1
+    },
+    {
+      "event_id": 4151,
+      "step": 39,
+      "agent": "5",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 1,
+      "water_after": 1
+    },
+    {
+      "event_id": 4234,
+      "step": 40,
+      "agent": "6",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 2,
+      "water_after": 2
+    },
+    {
+      "event_id": 4238,
+      "step": 40,
+      "agent": "8",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 1,
+      "water_after": 1
+    },
+    {
+      "event_id": 4314,
+      "step": 41,
+      "agent": "6",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 2,
+      "water_after": 2
+    },
+    {
+      "event_id": 4318,
+      "step": 41,
+      "agent": "8",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 1,
+      "water_after": 1
+    },
+    {
+      "event_id": 4383,
+      "step": 42,
+      "agent": "1",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 0,
+      "water_after": 5
+    },
+    {
+      "event_id": 4387,
+      "step": 42,
+      "agent": "3",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 0,
+      "water_after": 5
+    },
+    {
+      "event_id": 4393,
+      "step": 42,
+      "agent": "6",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 2,
+      "water_after": 2
+    },
+    {
+      "event_id": 4471,
+      "step": 43,
+      "agent": "6",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 2,
+      "water_after": 2
+    },
+    {
+      "event_id": 4552,
+      "step": 44,
+      "agent": "6",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 2,
+      "water_after": 2
+    },
+    {
+      "event_id": 4630,
+      "step": 45,
+      "agent": "6",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 2,
+      "water_after": 2
+    },
+    {
+      "event_id": 4700,
+      "step": 46,
+      "agent": "2",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 1,
+      "water_after": 1
+    },
+    {
+      "event_id": 4704,
+      "step": 46,
+      "agent": "4",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 1,
+      "water_after": 1
+    },
+    {
+      "event_id": 4708,
+      "step": 46,
+      "agent": "6",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 2,
+      "water_after": 2
+    },
+    {
+      "event_id": 4780,
+      "step": 47,
+      "agent": "2",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 1,
+      "water_after": 1
+    },
+    {
+      "event_id": 4784,
+      "step": 47,
+      "agent": "4",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 1,
+      "water_after": 1
+    },
+    {
+      "event_id": 4786,
+      "step": 47,
+      "agent": "5",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 1,
+      "water_after": 1
+    },
+    {
+      "event_id": 4863,
+      "step": 48,
+      "agent": "2",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 1,
+      "water_after": 1
+    },
+    {
+      "event_id": 4869,
+      "step": 48,
+      "agent": "5",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 1,
+      "water_after": 1
+    },
+    {
+      "event_id": 4949,
+      "step": 49,
+      "agent": "2",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 1,
+      "water_after": 1
+    },
+    {
+      "event_id": 4955,
+      "step": 49,
+      "agent": "5",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 1,
+      "water_after": 1
+    },
+    {
+      "event_id": 4957,
+      "step": 49,
+      "agent": "6",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 2,
+      "water_after": 2
+    },
+    {
+      "event_id": 5030,
+      "step": 50,
+      "agent": "2",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 1,
+      "water_after": 1
+    },
+    {
+      "event_id": 5034,
+      "step": 50,
+      "agent": "4",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 1,
+      "water_after": 1
+    },
+    {
+      "event_id": 5042,
+      "step": 50,
+      "agent": "8",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 1,
+      "water_after": 1
+    },
+    {
+      "event_id": 5111,
+      "step": 51,
+      "agent": "2",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 1,
+      "water_after": 1
+    },
+    {
+      "event_id": 5115,
+      "step": 51,
+      "agent": "4",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 1,
+      "water_after": 1
+    },
+    {
+      "event_id": 5123,
+      "step": 51,
+      "agent": "8",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 1,
+      "water_after": 1
+    },
+    {
+      "event_id": 5195,
+      "step": 52,
+      "agent": "2",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 1,
+      "water_after": 1
+    },
+    {
+      "event_id": 5199,
+      "step": 52,
+      "agent": "4",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 1,
+      "water_after": 1
+    },
+    {
+      "event_id": 5273,
+      "step": 53,
+      "agent": "2",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 1,
+      "water_after": 1
+    },
+    {
+      "event_id": 5281,
+      "step": 53,
+      "agent": "6",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 2,
+      "water_after": 2
+    },
+    {
+      "event_id": 5357,
+      "step": 54,
+      "agent": "2",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 1,
+      "water_after": 1
+    },
+    {
+      "event_id": 5363,
+      "step": 54,
+      "agent": "5",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 1,
+      "water_after": 1
+    },
+    {
+      "event_id": 5365,
+      "step": 54,
+      "agent": "6",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 2,
+      "water_after": 2
+    },
+    {
+      "event_id": 5369,
+      "step": 54,
+      "agent": "8",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 1,
+      "water_after": 1
+    },
+    {
+      "event_id": 5438,
+      "step": 55,
+      "agent": "2",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 1,
+      "water_after": 1
+    },
+    {
+      "event_id": 5442,
+      "step": 55,
+      "agent": "4",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 1,
+      "water_after": 1
+    },
+    {
+      "event_id": 5444,
+      "step": 55,
+      "agent": "5",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 1,
+      "water_after": 1
+    },
+    {
+      "event_id": 5446,
+      "step": 55,
+      "agent": "6",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 2,
+      "water_after": 2
+    },
+    {
+      "event_id": 5450,
+      "step": 55,
+      "agent": "8",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 1,
+      "water_after": 1
+    },
+    {
+      "event_id": 5521,
+      "step": 56,
+      "agent": "1",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 2,
+      "water_after": 2
+    },
+    {
+      "event_id": 5523,
+      "step": 56,
+      "agent": "2",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 1,
+      "water_after": 1
+    },
+    {
+      "event_id": 5527,
+      "step": 56,
+      "agent": "4",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 1,
+      "water_after": 1
+    },
+    {
+      "event_id": 5529,
+      "step": 56,
+      "agent": "5",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 1,
+      "water_after": 1
+    },
+    {
+      "event_id": 5531,
+      "step": 56,
+      "agent": "6",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 2,
+      "water_after": 2
+    },
+    {
+      "event_id": 5535,
+      "step": 56,
+      "agent": "8",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 1,
+      "water_after": 1
+    },
+    {
+      "event_id": 5615,
+      "step": 57,
+      "agent": "6",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 2,
+      "water_after": 2
+    },
+    {
+      "event_id": 5619,
+      "step": 57,
+      "agent": "8",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 1,
+      "water_after": 1
+    },
+    {
+      "event_id": 5692,
+      "step": 58,
+      "agent": "3",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 1,
+      "water_after": 1
+    },
+    {
+      "event_id": 5698,
+      "step": 58,
+      "agent": "6",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 2,
+      "water_after": 2
+    },
+    {
+      "event_id": 5772,
+      "step": 59,
+      "agent": "1",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 2,
+      "water_after": 2
+    },
+    {
+      "event_id": 5774,
+      "step": 59,
+      "agent": "2",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 1,
+      "water_after": 1
+    },
+    {
+      "event_id": 5776,
+      "step": 59,
+      "agent": "3",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 1,
+      "water_after": 1
+    },
+    {
+      "event_id": 5778,
+      "step": 59,
+      "agent": "4",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 1,
+      "water_after": 1
+    },
+    {
+      "event_id": 5780,
+      "step": 59,
+      "agent": "5",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 1,
+      "water_after": 1
+    },
+    {
+      "event_id": 5857,
+      "step": 60,
+      "agent": "1",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 2,
+      "water_after": 2
+    },
+    {
+      "event_id": 5859,
+      "step": 60,
+      "agent": "2",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 1,
+      "water_after": 1
+    },
+    {
+      "event_id": 5861,
+      "step": 60,
+      "agent": "3",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 1,
+      "water_after": 1
+    },
+    {
+      "event_id": 5863,
+      "step": 60,
+      "agent": "4",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 1,
+      "water_after": 1
+    },
+    {
+      "event_id": 5865,
+      "step": 60,
+      "agent": "5",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 1,
+      "water_after": 1
+    },
+    {
+      "event_id": 5941,
+      "step": 61,
+      "agent": "2",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 1,
+      "water_after": 1
+    },
+    {
+      "event_id": 5943,
+      "step": 61,
+      "agent": "3",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 1,
+      "water_after": 1
+    },
+    {
+      "event_id": 5945,
+      "step": 61,
+      "agent": "4",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 1,
+      "water_after": 1
+    },
+    {
+      "event_id": 5947,
+      "step": 61,
+      "agent": "5",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 1,
+      "water_after": 1
+    },
+    {
+      "event_id": 5949,
+      "step": 61,
+      "agent": "6",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 2,
+      "water_after": 2
+    },
+    {
+      "event_id": 5953,
+      "step": 61,
+      "agent": "8",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 1,
+      "water_after": 1
+    },
+    {
+      "event_id": 6024,
+      "step": 62,
+      "agent": "2",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 1,
+      "water_after": 1
+    },
+    {
+      "event_id": 6026,
+      "step": 62,
+      "agent": "3",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 1,
+      "water_after": 1
+    },
+    {
+      "event_id": 6030,
+      "step": 62,
+      "agent": "5",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 1,
+      "water_after": 1
+    },
+    {
+      "event_id": 6032,
+      "step": 62,
+      "agent": "6",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 2,
+      "water_after": 2
+    },
+    {
+      "event_id": 6106,
+      "step": 63,
+      "agent": "2",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 1,
+      "water_after": 1
+    },
+    {
+      "event_id": 6112,
+      "step": 63,
+      "agent": "5",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 1,
+      "water_after": 1
+    },
+    {
+      "event_id": 6114,
+      "step": 63,
+      "agent": "6",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 2,
+      "water_after": 2
+    },
+    {
+      "event_id": 6198,
+      "step": 64,
+      "agent": "6",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 2,
+      "water_after": 2
+    },
+    {
+      "event_id": 6202,
+      "step": 64,
+      "agent": "8",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 1,
+      "water_after": 1
+    },
+    {
+      "event_id": 6272,
+      "step": 65,
+      "agent": "3",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 1,
+      "water_after": 1
+    },
+    {
+      "event_id": 6278,
+      "step": 65,
+      "agent": "6",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 2,
+      "water_after": 2
+    },
+    {
+      "event_id": 6282,
+      "step": 65,
+      "agent": "8",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 1,
+      "water_after": 1
+    },
+    {
+      "event_id": 6350,
+      "step": 66,
+      "agent": "2",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 1,
+      "water_after": 1
+    },
+    {
+      "event_id": 6352,
+      "step": 66,
+      "agent": "3",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 1,
+      "water_after": 1
+    },
+    {
+      "event_id": 6354,
+      "step": 66,
+      "agent": "4",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 1,
+      "water_after": 1
+    },
+    {
+      "event_id": 6356,
+      "step": 66,
+      "agent": "5",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 1,
+      "water_after": 1
+    },
+    {
+      "event_id": 6362,
+      "step": 66,
+      "agent": "8",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 1,
+      "water_after": 1
+    },
+    {
+      "event_id": 6432,
+      "step": 67,
+      "agent": "2",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 1,
+      "water_after": 1
+    },
+    {
+      "event_id": 6438,
+      "step": 67,
+      "agent": "5",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 1,
+      "water_after": 1
+    },
+    {
+      "event_id": 6520,
+      "step": 68,
+      "agent": "6",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 2,
+      "water_after": 2
+    },
+    {
+      "event_id": 6601,
+      "step": 69,
+      "agent": "6",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 2,
+      "water_after": 2
+    },
+    {
+      "event_id": 6605,
+      "step": 69,
+      "agent": "8",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 1,
+      "water_after": 1
+    },
+    {
+      "event_id": 6680,
+      "step": 70,
+      "agent": "6",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 2,
+      "water_after": 2
+    },
+    {
+      "event_id": 6684,
+      "step": 70,
+      "agent": "8",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 1,
+      "water_after": 1
+    },
+    {
+      "event_id": 6762,
+      "step": 71,
+      "agent": "6",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 2,
+      "water_after": 2
+    },
+    {
+      "event_id": 6766,
+      "step": 71,
+      "agent": "8",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 1,
+      "water_after": 1
+    },
+    {
+      "event_id": 6842,
+      "step": 72,
+      "agent": "5",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 1,
+      "water_after": 1
+    },
+    {
+      "event_id": 6844,
+      "step": 72,
+      "agent": "6",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 2,
+      "water_after": 2
+    },
+    {
+      "event_id": 6848,
+      "step": 72,
+      "agent": "8",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 1,
+      "water_after": 1
+    },
+    {
+      "event_id": 6923,
+      "step": 73,
+      "agent": "5",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 1,
+      "water_after": 1
+    },
+    {
+      "event_id": 6929,
+      "step": 73,
+      "agent": "8",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 1,
+      "water_after": 1
+    },
+    {
+      "event_id": 7003,
+      "step": 74,
+      "agent": "3",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 0,
+      "water_after": 5
+    },
+    {
+      "event_id": 7013,
+      "step": 74,
+      "agent": "8",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 1,
+      "water_after": 1
+    },
+    {
+      "event_id": 7083,
+      "step": 75,
+      "agent": "3",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 5,
+      "water_after": 5
+    },
+    {
+      "event_id": 7165,
+      "step": 76,
+      "agent": "4",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 0,
+      "water_after": 5
+    },
+    {
+      "event_id": 7167,
+      "step": 76,
+      "agent": "5",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 1,
+      "water_after": 1
+    },
+    {
+      "event_id": 7246,
+      "step": 77,
+      "agent": "5",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 1,
+      "water_after": 1
+    },
+    {
+      "event_id": 7248,
+      "step": 77,
+      "agent": "6",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 2,
+      "water_after": 2
+    },
+    {
+      "event_id": 7252,
+      "step": 77,
+      "agent": "8",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 1,
+      "water_after": 1
+    },
+    {
+      "event_id": 7318,
+      "step": 78,
+      "agent": "1",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 1,
+      "water_after": 1
+    },
+    {
+      "event_id": 7326,
+      "step": 78,
+      "agent": "5",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 1,
+      "water_after": 1
+    },
+    {
+      "event_id": 7328,
+      "step": 78,
+      "agent": "6",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 2,
+      "water_after": 2
+    },
+    {
+      "event_id": 7332,
+      "step": 78,
+      "agent": "8",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 1,
+      "water_after": 1
+    },
+    {
+      "event_id": 7404,
+      "step": 79,
+      "agent": "2",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 1,
+      "water_after": 1
+    },
+    {
+      "event_id": 7484,
+      "step": 80,
+      "agent": "2",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 1,
+      "water_after": 1
+    },
+    {
+      "event_id": 7717,
+      "step": 83,
+      "agent": "1",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 1,
+      "water_after": 1
+    },
+    {
+      "event_id": 7725,
+      "step": 83,
+      "agent": "5",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 1,
+      "water_after": 1
+    },
+    {
+      "event_id": 7727,
+      "step": 83,
+      "agent": "6",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 2,
+      "water_after": 2
+    },
+    {
+      "event_id": 7800,
+      "step": 84,
+      "agent": "1",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 1,
+      "water_after": 1
+    },
+    {
+      "event_id": 7810,
+      "step": 84,
+      "agent": "6",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 2,
+      "water_after": 2
+    },
+    {
+      "event_id": 7891,
+      "step": 85,
+      "agent": "8",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 1,
+      "water_after": 1
+    },
+    {
+      "event_id": 7965,
+      "step": 86,
+      "agent": "5",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 1,
+      "water_after": 1
+    },
+    {
+      "event_id": 7971,
+      "step": 86,
+      "agent": "8",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 1,
+      "water_after": 1
+    },
+    {
+      "event_id": 8044,
+      "step": 87,
+      "agent": "4",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 1,
+      "water_after": 1
+    },
+    {
+      "event_id": 8048,
+      "step": 87,
+      "agent": "6",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 2,
+      "water_after": 2
+    },
+    {
+      "event_id": 8128,
+      "step": 88,
+      "agent": "6",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 2,
+      "water_after": 2
+    },
+    {
+      "event_id": 8212,
+      "step": 89,
+      "agent": "5",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 1,
+      "water_after": 1
+    },
+    {
+      "event_id": 8218,
+      "step": 89,
+      "agent": "8",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 1,
+      "water_after": 1
+    },
+    {
+      "event_id": 8292,
+      "step": 90,
+      "agent": "5",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 1,
+      "water_after": 1
+    },
+    {
+      "event_id": 8374,
+      "step": 91,
+      "agent": "5",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 1,
+      "water_after": 1
+    },
+    {
+      "event_id": 8376,
+      "step": 91,
+      "agent": "6",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 2,
+      "water_after": 2
+    },
+    {
+      "event_id": 8449,
+      "step": 92,
+      "agent": "3",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 0,
+      "water_after": 5
+    },
+    {
+      "event_id": 8455,
+      "step": 92,
+      "agent": "6",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 2,
+      "water_after": 2
+    },
+    {
+      "event_id": 8459,
+      "step": 92,
+      "agent": "8",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 1,
+      "water_after": 1
+    },
+    {
+      "event_id": 8525,
+      "step": 93,
+      "agent": "1",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 0,
+      "water_after": 5
+    },
+    {
+      "event_id": 8531,
+      "step": 93,
+      "agent": "4",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 1,
+      "water_after": 1
+    },
+    {
+      "event_id": 8613,
+      "step": 94,
+      "agent": "4",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 1,
+      "water_after": 1
+    },
+    {
+      "event_id": 8615,
+      "step": 94,
+      "agent": "5",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 1,
+      "water_after": 1
+    },
+    {
+      "event_id": 8694,
+      "step": 95,
+      "agent": "5",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 1,
+      "water_after": 1
+    },
+    {
+      "event_id": 8696,
+      "step": 95,
+      "agent": "6",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 2,
+      "water_after": 2
+    },
+    {
+      "event_id": 8700,
+      "step": 95,
+      "agent": "8",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 1,
+      "water_after": 1
+    },
+    {
+      "event_id": 8775,
+      "step": 96,
+      "agent": "5",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 1,
+      "water_after": 1
+    },
+    {
+      "event_id": 8777,
+      "step": 96,
+      "agent": "6",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 2,
+      "water_after": 2
+    },
+    {
+      "event_id": 8781,
+      "step": 96,
+      "agent": "8",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 1,
+      "water_after": 1
+    },
+    {
+      "event_id": 8855,
+      "step": 97,
+      "agent": "5",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 1,
+      "water_after": 1
+    },
+    {
+      "event_id": 8857,
+      "step": 97,
+      "agent": "6",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 2,
+      "water_after": 2
+    },
+    {
+      "event_id": 8861,
+      "step": 97,
+      "agent": "8",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 1,
+      "water_after": 1
+    },
+    {
+      "event_id": 8931,
+      "step": 98,
+      "agent": "2",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 1,
+      "water_after": 1
+    },
+    {
+      "event_id": 8937,
+      "step": 98,
+      "agent": "5",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 1,
+      "water_after": 1
+    },
+    {
+      "event_id": 9017,
+      "step": 99,
+      "agent": "2",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 1,
+      "water_after": 1
+    },
+    {
+      "event_id": 9021,
+      "step": 99,
+      "agent": "4",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 1,
+      "water_after": 1
+    },
+    {
+      "event_id": 9023,
+      "step": 99,
+      "agent": "5",
+      "position": [
+        15.0,
+        22.0
+      ],
+      "water_before": 1,
+      "water_after": 1
+    }
+  ],
+  "qualification": "empirical recorded action-boundary outcomes; corroborated by current C# water==0 refill loop; no claim that this is the only failure cause"
+}

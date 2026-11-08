@@ -1,0 +1,144 @@
+{
+  "checked": "2026-10-25T11:53:44.354774+08:00",
+  "batch": "/data1/gzy/crew_dynamic_followup_20261025_cycle010",
+  "kind": "verified live wait; partial trajectory only",
+  "live_pids": [
+    4084244,
+    4084345
+  ],
+  "latest_step": 7,
+  "phase": "before_action",
+  "online": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8"
+  ],
+  "rewards": [
+    1299,
+    3,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    3,
+    1,
+    0,
+    0,
+    0
+  ],
+  "counts": {
+    "RUN_STARTED": 1,
+    "TASK_HYPERGRAPH_STARTED": 1,
+    "NODE_JOINED": 8,
+    "STATE_OBSERVED": 120,
+    "TASK_WORLD_SNAPSHOT": 15,
+    "TASK_VALIDATED": 15,
+    "TASK_ORGANIZER_REQUEST": 2,
+    "TASK_ORGANIZER_RESPONSE": 2,
+    "TASK_GRAPH_COMMITTED": 2,
+    "TASK_EXECUTION_REBOUND": 12,
+    "COMMUNICATION_GENERATED": 56,
+    "TASK_MESSAGE_SUPPRESSED": 10,
+    "TASK_MESSAGE_DELIVERED": 134,
+    "TASK_ACTION_AUTHORIZED": 56,
+    "ACTION_STARTED": 56,
+    "ACTION_COMPLETED": 56,
+    "LLM_USAGE": 7,
+    "ACTION_NO_EFFECT": 2
+  },
+  "refills": [
+    {
+      "step": 3,
+      "agent": "3",
+      "command": [
+        4,
+        9.0,
+        23.0
+      ],
+      "position_before": [
+        9.0,
+        23.0
+      ],
+      "resources_before": {
+        "water": 0,
+        "civilian_carried": 0
+      },
+      "resources_after": {
+        "water": 5,
+        "civilian_carried": 0
+      }
+    },
+    {
+      "step": 3,
+      "agent": "4",
+      "command": [
+        4,
+        9.0,
+        23.0
+      ],
+      "position_before": [
+        9.0,
+        23.0
+      ],
+      "resources_before": {
+        "water": 0,
+        "civilian_carried": 0
+      },
+      "resources_after": {
+        "water": 5,
+        "civilian_carried": 0
+      }
+    },
+    {
+      "step": 4,
+      "agent": "1",
+      "command": [
+        4,
+        8.0,
+        24.0
+      ],
+      "position_before": [
+        8.0,
+        24.0
+      ],
+      "resources_before": {
+        "water": 0,
+        "civilian_carried": 0
+      },
+      "resources_after": {
+        "water": 5,
+        "civilian_carried": 0
+      }
+    },
+    {
+      "step": 4,
+      "agent": "2",
+      "command": [
+        4,
+        8.0,
+        24.0
+      ],
+      "position_before": [
+        8.0,
+        24.0
+      ],
+      "resources_before": {
+        "water": 0,
+        "civilian_carried": 0
+      },
+      "resources_after": {
+        "water": 5,
+        "civilian_carried": 0
+      }
+    }
+  ],
+  "native_exception_headings": [],
+  "qualification": "Before scheduled second-fire event. No causal comparison or task success claim."
+}

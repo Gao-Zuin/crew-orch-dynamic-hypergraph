@@ -1,0 +1,21 @@
+{
+  "source": "/data1/gzy/crew_group_address_replay_20261025",
+  "stats": {
+    "baseline": {
+      "responses": 3,
+      "responses_with_invalid_routes": 0,
+      "responses_with_valid_routes": 3,
+      "cross_group_deliveries": 0
+    },
+    "with_directory": {
+      "responses": 3,
+      "responses_with_invalid_routes": 2,
+      "responses_with_valid_routes": 1,
+      "cross_group_deliveries": 0
+    }
+  },
+  "input_tokens": 6900,
+  "output_tokens": 1498,
+  "decision": "Do not deploy directory-only candidate; preserved as deferred patch, reverted production files and candidate-only test",
+  "limits": "One recorded leader/step;3 samples each; no Unity, no performance or population-level inference"
+}

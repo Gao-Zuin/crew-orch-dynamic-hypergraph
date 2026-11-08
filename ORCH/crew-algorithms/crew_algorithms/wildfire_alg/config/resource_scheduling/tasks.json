@@ -1,0 +1,1130 @@
+[
+  {
+    "id": "Early_drone_Sufficient",
+    "preset": {
+      "game_type": 5,
+      "map_size": 100,
+      "fire_spread_frequency": 500,
+      "civilian_count": 5,
+      "civilian_clusters": 2,
+      "civilian_move_frequency": 800,
+      "known": false,
+      "starting_firefighter_agents": 8,
+      "starting_drone_agents": 2,
+      "starting_helicopter_agents": 1,
+      "starting_bulldozer_agents": 1,
+      "vegetation_density_offset": 30,
+      "max_steps": 100,
+      "scheduled_events": [
+        {
+          "timestep": 0,
+          "action": "start_fire",
+          "x": 80,
+          "y": 80,
+          "announcement": "Additional fire reported at (80,80); reassess shared resources."
+        },
+        {
+          "timestep": 1,
+          "action": "spawn_civilians_5",
+          "x": 20,
+          "y": 80,
+          "announcement": "Five additional civilians reported at (20,80); reassess rescue and transport priorities."
+        }
+      ],
+      "name": "Early_drone_Sufficient",
+      "description": "Coordinate original and newly reported fire/rescue work; share specialist workers and return them after the additional local objective.",
+      "water": true
+    },
+    "design": {
+      "sources": [
+        "Full_Game",
+        "Suppress_Fire_Extinguish_Second_Fire",
+        "Rescue_Civilians_Search_Rescue_Transport"
+      ],
+      "release_steps": [
+        0,
+        0,
+        1
+      ],
+      "focus_resource": "drone",
+      "capacity": 2,
+      "overlap_target_demand": 2,
+      "initial_spare_focus_workers": "policy-dependent; not guaranteed by preset",
+      "overlap_window": [
+        1,
+        13
+      ],
+      "requirement": "preferred-resource scheduling target; alternatives allowed; no Unity exclusivity constraint",
+      "objectives": [
+        "inspect initial fire region",
+        "inspect newly reported fire region"
+      ],
+      "deadline_profiles": {
+        "relaxed": {
+          "original_goal_due_step": 100,
+          "new_goal_release_step": 0,
+          "new_goal_due_step": 24,
+          "new_goal_budget_steps": 24,
+          "status": "candidate_requires_rollout_calibration",
+          "new_goal": "One live drone obtains fresh direct visibility of an active cell in the new fire region."
+        },
+        "urgent": {
+          "original_goal_due_step": 100,
+          "new_goal_release_step": 0,
+          "new_goal_due_step": 16,
+          "new_goal_budget_steps": 16,
+          "status": "candidate_requires_rollout_calibration",
+          "new_goal": "One live drone obtains fresh direct visibility of an active cell in the new fire region."
+        }
+      },
+      "deadline_semantics": "Evaluate after-action snapshots; count from verified event effect, not merely event submission. Profiles are external evaluation contracts, not enforced by the stock runner.",
+      "validity_gates": [
+        "Initial goal remains unfinished at release.",
+        "Event has verified physical effect.",
+        "A safe route and a feasible work target exist.",
+        "Both resource demands overlap; otherwise mark no_contention.",
+        "A scripted preemptive schedule passes the deadline; otherwise mark infeasible_or_uncalibrated."
+      ],
+      "movement_audit": {
+        "nominal_cells_per_sim_second": 10,
+        "nominal_sim_seconds_per_decision": 2,
+        "timing_status": "source nominal only; standalone InvokeRepeating registration requires deployed-build verification",
+        "deadline_requires_release_position_check": true
+      }
+    }
+  },
+  {
+    "id": "Early_drone_Contended",
+    "preset": {
+      "game_type": 5,
+      "map_size": 100,
+      "fire_spread_frequency": 500,
+      "civilian_count": 5,
+      "civilian_clusters": 2,
+      "civilian_move_frequency": 800,
+      "known": false,
+      "starting_firefighter_agents": 8,
+      "starting_drone_agents": 1,
+      "starting_helicopter_agents": 1,
+      "starting_bulldozer_agents": 1,
+      "vegetation_density_offset": 30,
+      "max_steps": 100,
+      "scheduled_events": [
+        {
+          "timestep": 0,
+          "action": "start_fire",
+          "x": 80,
+          "y": 80,
+          "announcement": "Additional fire reported at (80,80); reassess shared resources."
+        },
+        {
+          "timestep": 1,
+          "action": "spawn_civilians_5",
+          "x": 20,
+          "y": 80,
+          "announcement": "Five additional civilians reported at (20,80); reassess rescue and transport priorities."
+        }
+      ],
+      "name": "Early_drone_Contended",
+      "description": "Coordinate original and newly reported fire/rescue work; share specialist workers and return them after the additional local objective.",
+      "water": true
+    },
+    "design": {
+      "sources": [
+        "Full_Game",
+        "Suppress_Fire_Extinguish_Second_Fire",
+        "Rescue_Civilians_Search_Rescue_Transport"
+      ],
+      "release_steps": [
+        0,
+        0,
+        1
+      ],
+      "focus_resource": "drone",
+      "capacity": 1,
+      "overlap_target_demand": 2,
+      "initial_spare_focus_workers": "policy-dependent; not guaranteed by preset",
+      "overlap_window": [
+        1,
+        13
+      ],
+      "requirement": "preferred-resource scheduling target; alternatives allowed; no Unity exclusivity constraint",
+      "objectives": [
+        "inspect initial fire region",
+        "inspect newly reported fire region"
+      ],
+      "deadline_profiles": {
+        "relaxed": {
+          "original_goal_due_step": 100,
+          "new_goal_release_step": 0,
+          "new_goal_due_step": 24,
+          "new_goal_budget_steps": 24,
+          "status": "candidate_requires_rollout_calibration",
+          "new_goal": "One live drone obtains fresh direct visibility of an active cell in the new fire region."
+        },
+        "urgent": {
+          "original_goal_due_step": 100,
+          "new_goal_release_step": 0,
+          "new_goal_due_step": 16,
+          "new_goal_budget_steps": 16,
+          "status": "candidate_requires_rollout_calibration",
+          "new_goal": "One live drone obtains fresh direct visibility of an active cell in the new fire region."
+        }
+      },
+      "deadline_semantics": "Evaluate after-action snapshots; count from verified event effect, not merely event submission. Profiles are external evaluation contracts, not enforced by the stock runner.",
+      "validity_gates": [
+        "Initial goal remains unfinished at release.",
+        "Event has verified physical effect.",
+        "A safe route and a feasible work target exist.",
+        "Both resource demands overlap; otherwise mark no_contention.",
+        "A scripted preemptive schedule passes the deadline; otherwise mark infeasible_or_uncalibrated."
+      ],
+      "movement_audit": {
+        "nominal_cells_per_sim_second": 10,
+        "nominal_sim_seconds_per_decision": 2,
+        "timing_status": "source nominal only; standalone InvokeRepeating registration requires deployed-build verification",
+        "deadline_requires_release_position_check": true
+      }
+    }
+  },
+  {
+    "id": "Early_helicopter_Sufficient",
+    "preset": {
+      "game_type": 5,
+      "map_size": 100,
+      "fire_spread_frequency": 500,
+      "civilian_count": 5,
+      "civilian_clusters": 2,
+      "civilian_move_frequency": 800,
+      "known": false,
+      "starting_firefighter_agents": 8,
+      "starting_drone_agents": 1,
+      "starting_helicopter_agents": 2,
+      "starting_bulldozer_agents": 1,
+      "vegetation_density_offset": 30,
+      "max_steps": 100,
+      "scheduled_events": [
+        {
+          "timestep": 0,
+          "action": "start_fire",
+          "x": 80,
+          "y": 80,
+          "announcement": "Additional fire reported at (80,80); reassess shared resources."
+        },
+        {
+          "timestep": 1,
+          "action": "spawn_civilians_5",
+          "x": 20,
+          "y": 80,
+          "announcement": "Five additional civilians reported at (20,80); reassess rescue and transport priorities."
+        }
+      ],
+      "name": "Early_helicopter_Sufficient",
+      "description": "Coordinate original and newly reported fire/rescue work; share specialist workers and return them after the additional local objective.",
+      "water": true
+    },
+    "design": {
+      "sources": [
+        "Full_Game",
+        "Suppress_Fire_Extinguish_Second_Fire",
+        "Rescue_Civilians_Search_Rescue_Transport"
+      ],
+      "release_steps": [
+        0,
+        0,
+        1
+      ],
+      "focus_resource": "helicopter",
+      "capacity": 2,
+      "overlap_target_demand": 2,
+      "initial_spare_focus_workers": "policy-dependent; not guaranteed by preset",
+      "overlap_window": [
+        1,
+        13
+      ],
+      "requirement": "preferred-resource scheduling target; alternatives allowed; no Unity exclusivity constraint",
+      "objectives": [
+        "deploy firefighters toward initial fire",
+        "deploy a different firefighter team toward additional fire"
+      ],
+      "deadline_profiles": {
+        "relaxed": {
+          "original_goal_due_step": 100,
+          "new_goal_release_step": 0,
+          "new_goal_due_step": 30,
+          "new_goal_budget_steps": 30,
+          "status": "candidate_requires_rollout_calibration",
+          "new_goal": "Deliver at least two firefighters to safe cells near the additional fire; verify pickup and dropoff by identity."
+        },
+        "urgent": {
+          "original_goal_due_step": 100,
+          "new_goal_release_step": 0,
+          "new_goal_due_step": 20,
+          "new_goal_budget_steps": 20,
+          "status": "candidate_requires_rollout_calibration",
+          "new_goal": "Deliver at least two firefighters to safe cells near the additional fire; verify pickup and dropoff by identity."
+        }
+      },
+      "deadline_semantics": "Evaluate after-action snapshots; count from verified event effect, not merely event submission. Profiles are external evaluation contracts, not enforced by the stock runner.",
+      "validity_gates": [
+        "Initial goal remains unfinished at release.",
+        "Event has verified physical effect.",
+        "A safe route and a feasible work target exist.",
+        "Both resource demands overlap; otherwise mark no_contention.",
+        "A scripted preemptive schedule passes the deadline; otherwise mark infeasible_or_uncalibrated."
+      ],
+      "movement_audit": {
+        "nominal_cells_per_sim_second": 15,
+        "nominal_sim_seconds_per_decision": 2,
+        "timing_status": "source nominal only; standalone InvokeRepeating registration requires deployed-build verification",
+        "deadline_requires_release_position_check": true
+      }
+    }
+  },
+  {
+    "id": "Early_helicopter_Contended",
+    "preset": {
+      "game_type": 5,
+      "map_size": 100,
+      "fire_spread_frequency": 500,
+      "civilian_count": 5,
+      "civilian_clusters": 2,
+      "civilian_move_frequency": 800,
+      "known": false,
+      "starting_firefighter_agents": 8,
+      "starting_drone_agents": 1,
+      "starting_helicopter_agents": 1,
+      "starting_bulldozer_agents": 1,
+      "vegetation_density_offset": 30,
+      "max_steps": 100,
+      "scheduled_events": [
+        {
+          "timestep": 0,
+          "action": "start_fire",
+          "x": 80,
+          "y": 80,
+          "announcement": "Additional fire reported at (80,80); reassess shared resources."
+        },
+        {
+          "timestep": 1,
+          "action": "spawn_civilians_5",
+          "x": 20,
+          "y": 80,
+          "announcement": "Five additional civilians reported at (20,80); reassess rescue and transport priorities."
+        }
+      ],
+      "name": "Early_helicopter_Contended",
+      "description": "Coordinate original and newly reported fire/rescue work; share specialist workers and return them after the additional local objective.",
+      "water": true
+    },
+    "design": {
+      "sources": [
+        "Full_Game",
+        "Suppress_Fire_Extinguish_Second_Fire",
+        "Rescue_Civilians_Search_Rescue_Transport"
+      ],
+      "release_steps": [
+        0,
+        0,
+        1
+      ],
+      "focus_resource": "helicopter",
+      "capacity": 1,
+      "overlap_target_demand": 2,
+      "initial_spare_focus_workers": "policy-dependent; not guaranteed by preset",
+      "overlap_window": [
+        1,
+        13
+      ],
+      "requirement": "preferred-resource scheduling target; alternatives allowed; no Unity exclusivity constraint",
+      "objectives": [
+        "deploy firefighters toward initial fire",
+        "deploy a different firefighter team toward additional fire"
+      ],
+      "deadline_profiles": {
+        "relaxed": {
+          "original_goal_due_step": 100,
+          "new_goal_release_step": 0,
+          "new_goal_due_step": 30,
+          "new_goal_budget_steps": 30,
+          "status": "candidate_requires_rollout_calibration",
+          "new_goal": "Deliver at least two firefighters to safe cells near the additional fire; verify pickup and dropoff by identity."
+        },
+        "urgent": {
+          "original_goal_due_step": 100,
+          "new_goal_release_step": 0,
+          "new_goal_due_step": 20,
+          "new_goal_budget_steps": 20,
+          "status": "candidate_requires_rollout_calibration",
+          "new_goal": "Deliver at least two firefighters to safe cells near the additional fire; verify pickup and dropoff by identity."
+        }
+      },
+      "deadline_semantics": "Evaluate after-action snapshots; count from verified event effect, not merely event submission. Profiles are external evaluation contracts, not enforced by the stock runner.",
+      "validity_gates": [
+        "Initial goal remains unfinished at release.",
+        "Event has verified physical effect.",
+        "A safe route and a feasible work target exist.",
+        "Both resource demands overlap; otherwise mark no_contention.",
+        "A scripted preemptive schedule passes the deadline; otherwise mark infeasible_or_uncalibrated."
+      ],
+      "movement_audit": {
+        "nominal_cells_per_sim_second": 15,
+        "nominal_sim_seconds_per_decision": 2,
+        "timing_status": "source nominal only; standalone InvokeRepeating registration requires deployed-build verification",
+        "deadline_requires_release_position_check": true
+      }
+    }
+  },
+  {
+    "id": "Early_bulldozer_Sufficient",
+    "preset": {
+      "game_type": 5,
+      "map_size": 100,
+      "fire_spread_frequency": 500,
+      "civilian_count": 5,
+      "civilian_clusters": 2,
+      "civilian_move_frequency": 800,
+      "known": false,
+      "starting_firefighter_agents": 8,
+      "starting_drone_agents": 1,
+      "starting_helicopter_agents": 1,
+      "starting_bulldozer_agents": 2,
+      "vegetation_density_offset": 30,
+      "max_steps": 100,
+      "scheduled_events": [
+        {
+          "timestep": 0,
+          "action": "start_fire",
+          "x": 80,
+          "y": 80,
+          "announcement": "Additional fire reported at (80,80); reassess shared resources."
+        },
+        {
+          "timestep": 1,
+          "action": "spawn_civilians_5",
+          "x": 20,
+          "y": 80,
+          "announcement": "Five additional civilians reported at (20,80); reassess rescue and transport priorities."
+        }
+      ],
+      "name": "Early_bulldozer_Sufficient",
+      "description": "Coordinate original and newly reported fire/rescue work; share specialist workers and return them after the additional local objective.",
+      "water": true
+    },
+    "design": {
+      "sources": [
+        "Full_Game",
+        "Suppress_Fire_Extinguish_Second_Fire",
+        "Rescue_Civilians_Search_Rescue_Transport"
+      ],
+      "release_steps": [
+        0,
+        0,
+        1
+      ],
+      "focus_resource": "bulldozer",
+      "capacity": 2,
+      "overlap_target_demand": 2,
+      "initial_spare_focus_workers": "policy-dependent; not guaranteed by preset",
+      "overlap_window": [
+        1,
+        13
+      ],
+      "requirement": "preferred-resource scheduling target; alternatives allowed; no Unity exclusivity constraint",
+      "objectives": [
+        "cut an initial firebreak segment",
+        "cut a segment near the additional fire"
+      ],
+      "deadline_profiles": {
+        "relaxed": {
+          "original_goal_due_step": 100,
+          "new_goal_release_step": 0,
+          "new_goal_due_step": 48,
+          "new_goal_budget_steps": 48,
+          "status": "candidate_requires_rollout_calibration",
+          "new_goal": "Clear a predeclared short segment near the additional fire; target cells must contain trees at release."
+        },
+        "urgent": {
+          "original_goal_due_step": 100,
+          "new_goal_release_step": 0,
+          "new_goal_due_step": 32,
+          "new_goal_budget_steps": 32,
+          "status": "candidate_requires_rollout_calibration",
+          "new_goal": "Clear a predeclared short segment near the additional fire; target cells must contain trees at release."
+        }
+      },
+      "deadline_semantics": "Evaluate after-action snapshots; count from verified event effect, not merely event submission. Profiles are external evaluation contracts, not enforced by the stock runner.",
+      "validity_gates": [
+        "Initial goal remains unfinished at release.",
+        "Event has verified physical effect.",
+        "A safe route and a feasible work target exist.",
+        "Both resource demands overlap; otherwise mark no_contention.",
+        "A scripted preemptive schedule passes the deadline; otherwise mark infeasible_or_uncalibrated."
+      ],
+      "movement_audit": {
+        "nominal_cells_per_sim_second": 4,
+        "nominal_sim_seconds_per_decision": 2,
+        "timing_status": "source nominal only; standalone InvokeRepeating registration requires deployed-build verification",
+        "deadline_requires_release_position_check": true
+      }
+    }
+  },
+  {
+    "id": "Early_bulldozer_Contended",
+    "preset": {
+      "game_type": 5,
+      "map_size": 100,
+      "fire_spread_frequency": 500,
+      "civilian_count": 5,
+      "civilian_clusters": 2,
+      "civilian_move_frequency": 800,
+      "known": false,
+      "starting_firefighter_agents": 8,
+      "starting_drone_agents": 1,
+      "starting_helicopter_agents": 1,
+      "starting_bulldozer_agents": 1,
+      "vegetation_density_offset": 30,
+      "max_steps": 100,
+      "scheduled_events": [
+        {
+          "timestep": 0,
+          "action": "start_fire",
+          "x": 80,
+          "y": 80,
+          "announcement": "Additional fire reported at (80,80); reassess shared resources."
+        },
+        {
+          "timestep": 1,
+          "action": "spawn_civilians_5",
+          "x": 20,
+          "y": 80,
+          "announcement": "Five additional civilians reported at (20,80); reassess rescue and transport priorities."
+        }
+      ],
+      "name": "Early_bulldozer_Contended",
+      "description": "Coordinate original and newly reported fire/rescue work; share specialist workers and return them after the additional local objective.",
+      "water": true
+    },
+    "design": {
+      "sources": [
+        "Full_Game",
+        "Suppress_Fire_Extinguish_Second_Fire",
+        "Rescue_Civilians_Search_Rescue_Transport"
+      ],
+      "release_steps": [
+        0,
+        0,
+        1
+      ],
+      "focus_resource": "bulldozer",
+      "capacity": 1,
+      "overlap_target_demand": 2,
+      "initial_spare_focus_workers": "policy-dependent; not guaranteed by preset",
+      "overlap_window": [
+        1,
+        13
+      ],
+      "requirement": "preferred-resource scheduling target; alternatives allowed; no Unity exclusivity constraint",
+      "objectives": [
+        "cut an initial firebreak segment",
+        "cut a segment near the additional fire"
+      ],
+      "deadline_profiles": {
+        "relaxed": {
+          "original_goal_due_step": 100,
+          "new_goal_release_step": 0,
+          "new_goal_due_step": 48,
+          "new_goal_budget_steps": 48,
+          "status": "candidate_requires_rollout_calibration",
+          "new_goal": "Clear a predeclared short segment near the additional fire; target cells must contain trees at release."
+        },
+        "urgent": {
+          "original_goal_due_step": 100,
+          "new_goal_release_step": 0,
+          "new_goal_due_step": 32,
+          "new_goal_budget_steps": 32,
+          "status": "candidate_requires_rollout_calibration",
+          "new_goal": "Clear a predeclared short segment near the additional fire; target cells must contain trees at release."
+        }
+      },
+      "deadline_semantics": "Evaluate after-action snapshots; count from verified event effect, not merely event submission. Profiles are external evaluation contracts, not enforced by the stock runner.",
+      "validity_gates": [
+        "Initial goal remains unfinished at release.",
+        "Event has verified physical effect.",
+        "A safe route and a feasible work target exist.",
+        "Both resource demands overlap; otherwise mark no_contention.",
+        "A scripted preemptive schedule passes the deadline; otherwise mark infeasible_or_uncalibrated."
+      ],
+      "movement_audit": {
+        "nominal_cells_per_sim_second": 4,
+        "nominal_sim_seconds_per_decision": 2,
+        "timing_status": "source nominal only; standalone InvokeRepeating registration requires deployed-build verification",
+        "deadline_requires_release_position_check": true
+      }
+    }
+  },
+  {
+    "id": "Late_drone_Sufficient",
+    "preset": {
+      "game_type": 5,
+      "map_size": 100,
+      "fire_spread_frequency": 500,
+      "civilian_count": 5,
+      "civilian_clusters": 2,
+      "civilian_move_frequency": 800,
+      "known": false,
+      "starting_firefighter_agents": 8,
+      "starting_drone_agents": 2,
+      "starting_helicopter_agents": 1,
+      "starting_bulldozer_agents": 1,
+      "vegetation_density_offset": 30,
+      "max_steps": 100,
+      "scheduled_events": [
+        {
+          "timestep": 8,
+          "action": "start_fire",
+          "x": 80,
+          "y": 80,
+          "announcement": "Additional fire reported at (80,80); reassess shared resources."
+        },
+        {
+          "timestep": 9,
+          "action": "spawn_civilians_5",
+          "x": 20,
+          "y": 80,
+          "announcement": "Five additional civilians reported at (20,80); reassess rescue and transport priorities."
+        }
+      ],
+      "name": "Late_drone_Sufficient",
+      "description": "Coordinate original and newly reported fire/rescue work; share specialist workers and return them after the additional local objective.",
+      "water": true
+    },
+    "design": {
+      "sources": [
+        "Full_Game",
+        "Suppress_Fire_Extinguish_Second_Fire",
+        "Rescue_Civilians_Search_Rescue_Transport"
+      ],
+      "release_steps": [
+        0,
+        8,
+        9
+      ],
+      "focus_resource": "drone",
+      "capacity": 2,
+      "overlap_target_demand": 2,
+      "initial_spare_focus_workers": "policy-dependent; not guaranteed by preset",
+      "overlap_window": [
+        9,
+        21
+      ],
+      "requirement": "preferred-resource scheduling target; alternatives allowed; no Unity exclusivity constraint",
+      "objectives": [
+        "inspect initial fire region",
+        "inspect newly reported fire region"
+      ],
+      "deadline_profiles": {
+        "relaxed": {
+          "original_goal_due_step": 100,
+          "new_goal_release_step": 8,
+          "new_goal_due_step": 32,
+          "new_goal_budget_steps": 24,
+          "status": "candidate_requires_rollout_calibration",
+          "new_goal": "One live drone obtains fresh direct visibility of an active cell in the new fire region."
+        },
+        "urgent": {
+          "original_goal_due_step": 100,
+          "new_goal_release_step": 8,
+          "new_goal_due_step": 24,
+          "new_goal_budget_steps": 16,
+          "status": "candidate_requires_rollout_calibration",
+          "new_goal": "One live drone obtains fresh direct visibility of an active cell in the new fire region."
+        }
+      },
+      "deadline_semantics": "Evaluate after-action snapshots; count from verified event effect, not merely event submission. Profiles are external evaluation contracts, not enforced by the stock runner.",
+      "validity_gates": [
+        "Initial goal remains unfinished at release.",
+        "Event has verified physical effect.",
+        "A safe route and a feasible work target exist.",
+        "Both resource demands overlap; otherwise mark no_contention.",
+        "A scripted preemptive schedule passes the deadline; otherwise mark infeasible_or_uncalibrated."
+      ],
+      "movement_audit": {
+        "nominal_cells_per_sim_second": 10,
+        "nominal_sim_seconds_per_decision": 2,
+        "timing_status": "source nominal only; standalone InvokeRepeating registration requires deployed-build verification",
+        "deadline_requires_release_position_check": true
+      }
+    }
+  },
+  {
+    "id": "Late_drone_Contended",
+    "preset": {
+      "game_type": 5,
+      "map_size": 100,
+      "fire_spread_frequency": 500,
+      "civilian_count": 5,
+      "civilian_clusters": 2,
+      "civilian_move_frequency": 800,
+      "known": false,
+      "starting_firefighter_agents": 8,
+      "starting_drone_agents": 1,
+      "starting_helicopter_agents": 1,
+      "starting_bulldozer_agents": 1,
+      "vegetation_density_offset": 30,
+      "max_steps": 100,
+      "scheduled_events": [
+        {
+          "timestep": 8,
+          "action": "start_fire",
+          "x": 80,
+          "y": 80,
+          "announcement": "Additional fire reported at (80,80); reassess shared resources."
+        },
+        {
+          "timestep": 9,
+          "action": "spawn_civilians_5",
+          "x": 20,
+          "y": 80,
+          "announcement": "Five additional civilians reported at (20,80); reassess rescue and transport priorities."
+        }
+      ],
+      "name": "Late_drone_Contended",
+      "description": "Coordinate original and newly reported fire/rescue work; share specialist workers and return them after the additional local objective.",
+      "water": true
+    },
+    "design": {
+      "sources": [
+        "Full_Game",
+        "Suppress_Fire_Extinguish_Second_Fire",
+        "Rescue_Civilians_Search_Rescue_Transport"
+      ],
+      "release_steps": [
+        0,
+        8,
+        9
+      ],
+      "focus_resource": "drone",
+      "capacity": 1,
+      "overlap_target_demand": 2,
+      "initial_spare_focus_workers": "policy-dependent; not guaranteed by preset",
+      "overlap_window": [
+        9,
+        21
+      ],
+      "requirement": "preferred-resource scheduling target; alternatives allowed; no Unity exclusivity constraint",
+      "objectives": [
+        "inspect initial fire region",
+        "inspect newly reported fire region"
+      ],
+      "deadline_profiles": {
+        "relaxed": {
+          "original_goal_due_step": 100,
+          "new_goal_release_step": 8,
+          "new_goal_due_step": 32,
+          "new_goal_budget_steps": 24,
+          "status": "candidate_requires_rollout_calibration",
+          "new_goal": "One live drone obtains fresh direct visibility of an active cell in the new fire region."
+        },
+        "urgent": {
+          "original_goal_due_step": 100,
+          "new_goal_release_step": 8,
+          "new_goal_due_step": 24,
+          "new_goal_budget_steps": 16,
+          "status": "candidate_requires_rollout_calibration",
+          "new_goal": "One live drone obtains fresh direct visibility of an active cell in the new fire region."
+        }
+      },
+      "deadline_semantics": "Evaluate after-action snapshots; count from verified event effect, not merely event submission. Profiles are external evaluation contracts, not enforced by the stock runner.",
+      "validity_gates": [
+        "Initial goal remains unfinished at release.",
+        "Event has verified physical effect.",
+        "A safe route and a feasible work target exist.",
+        "Both resource demands overlap; otherwise mark no_contention.",
+        "A scripted preemptive schedule passes the deadline; otherwise mark infeasible_or_uncalibrated."
+      ],
+      "movement_audit": {
+        "nominal_cells_per_sim_second": 10,
+        "nominal_sim_seconds_per_decision": 2,
+        "timing_status": "source nominal only; standalone InvokeRepeating registration requires deployed-build verification",
+        "deadline_requires_release_position_check": true
+      }
+    }
+  },
+  {
+    "id": "Late_helicopter_Sufficient",
+    "preset": {
+      "game_type": 5,
+      "map_size": 100,
+      "fire_spread_frequency": 500,
+      "civilian_count": 5,
+      "civilian_clusters": 2,
+      "civilian_move_frequency": 800,
+      "known": false,
+      "starting_firefighter_agents": 8,
+      "starting_drone_agents": 1,
+      "starting_helicopter_agents": 2,
+      "starting_bulldozer_agents": 1,
+      "vegetation_density_offset": 30,
+      "max_steps": 100,
+      "scheduled_events": [
+        {
+          "timestep": 8,
+          "action": "start_fire",
+          "x": 80,
+          "y": 80,
+          "announcement": "Additional fire reported at (80,80); reassess shared resources."
+        },
+        {
+          "timestep": 9,
+          "action": "spawn_civilians_5",
+          "x": 20,
+          "y": 80,
+          "announcement": "Five additional civilians reported at (20,80); reassess rescue and transport priorities."
+        }
+      ],
+      "name": "Late_helicopter_Sufficient",
+      "description": "Coordinate original and newly reported fire/rescue work; share specialist workers and return them after the additional local objective.",
+      "water": true
+    },
+    "design": {
+      "sources": [
+        "Full_Game",
+        "Suppress_Fire_Extinguish_Second_Fire",
+        "Rescue_Civilians_Search_Rescue_Transport"
+      ],
+      "release_steps": [
+        0,
+        8,
+        9
+      ],
+      "focus_resource": "helicopter",
+      "capacity": 2,
+      "overlap_target_demand": 2,
+      "initial_spare_focus_workers": "policy-dependent; not guaranteed by preset",
+      "overlap_window": [
+        9,
+        21
+      ],
+      "requirement": "preferred-resource scheduling target; alternatives allowed; no Unity exclusivity constraint",
+      "objectives": [
+        "deploy firefighters toward initial fire",
+        "deploy a different firefighter team toward additional fire"
+      ],
+      "deadline_profiles": {
+        "relaxed": {
+          "original_goal_due_step": 100,
+          "new_goal_release_step": 8,
+          "new_goal_due_step": 38,
+          "new_goal_budget_steps": 30,
+          "status": "candidate_requires_rollout_calibration",
+          "new_goal": "Deliver at least two firefighters to safe cells near the additional fire; verify pickup and dropoff by identity."
+        },
+        "urgent": {
+          "original_goal_due_step": 100,
+          "new_goal_release_step": 8,
+          "new_goal_due_step": 28,
+          "new_goal_budget_steps": 20,
+          "status": "candidate_requires_rollout_calibration",
+          "new_goal": "Deliver at least two firefighters to safe cells near the additional fire; verify pickup and dropoff by identity."
+        }
+      },
+      "deadline_semantics": "Evaluate after-action snapshots; count from verified event effect, not merely event submission. Profiles are external evaluation contracts, not enforced by the stock runner.",
+      "validity_gates": [
+        "Initial goal remains unfinished at release.",
+        "Event has verified physical effect.",
+        "A safe route and a feasible work target exist.",
+        "Both resource demands overlap; otherwise mark no_contention.",
+        "A scripted preemptive schedule passes the deadline; otherwise mark infeasible_or_uncalibrated."
+      ],
+      "movement_audit": {
+        "nominal_cells_per_sim_second": 15,
+        "nominal_sim_seconds_per_decision": 2,
+        "timing_status": "source nominal only; standalone InvokeRepeating registration requires deployed-build verification",
+        "deadline_requires_release_position_check": true
+      }
+    }
+  },
+  {
+    "id": "Late_helicopter_Contended",
+    "preset": {
+      "game_type": 5,
+      "map_size": 100,
+      "fire_spread_frequency": 500,
+      "civilian_count": 5,
+      "civilian_clusters": 2,
+      "civilian_move_frequency": 800,
+      "known": false,
+      "starting_firefighter_agents": 8,
+      "starting_drone_agents": 1,
+      "starting_helicopter_agents": 1,
+      "starting_bulldozer_agents": 1,
+      "vegetation_density_offset": 30,
+      "max_steps": 100,
+      "scheduled_events": [
+        {
+          "timestep": 8,
+          "action": "start_fire",
+          "x": 80,
+          "y": 80,
+          "announcement": "Additional fire reported at (80,80); reassess shared resources."
+        },
+        {
+          "timestep": 9,
+          "action": "spawn_civilians_5",
+          "x": 20,
+          "y": 80,
+          "announcement": "Five additional civilians reported at (20,80); reassess rescue and transport priorities."
+        }
+      ],
+      "name": "Late_helicopter_Contended",
+      "description": "Coordinate original and newly reported fire/rescue work; share specialist workers and return them after the additional local objective.",
+      "water": true
+    },
+    "design": {
+      "sources": [
+        "Full_Game",
+        "Suppress_Fire_Extinguish_Second_Fire",
+        "Rescue_Civilians_Search_Rescue_Transport"
+      ],
+      "release_steps": [
+        0,
+        8,
+        9
+      ],
+      "focus_resource": "helicopter",
+      "capacity": 1,
+      "overlap_target_demand": 2,
+      "initial_spare_focus_workers": "policy-dependent; not guaranteed by preset",
+      "overlap_window": [
+        9,
+        21
+      ],
+      "requirement": "preferred-resource scheduling target; alternatives allowed; no Unity exclusivity constraint",
+      "objectives": [
+        "deploy firefighters toward initial fire",
+        "deploy a different firefighter team toward additional fire"
+      ],
+      "deadline_profiles": {
+        "relaxed": {
+          "original_goal_due_step": 100,
+          "new_goal_release_step": 8,
+          "new_goal_due_step": 38,
+          "new_goal_budget_steps": 30,
+          "status": "candidate_requires_rollout_calibration",
+          "new_goal": "Deliver at least two firefighters to safe cells near the additional fire; verify pickup and dropoff by identity."
+        },
+        "urgent": {
+          "original_goal_due_step": 100,
+          "new_goal_release_step": 8,
+          "new_goal_due_step": 28,
+          "new_goal_budget_steps": 20,
+          "status": "candidate_requires_rollout_calibration",
+          "new_goal": "Deliver at least two firefighters to safe cells near the additional fire; verify pickup and dropoff by identity."
+        }
+      },
+      "deadline_semantics": "Evaluate after-action snapshots; count from verified event effect, not merely event submission. Profiles are external evaluation contracts, not enforced by the stock runner.",
+      "validity_gates": [
+        "Initial goal remains unfinished at release.",
+        "Event has verified physical effect.",
+        "A safe route and a feasible work target exist.",
+        "Both resource demands overlap; otherwise mark no_contention.",
+        "A scripted preemptive schedule passes the deadline; otherwise mark infeasible_or_uncalibrated."
+      ],
+      "movement_audit": {
+        "nominal_cells_per_sim_second": 15,
+        "nominal_sim_seconds_per_decision": 2,
+        "timing_status": "source nominal only; standalone InvokeRepeating registration requires deployed-build verification",
+        "deadline_requires_release_position_check": true
+      }
+    }
+  },
+  {
+    "id": "Late_bulldozer_Sufficient",
+    "preset": {
+      "game_type": 5,
+      "map_size": 100,
+      "fire_spread_frequency": 500,
+      "civilian_count": 5,
+      "civilian_clusters": 2,
+      "civilian_move_frequency": 800,
+      "known": false,
+      "starting_firefighter_agents": 8,
+      "starting_drone_agents": 1,
+      "starting_helicopter_agents": 1,
+      "starting_bulldozer_agents": 2,
+      "vegetation_density_offset": 30,
+      "max_steps": 100,
+      "scheduled_events": [
+        {
+          "timestep": 8,
+          "action": "start_fire",
+          "x": 80,
+          "y": 80,
+          "announcement": "Additional fire reported at (80,80); reassess shared resources."
+        },
+        {
+          "timestep": 9,
+          "action": "spawn_civilians_5",
+          "x": 20,
+          "y": 80,
+          "announcement": "Five additional civilians reported at (20,80); reassess rescue and transport priorities."
+        }
+      ],
+      "name": "Late_bulldozer_Sufficient",
+      "description": "Coordinate original and newly reported fire/rescue work; share specialist workers and return them after the additional local objective.",
+      "water": true
+    },
+    "design": {
+      "sources": [
+        "Full_Game",
+        "Suppress_Fire_Extinguish_Second_Fire",
+        "Rescue_Civilians_Search_Rescue_Transport"
+      ],
+      "release_steps": [
+        0,
+        8,
+        9
+      ],
+      "focus_resource": "bulldozer",
+      "capacity": 2,
+      "overlap_target_demand": 2,
+      "initial_spare_focus_workers": "policy-dependent; not guaranteed by preset",
+      "overlap_window": [
+        9,
+        21
+      ],
+      "requirement": "preferred-resource scheduling target; alternatives allowed; no Unity exclusivity constraint",
+      "objectives": [
+        "cut an initial firebreak segment",
+        "cut a segment near the additional fire"
+      ],
+      "deadline_profiles": {
+        "relaxed": {
+          "original_goal_due_step": 100,
+          "new_goal_release_step": 8,
+          "new_goal_due_step": 56,
+          "new_goal_budget_steps": 48,
+          "status": "candidate_requires_rollout_calibration",
+          "new_goal": "Clear a predeclared short segment near the additional fire; target cells must contain trees at release."
+        },
+        "urgent": {
+          "original_goal_due_step": 100,
+          "new_goal_release_step": 8,
+          "new_goal_due_step": 40,
+          "new_goal_budget_steps": 32,
+          "status": "candidate_requires_rollout_calibration",
+          "new_goal": "Clear a predeclared short segment near the additional fire; target cells must contain trees at release."
+        }
+      },
+      "deadline_semantics": "Evaluate after-action snapshots; count from verified event effect, not merely event submission. Profiles are external evaluation contracts, not enforced by the stock runner.",
+      "validity_gates": [
+        "Initial goal remains unfinished at release.",
+        "Event has verified physical effect.",
+        "A safe route and a feasible work target exist.",
+        "Both resource demands overlap; otherwise mark no_contention.",
+        "A scripted preemptive schedule passes the deadline; otherwise mark infeasible_or_uncalibrated."
+      ],
+      "movement_audit": {
+        "nominal_cells_per_sim_second": 4,
+        "nominal_sim_seconds_per_decision": 2,
+        "timing_status": "source nominal only; standalone InvokeRepeating registration requires deployed-build verification",
+        "deadline_requires_release_position_check": true
+      }
+    }
+  },
+  {
+    "id": "Late_bulldozer_Contended",
+    "preset": {
+      "game_type": 5,
+      "map_size": 100,
+      "fire_spread_frequency": 500,
+      "civilian_count": 5,
+      "civilian_clusters": 2,
+      "civilian_move_frequency": 800,
+      "known": false,
+      "starting_firefighter_agents": 8,
+      "starting_drone_agents": 1,
+      "starting_helicopter_agents": 1,
+      "starting_bulldozer_agents": 1,
+      "vegetation_density_offset": 30,
+      "max_steps": 100,
+      "scheduled_events": [
+        {
+          "timestep": 8,
+          "action": "start_fire",
+          "x": 80,
+          "y": 80,
+          "announcement": "Additional fire reported at (80,80); reassess shared resources."
+        },
+        {
+          "timestep": 9,
+          "action": "spawn_civilians_5",
+          "x": 20,
+          "y": 80,
+          "announcement": "Five additional civilians reported at (20,80); reassess rescue and transport priorities."
+        }
+      ],
+      "name": "Late_bulldozer_Contended",
+      "description": "Coordinate original and newly reported fire/rescue work; share specialist workers and return them after the additional local objective.",
+      "water": true
+    },
+    "design": {
+      "sources": [
+        "Full_Game",
+        "Suppress_Fire_Extinguish_Second_Fire",
+        "Rescue_Civilians_Search_Rescue_Transport"
+      ],
+      "release_steps": [
+        0,
+        8,
+        9
+      ],
+      "focus_resource": "bulldozer",
+      "capacity": 1,
+      "overlap_target_demand": 2,
+      "initial_spare_focus_workers": "policy-dependent; not guaranteed by preset",
+      "overlap_window": [
+        9,
+        21
+      ],
+      "requirement": "preferred-resource scheduling target; alternatives allowed; no Unity exclusivity constraint",
+      "objectives": [
+        "cut an initial firebreak segment",
+        "cut a segment near the additional fire"
+      ],
+      "deadline_profiles": {
+        "relaxed": {
+          "original_goal_due_step": 100,
+          "new_goal_release_step": 8,
+          "new_goal_due_step": 56,
+          "new_goal_budget_steps": 48,
+          "status": "candidate_requires_rollout_calibration",
+          "new_goal": "Clear a predeclared short segment near the additional fire; target cells must contain trees at release."
+        },
+        "urgent": {
+          "original_goal_due_step": 100,
+          "new_goal_release_step": 8,
+          "new_goal_due_step": 40,
+          "new_goal_budget_steps": 32,
+          "status": "candidate_requires_rollout_calibration",
+          "new_goal": "Clear a predeclared short segment near the additional fire; target cells must contain trees at release."
+        }
+      },
+      "deadline_semantics": "Evaluate after-action snapshots; count from verified event effect, not merely event submission. Profiles are external evaluation contracts, not enforced by the stock runner.",
+      "validity_gates": [
+        "Initial goal remains unfinished at release.",
+        "Event has verified physical effect.",
+        "A safe route and a feasible work target exist.",
+        "Both resource demands overlap; otherwise mark no_contention.",
+        "A scripted preemptive schedule passes the deadline; otherwise mark infeasible_or_uncalibrated."
+      ],
+      "movement_audit": {
+        "nominal_cells_per_sim_second": 4,
+        "nominal_sim_seconds_per_decision": 2,
+        "timing_status": "source nominal only; standalone InvokeRepeating registration requires deployed-build verification",
+        "deadline_requires_release_position_check": true
+      }
+    }
+  }
+]

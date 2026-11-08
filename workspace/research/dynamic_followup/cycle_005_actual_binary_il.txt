@@ -1,0 +1,63 @@
+MVID: 256a5b92-637c-4cf2-991f-167dd098582a
+System.Void Examples.Wildfire.MapManager::SprayWater(UnityEngine.Vector2,System.Single,System.Single,UnityEngine.Vector2)
+IL_0090: ldc.r4 90
+IL_0095: add
+IL_0096: call System.Single System.Math::Abs(System.Single)
+IL_009b: ldarg.3
+IL_009c: bgt IL_01c3
+IL_00a1: ldarg.0
+IL_00a2: ldfld Examples.Wildfire.CellGrid Examples.Wildfire.MapManager::cellGrid
+IL_00a7: ldfld System.Collections.Generic.List`1<System.Collections.Generic.List`1<Examples.Wildfire.Cell>> Examples.Wildfire.CellGrid::grid
+IL_00ac: ldloc.0
+IL_00ad: callvirt !0 System.Collections.Generic.List`1<System.Collections.Generic.List`1<Examples.Wildfire.Cell>>::get_Item(System.Int32)
+IL_00b2: ldloc.1
+IL_00b3: callvirt !0 System.Collections.Generic.List`1<Examples.Wildfire.Cell>::get_Item(System.Int32)
+IL_00b8: stloc.2
+IL_00b9: ldloc.0
+IL_00ba: ldsflda UnityEngine.Vector2 Examples.Wildfire.MapManager::mapSize
+IL_00bf: ldfld System.Single UnityEngine.Vector2::x
+IL_00c4: conv.i4
+IL_00c5: mul
+IL_00c6: ldloc.1
+IL_00c7: add
+IL_00c8: stloc.3
+IL_00c9: ldloc.2
+IL_00ca: ldfld Examples.Wildfire.CellState Examples.Wildfire.Cell::state
+IL_00cf: ldc.i4.2
+IL_00d0: beq.s IL_00e4
+IL_00d2: ldloc.2
+IL_00d3: ldfld Examples.Wildfire.CellState Examples.Wildfire.Cell::state
+IL_00d8: ldc.i4.3
+IL_00d9: beq.s IL_00e4
+IL_00db: ldloc.2
+IL_00dc: ldfld Examples.Wildfire.CellState Examples.Wildfire.Cell::state
+IL_00e1: ldc.i4.4
+IL_00e2: bne.un.s IL_0131
+IL_00e4: ldloc.2
+IL_00e5: ldc.i4.5
+IL_00e6: callvirt System.Void Examples.Wildfire.Cell::SetState(Examples.Wildfire.CellState)
+IL_00eb: ldsfld System.Int32 Examples.Wildfire.MapManager::fire_extinguished
+IL_00f0: ldc.i4.1
+IL_00f1: add
+IL_00f2: stsfld System.Int32 Examples.Wildfire.MapManager::fire_extinguished
+IL_00f7: ldloc.2
+IL_00f8: ldfld UnityEngine.GameObject Examples.Wildfire.Cell::fire
+IL_00fd: callvirt !!0 UnityEngine.GameObject::GetComponent<UnityEngine.ParticleSystem>()
+IL_0102: callvirt System.Void UnityEngine.ParticleSystem::Stop()
+IL_0107: ldarg.0
+IL_0108: ldfld Examples.Wildfire.MapData Examples.Wildfire.MapManager::mapData
+IL_010d: ldfld UnityEngine.Color[] Examples.Wildfire.MapData::colourMap
+IL_0112: ldloc.3
+IL_0113: ldc.r4 0.08627451
+IL_0118: ldc.r4 0.1019608
+IL_011d: ldc.r4 0.1137255
+IL_0122: newobj System.Void UnityEngine.Color::.ctor(System.Single,System.Single,System.Single)
+IL_0127: stelem.any UnityEngine.Color
+IL_012c: br IL_01c3
+IL_0131: ldloc.2
+IL_0132: ldfld System.Int32 Examples.Wildfire.Cell::wet
+IL_0137: ldc.i4.0
+IL_0138: ble.s IL_0147
+IL_013a: ldloc.2
+IL_013b: ldsfld System.Int32 Examples.Wildfire.MapManager::drying_time
+IL_0140: stfld System.Int32 Examples.Wildfire.Cell::wet

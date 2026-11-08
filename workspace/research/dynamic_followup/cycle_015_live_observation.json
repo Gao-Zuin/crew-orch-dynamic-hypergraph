@@ -1,0 +1,197 @@
+{
+  "checked": "2026-10-25T11:56:28.469117+08:00",
+  "kind": "verified live wait, pre-second-fire partial trace",
+  "batch": "/data1/gzy/crew_dynamic_followup_20261025_cycle010",
+  "live_pids": [
+    4084244,
+    4084345
+  ],
+  "latest_step": 9,
+  "phase": "before_action",
+  "rewards": [
+    1492,
+    3,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    3,
+    1,
+    0,
+    0,
+    0
+  ],
+  "nodes": {
+    "1": {
+      "position": [
+        30.0,
+        45.0
+      ],
+      "resources": {
+        "water": 5,
+        "civilian_carried": 0
+      },
+      "online": true
+    },
+    "2": {
+      "position": [
+        30.0,
+        45.0
+      ],
+      "resources": {
+        "water": 5,
+        "civilian_carried": 0
+      },
+      "online": true
+    },
+    "3": {
+      "position": [
+        30.0,
+        44.0
+      ],
+      "resources": {
+        "water": 5,
+        "civilian_carried": 0
+      },
+      "online": true
+    },
+    "4": {
+      "position": [
+        30.0,
+        44.0
+      ],
+      "resources": {
+        "water": 5,
+        "civilian_carried": 0
+      },
+      "online": true
+    },
+    "5": {
+      "position": [
+        40.0,
+        56.0
+      ],
+      "resources": {
+        "water": 0,
+        "civilian_carried": 0
+      },
+      "online": true
+    },
+    "6": {
+      "position": [
+        41.0,
+        56.0
+      ],
+      "resources": {
+        "water": 0,
+        "civilian_carried": 0
+      },
+      "online": true
+    },
+    "7": {
+      "position": [
+        8.0,
+        24.0
+      ],
+      "resources": {
+        "water": 5,
+        "civilian_carried": 0
+      },
+      "online": true
+    },
+    "8": {
+      "position": [
+        42.0,
+        56.0
+      ],
+      "resources": {
+        "water": 0,
+        "civilian_carried": 0
+      },
+      "online": true
+    }
+  },
+  "action_code_counts": {
+    "0": 67,
+    "4": 5
+  },
+  "latest_action_step": 8,
+  "latest_actions": [
+    {
+      "agent": "1",
+      "action": [
+        0,
+        41,
+        59
+      ],
+      "timestep": 8
+    },
+    {
+      "agent": "2",
+      "action": [
+        0,
+        41,
+        59
+      ],
+      "timestep": 8
+    },
+    {
+      "agent": "3",
+      "action": [
+        0,
+        41,
+        59
+      ],
+      "timestep": 8
+    },
+    {
+      "agent": "4",
+      "action": [
+        0,
+        41,
+        59
+      ],
+      "timestep": 8
+    },
+    {
+      "agent": "5",
+      "action": [
+        0,
+        40,
+        56
+      ],
+      "timestep": 8
+    },
+    {
+      "agent": "6",
+      "action": [
+        0,
+        41,
+        56
+      ],
+      "timestep": 8
+    },
+    {
+      "agent": "7",
+      "action": [
+        4,
+        8.0,
+        24.0
+      ],
+      "timestep": 8
+    },
+    {
+      "agent": "8",
+      "action": [
+        0,
+        45,
+        57
+      ],
+      "timestep": 8
+    }
+  ],
+  "native_exception_headings": [],
+  "qualification": "No task effect attribution before event/full trajectory; no code changes or extra model sampling this cycle"
+}

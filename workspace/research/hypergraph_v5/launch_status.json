@@ -1,0 +1,11 @@
+{
+  "phase": "paused_by_user",
+  "paused_at": "2026-10-12T14:46:18+08:00",
+  "live_campaign_processes": 0,
+  "completed_cases": 6,
+  "interrupted_case": "06_Transport_Firefighters_large_seed741_HR_projector_off",
+  "not_started_cases": 5,
+  "pid": 3734169,
+  "output": "/data/gzy/selfevolve/CREW/benchmark_runs/hypergraph_campaign_v5",
+  "archive_sha256": "e65ea56fc3af9bace1a4348afaff2c630441e1ff2b833ca31265b05b22240bdc"
+}

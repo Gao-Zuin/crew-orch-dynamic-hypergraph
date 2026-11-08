@@ -1,0 +1,34 @@
+{
+  "checked": "2026-10-25T10:40:45.616628+08:00",
+  "run": "second_fire_seed137",
+  "snapshot_event": 19,
+  "organizer_request_event": 21,
+  "commit_event": 23,
+  "unsupported_plan_excerpt": {
+    "water_logistics_agent2": "Refill at [8,24] and hold full tank ready to relay to suppression group",
+    "suppression_agent8": "Hold as reserve near [41,59] approach; receive water from logistics group",
+    "suppression_advice": "Maintain safe standoff distance; coordinate water handoffs with the water-logistics group before spraying."
+  },
+  "worker_abilities_in_world": [
+    "firefighter",
+    "bulldozer",
+    "drone",
+    "helicopter"
+  ],
+  "worker_abilities_in_request": false,
+  "input_fields": [
+    "version",
+    "evidence_id",
+    "step",
+    "mission",
+    "rewards",
+    "fire_active",
+    "reward_schema",
+    "events",
+    "agents",
+    "edges",
+    "active"
+  ],
+  "candidate": "Forward existing worker_abilities to organizer; do not add a water-transfer ban or new action veto",
+  "qualification": "initial plan invents unsupported water transfer; later action consequences and correction benefit remain unproven"
+}

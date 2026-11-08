@@ -1,0 +1,180 @@
+{
+  "checked": "2026-10-25T12:27:26.367217+08:00",
+  "case": "/data1/gzy/crew_dynamic_followup_20261025_cycle010/runs/second_fire_seed137",
+  "status": {
+    "exit_code": 0,
+    "error": null,
+    "elapsed_seconds": 2295.787041252479,
+    "run_finished": true,
+    "graph_commits": 16,
+    "handoffs": 0,
+    "authorized_actions": 263,
+    "held_actions": 0,
+    "proposal_rejections": 1,
+    "frozen_sources_unchanged": true,
+    "usage": {
+      "input_tokens": 1763932,
+      "output_tokens": 195720,
+      "api_calls": 1067
+    },
+    "mechanism_audit_passed": true
+  },
+  "behavior": {
+    "run": "second_fire_seed137",
+    "profile": "task_hypergraph_soft_v1",
+    "fixed": false,
+    "level": "Suppress_Fire_Extinguish_Second_Fire",
+    "seed": 137,
+    "requested_steps": 100,
+    "completed_steps": 100,
+    "finished": true,
+    "commits": 16,
+    "topology_changes_after_initial": 9,
+    "identical_field_commits_after_initial": 2,
+    "action_boundaries": 263,
+    "authorized": 263,
+    "held": 0,
+    "rejections": 1,
+    "last_success": false,
+    "last_rewards": [
+      1863,
+      366,
+      0,
+      8,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      7,
+      0,
+      0
+    ],
+    "last_fire_active": true,
+    "events_sha256": "864974392cd82468918cb83c9410959aa51a868acecc0e71cecea43c5573a98d"
+  },
+  "first_all_offline": {
+    "event_id": 2553,
+    "step": 50,
+    "phase": "after_action"
+  },
+  "events_after_all_offline": {
+    "TASK_VALIDATED": 100,
+    "ACTION_COMPLETED": 1,
+    "LLM_USAGE": 50,
+    "TASK_WORLD_SNAPSHOT": 98,
+    "TASK_GRAPH_COMMITTED": 1,
+    "TASK_GROUP_ATTRITION": 1,
+    "TASK_HYPERGRAPH_FINISHED": 1,
+    "RUN_FINISHED": 1
+  },
+  "action_codes": {
+    "0": 238,
+    "4": 8,
+    "3": 17
+  },
+  "messages_delivered": 590,
+  "cross_group_delivered": 0,
+  "topology_changes": [
+    {
+      "step": 12,
+      "event": 952,
+      "fields_changed": [
+        "containment-prep:goal",
+        "containment-prep:tasks",
+        "containment-prep:advice",
+        "water-logistics:members",
+        "water-logistics:goal",
+        "water-logistics:tasks",
+        "water-logistics:advice",
+        "active"
+      ]
+    },
+    {
+      "step": 17,
+      "event": 1293,
+      "fields_changed": [
+        "containment-prep:members",
+        "containment-prep:tasks",
+        "water-logistics:members",
+        "water-logistics:tasks",
+        "active"
+      ]
+    },
+    {
+      "step": 22,
+      "event": 1619,
+      "fields_changed": [
+        "water-logistics:members",
+        "water-logistics:leader",
+        "water-logistics:tasks",
+        "active"
+      ]
+    },
+    {
+      "step": 27,
+      "event": 1894,
+      "fields_changed": [
+        "containment-prep:goal",
+        "water-logistics:members",
+        "water-logistics:leader",
+        "water-logistics:tasks",
+        "active"
+      ]
+    },
+    {
+      "step": 33,
+      "event": 2169,
+      "fields_changed": [
+        "containment-prep:removed",
+        "mission:created",
+        "water-logistics:removed",
+        "active"
+      ]
+    },
+    {
+      "step": 35,
+      "event": 2258,
+      "fields_changed": [
+        "mission:members",
+        "mission:goal",
+        "mission:tasks",
+        "mission:advice",
+        "active"
+      ]
+    },
+    {
+      "step": 36,
+      "event": 2292,
+      "fields_changed": [
+        "containment:created",
+        "mission:removed",
+        "active"
+      ]
+    },
+    {
+      "step": 47,
+      "event": 2514,
+      "fields_changed": [
+        "containment:members",
+        "containment:tasks",
+        "containment:advice",
+        "active"
+      ]
+    },
+    {
+      "step": 51,
+      "event": 2559,
+      "fields_changed": [
+        "containment:removed",
+        "active"
+      ]
+    }
+  ],
+  "native_exception": "Cell.UpdateCell at0x75; not the previously patched MapManager.SprayWater site",
+  "cancelled_cases": [
+    "second_fire_seed256"
+  ],
+  "all_experiment_processes_exited": true
+}

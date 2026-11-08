@@ -1,0 +1,1363 @@
+{
+  "source_case": "/data1/gzy/crew_dynamic_followup_20261025_cycle010/runs/second_fire_seed137",
+  "version": "Cycle010 guarded build; does not include withdrawn group_directory candidate",
+  "mode": "existing-record audit only, no new model calls/Unity runs/runtime changes",
+  "selected_actions": [
+    {
+      "agent": "1",
+      "step": 12,
+      "action_event": 991,
+      "position": [
+        41.0,
+        58.0
+      ],
+      "water": 5,
+      "command": [
+        0,
+        43,
+        56
+      ],
+      "model_output": "<justification>AGENT_2 and AGENT_4 both report the fire is wider than I observed, with ignited cells spanning (39-43, 60-61) and my west flank at (40,58) being dangerously close to the fire core. I'm at (41,58) with a full tank (5 water). Per the group plan, I should hold my full tank and stage at a safe standoff rather than spray. To widen my standoff from the fire core to my southwest, I'll move north/northeast to a safer staging position around (43,56), keeping clear of the fire perimeter while remaining ready to support containment. I'll report the discrepancy and my repositioning.</justification>\n\n<action>Move towards (43,56)</action>"
+    },
+    {
+      "agent": "1",
+      "step": 13,
+      "action_event": 1059,
+      "position": [
+        43.0,
+        56.0
+      ],
+      "water": 5,
+      "command": [
+        0,
+        44,
+        54
+      ],
+      "model_output": "<justification>Fire core is at (42-44,59-60) with ignited cells extending to (39-43,60-61), just south of my position at (43,56). I'm holding a full tank (5 units) and should stage at a safe standoff north/northeast of the perimeter as advised. Moving slightly north/northeast to (44,54) keeps me clear of the fire while maintaining a staging position near the target area for containment. I will not spray yet per coordination advice.</justification>\n\n<action>Move towards (44, 54)</action>"
+    },
+    {
+      "agent": "1",
+      "step": 14,
+      "action_event": 1124,
+      "position": [
+        44.0,
+        54.0
+      ],
+      "water": 5,
+      "command": [
+        0,
+        44.0,
+        54.0
+      ],
+      "model_output": "<justification>I'm AGENT_1, the north flank holder at (44,54) with a full tank (5). The fire core is at (40-43,59-61), roughly 5-6 cells SSW of me. My role per the group plan is to hold full tank at safe standoff north of the perimeter. AGENT_2 is shifting to (44,53) on the west, AGENT_4 holds east at (46,58). I should maintain my north flank position but ensure I keep a safe standoff — the fire is spreading SW, so my current position is reasonably safe. I'll hold position and stay on standby to conserve energy, keeping my full tank ready for containment once the group coordinates a spray. No spray yet per advice.</justification>\n\n<action>Do nothing, remaining on standby and conserving energy</action>"
+    },
+    {
+      "agent": "1",
+      "step": 15,
+      "action_event": 1187,
+      "position": [
+        44.0,
+        54.0
+      ],
+      "water": 5,
+      "command": [
+        0,
+        44,
+        56
+      ],
+      "model_output": "<justification>I'm at (44,54) with a full tank (5 water). The fire core is at (43-46,61-63), roughly 7-9 cells south of me. AGENT_2 holds the west flank at (42,52) and AGENT_4 holds the east flank at (46,57). My role as north flank is to maintain a safe standoff and stage my full tank near the fire perimeter without touching it. I should hold position or shift slightly to maintain a good northern containment stance. Moving slightly toward (44,56) keeps me staged closer to the fire's northern edge while staying at safe standoff (~5-6 cells from the core), ready to spray on containment-prep's call. I'll hold full tank, no spray.</justification>\n\n<action>Move towards (44, 56)</action>"
+    },
+    {
+      "agent": "1",
+      "step": 16,
+      "action_event": 1252,
+      "position": [
+        44.0,
+        56.0
+      ],
+      "water": 5,
+      "command": [
+        0,
+        42,
+        58
+      ],
+      "model_output": "<justification>I'm at (44,56) with a full tank (5 water). The fire core is at (43-46,61-63), roughly 5-7 cells south of me. A civilian is reported near (44,61), dangerously close to the fire line. AGENT_4 offered to assist with civilian extraction. My group role is water-logistics — staging full tanks near [41,59] at safe standoff. I should hold position at a safe standoff north of the fire (y=56 is safe, fire is at y=61+). I'll move slightly to maintain a good staging position near (42,58) but keep clear of the fire perimeter (y=59+). I should not spray without containment-prep call. I'll acknowledge AGENT_4's offer and coordinate civilian extraction while holding my staging position.</justification>\n\n<action>Move towards (42, 58)</action>"
+    },
+    {
+      "agent": "1",
+      "step": 17,
+      "action_event": 1323,
+      "position": [
+        42.0,
+        58.0
+      ],
+      "water": 5,
+      "command": [
+        0,
+        42.0,
+        58.0
+      ],
+      "model_output": "<justification>I'm at (42,58) with a full tank (5 units), holding safe standoff as group leader. Fire is active S/SE at (43-47,60-61) with ignited cells (44-46,61-62). AGENT_7 is co-located and requesting spray authorization. The group plan is to stage full tanks near [41,59] at safe standoff and coordinate with containment-prep before spraying. No containment-prep call has come yet, so I should not spray. My best action is to hold position and conserve energy while maintaining the full tank for staging, and confirm coordination status. Since I'm already at the staging point (42,58) near [41,59], doing nothing conserves energy and keeps me ready.</justification>\n\n<action>Do nothing, remaining on standby and conserving energy</action>"
+    },
+    {
+      "agent": "1",
+      "step": 18,
+      "action_event": 1384,
+      "position": [
+        42.0,
+        58.0
+      ],
+      "water": 5,
+      "command": [
+        0,
+        42.0,
+        58.0
+      ],
+      "model_output": "<justification>I'm at (42,58) with a full tank (5 water), holding the center standoff slot per the group plan. Fire front is at y=60-62, roughly 2-4 cells south, with no northward creep past y=59 reported by AGENT_7 and AGENT_2. My role is to hold full tank and stage near [41,59] at safe standoff, coordinating before any spray. I should not advance into the fire perimeter. I'll hold position and conserve energy while AGENT_4 handles the civilian rescue and we await containment-prep spray authorization. No spray is warranted yet since the fire hasn't crossed y=59 and I lack authorization.</justification>\n\n<action>Do nothing, remaining on standby and conserving energy</action>"
+    },
+    {
+      "agent": "1",
+      "step": 19,
+      "action_event": 1451,
+      "position": [
+        42.0,
+        58.0
+      ],
+      "water": 5,
+      "command": [
+        3,
+        44,
+        61
+      ],
+      "model_output": "<justification>I'm at (42,58) with a full tank (5 units), holding the center slot of the containment line. AGENT_4 confirms no civilian to extract and recommends coordinated spray on the band (43-47,60-61) from the north edge. AGENT_2 and AGENT_7 both confirm no northward creep past y=59 and are holding their flanks with full tanks. The fire line is at y=60-62, so spraying from my position at y=58 toward the band at y=60-61 keeps me at a safe standoff while suppressing the fire front. This aligns with the group goal of containment without touching the fire. I'll authorize and execute the coordinated spray toward the fire band.</justification>\n\n<action>Spray a wide cone of water in the direction of (44, 61)</action>"
+    },
+    {
+      "agent": "5",
+      "step": 37,
+      "action_event": 2319,
+      "position": [
+        48.0,
+        60.0
+      ],
+      "water": 1,
+      "command": [
+        0,
+        46,
+        60
+      ],
+      "model_output": "<justification>AGENT_6 has departed for refill, leaving the x44-48/y58-64 gap to me. I'm at (48,60) with 1 water. The wet/extinguished band is holding and no fire has crossed y=58. I should conserve my last water and reposition to cover the gap AGENT_6 vacated, staying north of the y=64 fire line. Moving toward (46,60) keeps me centered on the gap without touching the active fire to the south.</justification>\n\n<action>Move towards (46, 60)</action>"
+    },
+    {
+      "agent": "5",
+      "step": 38,
+      "action_event": 2338,
+      "position": [
+        46.0,
+        60.0
+      ],
+      "water": 1,
+      "command": [
+        0,
+        8,
+        24
+      ],
+      "model_output": "<justification>AGENT_6 has refilled and is returning to cover the x44-48/y58-64 gap, clearing me to rotate to the water source at (8,24). I currently have only 1 water, so refilling now is the priority while AGENT_6 covers the containment line. I'll move toward (8,24) to refill.</justification>\n\n<action>Move towards (8, 24)</action>"
+    },
+    {
+      "agent": "5",
+      "step": 39,
+      "action_event": 2357,
+      "position": [
+        42.0,
+        57.0
+      ],
+      "water": 1,
+      "command": [
+        0,
+        8,
+        24
+      ],
+      "model_output": "<justification>AGENT_6 has confirmed taking over the x44-48/y58-64 gap and cleared me to rotate to the water source at (8,24) for refill. My tank is nearly empty (1 water), so refilling now is the highest-value action to keep containment viable. I'll move toward (8,24).</justification>\n\n<action>Move towards (8, 24)</action>"
+    },
+    {
+      "agent": "5",
+      "step": 40,
+      "action_event": 2376,
+      "position": [
+        39.0,
+        53.0
+      ],
+      "water": 1,
+      "command": [
+        0,
+        8,
+        24
+      ],
+      "model_output": "<justification>AGENT_6 has confirmed they are holding the x44-48/y58-64 gap with only 1 water and will need to refill soon. I am at (39,53) with 1 water and was previously heading to refill at (8,24). The gap is currently covered by AGENT_6, so I should complete my refill run now so I can return full and relieve AGENT_6. Continuing toward (8,24) is the best action.</justification>\n\n<action>Move towards (8, 24)</action>"
+    },
+    {
+      "agent": "5",
+      "step": 41,
+      "action_event": 2400,
+      "position": [
+        35.0,
+        49.0
+      ],
+      "water": 1,
+      "command": [
+        0,
+        8,
+        24
+      ],
+      "model_output": "<justification>AGENT_6 is nearly dry (1 water) and holding the x44-48/y58-64 gap, requesting I get full so they can rotate to refill. I'm at (35,49) with 1 water and already en route to the water source at (8,24). Continuing toward (8,24) to refill is the correct move — it lets me return full and relieve AGENT_6. No active fire is visible near me, so no spray is needed now.</justification>\n\n<action>Move towards (8, 24)</action>"
+    },
+    {
+      "agent": "5",
+      "step": 42,
+      "action_event": 2419,
+      "position": [
+        28.0,
+        43.0
+      ],
+      "water": 1,
+      "command": [
+        0,
+        8,
+        24
+      ],
+      "model_output": "<justification>AGENT_6 is holding the gap but is nearly dry (1 water) and has asked me to ping when FULL so they can rotate to refill. I am currently at (28,43) with 1 water after my last refill attempt sequence — I need to complete my rotation to the water source at (8,24) to get FULL, then return to cover the gap. Moving toward (8,24) is the correct next step to keep water supplies viable and enable the swap.</justification>\n\n<action>Move towards (8, 24)</action>"
+    },
+    {
+      "agent": "5",
+      "step": 43,
+      "action_event": 2438,
+      "position": [
+        21.0,
+        37.0
+      ],
+      "water": 1,
+      "command": [
+        0,
+        8,
+        24
+      ],
+      "model_output": "<justification>I am at (21,37) with 1 water, having just refilled at (8,24) and moved back toward the fire. Agent 6 is holding the gap at (46,60) with only 1 water and needs me to return FULL so they can rotate to refill. However, my tank is only at 1 water — I did not actually top up to 5. I need to return to the water source at (8,24) to refill to full before I can relieve Agent 6. My last several actions were moving toward (8,24) but I'm still at (21,37), so I should continue moving toward the water source to refill.</justification>\n\n<action>Move towards (8, 24)</action>"
+    },
+    {
+      "agent": "5",
+      "step": 44,
+      "action_event": 2457,
+      "position": [
+        14.0,
+        30.0
+      ],
+      "water": 1,
+      "command": [
+        0,
+        46,
+        60
+      ],
+      "model_output": "<justification>I am at (14,30) with a full tank after refilling at (8,24). AGENT_6 is holding the gap at (46,58) with only 1 water and needs me to arrive full so they can rotate to refill. I should move toward the fire edge near (41,59)/(46,60) to relieve AGENT_6. Moving east/northeast toward (46,60) is the priority.</justification>\n\n<action>Move towards (46, 60)</action>"
+    },
+    {
+      "agent": "5",
+      "step": 45,
+      "action_event": 2476,
+      "position": [
+        21.0,
+        37.0
+      ],
+      "water": 1,
+      "command": [
+        0,
+        41,
+        59
+      ],
+      "model_output": "<justification>I'm at (21,37) with 1 water unit, far from the fire edge near (41,59). Agent 6 is holding the gap at (46,60) with only 1 water and needs relief. I should move toward the fire edge to reinforce containment and eventually relieve Agent 6. Moving toward (41,59) closes distance while staying south of the fire line.</justification>\n\n<action>Move towards (41, 59)</action>"
+    },
+    {
+      "agent": "5",
+      "step": 46,
+      "action_event": 2499,
+      "position": [
+        27.0,
+        44.0
+      ],
+      "water": 1,
+      "command": [
+        0,
+        46,
+        60
+      ],
+      "model_output": "<justification>AGENT_6 is rotating to refill at (8,24), leaving the containment gap at x44-48/y58-64 uncovered. I'm at (27,44) with a full tank and need to move northeast to cover that gap. I'll head toward (46,60) to take over the containment position.</justification>\n\n<action>Move towards (46,60)</action>"
+    },
+    {
+      "agent": "5",
+      "step": 47,
+      "action_event": 2518,
+      "position": [
+        34.0,
+        49.0
+      ],
+      "water": 1,
+      "command": [
+        0,
+        46,
+        60
+      ],
+      "model_output": "<justification>Agent 6 is rotating to refill and asked me to cover the gap at (46,60). I'm at (34,49) with 1 water charge. I need to move toward the fire edge/gap area to cover x44-48/y58-64. Moving toward (46,60) closes the distance while maintaining safe approach. I'll head there to take over containment while Agent 6 refills.</justification>\n\n<action>Move towards (46,60)</action>"
+    },
+    {
+      "agent": "5",
+      "step": 48,
+      "action_event": 2529,
+      "position": [
+        38.0,
+        53.0
+      ],
+      "water": 1,
+      "command": [
+        0,
+        46,
+        60
+      ],
+      "model_output": "<justification>Agent 6 is rotating to refill at (8,24), leaving the gap at x44-48/y58-64 uncovered. I'm at (38,53) with 1 water and need to move to cover that gap near (46,60). Moving southeast toward (46,60) to take over the containment position.</justification>\n<action>Move towards (46,60)</action>"
+    },
+    {
+      "agent": "5",
+      "step": 49,
+      "action_event": 2540,
+      "position": [
+        42.0,
+        56.0
+      ],
+      "water": 1,
+      "command": [
+        0,
+        46,
+        60
+      ],
+      "model_output": "<justification>Agent 6 has rotated to refill at (8,24), leaving the gap x44-48/y58-64 uncovered. I'm at (42,56) with 1 water and need to move to cover that gap at (46,60) to maintain containment. No active fire in my immediate view, so I'll reposition to the gap position rather than spray.</justification>\n<action>Move towards (46, 60)</action>"
+    },
+    {
+      "agent": "5",
+      "step": 50,
+      "action_event": 2551,
+      "position": [
+        46.0,
+        60.0
+      ],
+      "water": 1,
+      "command": [
+        0,
+        42,
+        62
+      ],
+      "model_output": "<justification>AGENT_6 reports the fire line is at ~y=64-66 with a treated band holding x38-50/y61-66, and no fire north of y=58. My view confirms a large extinguished/extinguishing zone to my west/southwest with no active fire visible. AGENT_6 is rotating to refill, so I should cover the gap at (46,60) and verify the fire edge. I'll move toward the fire edge near (41,59) to maintain safe distance and confirm the containment line, staying ready to spray if fire crosses north.</justification>\n\n<action>Move towards (42, 62)</action>"
+    },
+    {
+      "agent": "6",
+      "step": 36,
+      "action_event": 2302,
+      "position": [
+        44.0,
+        56.0
+      ],
+      "water": 1,
+      "command": [
+        0,
+        8,
+        24
+      ],
+      "model_output": "<justification>AGENT_5 is low on water and asked me to confirm when I depart for refill so they can cover the x44-48 gap. I'm also low (1 water) and my last sprays were toward (48,60). The fire line is south at y65-66 and no fire is north of y=58 in my sector, so the gap is currently stable. I'll depart for the water source at (8,24) to refill, letting AGENT_5 hold the line, and report my departure.</justification>\n\n<action>Move towards (8, 24)</action>"
+    },
+    {
+      "agent": "6",
+      "step": 37,
+      "action_event": 2321,
+      "position": [
+        40.0,
+        53.0
+      ],
+      "water": 1,
+      "command": [
+        0,
+        8,
+        24
+      ],
+      "model_output": "<justification>AGENT_5 is nearly dry (~1 water) and covering the x44-48 gap while I refill. I have 1 water and am at (40,53), north of the containment line. Per the coordination plan, I should depart for the water source at (8,24) now so AGENT_5 can rotate out soon. I'll move toward the water source and ping AGENT_5 that I'm departing.</justification>\n\n<action>Move towards (8, 24)</action>"
+    },
+    {
+      "agent": "6",
+      "step": 38,
+      "action_event": 2340,
+      "position": [
+        36.0,
+        48.0
+      ],
+      "water": 1,
+      "command": [
+        0,
+        44,
+        58
+      ],
+      "model_output": "<justification>I'm at (36,48) with 1 unit of water, having just refilled and returned. AGENT_5 is nearly dry at (46,60) and needs to rotate out for water. The containment gap x44-48/y58-64 needs coverage. I should move southeast toward the containment line to take over AGENT_5's sector so they can refill. Moving toward (44,58) positions me to cover the gap and be ready to spray if fire crosses y=58.</justification>\n\n<action>Move towards (44, 58)</action>"
+    },
+    {
+      "agent": "6",
+      "step": 39,
+      "action_event": 2359,
+      "position": [
+        40.0,
+        53.0
+      ],
+      "water": 1,
+      "command": [
+        0,
+        44,
+        57
+      ],
+      "model_output": "<justification>AGENT_5 has rotated to refill, leaving the x44-48/y58-64 gap to me. I'm at (40,53) with 1 water. The fire line is at y=66, well south of y=58, and the wet band is holding. I should move toward the gap to cover it, staying north of y=58 and not crossing y=64. I'll reposition toward (44,57) to take over AGENT_5's sector while conserving my last water.</justification>\n\n<action>Move towards (44, 57)</action>"
+    },
+    {
+      "agent": "6",
+      "step": 40,
+      "action_event": 2378,
+      "position": [
+        43.0,
+        56.0
+      ],
+      "water": 1,
+      "command": [
+        0,
+        46,
+        60
+      ],
+      "model_output": "<justification>AGENT_5 has departed for refill, leaving me responsible for the x44-48/y58-64 gap. I'm at (43,56) with 1 water. The fire line is at y=66, south of my position, and the wet/extinguished band x37-46/y58-64 is holding. I should reposition to cover the gap near (46,60) and hold my last water in reserve, only spraying if fire crosses y=58. Moving to (46,60) puts me in position to cover the assigned gap without crossing y=64.</justification>\n\n<action>Move towards (46,60)</action>"
+    },
+    {
+      "agent": "6",
+      "step": 41,
+      "action_event": 2402,
+      "position": [
+        46.0,
+        60.0
+      ],
+      "water": 1,
+      "command": [
+        0,
+        46,
+        62
+      ],
+      "model_output": "<justification>AGENT_5 is en route to refill and has handed me the x44-48/y58-64 gap. I am at (46,60) with 1 water. The fire front is at y=66, south of my position, and no fire has crossed y=58. I should hold position in the gap and conserve my last water, only spraying if fire crosses y=58. I'll reposition slightly to better cover the gap center around (46,61) while staying north of y=64.</justification>\n\n<action>Move towards (46, 62)</action>"
+    },
+    {
+      "agent": "6",
+      "step": 42,
+      "action_event": 2421,
+      "position": [
+        46.0,
+        62.0
+      ],
+      "water": 1,
+      "command": [
+        0,
+        46,
+        60
+      ],
+      "model_output": "<justification>I'm at (46,62) holding the x44-48/y58-64 gap as AGENT_5 requested. Fire is south of y=64 (ignited line at y=66), not crossing y=58. I have only 1 water, so I should conserve and not spray. AGENT_5 is en route to refill. I'll hold position near the gap and monitor, staying north of y=64. Moving slightly to maintain good coverage of the gap without burning water is best.</justification>\n\n<action>Move towards (46, 60)</action>"
+    },
+    {
+      "agent": "6",
+      "step": 43,
+      "action_event": 2440,
+      "position": [
+        46.0,
+        60.0
+      ],
+      "water": 1,
+      "command": [
+        0,
+        46,
+        58
+      ],
+      "model_output": "<justification>AGENT_5 is en route to refill and has asked me to hold the x44-48/y58-64 gap. I'm at (46,60), which is within that gap. I have 1 water unit and should conserve it, only spraying if fire crosses y=58. My observations show no active fire north of y=58 in my immediate vicinity, and the ignited line is at y=66 (south of me). I should reposition slightly to better cover the gap and stay vigilant without burning my last water. Moving to a central holding position in the gap like (46,58) keeps me at the northern boundary where I can react if fire crosses y=58.</justification>\n\n<action>Move towards (46, 58)</action>"
+    },
+    {
+      "agent": "6",
+      "step": 44,
+      "action_event": 2459,
+      "position": [
+        46.0,
+        58.0
+      ],
+      "water": 1,
+      "command": [
+        0,
+        46,
+        60
+      ],
+      "model_output": "<justification>AGENT_5 is still en route to refill (~6-8 steps out) and asked me to hold the x44-48/y58-64 gap. I'm at (46,58) with 1 water. Fire is to my west/southwest around (40,66) and the extinguishing zone spans (38,60)-(44,66). No fire has crossed y=58 in my view, so I should conserve my last water and maintain position on the gap rather than spray prematurely. I'll reposition slightly to keep the gap covered and stay ready to spray if the fire line advances north toward y=58.</justification>\n\n<action>Move towards (46, 60)</action>"
+    },
+    {
+      "agent": "6",
+      "step": 45,
+      "action_event": 2478,
+      "position": [
+        46.0,
+        60.0
+      ],
+      "water": 1,
+      "command": [
+        0,
+        46.0,
+        60.0
+      ],
+      "model_output": "<justification>AGENT_5 is en route with a full tank and will relieve me at (46,60) in ~6-8 steps. I have only 1 water left, so I should conserve it and hold the gap x44-48/y58-64. There is an ignited cell near (40,64) to my southwest, but it is outside my assigned gap and I should not burn my last water unless fire crosses y=58. I'll stay on station at (46,60) and monitor, ready to spray only if the fire line advances north across y=58.</justification>\n\n<action>Do nothing, remaining on standby and conserving energy</action>"
+    },
+    {
+      "agent": "6",
+      "step": 46,
+      "action_event": 2501,
+      "position": [
+        46.0,
+        60.0
+      ],
+      "water": 1,
+      "command": [
+        0,
+        44,
+        62
+      ],
+      "model_output": "<justification>I have only 1 water left and there is an ignited cell at (40,64) on the western edge of the treated zone. AGENT_5 is en route but still several steps away. Rather than burn my last water prematurely, I should reposition to keep the gap x44-48/y58-64 covered and monitor the fire line. Moving slightly toward the ignited cell at (40,64) lets me assess and be ready to spray if it spreads north across y=58. I'll hold position near the gap and report status.</justification>\n\n<action>Move towards (44, 62)</action>"
+    }
+  ],
+  "selected_events": [
+    {
+      "episode_id": "2026-10-25-11-46-45-process-4084269",
+      "task_id": "Suppress_Fire_Extinguish_Second_Fire",
+      "task_seed": 137,
+      "arm": "HT",
+      "agent_id": null,
+      "session_epoch": null,
+      "event_id": 1293,
+      "state_version": 269,
+      "timestamp_monotonic": 11814295.46463682,
+      "event_type": "TASK_GRAPH_COMMITTED",
+      "topology_version": 0,
+      "edge_id": null,
+      "action_id": null,
+      "message_id": null,
+      "transaction_id": null,
+      "payload": {
+        "version": 5,
+        "proposal": {
+          "based_on_version": 4,
+          "evidence_id": 1289,
+          "reason": "Keep two stable groups: full-tank agents stage near the fire for containment; empty-tank agents refill at the water source then scout/prepare containment positions. Agent 3 is offline and excluded.",
+          "edges": [
+            {
+              "id": "water-logistics",
+              "goal": "Stage full water tanks near [41,59] for containment without touching the fire",
+              "members": [
+                "1",
+                "2",
+                "4",
+                "7"
+              ],
+              "leader": "1",
+              "tasks": {
+                "1": "Hold full tank and stage near [41,59] at safe standoff",
+                "2": "Hold full tank and stage near [41,59] at safe standoff",
+                "4": "Hold full tank and stage near [41,59] at safe standoff",
+                "7": "Hold full tank and stage near [41,59] at safe standoff"
+              },
+              "advice": "Coordinate with containment-prep before any spray; keep clear of the fire perimeter."
+            },
+            {
+              "id": "containment-prep",
+              "goal": "Refill empty tanks at [8,24], then scout and prepare containment positions near [41,59]",
+              "members": [
+                "5",
+                "6",
+                "8"
+              ],
+              "leader": "5",
+              "tasks": {
+                "5": "Refill at [8,24], then scout fire perimeter from a safe distance",
+                "6": "Refill at [8,24], then identify cut/spray positions near [41,59]",
+                "8": "Refill at [8,24], then stage near [41,59] for containment support"
+              },
+              "advice": "Maintain safe standoff; report refill completion and perimeter observations to water-logistics."
+            }
+          ],
+          "active": {
+            "1": "water-logistics",
+            "2": "water-logistics",
+            "4": "water-logistics",
+            "7": "water-logistics",
+            "5": "containment-prep",
+            "6": "containment-prep",
+            "8": "containment-prep"
+          }
+        },
+        "edges": [
+          {
+            "id": "water-logistics",
+            "goal": "Stage full water tanks near [41,59] for containment without touching the fire",
+            "members": [
+              "1",
+              "2",
+              "4",
+              "7"
+            ],
+            "leader": "1",
+            "tasks": {
+              "1": "Hold full tank and stage near [41,59] at safe standoff",
+              "2": "Hold full tank and stage near [41,59] at safe standoff",
+              "4": "Hold full tank and stage near [41,59] at safe standoff",
+              "7": "Hold full tank and stage near [41,59] at safe standoff"
+            },
+            "advice": "Coordinate with containment-prep before any spray; keep clear of the fire perimeter.",
+            "revision": 4
+          },
+          {
+            "id": "containment-prep",
+            "goal": "Refill empty tanks at [8,24], then scout and prepare containment positions near [41,59]",
+            "members": [
+              "5",
+              "6",
+              "8"
+            ],
+            "leader": "5",
+            "tasks": {
+              "5": "Refill at [8,24], then scout fire perimeter from a safe distance",
+              "6": "Refill at [8,24], then identify cut/spray positions near [41,59]",
+              "8": "Refill at [8,24], then stage near [41,59] for containment support"
+            },
+            "advice": "Maintain safe standoff; report refill completion and perimeter observations to water-logistics.",
+            "revision": 4
+          }
+        ],
+        "retired": [],
+        "manual_regroup": false,
+        "attrition": false
+      },
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "episode_id": "2026-10-25-11-46-45-process-4084269",
+      "task_id": "Suppress_Fire_Extinguish_Second_Fire",
+      "task_seed": 137,
+      "arm": "HT",
+      "agent_id": null,
+      "session_epoch": null,
+      "event_id": 1363,
+      "state_version": 283,
+      "timestamp_monotonic": 11814377.003094656,
+      "event_type": "TASK_MESSAGE_DELIVERED",
+      "topology_version": 0,
+      "edge_id": null,
+      "action_id": null,
+      "message_id": null,
+      "transaction_id": null,
+      "payload": {
+        "sender": "1",
+        "recipient": "2",
+        "source": "water-logistics",
+        "target": "water-logistics",
+        "content": "'AGENT_1 at (42,58), full tank (5), holding standoff. Confirming staging: AGENT_2 (40,56) west, AGENT_7 (42,58) center, AGENT_4 (45,60) east — good spread along the north edge of the fire. AGENT_4: proceed with civilian rescue at (44,61), keep clear of ignited cells; report when extracted. AGENT_7: hold spray — do NOT engage until containment-prep authorizes; your wet cells (39-41,56-58) are a useful firebreak, stay north of them. AGENT_2: cover AGENT_4's west side during rescue. All: flag immediately if fire crosses north of y=59. I will relay spray authorization when containment-prep calls it.'",
+        "graph_version": 5,
+        "step": 18
+      },
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "episode_id": "2026-10-25-11-46-45-process-4084269",
+      "task_id": "Suppress_Fire_Extinguish_Second_Fire",
+      "task_seed": 137,
+      "arm": "HT",
+      "agent_id": null,
+      "session_epoch": null,
+      "event_id": 1426,
+      "state_version": 297,
+      "timestamp_monotonic": 11814413.351223199,
+      "event_type": "TASK_GRAPH_COMMITTED",
+      "topology_version": 0,
+      "edge_id": null,
+      "action_id": null,
+      "message_id": null,
+      "transaction_id": null,
+      "payload": {
+        "version": 6,
+        "proposal": {
+          "based_on_version": 5,
+          "evidence_id": 1422,
+          "reason": "Second fire at (70,70) needs a separate response while the original containment near [41,59] continues; keep existing groups stable and add a group for the new fire using online agents not already committed.",
+          "edges": [
+            {
+              "id": "water-logistics",
+              "goal": "Stage full water tanks near [41,59] for containment without touching the fire",
+              "members": [
+                "1",
+                "2",
+                "4",
+                "7"
+              ],
+              "leader": "1",
+              "tasks": {
+                "1": "Hold full tank and stage near [41,59] at safe standoff",
+                "2": "Hold full tank and stage near [41,59] at safe standoff",
+                "4": "Hold full tank and stage near [41,59] at safe standoff",
+                "7": "Hold full tank and stage near [41,59] at safe standoff"
+              },
+              "advice": "Coordinate with containment-prep before any spray; keep clear of the fire perimeter."
+            },
+            {
+              "id": "containment-prep",
+              "goal": "Refill empty tanks at [8,24], then scout and prepare containment positions near [41,59]",
+              "members": [
+                "5",
+                "6",
+                "8"
+              ],
+              "leader": "5",
+              "tasks": {
+                "5": "Refill at [8,24], then scout fire perimeter from a safe distance",
+                "6": "Refill at [8,24], then identify cut/spray positions near [41,59]",
+                "8": "Refill at [8,24], then stage near [41,59] for containment support"
+              },
+              "advice": "Maintain safe standoff; report refill completion and perimeter observations to water-logistics."
+            }
+          ],
+          "active": {
+            "1": "water-logistics",
+            "2": "water-logistics",
+            "4": "water-logistics",
+            "7": "water-logistics",
+            "5": "containment-prep",
+            "6": "containment-prep",
+            "8": "containment-prep"
+          }
+        },
+        "edges": [
+          {
+            "id": "water-logistics",
+            "goal": "Stage full water tanks near [41,59] for containment without touching the fire",
+            "members": [
+              "1",
+              "2",
+              "4",
+              "7"
+            ],
+            "leader": "1",
+            "tasks": {
+              "1": "Hold full tank and stage near [41,59] at safe standoff",
+              "2": "Hold full tank and stage near [41,59] at safe standoff",
+              "4": "Hold full tank and stage near [41,59] at safe standoff",
+              "7": "Hold full tank and stage near [41,59] at safe standoff"
+            },
+            "advice": "Coordinate with containment-prep before any spray; keep clear of the fire perimeter.",
+            "revision": 4
+          },
+          {
+            "id": "containment-prep",
+            "goal": "Refill empty tanks at [8,24], then scout and prepare containment positions near [41,59]",
+            "members": [
+              "5",
+              "6",
+              "8"
+            ],
+            "leader": "5",
+            "tasks": {
+              "5": "Refill at [8,24], then scout fire perimeter from a safe distance",
+              "6": "Refill at [8,24], then identify cut/spray positions near [41,59]",
+              "8": "Refill at [8,24], then stage near [41,59] for containment support"
+            },
+            "advice": "Maintain safe standoff; report refill completion and perimeter observations to water-logistics.",
+            "revision": 4
+          }
+        ],
+        "retired": [],
+        "manual_regroup": false,
+        "attrition": false
+      },
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "episode_id": "2026-10-25-11-46-45-process-4084269",
+      "task_id": "Suppress_Fire_Extinguish_Second_Fire",
+      "task_seed": 137,
+      "arm": "HT",
+      "agent_id": null,
+      "session_epoch": null,
+      "event_id": 1436,
+      "state_version": 297,
+      "timestamp_monotonic": 11814441.37018344,
+      "event_type": "TASK_MESSAGE_DELIVERED",
+      "topology_version": 0,
+      "edge_id": null,
+      "action_id": null,
+      "message_id": null,
+      "transaction_id": null,
+      "payload": {
+        "sender": "4",
+        "recipient": "1",
+        "source": "water-logistics",
+        "target": "water-logistics",
+        "content": "'AGENT_4 at (45,61), full tank (5). Correction: NO civilian visible at or near (44,61) — I see no civilian in my view, only fire cells. There is nothing to extract; treat rescue as complete/void. Fire status: ignited cells at (45,62) directly south of me and (38,63); active fire line along y=62 from ~(38,62) to (44,62); extinguishing band (39-44,60-63) to my SW. No creep north of y=59 observed. I am holding east slot at (45,61) at safe standoff, clear of ignited cells. AGENT_1: your extraction-complete trigger is effectively met — recommend authorizing coordinated spray on band (43-47,60-61) from north edge. Standing by.'",
+        "graph_version": 6,
+        "step": 19
+      },
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "episode_id": "2026-10-25-11-46-45-process-4084269",
+      "task_id": "Suppress_Fire_Extinguish_Second_Fire",
+      "task_seed": 137,
+      "arm": "HT",
+      "agent_id": null,
+      "session_epoch": null,
+      "event_id": 1619,
+      "state_version": 338,
+      "timestamp_monotonic": 11814581.090877663,
+      "event_type": "TASK_GRAPH_COMMITTED",
+      "topology_version": 0,
+      "edge_id": null,
+      "action_id": null,
+      "message_id": null,
+      "transaction_id": null,
+      "payload": {
+        "version": 7,
+        "proposal": {
+          "based_on_version": 6,
+          "evidence_id": 1615,
+          "reason": "Second fire at (70,70) needs scouting; keep existing containment prep stable and add a scout group for the new fire using online agents near the water source.",
+          "edges": [
+            {
+              "id": "water-logistics",
+              "goal": "Stage full water tanks near [41,59] for containment without touching the fire",
+              "members": [
+                "2",
+                "4",
+                "7"
+              ],
+              "leader": "2",
+              "tasks": {
+                "2": "Hold full tank and stage near [41,59] at safe standoff",
+                "4": "Hold full tank and stage near [41,59] at safe standoff",
+                "7": "Hold full tank and stage near [41,59] at safe standoff"
+              },
+              "advice": "Coordinate with containment-prep before any spray; keep clear of the fire perimeter."
+            },
+            {
+              "id": "containment-prep",
+              "goal": "Refill empty tanks at [8,24], then scout and prepare containment positions near [41,59]",
+              "members": [
+                "5",
+                "6",
+                "8"
+              ],
+              "leader": "5",
+              "tasks": {
+                "5": "Refill at [8,24], then scout fire perimeter from a safe distance",
+                "6": "Refill at [8,24], then identify cut/spray positions near [41,59]",
+                "8": "Refill at [8,24], then stage near [41,59] for containment support"
+              },
+              "advice": "Maintain safe standoff; report refill completion and perimeter observations to water-logistics."
+            }
+          ],
+          "active": {
+            "2": "water-logistics",
+            "4": "water-logistics",
+            "7": "water-logistics",
+            "5": "containment-prep",
+            "6": "containment-prep",
+            "8": "containment-prep"
+          }
+        },
+        "edges": [
+          {
+            "id": "water-logistics",
+            "goal": "Stage full water tanks near [41,59] for containment without touching the fire",
+            "members": [
+              "2",
+              "4",
+              "7"
+            ],
+            "leader": "2",
+            "tasks": {
+              "2": "Hold full tank and stage near [41,59] at safe standoff",
+              "4": "Hold full tank and stage near [41,59] at safe standoff",
+              "7": "Hold full tank and stage near [41,59] at safe standoff"
+            },
+            "advice": "Coordinate with containment-prep before any spray; keep clear of the fire perimeter.",
+            "revision": 5
+          },
+          {
+            "id": "containment-prep",
+            "goal": "Refill empty tanks at [8,24], then scout and prepare containment positions near [41,59]",
+            "members": [
+              "5",
+              "6",
+              "8"
+            ],
+            "leader": "5",
+            "tasks": {
+              "5": "Refill at [8,24], then scout fire perimeter from a safe distance",
+              "6": "Refill at [8,24], then identify cut/spray positions near [41,59]",
+              "8": "Refill at [8,24], then stage near [41,59] for containment support"
+            },
+            "advice": "Maintain safe standoff; report refill completion and perimeter observations to water-logistics.",
+            "revision": 4
+          }
+        ],
+        "retired": [],
+        "manual_regroup": false,
+        "attrition": false
+      },
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "episode_id": "2026-10-25-11-46-45-process-4084269",
+      "task_id": "Suppress_Fire_Extinguish_Second_Fire",
+      "task_seed": 137,
+      "arm": "HT",
+      "agent_id": null,
+      "session_epoch": null,
+      "event_id": 1635,
+      "state_version": 338,
+      "timestamp_monotonic": 11814610.625024809,
+      "event_type": "TASK_MESSAGE_DELIVERED",
+      "topology_version": 0,
+      "edge_id": null,
+      "action_id": null,
+      "message_id": null,
+      "transaction_id": null,
+      "payload": {
+        "sender": "7",
+        "recipient": "2",
+        "source": "water-logistics",
+        "target": "water-logistics",
+        "content": "'AGENT_7 status: at (41,57), tank 2/5, holding anchor at safe standoff. Sector (44,60-61) assigned to me per AGENT_2. Civilians spotted at (37-38,62) inside fire zone — AGENT_1, please confirm coverage on western flank (38-43,63-64) and civilian rescue. I'll refill at (8,24) and return.'",
+        "graph_version": 7,
+        "step": 22
+      },
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "episode_id": "2026-10-25-11-46-45-process-4084269",
+      "task_id": "Suppress_Fire_Extinguish_Second_Fire",
+      "task_seed": 137,
+      "arm": "HT",
+      "agent_id": null,
+      "session_epoch": null,
+      "event_id": 1688,
+      "state_version": 350,
+      "timestamp_monotonic": 11814656.649971727,
+      "event_type": "TASK_MESSAGE_DELIVERED",
+      "topology_version": 0,
+      "edge_id": null,
+      "action_id": null,
+      "message_id": null,
+      "transaction_id": null,
+      "payload": {
+        "sender": "7",
+        "recipient": "2",
+        "source": "water-logistics",
+        "target": "water-logistics",
+        "content": "'AGENT_7 at (44,60), tank 2/5. Civilian trapped in fire near (38,64) — south of active fire line y=63-64. Requesting a water-capable agent to assist rescue or cover my sector while I refill. AGENT_4 holding NE (45-47,60-61). Who can respond to the civilian?'",
+        "graph_version": 7,
+        "step": 23
+      },
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "episode_id": "2026-10-25-11-46-45-process-4084269",
+      "task_id": "Suppress_Fire_Extinguish_Second_Fire",
+      "task_seed": 137,
+      "arm": "HT",
+      "agent_id": null,
+      "session_epoch": null,
+      "event_id": 1797,
+      "state_version": 374,
+      "timestamp_monotonic": 11814757.179466866,
+      "event_type": "TASK_MESSAGE_DELIVERED",
+      "topology_version": 0,
+      "edge_id": null,
+      "action_id": null,
+      "message_id": null,
+      "transaction_id": null,
+      "payload": {
+        "sender": "7",
+        "recipient": "2",
+        "source": "water-logistics",
+        "target": "water-logistics",
+        "content": "'AGENT_7 at (37,53), tank 2/5, en route to (8,24). I'm closest to the civilian near (34,53) — I'll divert to check/rescue it before refilling, then continue to (8,24) and return to (44,60-61). Will report tank status on return.'",
+        "graph_version": 7,
+        "step": 25
+      },
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "episode_id": "2026-10-25-11-46-45-process-4084269",
+      "task_id": "Suppress_Fire_Extinguish_Second_Fire",
+      "task_seed": 137,
+      "arm": "HT",
+      "agent_id": "5",
+      "session_epoch": "2026-10-25-11-46-45-process-4084269",
+      "event_id": 1844,
+      "state_version": 386,
+      "timestamp_monotonic": 11814804.789143804,
+      "event_type": "COMMUNICATION_GENERATED",
+      "topology_version": 0,
+      "edge_id": null,
+      "action_id": null,
+      "message_id": null,
+      "transaction_id": null,
+      "payload": {
+        "raw_output": "<justification>I'm the group leader (5) for containment-prep. AGENT_6 and AGENT_8 have both reported full tanks and safe repositioning. I'm at (41,53) with 5 water, just north of the wet/extinguished band at y=56-58. I should confirm the plan, assign scouting arcs to avoid overlap, and report my own position/status. No need for redundant messages — one consolidated group update is sufficient. I'll direct AGENT_6 to cover the NE arc and AGENT_8 to hold the N/NW watch, while I scout the E/SE perimeter from a safe standoff.</justification>\n\n<EDGE id=\"containment-prep\" target=\"containment-prep\"><AGENT_6>AGENT_5 (leader) status: at (41,53), tank FULL (5 water). I'm ~3-5 cells north of the wet/extinguished band (y=56-58); active fire confirmed (38-44,59-60). Good call on the N/NE arc — please continue scouting NE (x>42, y<58) and report any fire crossing y=58 or smoke. Your brush clearing x=32-42,y=45-47 noted as staging/firebreak. Hold >=3 cells north of y=58.</AGENT_6></EDGE>\n\n<EDGE id=\"containment-prep\" target=\"containment-prep\"><AGENT_8>AGENT_5 (leader) status: at (41,53), tank FULL (5 water). Acknowledged your reposition to (39,49) — good standoff. Please hold N/NW watch (x=36-42, y<56) and report any northward spread past y=58. I'll scout the E/SE perimeter from a safe standoff to cover the arc you and AGENT_6 aren't watching. Report any civilians or fire edge changes.</AGENT_8></EDGE>\n\n<GLOBAL>AGENT_5 (containment-prep leader): tank FULL (5 water) at (41,53). Active fire confirmed (38-44,59-60), leading edge moving north; wet/extinguished band at y=56-58. AGENT_6 (full, N/NE scout) and AGENT_8 (full, N/NW watch) holding safe standoff. I'm scouting E/SE perimeter. Requesting water-logistics confirm refill status of remaining firefighters and any civilians spotted near the fire.</GLOBAL>",
+        "timestep": 26
+      },
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "episode_id": "2026-10-25-11-46-45-process-4084269",
+      "task_id": "Suppress_Fire_Extinguish_Second_Fire",
+      "task_seed": 137,
+      "arm": "HT",
+      "agent_id": null,
+      "session_epoch": null,
+      "event_id": 1845,
+      "state_version": 386,
+      "timestamp_monotonic": 11814804.789451052,
+      "event_type": "TASK_MESSAGE_DELIVERED",
+      "topology_version": 0,
+      "edge_id": null,
+      "action_id": null,
+      "message_id": null,
+      "transaction_id": null,
+      "payload": {
+        "sender": "5",
+        "recipient": "6",
+        "source": "containment-prep",
+        "target": "containment-prep",
+        "content": "AGENT_5 (leader) status: at (41,53), tank FULL (5 water). I'm ~3-5 cells north of the wet/extinguished band (y=56-58); active fire confirmed (38-44,59-60). Good call on the N/NE arc — please continue scouting NE (x>42, y<58) and report any fire crossing y=58 or smoke. Your brush clearing x=32-42,y=45-47 noted as staging/firebreak. Hold >=3 cells north of y=58.",
+        "graph_version": 7,
+        "step": 26
+      },
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "episode_id": "2026-10-25-11-46-45-process-4084269",
+      "task_id": "Suppress_Fire_Extinguish_Second_Fire",
+      "task_seed": 137,
+      "arm": "HT",
+      "agent_id": null,
+      "session_epoch": null,
+      "event_id": 1846,
+      "state_version": 386,
+      "timestamp_monotonic": 11814804.789611384,
+      "event_type": "TASK_MESSAGE_DELIVERED",
+      "topology_version": 0,
+      "edge_id": null,
+      "action_id": null,
+      "message_id": null,
+      "transaction_id": null,
+      "payload": {
+        "sender": "5",
+        "recipient": "8",
+        "source": "containment-prep",
+        "target": "containment-prep",
+        "content": "AGENT_5 (leader) status: at (41,53), tank FULL (5 water). Acknowledged your reposition to (39,49) — good standoff. Please hold N/NW watch (x=36-42, y<56) and report any northward spread past y=58. I'll scout the E/SE perimeter from a safe standoff to cover the arc you and AGENT_6 aren't watching. Report any civilians or fire edge changes.",
+        "graph_version": 7,
+        "step": 26
+      },
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "episode_id": "2026-10-25-11-46-45-process-4084269",
+      "task_id": "Suppress_Fire_Extinguish_Second_Fire",
+      "task_seed": 137,
+      "arm": "HT",
+      "agent_id": null,
+      "session_epoch": null,
+      "event_id": 1847,
+      "state_version": 386,
+      "timestamp_monotonic": 11814804.789761038,
+      "event_type": "TASK_MESSAGE_DELIVERED",
+      "topology_version": 0,
+      "edge_id": null,
+      "action_id": null,
+      "message_id": null,
+      "transaction_id": null,
+      "payload": {
+        "sender": "5",
+        "recipient": "6",
+        "source": "containment-prep",
+        "target": "containment-prep",
+        "content": "AGENT_5 (containment-prep leader): tank FULL (5 water) at (41,53). Active fire confirmed (38-44,59-60), leading edge moving north; wet/extinguished band at y=56-58. AGENT_6 (full, N/NE scout) and AGENT_8 (full, N/NW watch) holding safe standoff. I'm scouting E/SE perimeter. Requesting water-logistics confirm refill status of remaining firefighters and any civilians spotted near the fire.",
+        "graph_version": 7,
+        "step": 26
+      },
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "episode_id": "2026-10-25-11-46-45-process-4084269",
+      "task_id": "Suppress_Fire_Extinguish_Second_Fire",
+      "task_seed": 137,
+      "arm": "HT",
+      "agent_id": null,
+      "session_epoch": null,
+      "event_id": 1848,
+      "state_version": 386,
+      "timestamp_monotonic": 11814804.789865064,
+      "event_type": "TASK_MESSAGE_DELIVERED",
+      "topology_version": 0,
+      "edge_id": null,
+      "action_id": null,
+      "message_id": null,
+      "transaction_id": null,
+      "payload": {
+        "sender": "5",
+        "recipient": "8",
+        "source": "containment-prep",
+        "target": "containment-prep",
+        "content": "AGENT_5 (containment-prep leader): tank FULL (5 water) at (41,53). Active fire confirmed (38-44,59-60), leading edge moving north; wet/extinguished band at y=56-58. AGENT_6 (full, N/NE scout) and AGENT_8 (full, N/NW watch) holding safe standoff. I'm scouting E/SE perimeter. Requesting water-logistics confirm refill status of remaining firefighters and any civilians spotted near the fire.",
+        "graph_version": 7,
+        "step": 26
+      },
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "episode_id": "2026-10-25-11-46-45-process-4084269",
+      "task_id": "Suppress_Fire_Extinguish_Second_Fire",
+      "task_seed": 137,
+      "arm": "HT",
+      "agent_id": null,
+      "session_epoch": null,
+      "event_id": 2119,
+      "state_version": 447,
+      "timestamp_monotonic": 11815054.38566522,
+      "event_type": "TASK_GRAPH_COMMITTED",
+      "topology_version": 0,
+      "edge_id": null,
+      "action_id": null,
+      "message_id": null,
+      "transaction_id": null,
+      "payload": {
+        "version": 9,
+        "proposal": {
+          "based_on_version": 8,
+          "evidence_id": 2115,
+          "reason": "Only online agents 4,5,6,7,8 are active; keep two stable groups: water staging near the main fire and refill/scout prep, with the new (70,70) fire noted but not yet staffed since no online agent is near it.",
+          "edges": [
+            {
+              "id": "water-logistics",
+              "goal": "Stage full water tanks near [41,59] for containment without touching the fire",
+              "members": [
+                "4",
+                "7"
+              ],
+              "leader": "4",
+              "tasks": {
+                "4": "Hold full tank and stage near [41,59] at safe standoff",
+                "7": "Hold tank and stage near [41,59] at safe standoff"
+              },
+              "advice": "Coordinate with containment-prep before any spray; keep clear of the fire perimeter."
+            },
+            {
+              "id": "containment-prep",
+              "goal": "Refill tanks at [8,24], then scout and prepare containment positions near [41,59]",
+              "members": [
+                "5",
+                "6",
+                "8"
+              ],
+              "leader": "5",
+              "tasks": {
+                "5": "Refill at [8,24], then scout fire perimeter from a safe distance",
+                "6": "Refill at [8,24], then identify cut/spray positions near [41,59]",
+                "8": "Refill at [8,24], then stage near [41,59] for containment support"
+              },
+              "advice": "Maintain safe standoff; report refill completion and perimeter observations to water-logistics. Note the second fire at (70,70) but do not divert unless reassigned."
+            }
+          ],
+          "active": {
+            "4": "water-logistics",
+            "7": "water-logistics",
+            "5": "containment-prep",
+            "6": "containment-prep",
+            "8": "containment-prep"
+          }
+        },
+        "edges": [
+          {
+            "id": "water-logistics",
+            "goal": "Stage full water tanks near [41,59] for containment without touching the fire",
+            "members": [
+              "4",
+              "7"
+            ],
+            "leader": "4",
+            "tasks": {
+              "4": "Hold full tank and stage near [41,59] at safe standoff",
+              "7": "Hold tank and stage near [41,59] at safe standoff"
+            },
+            "advice": "Coordinate with containment-prep before any spray; keep clear of the fire perimeter.",
+            "revision": 6
+          },
+          {
+            "id": "containment-prep",
+            "goal": "Refill tanks at [8,24], then scout and prepare containment positions near [41,59]",
+            "members": [
+              "5",
+              "6",
+              "8"
+            ],
+            "leader": "5",
+            "tasks": {
+              "5": "Refill at [8,24], then scout fire perimeter from a safe distance",
+              "6": "Refill at [8,24], then identify cut/spray positions near [41,59]",
+              "8": "Refill at [8,24], then stage near [41,59] for containment support"
+            },
+            "advice": "Maintain safe standoff; report refill completion and perimeter observations to water-logistics. Note the second fire at (70,70) but do not divert unless reassigned.",
+            "revision": 6
+          }
+        ],
+        "retired": [],
+        "manual_regroup": false,
+        "attrition": false
+      },
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "episode_id": "2026-10-25-11-46-45-process-4084269",
+      "task_id": "Suppress_Fire_Extinguish_Second_Fire",
+      "task_seed": 137,
+      "arm": "HT",
+      "agent_id": null,
+      "session_epoch": null,
+      "event_id": 2336,
+      "state_version": 484,
+      "timestamp_monotonic": 11815251.745696668,
+      "event_type": "TASK_MESSAGE_DELIVERED",
+      "topology_version": 0,
+      "edge_id": null,
+      "action_id": null,
+      "message_id": null,
+      "transaction_id": null,
+      "payload": {
+        "sender": "6",
+        "recipient": "5",
+        "source": "containment",
+        "target": "containment",
+        "content": "'AGENT_6 status: refilled at (8,24), tank FULL (3 water). AGENT_5 — I'm heading back to the x44-48/y58-64 gap now; you are cleared to rotate to (8,24) for refill. I'll cover your sector and hold the line north of y=58. Do NOT cross y=64; civilian at (40,64) remains unconfirmed. Ping me if fire crosses y=58 before I arrive.'",
+        "graph_version": 12,
+        "step": 38
+      },
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "episode_id": "2026-10-25-11-46-45-process-4084269",
+      "task_id": "Suppress_Fire_Extinguish_Second_Fire",
+      "task_seed": 137,
+      "arm": "HT",
+      "agent_id": null,
+      "session_epoch": null,
+      "event_id": 2453,
+      "state_version": 508,
+      "timestamp_monotonic": 11815353.257622153,
+      "event_type": "TASK_MESSAGE_DELIVERED",
+      "topology_version": 0,
+      "edge_id": null,
+      "action_id": null,
+      "message_id": null,
+      "transaction_id": null,
+      "payload": {
+        "sender": "5",
+        "recipient": "6",
+        "source": "containment",
+        "target": "containment",
+        "content": "'AGENT_5: en route to (8,24), currently ~(14,30). ETA to full ~6-8 steps. Hold gap x44-48/y58-64 as long as you can; if you go dry before I return, fall back north of y=58 and report. I'll ping FULL and move to relieve you at (46,60).'",
+        "graph_version": 13,
+        "step": 44
+      },
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "episode_id": "2026-10-25-11-46-45-process-4084269",
+      "task_id": "Suppress_Fire_Extinguish_Second_Fire",
+      "task_seed": 137,
+      "arm": "HT",
+      "agent_id": null,
+      "session_epoch": null,
+      "event_id": 2472,
+      "state_version": 512,
+      "timestamp_monotonic": 11815369.905554611,
+      "event_type": "TASK_MESSAGE_DELIVERED",
+      "topology_version": 0,
+      "edge_id": null,
+      "action_id": null,
+      "message_id": null,
+      "transaction_id": null,
+      "payload": {
+        "sender": "5",
+        "recipient": "6",
+        "source": "containment",
+        "target": "containment",
+        "content": "'AGENT_5 status: FULL tank, en route to (46,60) from (8,24). ETA ~6-8 steps. Hold your gap until I arrive, then rotate to (8,24) to refill. Confirm you'll keep x44-48/y58-64 covered until handoff; report immediately if fire crosses y=58.'",
+        "graph_version": 13,
+        "step": 45
+      },
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "episode_id": "2026-10-25-11-46-45-process-4084269",
+      "task_id": "Suppress_Fire_Extinguish_Second_Fire",
+      "task_seed": 137,
+      "arm": "HT",
+      "agent_id": null,
+      "session_epoch": null,
+      "event_id": 2495,
+      "state_version": 516,
+      "timestamp_monotonic": 11815390.655207384,
+      "event_type": "TASK_MESSAGE_DELIVERED",
+      "topology_version": 0,
+      "edge_id": null,
+      "action_id": null,
+      "message_id": null,
+      "transaction_id": null,
+      "payload": {
+        "sender": "5",
+        "recipient": "6",
+        "source": "containment",
+        "target": "containment",
+        "content": "'AGENT_5 status: at (27,44) moving toward fire edge (41,59), tank 1 (full). I'm ~20 cells SW of you, ETA several steps. Hold the gap x44-48/y58-64 as long as you can; if you're nearly dry, rotate to (8,24) to refill now and I'll cover the gap on arrival. Confirm fire still north of y=58 in your sector.'",
+        "graph_version": 14,
+        "step": 46
+      },
+      "input_tokens": 0,
+      "output_tokens": 0
+    }
+  ],
+  "counter_note": "reward fire_extinguished rises at19 after_action to4,20 after_action to8; no further increase before all offline50 after_action; counters after all-offline may freeze",
+  "limits": "Execution failure mechanisms documented; relative causal contribution and hypothetical corrected outcomes not established"
+}

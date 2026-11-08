@@ -1,0 +1,46 @@
+{
+  "checked": "2026-10-25T10:27:21.996175+08:00",
+  "supervisor_pid": 4019868,
+  "supervisor_live": true,
+  "current": "transport_seed2461",
+  "completed_cases": 0,
+  "latest_world": {
+    "step": 3,
+    "phase": "before_action",
+    "rewards": [
+      4738,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "event_counts": {
+    "RUN_STARTED": 1,
+    "TASK_HYPERGRAPH_STARTED": 1,
+    "NODE_JOINED": 7,
+    "STATE_OBSERVED": 49,
+    "TASK_WORLD_SNAPSHOT": 7,
+    "TASK_VALIDATED": 7,
+    "TASK_ORGANIZER_REQUEST": 1,
+    "TASK_ORGANIZER_RESPONSE": 1,
+    "TASK_GRAPH_COMMITTED": 1,
+    "TASK_EXECUTION_REBOUND": 7,
+    "COMMUNICATION_GENERATED": 21,
+    "TASK_MESSAGE_DELIVERED": 117,
+    "TASK_ACTION_AUTHORIZED": 11,
+    "ACTION_STARTED": 21,
+    "ACTION_COMPLETED": 21,
+    "ACTION_NO_EFFECT": 3,
+    "LLM_USAGE": 3,
+    "TASK_ACTION_HELD": 10
+  }
+}

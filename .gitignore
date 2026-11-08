@@ -1,0 +1,49 @@
+# Secrets and local configuration
+.env
+.env.*
+*.pem
+*.key
+credentials*
+secrets*
+
+# Python and test caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Environments and dependencies
+.venv/
+venv/
+node_modules/
+
+# Runs, generated output, and logs
+benchmark_runs/
+artifacts/
+results/
+runs/
+UnityLogs/
+*.log
+*.jsonl
+
+# Large/downloaded/binary research material
+*.pdf
+*.tar
+*.tar.gz
+*.zip
+
+# Unity generated directories
+Library/
+Temp/
+Obj/
+Build/
+Builds/
+UserSettings/
+
+# Editor and OS files
+.DS_Store
+.idea/
+.vscode/

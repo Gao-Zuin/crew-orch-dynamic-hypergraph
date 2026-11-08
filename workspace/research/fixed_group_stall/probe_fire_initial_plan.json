@@ -1,0 +1,53 @@
+{
+  "based_on_version": 0,
+  "evidence_id": 19,
+  "reason": "All 8 agents are online, co-located, and idle with empty water; fire is not yet active but mission requires containment near [16,41] using water source at [15,22]. Split into a refill/water-supply group and a containment-prep group to parallelize logistics and fireline work.",
+  "edges": [
+    {
+      "id": "water-logistics",
+      "goal": "Fill water supplies from source at [15,22] and stage water for containment operations",
+      "members": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "leader": "1",
+      "tasks": {
+        "1": "Navigate toward water source [15,22] and coordinate refill order",
+        "2": "Refill water at [15,22] once on site",
+        "3": "Refill water at [15,22] once on site",
+        "4": "Scout route from [15,22] toward containment area and report passability"
+      },
+      "advice": "Keep refill trips staggered so at least one agent remains ready to move water forward."
+    },
+    {
+      "id": "containment-prep",
+      "goal": "Prepare fireline and containment posture near [16,41] without touching the fire",
+      "members": [
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "leader": "5",
+      "tasks": {
+        "5": "Navigate toward [16,41] and identify safe standoff positions",
+        "6": "Assess cut lines and defensible space near [16,41]",
+        "7": "Maintain lookout for fire behavior changes near [16,41]",
+        "8": "Stage cutting tools and identify escape routes near [16,41]"
+      },
+      "advice": "Do not approach or touch the fire; hold standoff distance and report observed fire state."
+    }
+  ],
+  "active": {
+    "1": "water-logistics",
+    "2": "water-logistics",
+    "3": "water-logistics",
+    "4": "water-logistics",
+    "5": "containment-prep",
+    "6": "containment-prep",
+    "7": "containment-prep",
+    "8": "containment-prep"
+  }
+}

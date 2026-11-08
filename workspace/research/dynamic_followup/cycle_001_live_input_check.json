@@ -1,0 +1,35 @@
+{
+  "run": "transport_seed2461",
+  "event_id": 19,
+  "reward_schema": [
+    "exploration",
+    "trees_burned",
+    "trees_cut",
+    "fire_extinguished",
+    "correct_trees_cut",
+    "civilians_rescued",
+    "firefighters_transported",
+    "civilians_scouted",
+    "fire_scouted",
+    "water_scouted",
+    "agents_destroyed",
+    "civilians_destroyed",
+    "buildings_destroyed"
+  ],
+  "rewards": [
+    1558,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "schema_length_matches": true
+}

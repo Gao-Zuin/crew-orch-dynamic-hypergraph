@@ -1,0 +1,11 @@
+{
+  "source_events": "/data1/gzy/crew_dynamic_followup_20261025_cycle003/runs/second_fire_seed137/run/events.jsonl",
+  "source_events_sha256": "4a5c112fe15cfa19e6cd0a9d5c0530bf24992087dbf32afab096ff23221bb03c",
+  "counts": {
+    "all_actions": 280,
+    "legacy_move_zero": 243,
+    "hold_intent": 35,
+    "navigation": 208
+  },
+  "qualification": "recomputed command-intent counts; not actual idle time or no-global-effect measurement; original CSV unchanged"
+}

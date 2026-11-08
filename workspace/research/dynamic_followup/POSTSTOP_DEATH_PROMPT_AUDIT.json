@@ -1,0 +1,168 @@
+{
+  "source": "/data1/gzy/crew_dynamic_followup_20261025_cycle010/runs/second_fire_seed137",
+  "kind": "read-only post-pause audit; no new model calls, no Unity run, no runtime changes",
+  "deaths": [
+    {
+      "agent": "3",
+      "death_step": 11,
+      "death_phase": "after_action",
+      "action_event": 910,
+      "position_before": [
+        39.0,
+        55.0
+      ],
+      "water_before": 5,
+      "last_action": [
+        0,
+        44,
+        61
+      ],
+      "target_cell_in_raw_prompt": "3",
+      "raw_C_count": 0,
+      "perception_output": "I'm currently positioned at (39, 55) in a dense forest area, with several other agents clustered very close around me — AGENT_1 is essentially on my position, AGENT_2 is just southeast at (40, 53), AGENT_4 and AGENT_5 are immediately north at (39, 56), AGENT_6 is northeast at (43, 57), and AGENT_8 is further northeast at (45, 60).\n\nLooking around my immediate surroundings, the terrain is predominantly dense forest in every direction, with medium forest appearing to the north and northwest, and lighter forest further north. To the west and southwest, the dense forest continues, with some unrevealed cells along the western and southern edges of my view.\n\nThe most critical situation is to my southeast: there's an active fire cluster centered roughly around (43, 59) to (44, 60), with several cells on fire and one cell actively extinguishing. Just south of that fire, around (42, 60) to (44, 61), there's a group of ignited cells, and I can see civilians trapped in that area — approximately at (43, 60) and a cluster around (39–43, 61). This is a serious situation: civilians are directly adjacent to and surrounded by fire and ignited terrain.\n\nI have 5 water available and am not carrying any civilians. Given the proximity of the fire and trapped civilians to my southeast, that should be my immediate priority.",
+      "action_output": "<justification>AGENT_1 has assigned me civilian rescue at (44,61). I'm at (39,55) with 5 water. The civilians are trapped near fire at (43,60)-(44,61). I need to move toward them to pick up a civilian. Moving southeast toward (44,61) closes the gap. I should not spray yet since flanks aren't wet and I need to prioritize rescue. Moving toward the civilian location is the correct next step.</justification>\n\n<action>Move towards (44, 61)</action>"
+    },
+    {
+      "agent": "1",
+      "death_step": 21,
+      "death_phase": "after_action",
+      "action_event": 1579,
+      "position_before": [
+        43.0,
+        59.0
+      ],
+      "water_before": 4,
+      "last_action": [
+        0,
+        40,
+        62
+      ],
+      "target_cell_in_raw_prompt": "f",
+      "raw_C_count": 0,
+      "perception_output": "I'm currently positioned at (43, 59) in a dense forest area, with my view spanning roughly x:33-53, y:49-69. The terrain around me is predominantly dense forest (3s), with lighter forest (1s and 2s) toward the eastern edge of my view and some brush (0s) appearing in the far northeast corner.\n\nThe most critical situation is directly to my west and southwest: there's an active fire zone centered around (39-41, 59-63). I can see fully extinguished cells (x) forming a line around (39-41, 59-60), with extinguishing activity (e) at (39-40, 61) and (39-41, 62), and active fire (f) at (41, 62) and a line of fire running west from (38-43, 63). There's also an ignited cell (i) at (38, 64) with a line of ignited cells extending west from (38-43, 64). A wet cell marked at (42, 60) sits just northwest of me. The fire appears to be spreading or being contained along a roughly east-west line just south of my position.\n\nMy fellow agents are nearby and engaged: AGENT_2 at (40, 56), AGENT_7 at (41, 57), and AGENT_4 at (45, 60) — all clustered around the fire zone to my west and northwest.\n\nI don't see any civilians in my current view. The southern portion of my view (below y~64) is largely unrevealed, as is the far eastern edge. I have 4 water available and am not carrying anyone. Given the active fire immediately to my west/southwest and my teammates already engaging there, I should be prepared to assist with containment, though I'll need to watch for the fire spreading toward my position.",
+      "action_output": "<justification>Teammates (AGENT_2, AGENT_4, AGENT_7) have all approved my shift to the under-covered western flank (38-43, 63-64), where active fire and ignited cells are spreading. I'm at (43,59) with a full tank (4 water). I should move toward the western flank to stage for containment, keeping a safe standoff from the fire perimeter. Moving southwest toward (40,62) positions me to cover the western flank without touching the fire, and lets me confirm no civilian at ~(38,60) as AGENT_7 requested.</justification>\n\n<action>Move towards (40, 62)</action>"
+    },
+    {
+      "agent": "2",
+      "death_step": 26,
+      "death_phase": "after_action",
+      "action_event": 1859,
+      "position_before": [
+        38.0,
+        58.0
+      ],
+      "water_before": 4,
+      "last_action": [
+        0,
+        40,
+        60
+      ],
+      "target_cell_in_raw_prompt": "e",
+      "raw_C_count": 0,
+      "perception_output": "I'm currently positioned at (38, 58) in a dense forest area, with my immediate surroundings consisting mostly of dense forest to my north and east. Looking around, I can see that the terrain becomes more varied to my south and west, with some lighter forest areas and what appears to be a large extinguished zone spreading across the southwest portion of my view.\n\nMost importantly, there's an active fire situation developing to my southeast. I can see a significant fire front starting around (43, 64) and spreading eastward, with multiple cells actively on fire. Just north of the fire line, there's an extinguishing operation underway - I can see several cells being actively extinguished in the area around (40-44, 60-63). There's also a smaller ignition point further north around (39, 58) that appears to be just starting.\n\nThe good news is that there's already been substantial firefighting progress - I can see a large area of fully extinguished cells stretching from approximately (41, 59) down through (44, 63) and extending eastward. The wet cells marked in the northeast portion of the fire zone suggest recent water deployment.\n\nI don't see any civilians in my immediate vicinity, but I'm aware of several other agents operating nearby - AGENT_4 is to my northeast at (46, 62), AGENT_5 is southwest at (41, 53), AGENT_6 is further southwest at (37, 52), AGENT_7 is just west of me at (40, 57), and AGENT_8 is southwest at (36, 50). \n\nWith 4 water units available, I should consider moving southeast toward the active fire front to assist with containment efforts, particularly focusing on the burning cells around (43-47, 64) where the fire appears most intense.",
+      "action_output": "<justification>AGENT_7 asks me to confirm holding the west flank at y=61, x=38-44. I'm at (38,58) with a full tank (4/5). The fire front is to my southeast around (43,64) and spreading west into dense forest at y=61. I should stage at a safe standoff on the west flank to cover it — moving toward (40,60) keeps me clear of the active perimeter while positioning to contain westward spread. I'll confirm to AGENT_7 and hold without spraying until containment-prep confirms.</justification>\n\n<action>Move towards (40, 60)</action>"
+    },
+    {
+      "agent": "4",
+      "death_step": 32,
+      "death_phase": "after_action",
+      "action_event": 2138,
+      "position_before": [
+        43.0,
+        60.0
+      ],
+      "water_before": 3,
+      "last_action": [
+        0,
+        43,
+        62
+      ],
+      "target_cell_in_raw_prompt": "e",
+      "raw_C_count": 0,
+      "perception_output": "I'm currently positioned at (43, 60) in a fully extinguished cell, sitting within a broad band of extinguished terrain that stretches across the center of my view. To my immediate west and southwest, the area is largely extinguished, with a few extinguishing cells mixed in around (39-42, 60-63). Directly north of me lies a large, dense forest block that remains unburned, while to my east the terrain transitions into medium and light forest.\n\nThe most pressing concern is a fire line to my south. There's a band of actively burning cells running roughly east-west around y=65, spanning from about x=38 to x=47, with ignited cells just north of that fire line around (40-46, 66). Several agents are working this area: AGENT_6 at (44, 56) and AGENT_8 at (40, 56) are north of the fire, AGENT_7 at (41, 59) is near me, and AGENT_5 at (52, 58) is off to my east. I don't see any civilians in my current view, and no water source cells are visible nearby. I have 3 water remaining, so I should move south toward the active fire line to assist with containment.",
+      "action_output": "<justification>AGENT_7 is heading to refill at (8,24), leaving the (43,62-63) gap uncovered. I am at (43,60) with 3 water remaining and the fire line is at y=65-66, about 5-6 cells south. Per group plan, I should hold full tank and stage near (41,59) at safe standoff, keeping clear of the fire perimeter. I'll reposition slightly to cover the gap AGENT_7 flagged at (43,62-63) while maintaining safe standoff, and hold without spraying until containment-prep confirmation. Moving to (43,62) keeps me ~3-4 cells from the fire line — safe standoff while covering the gap.</justification>\n\n<action>Move towards (43, 62)</action>"
+    },
+    {
+      "agent": "7",
+      "death_step": 34,
+      "death_phase": "after_action",
+      "action_event": 2237,
+      "position_before": [
+        42.0,
+        57.0
+      ],
+      "water_before": 2,
+      "last_action": [
+        0,
+        40,
+        64
+      ],
+      "target_cell_in_raw_prompt": "e",
+      "raw_C_count": 0,
+      "perception_output": "I'm currently positioned at (42, 57) in a dense forest area, with my immediate surroundings consisting mostly of dense forest (3) cells. Looking around, I can see medium forest (2) to my north and northwest, while the terrain to my south and southeast transitions into areas that have been treated with extinguishing agents (e) and fully extinguished cells (x).\n\nThe most critical situation is developing to my south and southeast, where there's an active fire zone. I can see a cluster of ignited cells (i) starting around (40, 66) and extending eastward, with on-fire cells (f) visible further south around (38-42, 65). There's a significant extinguishing operation underway in the area south of me, with numerous 'e' cells indicating active firefighting efforts between roughly (38-46, 61-64). The fully extinguished cells (x) are concentrated in the southeast quadrant of my view, around (40-46, 59-63).\n\nI notice several nearby agents: AGENT_5 is to my northeast at (48, 60), AGENT_6 is very close to my southwest at (44, 56), and AGENT_8 is to my west at (38, 57). The fire appears to be spreading northward from the southern edge of my visible area, and the extinguishing efforts are concentrated in the central-southern portion of my view. I have 2 water units available and should consider moving south to assist with the active firefighting efforts, particularly toward the ignited cells around (40, 66) and the on-fire cells further south.",
+      "action_output": "<justification>I'm at (42,57) with 2 water units. AGENT_6 covers x42-48/y58-62 and AGENT_8 covers x36-42/y58-62, so the firebreak north of the fire is held. AGENT_8 reported a civilian sighting at approx (40,64), just north of the active fire line y64-66. That's the most urgent item — a civilian near the fire needs rescue. I'm closest to that location (about 7 cells away). I'll move toward (40,64) to verify and pick up the civilian, staying cautious of the fire line at y64-66.</justification>\n\n<action>Move towards (40,64)</action>"
+    },
+    {
+      "agent": "8",
+      "death_step": 35,
+      "death_phase": "after_action",
+      "action_event": 2276,
+      "position_before": [
+        38.0,
+        57.0
+      ],
+      "water_before": 3,
+      "last_action": [
+        0,
+        40,
+        60
+      ],
+      "target_cell_in_raw_prompt": "e",
+      "raw_C_count": 0,
+      "perception_output": "I'm currently positioned at (38, 57) in a dense forest area, with the terrain around me being predominantly dense forest to my north, east, and south. To my west, the forest thins out into medium and light forest patches, with some unrevealed cells further west.\n\nLooking around, I can see a significant fire suppression operation happening to my southeast. There's a large cluster of extinguishing cells (e) centered roughly around (40-44, 60-63), with fully extinguished cells (x) scattered throughout that area, particularly around (41-43, 58-60) and (44-45, 61-63). The fire appears to have been largely contained in that direction, though there are still active extinguishing efforts ongoing.\n\nTo my northeast, I notice a band of wet cells (') stretching from approximately (37-44, 56-57), suggesting recent water application in that area. There's also a line of ignited cells (i) far to my southeast around (40-47, 65), which may indicate a new fire threat or residual hot spots.\n\nMy immediate surroundings are mostly dense forest with no active fire directly adjacent to my position. AGENT_5 is located to my east-northeast at (48, 60), and AGENT_6 is closer to my east at (44, 56), both operating in the fire-affected zone. I have 3 water units available for spraying and am not currently carrying any civilians. The area appears to be a mix of active suppression, recently extinguished terrain, and some remaining fire threats to my southeast that may require attention.",
+      "action_output": "<justification>I'm at (38,57) with 3 water units. AGENT_5 asked me to confirm a civilian near (40,64), but that's across the active ignition band at y65-66 — I should not cross the fire line. My sector x36-42 is my coverage responsibility. The fire line is to my south/southeast around y65. I should reposition to better cover the southern flank of my sector and be ready to suppress if fire pushes north, while staying north of y=58. Moving toward (40,60) keeps me in my sector, near the wet band, and lets me observe the fire line without crossing it.</justification>\n\n<action>Move towards (40,60)</action>"
+    },
+    {
+      "agent": "6",
+      "death_step": 46,
+      "death_phase": "after_action",
+      "action_event": 2501,
+      "position_before": [
+        46.0,
+        60.0
+      ],
+      "water_before": 1,
+      "last_action": [
+        0,
+        44,
+        62
+      ],
+      "target_cell_in_raw_prompt": "e",
+      "raw_C_count": 0,
+      "perception_output": "I'm currently positioned at (46, 60) in a dense forest area, with my view spanning roughly x:36-56, y:50-70. The terrain around me is predominantly dense forest (3s) to my north and west, transitioning to medium and light forest (2s and 1s) toward the northeast, and opening into brush (0s) in the far northeast corner of my view.\n\nThe most significant feature is a large extinguished zone (x cells) directly to my south and southwest, roughly centered around (44-50, 61-65). This area appears to have been recently treated — I can see extinguishing cells (e) forming a broad band through the south-central portion of my view, spanning roughly x:38-50, y:61-66. There's also a small cluster of extinguishing cells just west of my position around (41-43, 60-61), and a few extinguished cells immediately adjacent to me at (41-43, 59-60). I notice a single ignited cell (i) at approximately (40, 64) on the western edge of the treated zone — this is a potential concern that may need attention.\n\nTo my north and northwest, the forest remains untreated and dense, with wet cells (marked in quotes) scattered through the dense forest around (37-46, 56-59) — these appear to be dampened but not fully extinguished areas. There's a notable wet dense-forest cell directly at my position's row, just west of me.\n\nI don't see any civilians (C cells) in my current view, and I'm not carrying anyone. I have 1 water remaining, which is limited given the ignited cell to my southwest. The far northeast shows lighter terrain and brush, suggesting a natural firebreak or open area in that direction. The southern and southeastern edges of my view fade into unrevealed cells, so I have limited awareness there. AGENT_5 is operating well to my northwest at (27, 44), outside my current view.",
+      "action_output": "<justification>I have only 1 water left and there is an ignited cell at (40,64) on the western edge of the treated zone. AGENT_5 is en route but still several steps away. Rather than burn my last water prematurely, I should reposition to keep the gap x44-48/y58-64 covered and monitor the fire line. Moving slightly toward the ignited cell at (40,64) lets me assess and be ready to spray if it spreads north across y=58. I'll hold position near the gap and report status.</justification>\n\n<action>Move towards (44, 62)</action>"
+    },
+    {
+      "agent": "5",
+      "death_step": 50,
+      "death_phase": "after_action",
+      "action_event": 2551,
+      "position_before": [
+        46.0,
+        60.0
+      ],
+      "water_before": 1,
+      "last_action": [
+        0,
+        42,
+        62
+      ],
+      "target_cell_in_raw_prompt": "e",
+      "raw_C_count": 0,
+      "perception_output": "I'm currently positioned at (46, 60) in a dense forest area, with my minimap view spanning x:[36-56] and y:[50-70]. The terrain around me is predominantly dense forest (3s) to my north and west, transitioning to medium forest (2s) and light forest (1s) toward the northeast and east. \n\nTo my immediate west and southwest, I can see a significant area of fully extinguished cells (x) and extinguishing cells (e) — this appears to be a large burned or treated zone stretching from roughly (36-45, 59-64). There's also a wet cell ('3') just to my east at approximately (47, 60), and another wet cell to my northwest around (45, 59). \n\nThe northeast quadrant of my view shows a gradient from dense forest into medium forest, light forest, and eventually brush (0s) toward the far northeast corner near (56, 50). The southern portion of my view contains more extinguished and extinguishing terrain, with unrevealed cells (-) along the far southern and southeastern edges.\n\nI don't see any active fire (f) or ignited (i) cells in my current view, nor do I see any civilians or water source cells. The area appears to have been largely treated already. I have 1 water available if needed. I should consider moving toward the unrevealed southern/southeastern edges to expand my awareness, or check the northeast where the forest thins out.",
+      "action_output": "<justification>AGENT_6 reports the fire line is at ~y=64-66 with a treated band holding x38-50/y61-66, and no fire north of y=58. My view confirms a large extinguished/extinguishing zone to my west/southwest with no active fire visible. AGENT_6 is rotating to refill, so I should cover the gap at (46,60) and verify the fire edge. I'll move toward the fire edge near (41,59) to maintain safe distance and confirm the containment line, staying ready to spray if fire crosses north.</justification>\n\n<action>Move towards (42, 62)</action>"
+    }
+  ],
+  "mechanism": "Deployed guarded DLL Firefighter.FixedUpdate IL0109..0126 bypasses death for CellState0,1,5 only; states2,3,4 kill. e=extenguishing, x=fully_extenguished. Source and deployed IL agree.",
+  "limits": "Grid is shared accumulated-map crop. Recorded action and destruction bracket death but not exact frame/path/cell. Do not claim individual microtrajectory proof or exclude unrelated engine faults."
+}

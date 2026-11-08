@@ -1,0 +1,133 @@
+{
+  "cycle": 16,
+  "implementation": "SoftTaskGraph / SoftTaskPolicy / Embodied",
+  "change": "Directory-only candidate deferred and reverted after bounded real-model replay; current runtime remains Cycle010",
+  "hypothesis": "Missing group addresses are real, but directory-only change is insufficient and not approved for automatic deployment",
+  "tests": "Reverted candidate:12 runtime+11 graph/policy tests passed;6 recorded-prompt API replays saved",
+  "batch": "/data1/gzy/crew_dynamic_followup_20261025_cycle010",
+  "batch_state": "stopped_after_current_by_user",
+  "next": "Single validation finished and reviewed. No qualifying new-goal/structural-change/success run obtained. Do not automatically retry or resume long-term goal; await user direction.",
+  "started": "2026-10-25T10:34:54.797438+08:00",
+  "supervisor_pid": 4084244,
+  "verified": "All 8 real worker action prompts contain empty-only refill semantics; organizer receives 13 reward names",
+  "last_checked": "2026-10-25T12:27:26.367217+08:00",
+  "latest_observation": "final_current_run_verification.json",
+  "new_evidence": "Baseline3/3 valid addressing; directory-only1/3 valid,2/3 literal source-edge errors; neither cross-group sends",
+  "working_tree_change": "Runtime restored to Cycle010 tested path; rejected candidate patch archived, research replay tool added",
+  "active_batch_revision": "Cycle010 frozen code without new directory; explicit guarded build unchanged",
+  "pending_validation": "Paused by user: Cell.UpdateCell exception and second-fire reason/edges mismatch unresolved; no new experiments authorized until resume",
+  "previous_batch": "/data1/gzy/crew_dynamic_followup_20261025_cycle003",
+  "previous_batch_state": "completed: both100-step firecases failed, audits/source passed",
+  "candidate_next_fix": "None adopted; current full trajectory and event response take priority",
+  "guarded_build": "/data1/gzy/crew_engine_visual_guard_20261025/runtime_check/guarded_build",
+  "completed_cases": [
+    {
+      "id": "second_fire_seed137",
+      "steps": 100,
+      "task_success": false,
+      "audit_passed": true,
+      "agents_destroyed_reward": 7
+    },
+    {
+      "id": "second_fire_seed256",
+      "steps": 100,
+      "task_success": false,
+      "audit_passed": true,
+      "agents_destroyed_reward": 7,
+      "offline_nodes": 8
+    }
+  ],
+  "native_log_limit": "seed137 terminal native log overwritten before capture; preserved prefixes only; do not claim complete exception count",
+  "integration_gate": "/data1/gzy/crew_dynamic_followup_20261025_integration_gate",
+  "integration_gate_state": "passed",
+  "completed_cases_batch": "/data1/gzy/crew_dynamic_followup_20261025_cycle003",
+  "current_turn": "completed current100-step case, archived audit/native/behavior results; queued case cancelled; all experiment processes exited",
+  "user_stop_request": {
+    "requested": "2026-10-25T11:59:53.968624+08:00",
+    "user_instruction": "跑完当前的任务停下，总结进度，要求逻辑清楚，详略得当。",
+    "finish_case": "second_fire_seed137",
+    "cancel_queued_cases": [
+      "second_fire_seed256"
+    ],
+    "queue_control": "SIGSTOP serial supervisor only; currently running child/Unity continue; finalize artifacts manually after child completes",
+    "supervisor_pid": 4084244
+  },
+  "stop_summary": "STOP_SUMMARY_20261025.md",
+  "completed_current_case": {
+    "id": "second_fire_seed137",
+    "steps": 100,
+    "success": false,
+    "audit_passed": true,
+    "offline_nodes": 8,
+    "zero_live_organizer_calls": 0,
+    "native_exceptions": 1
+  },
+  "supervisor_state": "terminated after child completed; queued seed256 cancelled",
+  "single_user_authorized_validation": {
+    "batch": "/data1/gzy/crew_dynamic_success_validation_20261026_rescue42",
+    "supervisor_pid": 1196288,
+    "state": "finished_not_qualifying",
+    "task": "Rescue_Civilians_Surprise",
+    "seed": 42,
+    "budget": 60,
+    "scope": "one run only; long-term goal remains paused",
+    "target_after_event": 15,
+    "task_success": false,
+    "rescued": 14,
+    "target": 15,
+    "structure_changes": 0,
+    "native_exception_count": 6216,
+    "review": "/data1/gzy/crew_dynamic_success_validation_20261026_rescue42/VALIDATION_REVIEW.md"
+  },
+  "interface_repair_20261027": {
+    "root": "/data1/gzy/crew_interface_repairs_20261027",
+    "state": "repairs_verified_stopped",
+    "implementation": "SoftTaskGraph + SoftTaskPolicy + Embodied isolated snapshot",
+    "tests_passed": 36,
+    "unity_gate_steps": 2,
+    "native_exceptions": 0,
+    "shared_core_overwritten": false,
+    "report": "/data1/gzy/crew_interface_repairs_20261027/REPAIR_REPORT.md",
+    "scope": "User-authorized engine/interface/information repair only; no full batch; long-term goal remains paused",
+    "prompt_restore": {
+      "state": "original_prompts_restored_verified_stopped",
+      "report": "/data1/gzy/crew_interface_repairs_20261027/PROMPT_RESTORE_REPORT.md",
+      "tests_passed": 36,
+      "shared_change": "firefighter description restored to pinned official text",
+      "prior_live_gate": "historical enhanced prompts; not re-run after withdrawal"
+    }
+  },
+  "finite_structure_pair_20261027": {
+    "root": "/data1/gzy/crew_runtime_structure_pair_20261027",
+    "supervisor_pid": 1798664,
+    "state": "completed_reviewed_stopped",
+    "task": "Rescue_Civilians_Surprise",
+    "seed": 42,
+    "arms": [
+      "dynamic",
+      "fixed organization with common initial plan"
+    ],
+    "steps_each": 60,
+    "scope": "User-authorized finite pair only; no general long-term loop resumed",
+    "prompt_profile": "official Embodied base + pre-repair HT context",
+    "protocol": "/data1/gzy/crew_runtime_structure_pair_20261027/PROTOCOL.md",
+    "report": "/data1/gzy/crew_runtime_structure_pair_20261027/RESULTS.md",
+    "dynamic_rescued": 11,
+    "fixed_rescued": 13,
+    "target": 15,
+    "dynamic_topology_changes": 3,
+    "fixed_topology_changes": 0,
+    "native_exceptions": 0,
+    "queued_cases": 0
+  },
+  "implementation_cleanup_20261028": {
+    "state": "completed",
+    "active_implementation": "SoftTaskGraph + SoftTaskPolicy + TaskRuntimeBridge",
+    "archive": "/data/gzy/selfevolve/CREW/research/legacy_full_task_graph",
+    "report": "/data/gzy/selfevolve/CREW/research/legacy_full_task_graph/CLEANUP_REPORT.md",
+    "runtime_source_changed": false,
+    "current_tests_passed": 74,
+    "archived_tests_passed": 36,
+    "new_experiments": 0
+  }
+}

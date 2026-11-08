@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 """Audit explicit ``after refill`` assignments against observed actions/resources.
 
-This is deliberately a narrow, conservative audit.  It does not infer that every
-fire task requires a full tank.  It asks whether an explicitly ordered prerequisite
-(``after refill``) was ever evidenced by an increase in the assignee's water before
-the assignee selected the downstream coordinate.
+This is deliberately a narrow audit.  Firefighter refill only works at zero water;
+therefore a manager's ``after refill`` instruction can itself be infeasible when the
+assignee has 1--4 water.  The audit separates feasible empty-tank prerequisites from
+impossible top-up requests instead of treating literal departure as a worker failure.
 """
 from __future__ import annotations
 
@@ -131,8 +131,14 @@ def audit_run(path, horizon=10, target_radius=5):
         # A full tank at assignment time already satisfies "after refill".  Using
         # each run's observed maximum avoids hard-coding a simulator capacity.
         capacity = observed_capacity.get(item["agent"])
+        if initial_water == capacity:
+            prerequisite_state = "ALREADY_FULL"
+        elif initial_water == 0:
+            prerequisite_state = "FEASIBLE_EMPTY_TANK_REFILL"
+        else:
+            prerequisite_state = "INFEASIBLE_POSITIVE_TANK_TOP_UP"
         refill_step = item["step"] if initial_water == capacity else None
-        premature = []
+        downstream_before_refill = []
         downstream_after_refill = []
         observations = []
         for step in range(item["step"], item["step"] + horizon + 1):
@@ -147,15 +153,17 @@ def audit_run(path, horizon=10, target_radius=5):
                 point = (action[1], action[2])
                 matched_target = next((t for t in targets if chebyshev(point, t) <= target_radius), None)
                 if matched_target is not None:
-                    (premature if refill_step is None else downstream_after_refill).append(step)
+                    (downstream_before_refill if refill_step is None
+                     else downstream_after_refill).append(step)
             if snap and (action is not None or step == item["step"]):
                 observations.append({"step": step, "water": water, "action": action,
                                      "target_match": matched_target})
         cases.append({**item, "initial_water": initial_water,
                       "observed_water_capacity": capacity,
+                      "prerequisite_state_at_assignment": prerequisite_state,
                       "water_source": water_coord, "downstream_targets": targets,
                       "refill_evidenced_step": refill_step,
-                      "premature_downstream_action_steps": premature,
+                      "downstream_action_before_refill_evidence_steps": downstream_before_refill,
                       "downstream_action_after_refill_steps": downstream_after_refill,
                       "observations": observations})
     return cases
@@ -164,9 +172,18 @@ def audit_run(path, horizon=10, target_radius=5):
 def summarize(all_cases):
     return {
         "explicit_assignments": len(all_cases),
-        "with_observed_water_increase": sum(c["refill_evidenced_step"] is not None for c in all_cases),
-        "with_premature_downstream_action": sum(bool(c["premature_downstream_action_steps"])
-                                                  for c in all_cases),
+        "already_full_at_assignment": sum(c["prerequisite_state_at_assignment"] == "ALREADY_FULL"
+                                           for c in all_cases),
+        "feasible_empty_tank_refill_assignments": sum(
+            c["prerequisite_state_at_assignment"] == "FEASIBLE_EMPTY_TANK_REFILL"
+            for c in all_cases),
+        "infeasible_positive_tank_top_up_assignments": sum(
+            c["prerequisite_state_at_assignment"] == "INFEASIBLE_POSITIVE_TANK_TOP_UP"
+            for c in all_cases),
+        "with_prerequisite_satisfied_or_observed": sum(
+            c["refill_evidenced_step"] is not None for c in all_cases),
+        "with_downstream_action_before_refill_evidence": sum(
+            bool(c["downstream_action_before_refill_evidence_steps"]) for c in all_cases),
         "with_downstream_action_after_refill": sum(bool(c["downstream_action_after_refill_steps"])
                                                      for c in all_cases),
     }
@@ -186,6 +203,7 @@ def main():
         runs[str(Path(raw))] = {"summary": summarize(cases), "cases": cases}
         combined.extend(cases)
     result = {"method": {"horizon": args.horizon, "target_radius": args.target_radius,
+                         "refill_rule": "firefighter refills only from zero to capacity",
                          "refill_evidence": "observed water strictly above assignment-step water"},
               "summary": summarize(combined), "runs": runs}
     text = json.dumps(result, ensure_ascii=False, indent=2)

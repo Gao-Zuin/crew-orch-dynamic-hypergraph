@@ -18,14 +18,16 @@ class SequentialCommitmentTests(unittest.TestCase):
         text = "AGENT_2 and AGENT_3 refill and return staggered. I will cover after refill."
         self.assertFalse(mentioned_assignee(text, "3"))
 
-    def test_real_trace_detects_departure_before_resource_increase(self):
+    def test_real_trace_identifies_infeasible_positive_tank_top_up(self):
         path = "/data1/gzy/crew_ht_r2_pro_campaign_20261030/runs/pro_second_fire/run/events.jsonl"
         if not Path(path).exists():
             self.skipTest("campaign trace is not mounted")
         cases = audit_run(path, horizon=3)
         case = next(c for c in cases if c["event_id"] == 5226)
         self.assertEqual(case["initial_water"], 2)
-        self.assertIn(68, case["premature_downstream_action_steps"])
+        self.assertEqual(case["prerequisite_state_at_assignment"],
+                         "INFEASIBLE_POSITIVE_TANK_TOP_UP")
+        self.assertIn(68, case["downstream_action_before_refill_evidence_steps"])
         self.assertIsNone(case["refill_evidenced_step"])
 
 

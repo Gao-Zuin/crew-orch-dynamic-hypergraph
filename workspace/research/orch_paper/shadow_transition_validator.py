@@ -32,12 +32,12 @@ def official_labels(transition):
 
 
 def local_labels(case):
-    premature = bool(case.get("premature_downstream_action_steps"))
+    state = case.get("prerequisite_state_at_assignment")
+    before = bool(case.get("downstream_action_before_refill_evidence_steps"))
     verified = bool(case.get("downstream_action_after_refill_steps"))
-    if premature and verified:
-        return ["PREREQUISITE_VIOLATION_THEN_RECOVERED"]
-    if premature:
-        return ["PREREQUISITE_VIOLATION"]
+    if state == "INFEASIBLE_POSITIVE_TANK_TOP_UP":
+        return ["INFEASIBLE_TOP_UP_DEPARTED_WITH_USABLE_WATER" if before
+                else "INFEASIBLE_TOP_UP_NO_RESOLUTION"]
     if verified:
         return ["VERIFIED_PREREQUISITE_SEQUENCE"]
     return ["PENDING_OR_UNOBSERVED_SEQUENCE"]

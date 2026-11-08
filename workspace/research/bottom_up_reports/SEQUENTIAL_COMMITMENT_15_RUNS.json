@@ -2,20 +2,27 @@
   "method": {
     "horizon": 10,
     "target_radius": 5,
+    "refill_rule": "firefighter refills only from zero to capacity",
     "refill_evidence": "observed water strictly above assignment-step water"
   },
   "summary": {
     "explicit_assignments": 15,
-    "with_observed_water_increase": 4,
-    "with_premature_downstream_action": 6,
+    "already_full_at_assignment": 1,
+    "feasible_empty_tank_refill_assignments": 3,
+    "infeasible_positive_tank_top_up_assignments": 11,
+    "with_prerequisite_satisfied_or_observed": 4,
+    "with_downstream_action_before_refill_evidence": 6,
     "with_downstream_action_after_refill": 4
   },
   "runs": {
     "/data1/gzy/crew_bottom_up_20261029_attrition_fix/runs/large_transport_down/run/events.jsonl": {
       "summary": {
         "explicit_assignments": 0,
-        "with_observed_water_increase": 0,
-        "with_premature_downstream_action": 0,
+        "already_full_at_assignment": 0,
+        "feasible_empty_tank_refill_assignments": 0,
+        "infeasible_positive_tank_top_up_assignments": 0,
+        "with_prerequisite_satisfied_or_observed": 0,
+        "with_downstream_action_before_refill_evidence": 0,
         "with_downstream_action_after_refill": 0
       },
       "cases": []
@@ -23,8 +30,11 @@
     "/data1/gzy/crew_bottom_up_20261029_attrition_fix/runs/large_sparse_clearance/run/events.jsonl": {
       "summary": {
         "explicit_assignments": 0,
-        "with_observed_water_increase": 0,
-        "with_premature_downstream_action": 0,
+        "already_full_at_assignment": 0,
+        "feasible_empty_tank_refill_assignments": 0,
+        "infeasible_positive_tank_top_up_assignments": 0,
+        "with_prerequisite_satisfied_or_observed": 0,
+        "with_downstream_action_before_refill_evidence": 0,
         "with_downstream_action_after_refill": 0
       },
       "cases": []
@@ -32,8 +42,11 @@
     "/data1/gzy/crew_bottom_up_20261029_cell_guard/runs/large_rapid_growth/run/events.jsonl": {
       "summary": {
         "explicit_assignments": 1,
-        "with_observed_water_increase": 1,
-        "with_premature_downstream_action": 0,
+        "already_full_at_assignment": 1,
+        "feasible_empty_tank_refill_assignments": 0,
+        "infeasible_positive_tank_top_up_assignments": 0,
+        "with_prerequisite_satisfied_or_observed": 1,
+        "with_downstream_action_before_refill_evidence": 0,
         "with_downstream_action_after_refill": 1
       },
       "cases": [
@@ -51,6 +64,7 @@
           ],
           "initial_water": 5,
           "observed_water_capacity": 5,
+          "prerequisite_state_at_assignment": "ALREADY_FULL",
           "water_source": [
             15.0,
             22.0
@@ -62,7 +76,7 @@
             ]
           ],
           "refill_evidenced_step": 13,
-          "premature_downstream_action_steps": [],
+          "downstream_action_before_refill_evidence_steps": [],
           "downstream_action_after_refill_steps": [
             13,
             14,
@@ -199,8 +213,11 @@
     "/data1/gzy/crew_bottom_up_20261029_cell_guard/runs/large_rescue/run/events.jsonl": {
       "summary": {
         "explicit_assignments": 0,
-        "with_observed_water_increase": 0,
-        "with_premature_downstream_action": 0,
+        "already_full_at_assignment": 0,
+        "feasible_empty_tank_refill_assignments": 0,
+        "infeasible_positive_tank_top_up_assignments": 0,
+        "with_prerequisite_satisfied_or_observed": 0,
+        "with_downstream_action_before_refill_evidence": 0,
         "with_downstream_action_after_refill": 0
       },
       "cases": []
@@ -208,8 +225,11 @@
     "/data1/gzy/crew_bottom_up_20261029_cell_guard/runs/large_second_fire/run/events.jsonl": {
       "summary": {
         "explicit_assignments": 0,
-        "with_observed_water_increase": 0,
-        "with_premature_downstream_action": 0,
+        "already_full_at_assignment": 0,
+        "feasible_empty_tank_refill_assignments": 0,
+        "infeasible_positive_tank_top_up_assignments": 0,
+        "with_prerequisite_satisfied_or_observed": 0,
+        "with_downstream_action_before_refill_evidence": 0,
         "with_downstream_action_after_refill": 0
       },
       "cases": []
@@ -217,8 +237,11 @@
     "/data1/gzy/crew_ht_r2_pro_campaign_20261030/runs/pro_transport_down/run/events.jsonl": {
       "summary": {
         "explicit_assignments": 0,
-        "with_observed_water_increase": 0,
-        "with_premature_downstream_action": 0,
+        "already_full_at_assignment": 0,
+        "feasible_empty_tank_refill_assignments": 0,
+        "infeasible_positive_tank_top_up_assignments": 0,
+        "with_prerequisite_satisfied_or_observed": 0,
+        "with_downstream_action_before_refill_evidence": 0,
         "with_downstream_action_after_refill": 0
       },
       "cases": []
@@ -226,8 +249,11 @@
     "/data1/gzy/crew_ht_r2_pro_sparse_20261030/runs/pro_sparse_seed42/run/events.jsonl": {
       "summary": {
         "explicit_assignments": 0,
-        "with_observed_water_increase": 0,
-        "with_premature_downstream_action": 0,
+        "already_full_at_assignment": 0,
+        "feasible_empty_tank_refill_assignments": 0,
+        "infeasible_positive_tank_top_up_assignments": 0,
+        "with_prerequisite_satisfied_or_observed": 0,
+        "with_downstream_action_before_refill_evidence": 0,
         "with_downstream_action_after_refill": 0
       },
       "cases": []
@@ -235,8 +261,11 @@
     "/data1/gzy/crew_ht_r2_pro_campaign_20261030/runs/pro_rapid_growth/run/events.jsonl": {
       "summary": {
         "explicit_assignments": 0,
-        "with_observed_water_increase": 0,
-        "with_premature_downstream_action": 0,
+        "already_full_at_assignment": 0,
+        "feasible_empty_tank_refill_assignments": 0,
+        "infeasible_positive_tank_top_up_assignments": 0,
+        "with_prerequisite_satisfied_or_observed": 0,
+        "with_downstream_action_before_refill_evidence": 0,
         "with_downstream_action_after_refill": 0
       },
       "cases": []
@@ -244,8 +273,11 @@
     "/data1/gzy/crew_ht_r2_pro_campaign_20261030/runs/pro_rescue/run/events.jsonl": {
       "summary": {
         "explicit_assignments": 0,
-        "with_observed_water_increase": 0,
-        "with_premature_downstream_action": 0,
+        "already_full_at_assignment": 0,
+        "feasible_empty_tank_refill_assignments": 0,
+        "infeasible_positive_tank_top_up_assignments": 0,
+        "with_prerequisite_satisfied_or_observed": 0,
+        "with_downstream_action_before_refill_evidence": 0,
         "with_downstream_action_after_refill": 0
       },
       "cases": []
@@ -253,8 +285,11 @@
     "/data1/gzy/crew_ht_r2_pro_campaign_20261030/runs/pro_second_fire/run/events.jsonl": {
       "summary": {
         "explicit_assignments": 11,
-        "with_observed_water_increase": 0,
-        "with_premature_downstream_action": 6,
+        "already_full_at_assignment": 0,
+        "feasible_empty_tank_refill_assignments": 0,
+        "infeasible_positive_tank_top_up_assignments": 11,
+        "with_prerequisite_satisfied_or_observed": 0,
+        "with_downstream_action_before_refill_evidence": 6,
         "with_downstream_action_after_refill": 0
       },
       "cases": [
@@ -276,6 +311,7 @@
           ],
           "initial_water": 2,
           "observed_water_capacity": 5,
+          "prerequisite_state_at_assignment": "INFEASIBLE_POSITIVE_TANK_TOP_UP",
           "water_source": [
             8.0,
             24.0
@@ -287,7 +323,7 @@
             ]
           ],
           "refill_evidenced_step": null,
-          "premature_downstream_action_steps": [
+          "downstream_action_before_refill_evidence_steps": [
             68
           ],
           "downstream_action_after_refill_steps": [],
@@ -421,6 +457,7 @@
           ],
           "initial_water": 1,
           "observed_water_capacity": 5,
+          "prerequisite_state_at_assignment": "INFEASIBLE_POSITIVE_TANK_TOP_UP",
           "water_source": [
             8.0,
             24.0
@@ -432,7 +469,7 @@
             ]
           ],
           "refill_evidenced_step": null,
-          "premature_downstream_action_steps": [
+          "downstream_action_before_refill_evidence_steps": [
             71
           ],
           "downstream_action_after_refill_steps": [],
@@ -570,6 +607,7 @@
           ],
           "initial_water": 1,
           "observed_water_capacity": 5,
+          "prerequisite_state_at_assignment": "INFEASIBLE_POSITIVE_TANK_TOP_UP",
           "water_source": [
             8.0,
             24.0
@@ -581,7 +619,7 @@
             ]
           ],
           "refill_evidenced_step": null,
-          "premature_downstream_action_steps": [
+          "downstream_action_before_refill_evidence_steps": [
             75,
             79,
             81
@@ -723,6 +761,7 @@
           ],
           "initial_water": 1,
           "observed_water_capacity": 5,
+          "prerequisite_state_at_assignment": "INFEASIBLE_POSITIVE_TANK_TOP_UP",
           "water_source": [
             8.0,
             24.0
@@ -734,7 +773,7 @@
             ]
           ],
           "refill_evidenced_step": null,
-          "premature_downstream_action_steps": [
+          "downstream_action_before_refill_evidence_steps": [
             75,
             79,
             81
@@ -876,6 +915,7 @@
           ],
           "initial_water": 1,
           "observed_water_capacity": 5,
+          "prerequisite_state_at_assignment": "INFEASIBLE_POSITIVE_TANK_TOP_UP",
           "water_source": [
             8.0,
             24.0
@@ -887,7 +927,7 @@
             ]
           ],
           "refill_evidenced_step": null,
-          "premature_downstream_action_steps": [],
+          "downstream_action_before_refill_evidence_steps": [],
           "downstream_action_after_refill_steps": [],
           "observations": [
             {
@@ -1016,6 +1056,7 @@
           ],
           "initial_water": 2,
           "observed_water_capacity": 5,
+          "prerequisite_state_at_assignment": "INFEASIBLE_POSITIVE_TANK_TOP_UP",
           "water_source": [
             8.0,
             24.0
@@ -1027,7 +1068,7 @@
             ]
           ],
           "refill_evidenced_step": null,
-          "premature_downstream_action_steps": [],
+          "downstream_action_before_refill_evidence_steps": [],
           "downstream_action_after_refill_steps": [],
           "observations": [
             {
@@ -1156,6 +1197,7 @@
           ],
           "initial_water": 2,
           "observed_water_capacity": 5,
+          "prerequisite_state_at_assignment": "INFEASIBLE_POSITIVE_TANK_TOP_UP",
           "water_source": [
             8.0,
             24.0
@@ -1167,7 +1209,7 @@
             ]
           ],
           "refill_evidenced_step": null,
-          "premature_downstream_action_steps": [],
+          "downstream_action_before_refill_evidence_steps": [],
           "downstream_action_after_refill_steps": [],
           "observations": [
             {
@@ -1296,6 +1338,7 @@
           ],
           "initial_water": 2,
           "observed_water_capacity": 5,
+          "prerequisite_state_at_assignment": "INFEASIBLE_POSITIVE_TANK_TOP_UP",
           "water_source": [
             8.0,
             24.0
@@ -1307,7 +1350,7 @@
             ]
           ],
           "refill_evidenced_step": null,
-          "premature_downstream_action_steps": [],
+          "downstream_action_before_refill_evidence_steps": [],
           "downstream_action_after_refill_steps": [],
           "observations": [
             {
@@ -1426,6 +1469,7 @@
           ],
           "initial_water": 1,
           "observed_water_capacity": 5,
+          "prerequisite_state_at_assignment": "INFEASIBLE_POSITIVE_TANK_TOP_UP",
           "water_source": [
             8.0,
             24.0
@@ -1437,7 +1481,7 @@
             ]
           ],
           "refill_evidenced_step": null,
-          "premature_downstream_action_steps": [
+          "downstream_action_before_refill_evidence_steps": [
             92,
             96,
             98,
@@ -1573,6 +1617,7 @@
           ],
           "initial_water": 2,
           "observed_water_capacity": 5,
+          "prerequisite_state_at_assignment": "INFEASIBLE_POSITIVE_TANK_TOP_UP",
           "water_source": [
             8.0,
             24.0
@@ -1584,7 +1629,7 @@
             ]
           ],
           "refill_evidenced_step": null,
-          "premature_downstream_action_steps": [],
+          "downstream_action_before_refill_evidence_steps": [],
           "downstream_action_after_refill_steps": [],
           "observations": [
             {
@@ -1693,6 +1738,7 @@
           ],
           "initial_water": 1,
           "observed_water_capacity": 5,
+          "prerequisite_state_at_assignment": "INFEASIBLE_POSITIVE_TANK_TOP_UP",
           "water_source": [
             8.0,
             24.0
@@ -1704,7 +1750,7 @@
             ]
           ],
           "refill_evidenced_step": null,
-          "premature_downstream_action_steps": [
+          "downstream_action_before_refill_evidence_steps": [
             92,
             96,
             98,
@@ -1821,8 +1867,11 @@
     "/data1/gzy/crew_ht_r3_orch_knowledge_flash_20261102/runs/flash_transport_down/run/events.jsonl": {
       "summary": {
         "explicit_assignments": 0,
-        "with_observed_water_increase": 0,
-        "with_premature_downstream_action": 0,
+        "already_full_at_assignment": 0,
+        "feasible_empty_tank_refill_assignments": 0,
+        "infeasible_positive_tank_top_up_assignments": 0,
+        "with_prerequisite_satisfied_or_observed": 0,
+        "with_downstream_action_before_refill_evidence": 0,
         "with_downstream_action_after_refill": 0
       },
       "cases": []
@@ -1830,8 +1879,11 @@
     "/data1/gzy/crew_ht_r3_orch_knowledge_flash_20261102/runs/flash_sparse_seed42/run/events.jsonl": {
       "summary": {
         "explicit_assignments": 0,
-        "with_observed_water_increase": 0,
-        "with_premature_downstream_action": 0,
+        "already_full_at_assignment": 0,
+        "feasible_empty_tank_refill_assignments": 0,
+        "infeasible_positive_tank_top_up_assignments": 0,
+        "with_prerequisite_satisfied_or_observed": 0,
+        "with_downstream_action_before_refill_evidence": 0,
         "with_downstream_action_after_refill": 0
       },
       "cases": []
@@ -1839,8 +1891,11 @@
     "/data1/gzy/crew_ht_r3_orch_knowledge_flash_20261102/runs/flash_rapid_growth/run/events.jsonl": {
       "summary": {
         "explicit_assignments": 1,
-        "with_observed_water_increase": 1,
-        "with_premature_downstream_action": 0,
+        "already_full_at_assignment": 0,
+        "feasible_empty_tank_refill_assignments": 1,
+        "infeasible_positive_tank_top_up_assignments": 0,
+        "with_prerequisite_satisfied_or_observed": 1,
+        "with_downstream_action_before_refill_evidence": 0,
         "with_downstream_action_after_refill": 1
       },
       "cases": [
@@ -1858,6 +1913,7 @@
           ],
           "initial_water": 0,
           "observed_water_capacity": 5,
+          "prerequisite_state_at_assignment": "FEASIBLE_EMPTY_TANK_REFILL",
           "water_source": [
             15.0,
             22.0
@@ -1869,7 +1925,7 @@
             ]
           ],
           "refill_evidenced_step": 5,
-          "premature_downstream_action_steps": [],
+          "downstream_action_before_refill_evidence_steps": [],
           "downstream_action_after_refill_steps": [
             5,
             6,
@@ -2010,8 +2066,11 @@
     "/data1/gzy/crew_ht_r3_orch_knowledge_flash_20261102/runs/flash_rescue/run/events.jsonl": {
       "summary": {
         "explicit_assignments": 0,
-        "with_observed_water_increase": 0,
-        "with_premature_downstream_action": 0,
+        "already_full_at_assignment": 0,
+        "feasible_empty_tank_refill_assignments": 0,
+        "infeasible_positive_tank_top_up_assignments": 0,
+        "with_prerequisite_satisfied_or_observed": 0,
+        "with_downstream_action_before_refill_evidence": 0,
         "with_downstream_action_after_refill": 0
       },
       "cases": []
@@ -2019,8 +2078,11 @@
     "/data1/gzy/crew_ht_r3_orch_knowledge_flash_second_fire_retry_20261103/runs/flash_second_fire_retry_after_recharge/run/events.jsonl": {
       "summary": {
         "explicit_assignments": 2,
-        "with_observed_water_increase": 2,
-        "with_premature_downstream_action": 0,
+        "already_full_at_assignment": 0,
+        "feasible_empty_tank_refill_assignments": 2,
+        "infeasible_positive_tank_top_up_assignments": 0,
+        "with_prerequisite_satisfied_or_observed": 2,
+        "with_downstream_action_before_refill_evidence": 0,
         "with_downstream_action_after_refill": 2
       },
       "cases": [
@@ -2038,6 +2100,7 @@
           ],
           "initial_water": 0,
           "observed_water_capacity": 5,
+          "prerequisite_state_at_assignment": "FEASIBLE_EMPTY_TANK_REFILL",
           "water_source": [
             8.0,
             24.0
@@ -2049,7 +2112,7 @@
             ]
           ],
           "refill_evidenced_step": 4,
-          "premature_downstream_action_steps": [],
+          "downstream_action_before_refill_evidence_steps": [],
           "downstream_action_after_refill_steps": [
             4,
             5,
@@ -2203,6 +2266,7 @@
           ],
           "initial_water": 0,
           "observed_water_capacity": 5,
+          "prerequisite_state_at_assignment": "FEASIBLE_EMPTY_TANK_REFILL",
           "water_source": [
             8.0,
             24.0
@@ -2214,7 +2278,7 @@
             ]
           ],
           "refill_evidenced_step": 5,
-          "premature_downstream_action_steps": [],
+          "downstream_action_before_refill_evidence_steps": [],
           "downstream_action_after_refill_steps": [
             5,
             6,

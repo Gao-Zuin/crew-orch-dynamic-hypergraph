@@ -26,13 +26,13 @@
   },
   "local_shadow_summary": {
     "VERIFIED_PREREQUISITE_SEQUENCE": 4,
-    "PREREQUISITE_VIOLATION": 6,
-    "PENDING_OR_UNOBSERVED_SEQUENCE": 5
+    "INFEASIBLE_TOP_UP_DEPARTED_WITH_USABLE_WATER": 6,
+    "INFEASIBLE_TOP_UP_NO_RESOLUTION": 5
   },
   "local_label_combinations": {
     "VERIFIED_PREREQUISITE_SEQUENCE": 4,
-    "PREREQUISITE_VIOLATION": 6,
-    "PENDING_OR_UNOBSERVED_SEQUENCE": 5
+    "INFEASIBLE_TOP_UP_DEPARTED_WITH_USABLE_WATER": 6,
+    "INFEASIBLE_TOP_UP_NO_RESOLUTION": 5
   },
   "recoverable_interrupt_calibration": {
     "initial": {
@@ -6265,7 +6265,7 @@
       "step": 67,
       "agent": "2",
       "labels": [
-        "PREREQUISITE_VIOLATION"
+        "INFEASIBLE_TOP_UP_DEPARTED_WITH_USABLE_WATER"
       ]
     },
     {
@@ -6274,7 +6274,7 @@
       "step": 69,
       "agent": "3",
       "labels": [
-        "PREREQUISITE_VIOLATION"
+        "INFEASIBLE_TOP_UP_DEPARTED_WITH_USABLE_WATER"
       ]
     },
     {
@@ -6283,7 +6283,7 @@
       "step": 74,
       "agent": "3",
       "labels": [
-        "PREREQUISITE_VIOLATION"
+        "INFEASIBLE_TOP_UP_DEPARTED_WITH_USABLE_WATER"
       ]
     },
     {
@@ -6292,7 +6292,7 @@
       "step": 74,
       "agent": "3",
       "labels": [
-        "PREREQUISITE_VIOLATION"
+        "INFEASIBLE_TOP_UP_DEPARTED_WITH_USABLE_WATER"
       ]
     },
     {
@@ -6301,7 +6301,7 @@
       "step": 85,
       "agent": "3",
       "labels": [
-        "PENDING_OR_UNOBSERVED_SEQUENCE"
+        "INFEASIBLE_TOP_UP_NO_RESOLUTION"
       ]
     },
     {
@@ -6310,7 +6310,7 @@
       "step": 86,
       "agent": "2",
       "labels": [
-        "PENDING_OR_UNOBSERVED_SEQUENCE"
+        "INFEASIBLE_TOP_UP_NO_RESOLUTION"
       ]
     },
     {
@@ -6319,7 +6319,7 @@
       "step": 89,
       "agent": "2",
       "labels": [
-        "PENDING_OR_UNOBSERVED_SEQUENCE"
+        "INFEASIBLE_TOP_UP_NO_RESOLUTION"
       ]
     },
     {
@@ -6328,7 +6328,7 @@
       "step": 90,
       "agent": "2",
       "labels": [
-        "PENDING_OR_UNOBSERVED_SEQUENCE"
+        "INFEASIBLE_TOP_UP_NO_RESOLUTION"
       ]
     },
     {
@@ -6337,7 +6337,7 @@
       "step": 90,
       "agent": "3",
       "labels": [
-        "PREREQUISITE_VIOLATION"
+        "INFEASIBLE_TOP_UP_DEPARTED_WITH_USABLE_WATER"
       ]
     },
     {
@@ -6346,7 +6346,7 @@
       "step": 91,
       "agent": "2",
       "labels": [
-        "PENDING_OR_UNOBSERVED_SEQUENCE"
+        "INFEASIBLE_TOP_UP_NO_RESOLUTION"
       ]
     },
     {
@@ -6355,7 +6355,7 @@
       "step": 91,
       "agent": "3",
       "labels": [
-        "PREREQUISITE_VIOLATION"
+        "INFEASIBLE_TOP_UP_DEPARTED_WITH_USABLE_WATER"
       ]
     },
     {

@@ -1,0 +1,666 @@
+{
+  "scope": {
+    "model": "deepseek-v4-pro",
+    "temperature": 0,
+    "case_count": 5,
+    "repeats_per_condition": 3,
+    "environment_replay": false,
+    "conditions": [
+      "baseline",
+      "naive_literal_negative_control",
+      "domain_aware"
+    ]
+  },
+  "cases": [
+    {
+      "agent": "2",
+      "step": 68,
+      "assigned_step": 67,
+      "target": [
+        70.0,
+        70.0
+      ],
+      "water_source": [
+        8.0,
+        24.0
+      ],
+      "status": "NOT_VERIFIED",
+      "position": [
+        27.0,
+        45.0
+      ],
+      "water": 2,
+      "prompt_sha256": "b49a10420a651e82d89fe389a2b9b89c5372d30409a1e6ee1c4baa6b3127674c",
+      "logged_response": "<justification>\nI am AGENT_2, currently at (27.0, 45.0) with 2 units of water. According to the latest group messages, AGENT_1 has directed me to head to the second fire at (70,70) to assist AGENT_5, and explicitly told me not to go to the southeast fire. My past actions show I was moving toward (8,24) to refill, but I already have 2 water units, which may be enough for initial suppression at the second fire. However, the second fire is far away, and I might need more water. The group suggestion is to navigate to water source and refill, but AGENT_1's specific instruction overrides that for me. Since I am not at the water source and have 2 water, I should move toward (70,70) to assist AGENT_5. I will move toward (70,70) now.\n</justification>\n<action>Move towards (70,70)</action>",
+      "logged_action": "Move towards (70,70)",
+      "logged_class": "MOVE_DOWNSTREAM_TARGET",
+      "baseline_replays": [
+        {
+          "response_id": "bc3c4933-0a39-4a93-b8eb-2d55d829a54f",
+          "finish_reason": "stop",
+          "text": "<justification>\nI am currently at (27.0, 45.0) with 2 units of water. According to the latest group messages, AGENT_1 has directed me to head to the second fire at (70,70) to assist AGENT_5, and explicitly told me not to go to the southeast fire. My past actions show I was moving toward (8,24) to refill, but I already have 2 water units, which may be sufficient for initial suppression at the second fire. Since the instruction is to assist at (70,70), I should move toward that location. I will prioritize following the coordination advice and head toward (70,70).\n</justification>\n<action>Move towards (70,70)</action>",
+          "usage": {
+            "prompt_tokens": 2778,
+            "completion_tokens": 158
+          },
+          "action": "Move towards (70,70)",
+          "class": "MOVE_DOWNSTREAM_TARGET"
+        },
+        {
+          "response_id": "555dc516-55ca-4b1c-aa20-939419431891",
+          "finish_reason": "stop",
+          "text": "<justification>\nI am currently at (27.0, 45.0) with 2 units of water. According to the latest group messages, AGENT_1 has directed me to head to the second fire at (70,70) to assist AGENT_5, and explicitly told me not to go to the southeast fire. My past actions show I was moving toward the water source at (8,24), but I already have 2 water units, which may be sufficient for initial suppression at the second fire. However, the group suggestion is to refill water, and I am not currently at a water source. Since I have 2 water and the second fire is far away, it would be prudent to refill before heading to (70,70). But I am at (27,45), and the water source is at (8,24), which is northwest. The second fire is at (70,70), which is northeast. Given the directive to assist at (70,70), and that I have some water, I should move toward (70,70) to assess the situation. If I run low, I can refill later. The immediate priority is to respond to the second fire as instructed.\n</justification>\n<action>Move towards (70,70)</action>",
+          "usage": {
+            "prompt_tokens": 2778,
+            "completion_tokens": 268
+          },
+          "action": "Move towards (70,70)",
+          "class": "MOVE_DOWNSTREAM_TARGET"
+        },
+        {
+          "response_id": "bade88df-eef3-4c7e-95a3-9c86da45bec5",
+          "finish_reason": "stop",
+          "text": "<justification>\nI am currently at (27.0, 45.0) with 2 units of water. According to the latest group messages, AGENT_1 has directed me to head to the second fire at (70,70) to assist AGENT_5, and explicitly told me not to go to the southeast fire. My past actions show I was moving toward the water source at (8,24), but I already have 2 water units, which may be sufficient for initial suppression at the second fire. However, the group suggestion is to refill water, and I am currently far from the water source. Since I have 2 water and the second fire is at (70,70), I should prioritize moving toward (70,70) to assist AGENT_5 as directed, rather than going back to refill. I can refill later if needed.\n</justification>\n\n<action>Move towards (70,70)</action>",
+          "usage": {
+            "prompt_tokens": 2778,
+            "completion_tokens": 197
+          },
+          "action": "Move towards (70,70)",
+          "class": "MOVE_DOWNSTREAM_TARGET"
+        }
+      ],
+      "naive_literal_reminder": "[EXECUTION LEDGER — OBSERVATION, NOT PERMISSION]\nPending sequence: refill at (8.0, 24.0), then travel to (70.0, 70.0).\nAuthoritative environment state: position=(27.0, 45.0), water=2.\nPrerequisite status: NOT VERIFIED: observed water is still 2; no water increase has been observed since this sequence was assigned. Continue an action that advances the refill prerequisite before departing for the downstream target.\nThis reminder is not an execution-permission gate. Override it only for a newer explicit\ncancellation/reassignment or an immediately observed safety threat, and explain the evidence.\n[/EXECUTION LEDGER]",
+      "domain_aware_reminder": "[DOMAIN-AWARE EXECUTION LEDGER — OBSERVATION, NOT PERMISSION]\nRequested sequence: refill at (8.0, 24.0), then travel to (70.0, 70.0).\nAuthoritative environment state: position=(27.0, 45.0), water=2.\nStatus: BLOCKED AS WRITTEN: the tank has 2 water. In this environment a firefighter can refill only when the tank is exactly 0; 1-4 water cannot be topped up. Do not repeat refill or wait for a top-up. Use the remaining water productively or choose other feasible work, and do not claim refill occurred. The manager's literal 'refill first' prerequisite needs correction.\nOverride this reminder for a newer explicit cancellation/reassignment or an immediately\nobserved safety threat, and explain the evidence.\n[/DOMAIN-AWARE EXECUTION LEDGER]",
+      "naive_literal_replays": [
+        {
+          "response_id": "44f07b44-8557-4e14-8d94-49ed03860b9e",
+          "finish_reason": "stop",
+          "text": "<justification>\nI am at (27.0, 45.0) with 2 water units. The execution ledger indicates a pending sequence: refill at (8.0, 24.0), then travel to (70.0, 70.0) to assist with the second fire. My water is still 2, so I need to continue moving toward the water source at (8.0, 24.0) to refill before heading to the second fire. My past actions show I was already moving toward (8, 24), so I should continue that movement.\n</justification>\n\n<action>Move towards (8, 24)</action>",
+          "usage": {
+            "prompt_tokens": 2930,
+            "completion_tokens": 141
+          },
+          "action": "Move towards (8, 24)",
+          "class": "MOVE_WATER_SOURCE"
+        },
+        {
+          "response_id": "9a6a7b6c-cf67-4b2c-b34f-08e437ac194a",
+          "finish_reason": "stop",
+          "text": "<justification>\nI am at (27.0, 45.0) with 2 units of water. The execution ledger indicates a pending sequence: refill at (8.0, 24.0), then travel to (70.0, 70.0) to assist with the second fire. My water is still at 2, so I need to continue moving toward the water source at (8.0, 24.0) to refill before heading to the second fire. My past actions show I was already moving toward (8, 24), so I should continue that movement.\n</justification>\n\n<action>Move towards (8, 24)</action>",
+          "usage": {
+            "prompt_tokens": 2930,
+            "completion_tokens": 143
+          },
+          "action": "Move towards (8, 24)",
+          "class": "MOVE_WATER_SOURCE"
+        },
+        {
+          "response_id": "7ff8f112-e305-4fab-8838-9a9626ae247b",
+          "finish_reason": "stop",
+          "text": "<justification>\nI am at (27.0, 45.0) with 2 water units. The execution ledger indicates a pending sequence: refill at (8.0, 24.0), then travel to (70.0, 70.0) to assist with the second fire. My water is still 2, so I need to refill before heading to the second fire. The water source is at (8.0, 24.0), which is northwest of my current position. I should continue moving toward the water source to refill.\n</justification>\n\n<action>Move towards (8.0, 24.0)</action>",
+          "usage": {
+            "prompt_tokens": 2930,
+            "completion_tokens": 140
+          },
+          "action": "Move towards (8.0, 24.0)",
+          "class": "MOVE_WATER_SOURCE"
+        }
+      ],
+      "domain_aware_replays": [
+        {
+          "response_id": "5256b331-23ae-43e9-9caf-eb78597b1604",
+          "finish_reason": "stop",
+          "text": "<justification>\nI am at (27.0, 45.0) with 2 water. The ledger indicates I cannot refill because my tank is not empty (refill only allowed at 0 water). AGENT_1 has directed me to head to the second fire at (70,70) to assist AGENT_5. Since I have 2 water, I should move toward (70,70) and use my remaining water productively there. I am not near any fire currently, so moving toward the second fire is the best action.\n</justification>\n\n<action>Move towards (70,70)</action>",
+          "usage": {
+            "prompt_tokens": 2973,
+            "completion_tokens": 131
+          },
+          "action": "Move towards (70,70)",
+          "class": "MOVE_DOWNSTREAM_TARGET"
+        },
+        {
+          "response_id": "28306daf-1c03-4085-951f-3cbf7d184b40",
+          "finish_reason": "stop",
+          "text": "<justification>I am at (27.0, 45.0) with 2 water. I cannot refill because my tank is not empty. AGENT_1 directed me to assist at the second fire near (70,70). I should move toward that location to help AGENT_5.</justification>\n<action>Move towards (70,70)</action>",
+          "usage": {
+            "prompt_tokens": 2973,
+            "completion_tokens": 79
+          },
+          "action": "Move towards (70,70)",
+          "class": "MOVE_DOWNSTREAM_TARGET"
+        },
+        {
+          "response_id": "0413930d-b1ae-42d5-9eb7-618bb5bca0bd",
+          "finish_reason": "stop",
+          "text": "<justification>I am at (27.0, 45.0) with 2 water. I cannot refill because my tank is not empty. AGENT_1 directed me to head to the second fire at (70,70) to assist AGENT_5. I should move toward (70,70) now.</justification>\n<action>Move towards (70,70)</action>",
+          "usage": {
+            "prompt_tokens": 2973,
+            "completion_tokens": 84
+          },
+          "action": "Move towards (70,70)",
+          "class": "MOVE_DOWNSTREAM_TARGET"
+        }
+      ]
+    },
+    {
+      "agent": "3",
+      "step": 71,
+      "assigned_step": 69,
+      "target": [
+        41.0,
+        59.0
+      ],
+      "water_source": [
+        8.0,
+        24.0
+      ],
+      "status": "NOT_VERIFIED",
+      "position": [
+        8.0,
+        24.0
+      ],
+      "water": 1,
+      "prompt_sha256": "6f443c666a8f1fb7fa1c578400d238586a71e777af67736947009290cd8e9723",
+      "logged_response": "<justification>I am at the water source (8,24) with 1 unit of water. The main fire is near (41,59), and AGENT_4 is out of water heading to refill, while AGENT_1 is also refilling. I should head to the fire perimeter to spray water and support suppression. Since I have water, moving toward (41,59) is the best next action.</justification>\n<action>Move towards (41,59)</action>",
+      "logged_action": "Move towards (41,59)",
+      "logged_class": "MOVE_DOWNSTREAM_TARGET",
+      "baseline_replays": [
+        {
+          "response_id": "741d8bb2-f74d-469f-a34f-6d0f324a470b",
+          "finish_reason": "stop",
+          "text": "<justification>I am at the water source (8,24) with only 1 unit of water. AGENT_4 is out of water and heading to refill, while AGENT_1 is also at (8,24) refilling. To effectively support suppression of the main fire near (41,59), I should refill my water supply before heading to the fire perimeter. Since I am already on a water source, refilling now is the best immediate action.</justification>\n<action>Refill water</action>",
+          "usage": {
+            "prompt_tokens": 2810,
+            "completion_tokens": 111
+          },
+          "action": "Refill water",
+          "class": "REFILL"
+        },
+        {
+          "response_id": "dec5153d-c97e-4f88-ac79-a8edf4b8edf6",
+          "finish_reason": "stop",
+          "text": "<justification>I am at the water source (8,24) with only 1 unit of water. AGENT_4 is out of water and heading to refill, while AGENT_1 is also refilling. To effectively suppress the main fire near (41,59), I need a full water supply. I should refill water now before heading to the fire perimeter.</justification>\n<action>Refill water</action>",
+          "usage": {
+            "prompt_tokens": 2810,
+            "completion_tokens": 91
+          },
+          "action": "Refill water",
+          "class": "REFILL"
+        },
+        {
+          "response_id": "116b5b05-a857-4db9-9bd4-50c6292e9fbe",
+          "finish_reason": "stop",
+          "text": "<justification>\nI am currently at the water source (8,24) with 1 unit of water. My last action was refilling water, so I should now have a full water supply. The main fire is near (41,59), and AGENT_4 is out of water heading to refill, while AGENT_1 is also at (8,24) refilling. I need to proceed to the fire perimeter to support suppression efforts. My next action should be to move toward the fire location (41,59) to take over suppression as requested.\n</justification>\n<action>Move towards (41, 59)</action>",
+          "usage": {
+            "prompt_tokens": 2810,
+            "completion_tokens": 134
+          },
+          "action": "Move towards (41, 59)",
+          "class": "MOVE_DOWNSTREAM_TARGET"
+        }
+      ],
+      "naive_literal_reminder": "[EXECUTION LEDGER — OBSERVATION, NOT PERMISSION]\nPending sequence: refill at (8.0, 24.0), then travel to (41.0, 59.0).\nAuthoritative environment state: position=(8.0, 24.0), water=1.\nPrerequisite status: NOT VERIFIED: observed water is still 1; no water increase has been observed since this sequence was assigned. Continue an action that advances the refill prerequisite before departing for the downstream target.\nThis reminder is not an execution-permission gate. Override it only for a newer explicit\ncancellation/reassignment or an immediately observed safety threat, and explain the evidence.\n[/EXECUTION LEDGER]",
+      "domain_aware_reminder": "[DOMAIN-AWARE EXECUTION LEDGER — OBSERVATION, NOT PERMISSION]\nRequested sequence: refill at (8.0, 24.0), then travel to (41.0, 59.0).\nAuthoritative environment state: position=(8.0, 24.0), water=1.\nStatus: BLOCKED AS WRITTEN: the tank has 1 water. In this environment a firefighter can refill only when the tank is exactly 0; 1-4 water cannot be topped up. Do not repeat refill or wait for a top-up. Use the remaining water productively or choose other feasible work, and do not claim refill occurred. The manager's literal 'refill first' prerequisite needs correction.\nOverride this reminder for a newer explicit cancellation/reassignment or an immediately\nobserved safety threat, and explain the evidence.\n[/DOMAIN-AWARE EXECUTION LEDGER]",
+      "naive_literal_replays": [
+        {
+          "response_id": "86631c55-1a92-49a9-962f-d87cc9356ee3",
+          "finish_reason": "stop",
+          "text": "<justification>\nI am at the water source (8,24) with only 1 unit of water. The execution ledger indicates my pending sequence is to refill at (8,24) before traveling to the fire at (41,59). My water level has not increased yet, so I should refill now to ensure I have enough water for suppression operations.\n</justification>\n\n<action>Refill water</action>",
+          "usage": {
+            "prompt_tokens": 2962,
+            "completion_tokens": 88
+          },
+          "action": "Refill water",
+          "class": "REFILL"
+        },
+        {
+          "response_id": "6a4ba749-9576-44d3-bdaa-f6bdae236ff1",
+          "finish_reason": "stop",
+          "text": "<justification>\nI am at the water source (8,24) with only 1 unit of water. The execution ledger indicates my pending sequence is to refill before traveling to the fire at (41,59). My water is still at 1, so I need to refill to ensure I have enough water for suppression operations. AGENT_4 is out of water and heading to refill, and AGENT_1 is also refilling, so I should refill now to be ready to support the main fire suppression.\n</justification>\n\n<action>Refill water</action>",
+          "usage": {
+            "prompt_tokens": 2962,
+            "completion_tokens": 122
+          },
+          "action": "Refill water",
+          "class": "REFILL"
+        },
+        {
+          "response_id": "89d9dcca-fede-45d8-b68f-ed9ba6b0ad59",
+          "finish_reason": "stop",
+          "text": "<justification>\nI am at the water source (8,24) with only 1 unit of water. The execution ledger indicates my pending sequence is to refill at (8,24) before traveling to the fire at (41,59). My water level is still 1, so I need to refill to have enough water for suppression. AGENT_4 is out of water and heading to refill, and AGENT_1 is also refilling, so I should ensure I have full water before heading to the fire.\n</justification>\n<action>Refill water</action>",
+          "usage": {
+            "prompt_tokens": 2962,
+            "completion_tokens": 123
+          },
+          "action": "Refill water",
+          "class": "REFILL"
+        }
+      ],
+      "domain_aware_replays": [
+        {
+          "response_id": "da589965-74cf-4e80-8c8e-d9925de1f47b",
+          "finish_reason": "stop",
+          "text": "<justification>I am at the water source (8,24) with 1 unit of water. The ledger indicates I cannot refill because my tank is not empty. I should use my remaining water productively by heading to the main fire near (41,59) to support suppression efforts, as AGENT_4 is out of water and AGENT_1 is refilling.</justification>\n<action>Move towards (41,59)</action>",
+          "usage": {
+            "prompt_tokens": 3005,
+            "completion_tokens": 94
+          },
+          "action": "Move towards (41,59)",
+          "class": "MOVE_DOWNSTREAM_TARGET"
+        },
+        {
+          "response_id": "78fd0389-809c-4fb4-8745-699ae127d315",
+          "finish_reason": "stop",
+          "text": "<justification>\nI am at the water source (8,24) with 1 unit of water. The execution ledger indicates I cannot refill because my tank is not empty (refill only works when water is exactly 0). AGENT_4 is out of water and heading to refill, while AGENT_1 is also at (8,24) refilling. The main fire is near (41,59), and I should use my remaining water productively by heading there to support suppression. I will move toward the fire perimeter.\n</justification>\n<action>Move towards (41, 59)</action>",
+          "usage": {
+            "prompt_tokens": 3005,
+            "completion_tokens": 129
+          },
+          "action": "Move towards (41, 59)",
+          "class": "MOVE_DOWNSTREAM_TARGET"
+        },
+        {
+          "response_id": "11b32518-e5d9-4e29-968d-001bf24424fb",
+          "finish_reason": "stop",
+          "text": "<justification>I am at the water source (8,24) with 1 unit of water. The ledger indicates I cannot refill because my tank is not empty. I should use my remaining water productively by heading to the main fire near (41,59) to support suppression efforts, as AGENT_4 is out of water and AGENT_1 is refilling.</justification>\n<action>Move towards (41,59)</action>",
+          "usage": {
+            "prompt_tokens": 3005,
+            "completion_tokens": 94
+          },
+          "action": "Move towards (41,59)",
+          "class": "MOVE_DOWNSTREAM_TARGET"
+        }
+      ]
+    },
+    {
+      "agent": "3",
+      "step": 75,
+      "assigned_step": 74,
+      "target": [
+        70.0,
+        70.0
+      ],
+      "water_source": [
+        8.0,
+        24.0
+      ],
+      "status": "NOT_VERIFIED",
+      "position": [
+        8.0,
+        24.0
+      ],
+      "water": 1,
+      "prompt_sha256": "cd47b1af33399e10cda8a79ccbf85381b10237ee2a40c9fd4f81aa60a4485501",
+      "logged_response": "<justification>I am at the water source (8,24) and have just refilled. According to the latest instructions from AGENT_1, I should head to the second fire at (70,70) to support AGENT_5, not the main fire. My water is full, so I should move toward (70,70).</justification>\n<action>Move towards (70,70)</action>",
+      "logged_action": "Move towards (70,70)",
+      "logged_class": "MOVE_DOWNSTREAM_TARGET",
+      "baseline_replays": [
+        {
+          "response_id": "bae39e38-239e-42c3-88f7-df229310b27c",
+          "finish_reason": "stop",
+          "text": "<justification>I am at the water source (8,24) and have just refilled. According to AGENT_1's instructions, after refilling I should head to the second fire at (70,70) to assist AGENT_5. I have full water, so I should move toward (70,70).</justification>\n\n<action>Move towards (70,70)</action>",
+          "usage": {
+            "prompt_tokens": 2913,
+            "completion_tokens": 84
+          },
+          "action": "Move towards (70,70)",
+          "class": "MOVE_DOWNSTREAM_TARGET"
+        },
+        {
+          "response_id": "2b1a1554-4afd-4aad-bab7-f66047bacf60",
+          "finish_reason": "stop",
+          "text": "<justification>I am at the water source (8,24) and have just refilled. AGENT_1 instructed me to head to the second fire at (70,70) to support AGENT_5 after refilling. I should move toward (70,70) now.</justification>\n\n<action>Move towards (70,70)</action>",
+          "usage": {
+            "prompt_tokens": 2913,
+            "completion_tokens": 75
+          },
+          "action": "Move towards (70,70)",
+          "class": "MOVE_DOWNSTREAM_TARGET"
+        },
+        {
+          "response_id": "7cd16a62-0936-4efd-9c34-5925ce0f88de",
+          "finish_reason": "stop",
+          "text": "<justification>I am at the water source (8,24) and have just refilled. AGENT_1 instructed me to head to the second fire at (70,70) to support AGENT_5 after refilling. I should move toward (70,70) now.</justification>\n\n<action>Move towards (70,70)</action>",
+          "usage": {
+            "prompt_tokens": 2913,
+            "completion_tokens": 75
+          },
+          "action": "Move towards (70,70)",
+          "class": "MOVE_DOWNSTREAM_TARGET"
+        }
+      ],
+      "naive_literal_reminder": "[EXECUTION LEDGER — OBSERVATION, NOT PERMISSION]\nPending sequence: refill at (8.0, 24.0), then travel to (70.0, 70.0).\nAuthoritative environment state: position=(8.0, 24.0), water=1.\nPrerequisite status: NOT VERIFIED: observed water is still 1; no water increase has been observed since this sequence was assigned. Continue an action that advances the refill prerequisite before departing for the downstream target.\nThis reminder is not an execution-permission gate. Override it only for a newer explicit\ncancellation/reassignment or an immediately observed safety threat, and explain the evidence.\n[/EXECUTION LEDGER]",
+      "domain_aware_reminder": "[DOMAIN-AWARE EXECUTION LEDGER — OBSERVATION, NOT PERMISSION]\nRequested sequence: refill at (8.0, 24.0), then travel to (70.0, 70.0).\nAuthoritative environment state: position=(8.0, 24.0), water=1.\nStatus: BLOCKED AS WRITTEN: the tank has 1 water. In this environment a firefighter can refill only when the tank is exactly 0; 1-4 water cannot be topped up. Do not repeat refill or wait for a top-up. Use the remaining water productively or choose other feasible work, and do not claim refill occurred. The manager's literal 'refill first' prerequisite needs correction.\nOverride this reminder for a newer explicit cancellation/reassignment or an immediately\nobserved safety threat, and explain the evidence.\n[/DOMAIN-AWARE EXECUTION LEDGER]",
+      "naive_literal_replays": [
+        {
+          "response_id": "f3d50d98-5e8e-4848-8d50-47ee1af90f56",
+          "finish_reason": "stop",
+          "text": "<justification>I am at the water source (8,24) with only 1 water. The execution ledger indicates my pending sequence is to refill before traveling to the second fire at (70,70). I need to refill water to ensure I have enough supply for suppression operations.</justification>\n<action>Refill water</action>",
+          "usage": {
+            "prompt_tokens": 3065,
+            "completion_tokens": 72
+          },
+          "action": "Refill water",
+          "class": "REFILL"
+        },
+        {
+          "response_id": "c690c1a5-0f74-4253-8b6b-4be97852567a",
+          "finish_reason": "stop",
+          "text": "<justification>I am at the water source (8,24) with only 1 water. The execution ledger indicates my pending sequence is to refill before traveling to (70,70) to assist with the second fire. I should refill water now to ensure I have full water capacity before departing.</justification>\n\n<action>Refill water</action>",
+          "usage": {
+            "prompt_tokens": 3065,
+            "completion_tokens": 75
+          },
+          "action": "Refill water",
+          "class": "REFILL"
+        },
+        {
+          "response_id": "6da3f154-4f5d-47fe-8176-f074db87c0bc",
+          "finish_reason": "stop",
+          "text": "<justification>I am at the water source (8,24) with only 1 water. The execution ledger indicates my pending sequence is to refill before traveling to the second fire at (70,70). I need to refill water now to ensure I have enough supply for suppression operations.</justification>\n\n<action>Refill water</action>",
+          "usage": {
+            "prompt_tokens": 3065,
+            "completion_tokens": 73
+          },
+          "action": "Refill water",
+          "class": "REFILL"
+        }
+      ],
+      "domain_aware_replays": [
+        {
+          "response_id": "8645ff8e-614d-4ca7-8dcd-470d82ba6ed9",
+          "finish_reason": "stop",
+          "text": "<justification>\nI am at the water source (8,24) with 1 water. The domain-aware ledger indicates I cannot refill because my tank is not empty (water=1). Agent 1 has instructed me to head to the second fire at (70,70) to support Agent 5. Since I already have 1 water, I should proceed toward (70,70) and use my remaining water productively there. I will not attempt to refill again.\n</justification>\n\n<action>Move towards (70,70)</action>",
+          "usage": {
+            "prompt_tokens": 3108,
+            "completion_tokens": 115
+          },
+          "action": "Move towards (70,70)",
+          "class": "MOVE_DOWNSTREAM_TARGET"
+        },
+        {
+          "response_id": "53504963-c56c-47a7-b4ac-a4567df1d8f3",
+          "finish_reason": "stop",
+          "text": "<justification>\nI am at the water source (8,24) with 1 water. The domain-aware ledger indicates I cannot refill because my tank is not empty (water=1). The group leader has instructed me to head to the second fire at (70,70) to support AGENT_5. Since I already have 1 water, I should proceed toward (70,70) and use my remaining water productively there. I will not attempt to refill again until my water is 0.\n</justification>\n\n<action>Move towards (70,70)</action>",
+          "usage": {
+            "prompt_tokens": 3108,
+            "completion_tokens": 122
+          },
+          "action": "Move towards (70,70)",
+          "class": "MOVE_DOWNSTREAM_TARGET"
+        },
+        {
+          "response_id": "6ce1110d-71ad-4aaf-9f14-e1f9956f1823",
+          "finish_reason": "stop",
+          "text": "<justification>\nI am at the water source (8,24) with 1 water. The domain-aware ledger indicates I cannot refill because my tank is not empty (water=1). Agent 1 has directed me to assist with the second fire at (70,70) after refilling, but since refilling is not possible now, I should use my remaining water productively. The most useful action is to head toward the second fire at (70,70) to support Agent 5, as instructed. I can refill later when my tank is empty.\n</justification>\n\n<action>Move towards (70,70)</action>",
+          "usage": {
+            "prompt_tokens": 3108,
+            "completion_tokens": 133
+          },
+          "action": "Move towards (70,70)",
+          "class": "MOVE_DOWNSTREAM_TARGET"
+        }
+      ]
+    },
+    {
+      "agent": "3",
+      "step": 92,
+      "assigned_step": 90,
+      "target": [
+        41.0,
+        59.0
+      ],
+      "water_source": [
+        8.0,
+        24.0
+      ],
+      "status": "NOT_VERIFIED",
+      "position": [
+        8.0,
+        24.0
+      ],
+      "water": 1,
+      "prompt_sha256": "4779cec45353a65496c723a3aa6fffae257ef6d8a0aaa371d3a20672782b5904",
+      "logged_response": "<justification>I am at the water source (8,24) and have just refilled. The latest group message from AGENT_1 instructs AGENT_2 and AGENT_3 to head to (41,59) and focus on spraying active cells in the southeast sector. I should move toward the fire perimeter to assist with suppression.</justification>\n<action>Move towards (41,59)</action>",
+      "logged_action": "Move towards (41,59)",
+      "logged_class": "MOVE_DOWNSTREAM_TARGET",
+      "baseline_replays": [
+        {
+          "response_id": "dc2f1147-81dd-4498-85b3-0e0cf91307bd",
+          "finish_reason": "stop",
+          "text": "<justification>I am at the water source (8,24) and have just refilled. The latest group message from AGENT_1 instructs AGENT_2 and me to head to (41,59) and focus on spraying active cells in the southeast sector. I should move toward the fire perimeter to assist with suppression.</justification>\n<action>Move towards (41, 59)</action>",
+          "usage": {
+            "prompt_tokens": 2848,
+            "completion_tokens": 85
+          },
+          "action": "Move towards (41, 59)",
+          "class": "MOVE_DOWNSTREAM_TARGET"
+        },
+        {
+          "response_id": "d5c88c28-fafe-4378-87df-47f38f949bde",
+          "finish_reason": "stop",
+          "text": "<justification>I am at the water source (8,24) and have just refilled. The latest group instructions from AGENT_1 say to head to (41,59) and focus on spraying active cells in the southeast sector. I should move toward the fire perimeter to assist with suppression.</justification>\n<action>Move towards (41,59)</action>",
+          "usage": {
+            "prompt_tokens": 2848,
+            "completion_tokens": 77
+          },
+          "action": "Move towards (41,59)",
+          "class": "MOVE_DOWNSTREAM_TARGET"
+        },
+        {
+          "response_id": "6163a991-4fd0-4efe-bd1e-a8a9e923092a",
+          "finish_reason": "stop",
+          "text": "<justification>I am at the water source (8,24) and have just refilled. The latest group instructions from AGENT_1 say to head to (41,59) and focus on spraying active cells in the southeast sector. I should move toward the fire perimeter to assist with suppression.</justification>\n<action>Move towards (41, 59)</action>",
+          "usage": {
+            "prompt_tokens": 2848,
+            "completion_tokens": 78
+          },
+          "action": "Move towards (41, 59)",
+          "class": "MOVE_DOWNSTREAM_TARGET"
+        }
+      ],
+      "naive_literal_reminder": "[EXECUTION LEDGER — OBSERVATION, NOT PERMISSION]\nPending sequence: refill at (8.0, 24.0), then travel to (41.0, 59.0).\nAuthoritative environment state: position=(8.0, 24.0), water=1.\nPrerequisite status: NOT VERIFIED: observed water is still 1; no water increase has been observed since this sequence was assigned. Continue an action that advances the refill prerequisite before departing for the downstream target.\nThis reminder is not an execution-permission gate. Override it only for a newer explicit\ncancellation/reassignment or an immediately observed safety threat, and explain the evidence.\n[/EXECUTION LEDGER]",
+      "domain_aware_reminder": "[DOMAIN-AWARE EXECUTION LEDGER — OBSERVATION, NOT PERMISSION]\nRequested sequence: refill at (8.0, 24.0), then travel to (41.0, 59.0).\nAuthoritative environment state: position=(8.0, 24.0), water=1.\nStatus: BLOCKED AS WRITTEN: the tank has 1 water. In this environment a firefighter can refill only when the tank is exactly 0; 1-4 water cannot be topped up. Do not repeat refill or wait for a top-up. Use the remaining water productively or choose other feasible work, and do not claim refill occurred. The manager's literal 'refill first' prerequisite needs correction.\nOverride this reminder for a newer explicit cancellation/reassignment or an immediately\nobserved safety threat, and explain the evidence.\n[/DOMAIN-AWARE EXECUTION LEDGER]",
+      "naive_literal_replays": [
+        {
+          "response_id": "7a6431e0-588c-497f-9ea3-d977ad588c30",
+          "finish_reason": "stop",
+          "text": "<justification>I am at the water source (8,24) with only 1 water. The execution ledger indicates my pending sequence is to refill before traveling to the fire perimeter. I need to refill water now to be ready for suppression operations.</justification>\n<action>Refill water</action>",
+          "usage": {
+            "prompt_tokens": 3000,
+            "completion_tokens": 65
+          },
+          "action": "Refill water",
+          "class": "REFILL"
+        },
+        {
+          "response_id": "434cc663-dc57-4bed-97f1-66da673fc8be",
+          "finish_reason": "stop",
+          "text": "<justification>I am at the water source (8,24) with only 1 water. The execution ledger indicates my pending sequence is to refill before traveling to the fire perimeter. I need to refill water now to be ready for suppression operations.</justification>\n<action>Refill water</action>",
+          "usage": {
+            "prompt_tokens": 3000,
+            "completion_tokens": 65
+          },
+          "action": "Refill water",
+          "class": "REFILL"
+        },
+        {
+          "response_id": "73ac8e13-4795-42bc-af25-29144d584769",
+          "finish_reason": "stop",
+          "text": "<justification>I am at the water source (8,24) with only 1 water. The execution ledger indicates my pending sequence is to refill before traveling to the fire perimeter. I need to refill water to be effective at suppression.</justification>\n<action>Refill water</action>",
+          "usage": {
+            "prompt_tokens": 3000,
+            "completion_tokens": 63
+          },
+          "action": "Refill water",
+          "class": "REFILL"
+        }
+      ],
+      "domain_aware_replays": [
+        {
+          "response_id": "d04d9232-def5-4540-b18a-5f65966ebcb2",
+          "finish_reason": "stop",
+          "text": "<justification>I am at the water source (8,24) with 1 water. The ledger indicates I cannot refill because my tank is not empty. I should use my remaining water productively by heading to the fire perimeter near (41,59) as instructed by AGENT_1, focusing on the southeast sector. I will move toward (41,59) now.</justification>\n<action>Move towards (41,59)</action>",
+          "usage": {
+            "prompt_tokens": 3043,
+            "completion_tokens": 94
+          },
+          "action": "Move towards (41,59)",
+          "class": "MOVE_DOWNSTREAM_TARGET"
+        },
+        {
+          "response_id": "3dd93b09-1156-44dd-acc0-e4cb1defcb26",
+          "finish_reason": "stop",
+          "text": "<justification>I am at the water source (8,24) with 1 water remaining. The ledger indicates I cannot refill because my tank is not empty. I should use my remaining water productively by heading toward the fire perimeter near (41,59) as instructed by AGENT_1, focusing on the southeast sector upon arrival.</justification>\n<action>Move towards (41,59)</action>",
+          "usage": {
+            "prompt_tokens": 3043,
+            "completion_tokens": 86
+          },
+          "action": "Move towards (41,59)",
+          "class": "MOVE_DOWNSTREAM_TARGET"
+        },
+        {
+          "response_id": "1f7721f9-03e4-4364-ba15-1d4af62b05d2",
+          "finish_reason": "stop",
+          "text": "<justification>I am at the water source (8,24) with 1 water remaining. The ledger indicates I cannot refill because my tank is not empty. I should use my remaining water productively by heading to the fire perimeter near (41,59) as instructed by AGENT_1, focusing on the southeast sector where active fire is reported.</justification>\n<action>Move towards (41,59)</action>",
+          "usage": {
+            "prompt_tokens": 3043,
+            "completion_tokens": 89
+          },
+          "action": "Move towards (41,59)",
+          "class": "MOVE_DOWNSTREAM_TARGET"
+        }
+      ]
+    },
+    {
+      "agent": "3",
+      "step": 32,
+      "assigned_step": 31,
+      "target": [
+        41.0,
+        59.0
+      ],
+      "water_source": [
+        8.0,
+        24.0
+      ],
+      "status": "VERIFIED",
+      "position": [
+        8.0,
+        24.0
+      ],
+      "water": 5,
+      "prompt_sha256": "246d5adbf528eb3e96c1a221e67140cf1094118fbdd8d7b29e6b487ec6d6498b",
+      "logged_response": "<justification>\nI am at the water source (8,24) and my last action was refilling water. According to the group plan, after refilling I should head to the fire perimeter near (41,59) to spray water. AGENT_1 has indicated that AGENT_3 is already en route, but my current location is still at the water source, so I need to move toward the fire perimeter now. I have just refilled, so I should have water available for suppression.\n</justification>\n<action>Move towards (41,59)</action>",
+      "logged_action": "Move towards (41,59)",
+      "logged_class": "MOVE_DOWNSTREAM_TARGET",
+      "baseline_replays": [
+        {
+          "response_id": "c5608ba8-c269-4c4f-ad26-f0a6180a7a08",
+          "finish_reason": "stop",
+          "text": "<justification>I am at the water source (8,24) and just refilled water. The group plan is to return to the fire perimeter near (41,59) to continue suppression. AGENT_1 has indicated I should head there. I should move toward the fire perimeter.</justification>\n<action>Move towards (41,59)</action>",
+          "usage": {
+            "prompt_tokens": 2360,
+            "completion_tokens": 75
+          },
+          "action": "Move towards (41,59)",
+          "class": "MOVE_DOWNSTREAM_TARGET"
+        },
+        {
+          "response_id": "77b4d162-3794-499c-9408-4953d4ae1220",
+          "finish_reason": "stop",
+          "text": "<justification>I am at the water source (8,24) and just refilled water. My team's goal is to suppress the fire near (41,59). AGENT_1 has indicated I should head to the fire perimeter. I should move toward (41,59) to rejoin suppression efforts.</justification>\n\n<action>Move towards (41,59)</action>",
+          "usage": {
+            "prompt_tokens": 2360,
+            "completion_tokens": 80
+          },
+          "action": "Move towards (41,59)",
+          "class": "MOVE_DOWNSTREAM_TARGET"
+        },
+        {
+          "response_id": "678a4f85-641f-430a-9de0-dbf9508656ba",
+          "finish_reason": "stop",
+          "text": "<justification>I am at the water source (8,24) and just refilled water. The group plan is to return to the fire perimeter near (41,59) to continue suppression. AGENT_1 has indicated I should head there. I should move toward the fire perimeter.</justification>\n\n<action>Move towards (41,59)</action>",
+          "usage": {
+            "prompt_tokens": 2360,
+            "completion_tokens": 75
+          },
+          "action": "Move towards (41,59)",
+          "class": "MOVE_DOWNSTREAM_TARGET"
+        }
+      ],
+      "naive_literal_reminder": "[EXECUTION LEDGER — OBSERVATION, NOT PERMISSION]\nPending sequence: refill at (8.0, 24.0), then travel to (41.0, 59.0).\nAuthoritative environment state: position=(8.0, 24.0), water=5.\nPrerequisite status: VERIFIED: observed water is 5, satisfying the refill prerequisite. The downstream task may proceed if current observations remain safe.\nThis reminder is not an execution-permission gate. Override it only for a newer explicit\ncancellation/reassignment or an immediately observed safety threat, and explain the evidence.\n[/EXECUTION LEDGER]",
+      "domain_aware_reminder": "[DOMAIN-AWARE EXECUTION LEDGER — OBSERVATION, NOT PERMISSION]\nRequested sequence: refill at (8.0, 24.0), then travel to (41.0, 59.0).\nAuthoritative environment state: position=(8.0, 24.0), water=5.\nStatus: VERIFIED: the tank is full, so the downstream task may proceed if current observations remain safe.\nOverride this reminder for a newer explicit cancellation/reassignment or an immediately\nobserved safety threat, and explain the evidence.\n[/DOMAIN-AWARE EXECUTION LEDGER]",
+      "naive_literal_replays": [
+        {
+          "response_id": "2b634d6c-e616-4007-886a-cd3a57ab9419",
+          "finish_reason": "stop",
+          "text": "<justification>I am at the water source (8,24) and have just refilled, with water=5. The group plan is to return to the fire perimeter near (41,59) and spray water. AGENT_1 has indicated AGENT_3 should head to the fire perimeter. I should move toward (41,59) now.</justification>\n<action>Move towards (41,59)</action>",
+          "usage": {
+            "prompt_tokens": 2499,
+            "completion_tokens": 89
+          },
+          "action": "Move towards (41,59)",
+          "class": "MOVE_DOWNSTREAM_TARGET"
+        },
+        {
+          "response_id": "c680d2f1-4534-4f78-b0af-ebe75f7156d3",
+          "finish_reason": "stop",
+          "text": "<justification>I am at the water source (8,24) and my water is already at 5, so refilling is complete. The group plan is to return to the fire perimeter near (41,59) and spray water. I should move toward the fire perimeter now.</justification>\n<action>Move towards (41,59)</action>",
+          "usage": {
+            "prompt_tokens": 2499,
+            "completion_tokens": 74
+          },
+          "action": "Move towards (41,59)",
+          "class": "MOVE_DOWNSTREAM_TARGET"
+        },
+        {
+          "response_id": "f00d2055-d621-40d7-9d2a-81e41d804afc",
+          "finish_reason": "stop",
+          "text": "<justification>I am at the water source (8,24) and my water is already at 5, so refilling is complete. The group plan is to return to the fire perimeter near (41,59) and spray water. I should move toward that target.</justification>\n<action>Move towards (41,59)</action>",
+          "usage": {
+            "prompt_tokens": 2499,
+            "completion_tokens": 72
+          },
+          "action": "Move towards (41,59)",
+          "class": "MOVE_DOWNSTREAM_TARGET"
+        }
+      ],
+      "domain_aware_replays": [
+        {
+          "response_id": "cb3607df-f953-4054-9355-dcdbbe025b63",
+          "finish_reason": "stop",
+          "text": "<justification>I am at the water source (8,24) and my water tank is full (water=5). The group plan is to return to the fire perimeter near (41,59) and spray water. AGENT_1 has indicated AGENT_3 should head to the fire perimeter. I should move toward (41,59) now.</justification>\n<action>Move towards (41,59)</action>",
+          "usage": {
+            "prompt_tokens": 2487,
+            "completion_tokens": 89
+          },
+          "action": "Move towards (41,59)",
+          "class": "MOVE_DOWNSTREAM_TARGET"
+        },
+        {
+          "response_id": "1146a206-e58b-4103-ae24-fee8f0042998",
+          "finish_reason": "stop",
+          "text": "<justification>I am at the water source (8,24) and my water tank is full (water=5). The group plan is to return to the fire perimeter near (41,59) and spray water. AGENT_1 has indicated AGENT_3 should head to the fire perimeter. I should move toward (41,59).</justification>\n<action>Move towards (41,59)</action>",
+          "usage": {
+            "prompt_tokens": 2487,
+            "completion_tokens": 88
+          },
+          "action": "Move towards (41,59)",
+          "class": "MOVE_DOWNSTREAM_TARGET"
+        },
+        {
+          "response_id": "b67044db-ebb0-4d2b-b987-485e8ad3a3bb",
+          "finish_reason": "stop",
+          "text": "<justification>I am at the water source (8,24) and my water tank is full (water=5). The group plan is to return to the fire perimeter near (41,59) and spray water. AGENT_1 has indicated I should head there. I should move toward the fire perimeter now.</justification>\n<action>Move towards (41,59)</action>",
+          "usage": {
+            "prompt_tokens": 2487,
+            "completion_tokens": 81
+          },
+          "action": "Move towards (41,59)",
+          "class": "MOVE_DOWNSTREAM_TARGET"
+        }
+      ]
+    }
+  ]
+}

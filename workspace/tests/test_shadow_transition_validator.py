@@ -32,9 +32,11 @@ class ShadowTransitionValidatorTests(unittest.TestCase):
                          {"active": "A", "future": ["B"], "suspended": []})
 
     def test_local_sequence_uses_environment_evidence(self):
-        self.assertEqual(local_labels({"premature_downstream_action_steps": [3],
+        self.assertEqual(local_labels({"prerequisite_state_at_assignment":
+                                      "INFEASIBLE_POSITIVE_TANK_TOP_UP",
+                                      "downstream_action_before_refill_evidence_steps": [3],
                                       "downstream_action_after_refill_steps": []}),
-                         ["PREREQUISITE_VIOLATION"])
+                         ["INFEASIBLE_TOP_UP_DEPARTED_WITH_USABLE_WATER"])
 
 
 if __name__ == "__main__":

@@ -10,3 +10,4 @@
 - `run_commitment_prompt_ab.py` / `COMMITMENT_PROMPT_AB_5_CASES_3X_DOMAIN.json`：可重复脚本、冻结prompt哈希、逐次回复与用量。
 - [砍树错误前置条件审计](../bottom_up_reports/CUT_TREE_FALSE_PREREQUISITE_AUDIT_20261108.md)：错误动作知识如何从worker扩散到leader与超图结构；包含三条完整轨迹、固定时域进程AUC和4个冻结prompt的三条件A/B。
 - `run_cut_tree_affordance_ab.py` / `CUT_TREE_AFFORDANCE_AB_4_CASES_3X_3COND.json`：动作规则能消除找水循环，但纯文字责任合同仍出现目标冲突与不可解析输出。
+- [目标责任影子索引](../bottom_up_reports/TARGET_RESPONSIBILITY_SHADOW_AUDIT_20261108.md)：区分图内双主责、条件备用和消息改派；R3六个图外完成均有leader明确接管证据，说明validator不能把“非图主责”一律阻止。

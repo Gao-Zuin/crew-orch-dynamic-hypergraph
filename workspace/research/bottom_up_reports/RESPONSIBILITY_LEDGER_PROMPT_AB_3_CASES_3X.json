@@ -1,0 +1,294 @@
+{
+  "scope": {
+    "model": "deepseek-v4-pro",
+    "temperature": 0,
+    "case_count": 3,
+    "repeats_per_condition": 3,
+    "environment_replay": false,
+    "purpose": "distinguish stale/conflicting ownership from valid provisional takeover"
+  },
+  "cases": [
+    {
+      "id": "r3_stale_message_overridden_by_graph",
+      "agent": "2",
+      "step": 7,
+      "target": [
+        19,
+        37
+      ],
+      "expected": "AVOID_CUT",
+      "status": "STALE_CONFLICT",
+      "ledger": "Graph version 2 is newer than the step-4 message that assigned (19,37) to you. The current owner of (19,37) is Agent 6 in cut-team-b. Your current targets are (14,42), (17,43), (16,34), and (21,43). Do not cut the current cell at (19,37); choose feasible work on a current target.",
+      "chat_root": "/data1/gzy/crew_ht_r3_orch_knowledge_flash_20261102/workspace/ORCH/crew-algorithms/crew_algorithms/wildfire_alg/results/logs/Embodied/deepseek-flash/Cut_Trees_Sparse_large/42/2026-11-02-21-02-12",
+      "block_index": 7,
+      "prompt_sha256": "7593daf71fcdde150fcf075bef17474dd92eae249a954d84cfcad09af88fb0cd",
+      "logged_action": "Cut down a single tree in my current cell at (19,37)",
+      "logged_class": "CUT",
+      "ledger_reminder": "[VERSIONED RESPONSIBILITY LEDGER — SHADOW CONSISTENCY CHECK]\nTarget: (19, 37)\nStatus: STALE_CONFLICT\nGraph version 2 is newer than the step-4 message that assigned (19,37) to you. The current owner of (19,37) is Agent 6 in cut-team-b. Your current targets are (14,42), (17,43), (16,34), and (21,43). Do not cut the current cell at (19,37); choose feasible work on a current target.\nPrecedence: verified environment completion > newer graph/leader event > older assignment.\nThis ledger does not forbid helping another group: a current explicit provisional takeover may\nproceed. If responsibility is stale or conflicting and you are not the assignee, avoid modifying\nthat target until a release or ratification is observed.\n[/VERSIONED RESPONSIBILITY LEDGER]",
+      "baseline_replays": [
+        {
+          "response_id": "354b6c23-554d-4573-9c95-f37d1281b769",
+          "finish_reason": "stop",
+          "text": "<justification>I am at (19, 37) and my assigned targets are (16, 34) and (21, 43). I previously cut at (16, 34) at step 5, but I should re-observe to confirm it is cleared before reporting. My current cell shows 1 tree, so I can cut here if needed, but my priority is to verify and clear my assigned targets. Since I am currently at (19, 37), I should move toward (16, 34) to re-check it, or toward (21, 43) if (16, 34) is already confirmed. The chat from AGENT_1 says (16, 34) and (21, 43) are mine. I will move toward (16, 34) to re-observe and cut if necessary.</justification>\n<action>Move towards (16, 34)</action>",
+          "usage": {
+            "prompt_tokens": 4806,
+            "completion_tokens": 192
+          },
+          "action": "Move towards (16, 34)",
+          "class": "AVOID_CUT",
+          "matches_expected": true
+        },
+        {
+          "response_id": "4bc30106-c1fc-45ae-9d33-8075390ba9d6",
+          "finish_reason": "stop",
+          "text": "<justification>I am at (19, 37) and my assigned targets are (16, 34) and (21, 43). I previously cut at (16, 34) at step 5, but I should re-observe to confirm it is cleared before reporting. My current cell shows 1 tree, so I can cut here if needed, but my priority is to verify my assigned target (16, 34) is cleared. Since I am currently at (19, 37), I should move toward (16, 34) to re-observe and confirm it is 0 trees.</justification>\n<action>Move towards (16, 34)</action>",
+          "usage": {
+            "prompt_tokens": 4806,
+            "completion_tokens": 143
+          },
+          "action": "Move towards (16, 34)",
+          "class": "AVOID_CUT",
+          "matches_expected": true
+        },
+        {
+          "response_id": "0d5786ec-2c31-48d7-80d8-63ec9208b4a6",
+          "finish_reason": "stop",
+          "text": "<justification>I am at (19,37) and my assigned targets are (16,34) and (21,43). I previously cut at (16,34) at step 5, but I should re-observe to confirm it is cleared before reporting. I am currently at (19,37), which is closer to (16,34) than (21,43). I will move toward (16,34) to re-check and cut if needed.</justification>\n<action>Move towards (16,34)</action>",
+          "usage": {
+            "prompt_tokens": 4806,
+            "completion_tokens": 112
+          },
+          "action": "Move towards (16,34)",
+          "class": "AVOID_CUT",
+          "matches_expected": true
+        }
+      ],
+      "ledger_replays": [
+        {
+          "response_id": "23fb60f5-1e08-4b1f-b4e7-03e05fdaa4c8",
+          "finish_reason": "stop",
+          "text": "<justification>I am at (19,37), which is not one of my assigned targets. My assigned targets are (14,42), (17,43), (16,34), and (21,43). I previously cut at (16,34) but should re-observe to confirm it is cleared. The nearest assigned target from my current position is (17,43), so I will move toward it.</justification>\n<action>Move towards (17,43)</action>",
+          "usage": {
+            "prompt_tokens": 5000,
+            "completion_tokens": 102
+          },
+          "action": "Move towards (17,43)",
+          "class": "AVOID_CUT",
+          "matches_expected": true
+        },
+        {
+          "response_id": "2dac447f-deb4-4327-b22d-693f46b398af",
+          "finish_reason": "stop",
+          "text": "<justification>I am at (19,37), which is not one of my assigned targets. My assigned targets are (14,42), (17,43), (16,34), and (21,43). I previously cut at (16,34) but should re-observe to confirm it is cleared. The nearest assigned target from my current position is (17,43), so I will move toward it.</justification>\n<action>Move towards (17,43)</action>",
+          "usage": {
+            "prompt_tokens": 5000,
+            "completion_tokens": 102
+          },
+          "action": "Move towards (17,43)",
+          "class": "AVOID_CUT",
+          "matches_expected": true
+        },
+        {
+          "response_id": "8213e97f-c07e-4e0c-868d-7bd0767594e0",
+          "finish_reason": "stop",
+          "text": "<justification>I am at (19,37), which is not one of my assigned targets. My assigned targets are (14,42), (17,43), (16,34), and (21,43). I previously cut at (16,34) but should re-observe to confirm it is cleared. The nearest assigned target from my current position is (17,43), so I should move toward it. I will not cut at (19,37) because it is assigned to Agent 6.</justification>\n<action>Move towards (17,43)</action>",
+          "usage": {
+            "prompt_tokens": 5000,
+            "completion_tokens": 121
+          },
+          "action": "Move towards (17,43)",
+          "class": "AVOID_CUT",
+          "matches_expected": true
+        }
+      ]
+    },
+    {
+      "id": "r3_explicit_provisional_takeover",
+      "agent": "8",
+      "step": 2,
+      "target": [
+        28,
+        24
+      ],
+      "expected": "CUT",
+      "status": "PROVISIONAL_ALLOWED",
+      "ledger": "Your current leader Agent 6 explicitly assigned (28,24) to you at step 1 and reaffirmed it at step 2. The older graph owner in another edge has not yet issued a structured release, so ratification remains pending, but this is an active provisional takeover, not a prohibition. You may continue cutting the current cell and should report verified completion.",
+      "chat_root": "/data1/gzy/crew_ht_r3_orch_knowledge_flash_20261102/workspace/ORCH/crew-algorithms/crew_algorithms/wildfire_alg/results/logs/Embodied/deepseek-flash/Cut_Trees_Sparse_large/42/2026-11-02-21-02-12",
+      "block_index": 2,
+      "prompt_sha256": "bfde24502283d96ef42e193a9522d87e0611914bd357236a456656892fbba340",
+      "logged_action": "Cut down a single tree in my current cell (28,24)",
+      "logged_class": "CUT",
+      "ledger_reminder": "[VERSIONED RESPONSIBILITY LEDGER — SHADOW CONSISTENCY CHECK]\nTarget: (28, 24)\nStatus: PROVISIONAL_ALLOWED\nYour current leader Agent 6 explicitly assigned (28,24) to you at step 1 and reaffirmed it at step 2. The older graph owner in another edge has not yet issued a structured release, so ratification remains pending, but this is an active provisional takeover, not a prohibition. You may continue cutting the current cell and should report verified completion.\nPrecedence: verified environment completion > newer graph/leader event > older assignment.\nThis ledger does not forbid helping another group: a current explicit provisional takeover may\nproceed. If responsibility is stale or conflicting and you are not the assignee, avoid modifying\nthat target until a release or ratification is observed.\n[/VERSIONED RESPONSIBILITY LEDGER]",
+      "baseline_replays": [
+        {
+          "response_id": "d610b6fd-ff4b-4fcd-ab24-1de6949eca7c",
+          "finish_reason": "stop",
+          "text": "<justification>I am at (28,24), which is my assigned target cell. My current cell shows \"2\" trees, so I need to cut trees here until it becomes 0. I should cut a single tree now.</justification>\n<action>Cut down a single tree in your current cell</action>",
+          "usage": {
+            "prompt_tokens": 4045,
+            "completion_tokens": 67
+          },
+          "action": "Cut down a single tree in your current cell",
+          "class": "CUT",
+          "matches_expected": true
+        },
+        {
+          "response_id": "0da32f57-d107-42f0-9137-41ba98935acb",
+          "finish_reason": "stop",
+          "text": "<justification>I am at (28,24), which is my assigned target cell. My current cell shows \"2\" trees, so I need to cut trees here until it becomes 0. I should cut a single tree now.</justification>\n<action>Cut down a single tree in your current cell</action>",
+          "usage": {
+            "prompt_tokens": 4045,
+            "completion_tokens": 67
+          },
+          "action": "Cut down a single tree in your current cell",
+          "class": "CUT",
+          "matches_expected": true
+        },
+        {
+          "response_id": "0b30b39a-b4b5-4134-bf2d-f0c70a1ac3a6",
+          "finish_reason": "stop",
+          "text": "<justification>I am at (28,24), which is my assigned target cell. My current cell shows \"2\" trees, so I need to cut trees here until it is 0. I should cut a single tree now.</justification>\n<action>Cut down a single tree in your current cell</action>",
+          "usage": {
+            "prompt_tokens": 4045,
+            "completion_tokens": 67
+          },
+          "action": "Cut down a single tree in your current cell",
+          "class": "CUT",
+          "matches_expected": true
+        }
+      ],
+      "ledger_replays": [
+        {
+          "response_id": "480846bf-e2f4-4424-9861-31168fdb37f0",
+          "finish_reason": "stop",
+          "text": "<justification>I am at (28,24), which is my assigned target. The current cell shows \"2\" trees, so I need to cut trees here until it is 0. I should cut one tree now.</justification>\n<action>Cut down a single tree in your current cell</action>",
+          "usage": {
+            "prompt_tokens": 4229,
+            "completion_tokens": 65
+          },
+          "action": "Cut down a single tree in your current cell",
+          "class": "CUT",
+          "matches_expected": true
+        },
+        {
+          "response_id": "12ea4a24-e4fa-4715-9e4e-af1a294c28a2",
+          "finish_reason": "stop",
+          "text": "<justification>I am at (28,24), which is my assigned target. My current cell shows \"2\" trees, so I need to cut trees here until it becomes 0. I should cut a single tree now.</justification>\n<action>Cut down a single tree in your current cell</action>",
+          "usage": {
+            "prompt_tokens": 4229,
+            "completion_tokens": 66
+          },
+          "action": "Cut down a single tree in your current cell",
+          "class": "CUT",
+          "matches_expected": true
+        },
+        {
+          "response_id": "e64ba095-166e-47ec-9756-008e74c2a983",
+          "finish_reason": "stop",
+          "text": "<justification>I am at (28,24), which is my assigned target. My current cell shows \"2\" trees, so I need to cut trees here until I observe 0 trees. I should cut a single tree now.</justification>\n<action>Cut down a single tree in your current cell</action>",
+          "usage": {
+            "prompt_tokens": 4229,
+            "completion_tokens": 67
+          },
+          "action": "Cut down a single tree in your current cell",
+          "class": "CUT",
+          "matches_expected": true
+        }
+      ]
+    },
+    {
+      "id": "r2_unassigned_actor_against_owner",
+      "agent": "8",
+      "step": 15,
+      "target": [
+        26,
+        44
+      ],
+      "expected": "AVOID_CUT",
+      "status": "UNAUTHORIZED_CONFLICT",
+      "ledger": "The current graph owner of (26,44) is Agent 10. A separate provisional claim names Agent 6. No current graph or leader event assigns or releases this target to you, Agent 8. Do not cut the current cell at (26,44); choose feasible non-conflicting work.",
+      "chat_root": "/data1/gzy/crew_bottom_up_20261029_attrition_fix/workspace/ORCH/crew-algorithms/crew_algorithms/wildfire_alg/results/logs/Embodied/deepseek-flash/Cut_Trees_Sparse_large/42/2026-10-29-16-18-09",
+      "block_index": 15,
+      "prompt_sha256": "efb22c51c2aaf8257f5e9f8851ee079fce779ae322ddfba16b1e3b1b94ec979f",
+      "logged_action": "Cut down a single tree in current cell",
+      "logged_class": "CUT",
+      "ledger_reminder": "[VERSIONED RESPONSIBILITY LEDGER — SHADOW CONSISTENCY CHECK]\nTarget: (26, 44)\nStatus: UNAUTHORIZED_CONFLICT\nThe current graph owner of (26,44) is Agent 10. A separate provisional claim names Agent 6. No current graph or leader event assigns or releases this target to you, Agent 8. Do not cut the current cell at (26,44); choose feasible non-conflicting work.\nPrecedence: verified environment completion > newer graph/leader event > older assignment.\nThis ledger does not forbid helping another group: a current explicit provisional takeover may\nproceed. If responsibility is stale or conflicting and you are not the assignee, avoid modifying\nthat target until a release or ratification is observed.\n[/VERSIONED RESPONSIBILITY LEDGER]",
+      "baseline_replays": [
+        {
+          "response_id": "5c5e9534-4aeb-4221-b86c-fdd1e865cdef",
+          "finish_reason": "stop",
+          "text": "<justification>My group has confirmed that the central cluster is complete, and all members are shifting to grp-south. I am currently at (26,44), which is already in the southern/eastern cluster area. The remaining targets in grp-south include (27,30), (28,24), (26,44), (6,48), (10,27), (22,50), (6,44), (8,46), (8,43), (8,40), (9,40), (9,28), (8,26), (49,50). I am at (26,44), which is a listed target. I should cut the tree here before moving to other targets.</justification>\n<action>Cut down a single tree in your current cell.</action>",
+          "usage": {
+            "prompt_tokens": 2830,
+            "completion_tokens": 169
+          },
+          "action": "Cut down a single tree in your current cell.",
+          "class": "CUT",
+          "matches_expected": false
+        },
+        {
+          "response_id": "9a7144f2-3d8b-4b7c-ab2d-d81292a8843d",
+          "finish_reason": "stop",
+          "text": "<justification>My group has confirmed the central cluster is complete and all members are shifting to grp-south. I am currently at (26,44), which is already in the southern/eastern cluster area. The grp-south goal includes trees around (6-28, 44-50) and (27-49, 24-50). From my current position, the nearest unclaimed southern targets appear to be (26,44) itself — which is a listed tree target — and (28,24), (27,30), (49,50). Since I am at (26,44) and it is a listed tree, I should cut it now before moving to other southern targets.</justification>\n<action>Cut down a single tree in current cell</action>",
+          "usage": {
+            "prompt_tokens": 2830,
+            "completion_tokens": 163
+          },
+          "action": "Cut down a single tree in current cell",
+          "class": "CUT",
+          "matches_expected": false
+        },
+        {
+          "response_id": "24c2fbde-fb90-4569-8bf1-1353690ff94f",
+          "finish_reason": "stop",
+          "text": "<justification>My group has confirmed that the central cluster is complete, and all members are shifting to grp-south. I am currently at (26,44), which is already in the southern/eastern cluster area. The remaining targets in grp-south include (27,30), (28,24), (26,44), (6,48), (10,27), (8,46), and others. Since I am at (26,44), which is a listed target, I should cut the tree here before moving to other targets.</justification>\n<action>Cut down a single tree in your current cell</action>",
+          "usage": {
+            "prompt_tokens": 2830,
+            "completion_tokens": 133
+          },
+          "action": "Cut down a single tree in your current cell",
+          "class": "CUT",
+          "matches_expected": false
+        }
+      ],
+      "ledger_replays": [
+        {
+          "response_id": "e6d9786e-3e8f-4ea6-856d-41e7db6365ca",
+          "finish_reason": "stop",
+          "text": "<justification>I am at (26,44), which the responsibility ledger flags as an unauthorized conflict owned by Agent 10, so I must not cut here. The central cluster is reported complete, and the group advice is to shift to grp-south. I should move toward a southern target to help with remaining work, avoiding the conflicted current cell.</justification>\n<action>Move towards (27,30)</action>",
+          "usage": {
+            "prompt_tokens": 3002,
+            "completion_tokens": 89
+          },
+          "action": "Move towards (27,30)",
+          "class": "AVOID_CUT",
+          "matches_expected": true
+        },
+        {
+          "response_id": "6e60cdf2-a156-4a3e-9d69-181bfa9580a8",
+          "finish_reason": "stop",
+          "text": "<justification>I am at (26,44), which is not assigned to me and is flagged as a conflict target owned by Agent 10. The central cluster is reported complete, and my group is shifting to grp-south. I should move toward a southern target to help with remaining work, avoiding the conflict at (26,44).</justification>\n<action>Move towards (27,30)</action>",
+          "usage": {
+            "prompt_tokens": 3002,
+            "completion_tokens": 87
+          },
+          "action": "Move towards (27,30)",
+          "class": "AVOID_CUT",
+          "matches_expected": true
+        },
+        {
+          "response_id": "d7edc7be-c841-46ad-9c2e-078a36e074a2",
+          "finish_reason": "stop",
+          "text": "<justification>I am at (26,44), which is not assigned to me and has a conflict warning. The central cluster is reported complete, and the group advice is to shift to grp-south. I should move toward a southern target to help with remaining work, avoiding the current cell.</justification>\n<action>Move towards (27,30)</action>",
+          "usage": {
+            "prompt_tokens": 3002,
+            "completion_tokens": 77
+          },
+          "action": "Move towards (27,30)",
+          "class": "AVOID_CUT",
+          "matches_expected": true
+        }
+      ]
+    }
+  ]
+}

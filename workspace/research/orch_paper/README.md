@@ -10,4 +10,5 @@
 - `run_commitment_prompt_ab.py` / `COMMITMENT_PROMPT_AB_5_CASES_3X_DOMAIN.json`：可重复脚本、冻结prompt哈希、逐次回复与用量。
 - [砍树错误前置条件审计](../bottom_up_reports/CUT_TREE_FALSE_PREREQUISITE_AUDIT_20261108.md)：错误动作知识如何从worker扩散到leader与超图结构；包含三条完整轨迹、固定时域进程AUC和4个冻结prompt的三条件A/B。
 - `run_cut_tree_affordance_ab.py` / `CUT_TREE_AFFORDANCE_AB_4_CASES_3X_3COND.json`：动作规则能消除找水循环，但纯文字责任合同仍出现目标冲突与不可解析输出。
-- [目标责任影子索引](../bottom_up_reports/TARGET_RESPONSIBILITY_SHADOW_AUDIT_20261108.md)：区分图内双主责、条件备用和消息改派；R3六个图外完成均有leader明确接管证据，说明validator不能把“非图主责”一律阻止。
+- [目标责任影子索引](../bottom_up_reports/TARGET_RESPONSIBILITY_SHADOW_AUDIT_20261108.md)与[版本化责任事件账本](../bottom_up_reports/RESPONSIBILITY_EVENT_LEDGER_AUDIT_20261108.md)：区分图内双主责、条件备用和消息改派；R3六个图外完成中五个有当前有效/暂定责任依据，一个是旧消息被新图覆盖后的陈旧执行，说明validator既不能把“非图主责”一律阻止，也不能把历史授权永久视为有效。
+- [责任账本冻结提示A/B](../bottom_up_reports/RESPONSIBILITY_LEDGER_PROMPT_AB_20261108.md)：两个冲突案例加一个合法暂定接管正例；账本纠正R2冲突且未误伤正例，但R3冲突的Pro baseline已经自纠，仍需Unity闭环验证。

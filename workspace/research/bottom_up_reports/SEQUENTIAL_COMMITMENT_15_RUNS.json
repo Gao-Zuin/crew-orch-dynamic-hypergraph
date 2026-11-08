@@ -1,0 +1,2356 @@
+{
+  "method": {
+    "horizon": 10,
+    "target_radius": 5,
+    "refill_evidence": "observed water strictly above assignment-step water"
+  },
+  "summary": {
+    "explicit_assignments": 15,
+    "with_observed_water_increase": 4,
+    "with_premature_downstream_action": 6,
+    "with_downstream_action_after_refill": 4
+  },
+  "runs": {
+    "/data1/gzy/crew_bottom_up_20261029_attrition_fix/runs/large_transport_down/run/events.jsonl": {
+      "summary": {
+        "explicit_assignments": 0,
+        "with_observed_water_increase": 0,
+        "with_premature_downstream_action": 0,
+        "with_downstream_action_after_refill": 0
+      },
+      "cases": []
+    },
+    "/data1/gzy/crew_bottom_up_20261029_attrition_fix/runs/large_sparse_clearance/run/events.jsonl": {
+      "summary": {
+        "explicit_assignments": 0,
+        "with_observed_water_increase": 0,
+        "with_premature_downstream_action": 0,
+        "with_downstream_action_after_refill": 0
+      },
+      "cases": []
+    },
+    "/data1/gzy/crew_bottom_up_20261029_cell_guard/runs/large_rapid_growth/run/events.jsonl": {
+      "summary": {
+        "explicit_assignments": 1,
+        "with_observed_water_increase": 1,
+        "with_premature_downstream_action": 0,
+        "with_downstream_action_after_refill": 1
+      },
+      "cases": [
+        {
+          "event_id": 916,
+          "step": 13,
+          "agent": "5",
+          "content": "AGENT_5: after refill, stage at (18,40) and support AGENT_2's main line — you and AGENT_4 are the two sprayers on that edge. I'm handling the (15,30)/(16,30) civilian cluster myself. If you pass near (15,30) on your route, confirm whether those civilians are still present.",
+          "assignment_clause": "AGENT_5: after refill, stage at (18,40) and support AGENT_2's main line — you and AGENT_4 are the two sprayers on that edge",
+          "coordinates": [
+            [
+              18.0,
+              40.0
+            ]
+          ],
+          "initial_water": 5,
+          "observed_water_capacity": 5,
+          "water_source": [
+            15.0,
+            22.0
+          ],
+          "downstream_targets": [
+            [
+              18.0,
+              40.0
+            ]
+          ],
+          "refill_evidenced_step": 13,
+          "premature_downstream_action_steps": [],
+          "downstream_action_after_refill_steps": [
+            13,
+            14,
+            17,
+            23
+          ],
+          "observations": [
+            {
+              "step": 13,
+              "water": 5,
+              "action": [
+                0,
+                18,
+                40
+              ],
+              "target_match": [
+                18.0,
+                40.0
+              ]
+            },
+            {
+              "step": 14,
+              "water": 5,
+              "action": [
+                0,
+                18,
+                40
+              ],
+              "target_match": [
+                18.0,
+                40.0
+              ]
+            },
+            {
+              "step": 15,
+              "water": 5,
+              "action": [
+                3,
+                16,
+                43
+              ],
+              "target_match": null
+            },
+            {
+              "step": 16,
+              "water": 4,
+              "action": [
+                3,
+                16,
+                44
+              ],
+              "target_match": null
+            },
+            {
+              "step": 17,
+              "water": 3,
+              "action": [
+                0,
+                18.0,
+                38.0
+              ],
+              "target_match": [
+                18.0,
+                40.0
+              ]
+            },
+            {
+              "step": 18,
+              "water": 3,
+              "action": [
+                3,
+                23,
+                44
+              ],
+              "target_match": null
+            },
+            {
+              "step": 19,
+              "water": 2,
+              "action": [
+                0,
+                15,
+                22
+              ],
+              "target_match": null
+            },
+            {
+              "step": 20,
+              "water": 2,
+              "action": [
+                0,
+                15,
+                22
+              ],
+              "target_match": null
+            },
+            {
+              "step": 21,
+              "water": 2,
+              "action": [
+                0,
+                15,
+                22
+              ],
+              "target_match": null
+            },
+            {
+              "step": 22,
+              "water": 2,
+              "action": [
+                4,
+                15.0,
+                22.0
+              ],
+              "target_match": null
+            },
+            {
+              "step": 23,
+              "water": 2,
+              "action": [
+                0,
+                21,
+                44
+              ],
+              "target_match": [
+                18.0,
+                40.0
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "/data1/gzy/crew_bottom_up_20261029_cell_guard/runs/large_rescue/run/events.jsonl": {
+      "summary": {
+        "explicit_assignments": 0,
+        "with_observed_water_increase": 0,
+        "with_premature_downstream_action": 0,
+        "with_downstream_action_after_refill": 0
+      },
+      "cases": []
+    },
+    "/data1/gzy/crew_bottom_up_20261029_cell_guard/runs/large_second_fire/run/events.jsonl": {
+      "summary": {
+        "explicit_assignments": 0,
+        "with_observed_water_increase": 0,
+        "with_premature_downstream_action": 0,
+        "with_downstream_action_after_refill": 0
+      },
+      "cases": []
+    },
+    "/data1/gzy/crew_ht_r2_pro_campaign_20261030/runs/pro_transport_down/run/events.jsonl": {
+      "summary": {
+        "explicit_assignments": 0,
+        "with_observed_water_increase": 0,
+        "with_premature_downstream_action": 0,
+        "with_downstream_action_after_refill": 0
+      },
+      "cases": []
+    },
+    "/data1/gzy/crew_ht_r2_pro_sparse_20261030/runs/pro_sparse_seed42/run/events.jsonl": {
+      "summary": {
+        "explicit_assignments": 0,
+        "with_observed_water_increase": 0,
+        "with_premature_downstream_action": 0,
+        "with_downstream_action_after_refill": 0
+      },
+      "cases": []
+    },
+    "/data1/gzy/crew_ht_r2_pro_campaign_20261030/runs/pro_rapid_growth/run/events.jsonl": {
+      "summary": {
+        "explicit_assignments": 0,
+        "with_observed_water_increase": 0,
+        "with_premature_downstream_action": 0,
+        "with_downstream_action_after_refill": 0
+      },
+      "cases": []
+    },
+    "/data1/gzy/crew_ht_r2_pro_campaign_20261030/runs/pro_rescue/run/events.jsonl": {
+      "summary": {
+        "explicit_assignments": 0,
+        "with_observed_water_increase": 0,
+        "with_premature_downstream_action": 0,
+        "with_downstream_action_after_refill": 0
+      },
+      "cases": []
+    },
+    "/data1/gzy/crew_ht_r2_pro_campaign_20261030/runs/pro_second_fire/run/events.jsonl": {
+      "summary": {
+        "explicit_assignments": 11,
+        "with_observed_water_increase": 0,
+        "with_premature_downstream_action": 6,
+        "with_downstream_action_after_refill": 0
+      },
+      "cases": [
+        {
+          "event_id": 5226,
+          "step": 67,
+          "agent": "2",
+          "content": "AGENT_2, after refilling at (8,24), head to second fire at (70,70) to assist AGENT_5 as requested. Do not go to southeast fire.",
+          "assignment_clause": "AGENT_2, after refilling at (8,24), head to second fire at (70,70) to assist AGENT_5 as requested",
+          "coordinates": [
+            [
+              8.0,
+              24.0
+            ],
+            [
+              70.0,
+              70.0
+            ]
+          ],
+          "initial_water": 2,
+          "observed_water_capacity": 5,
+          "water_source": [
+            8.0,
+            24.0
+          ],
+          "downstream_targets": [
+            [
+              70.0,
+              70.0
+            ]
+          ],
+          "refill_evidenced_step": null,
+          "premature_downstream_action_steps": [
+            68
+          ],
+          "downstream_action_after_refill_steps": [],
+          "observations": [
+            {
+              "step": 67,
+              "water": 2,
+              "action": [
+                0,
+                8,
+                24
+              ],
+              "target_match": null
+            },
+            {
+              "step": 68,
+              "water": 2,
+              "action": [
+                0,
+                70,
+                70
+              ],
+              "target_match": [
+                70.0,
+                70.0
+              ]
+            },
+            {
+              "step": 69,
+              "water": 2,
+              "action": [
+                0,
+                8,
+                24
+              ],
+              "target_match": null
+            },
+            {
+              "step": 70,
+              "water": 2,
+              "action": [
+                0,
+                8,
+                24
+              ],
+              "target_match": null
+            },
+            {
+              "step": 71,
+              "water": 2,
+              "action": [
+                0,
+                8,
+                24
+              ],
+              "target_match": null
+            },
+            {
+              "step": 72,
+              "water": 2,
+              "action": [
+                0,
+                8,
+                24
+              ],
+              "target_match": null
+            },
+            {
+              "step": 73,
+              "water": 2,
+              "action": [
+                0,
+                8,
+                24
+              ],
+              "target_match": null
+            },
+            {
+              "step": 74,
+              "water": 2,
+              "action": [
+                4,
+                8.0,
+                24.0
+              ],
+              "target_match": null
+            },
+            {
+              "step": 75,
+              "water": 2,
+              "action": [
+                0,
+                41,
+                59
+              ],
+              "target_match": null
+            },
+            {
+              "step": 76,
+              "water": 2,
+              "action": [
+                0,
+                8,
+                24
+              ],
+              "target_match": null
+            },
+            {
+              "step": 77,
+              "water": 2,
+              "action": [
+                4,
+                8.0,
+                24.0
+              ],
+              "target_match": null
+            }
+          ]
+        },
+        {
+          "event_id": 5328,
+          "step": 69,
+          "agent": "3",
+          "content": "AGENT_3, after refilling, head to main fire near (41,59) and coordinate with AGENT_4. Avoid direct fire contact.",
+          "assignment_clause": "AGENT_3, after refilling, head to main fire near (41,59) and coordinate with AGENT_4",
+          "coordinates": [
+            [
+              41.0,
+              59.0
+            ]
+          ],
+          "initial_water": 1,
+          "observed_water_capacity": 5,
+          "water_source": [
+            8.0,
+            24.0
+          ],
+          "downstream_targets": [
+            [
+              41.0,
+              59.0
+            ]
+          ],
+          "refill_evidenced_step": null,
+          "premature_downstream_action_steps": [
+            71
+          ],
+          "downstream_action_after_refill_steps": [],
+          "observations": [
+            {
+              "step": 69,
+              "water": 1,
+              "action": [
+                0,
+                8,
+                24
+              ],
+              "target_match": null
+            },
+            {
+              "step": 70,
+              "water": 1,
+              "action": [
+                4,
+                8.0,
+                24.0
+              ],
+              "target_match": null
+            },
+            {
+              "step": 71,
+              "water": 1,
+              "action": [
+                0,
+                41,
+                59
+              ],
+              "target_match": [
+                41.0,
+                59.0
+              ]
+            },
+            {
+              "step": 72,
+              "water": 1,
+              "action": [
+                0,
+                8,
+                24
+              ],
+              "target_match": null
+            },
+            {
+              "step": 73,
+              "water": 1,
+              "action": [
+                4,
+                8.0,
+                24.0
+              ],
+              "target_match": null
+            },
+            {
+              "step": 74,
+              "water": 1,
+              "action": [
+                4,
+                8.0,
+                24.0
+              ],
+              "target_match": null
+            },
+            {
+              "step": 75,
+              "water": 1,
+              "action": [
+                0,
+                70,
+                70
+              ],
+              "target_match": null
+            },
+            {
+              "step": 76,
+              "water": 1,
+              "action": [
+                0,
+                8,
+                24
+              ],
+              "target_match": null
+            },
+            {
+              "step": 77,
+              "water": 1,
+              "action": [
+                4,
+                8.0,
+                24.0
+              ],
+              "target_match": null
+            },
+            {
+              "step": 78,
+              "water": 1,
+              "action": [
+                4,
+                8.0,
+                24.0
+              ],
+              "target_match": null
+            },
+            {
+              "step": 79,
+              "water": 1,
+              "action": [
+                0,
+                70,
+                70
+              ],
+              "target_match": null
+            }
+          ]
+        },
+        {
+          "event_id": 5590,
+          "step": 74,
+          "agent": "3",
+          "content": "I am at (24,41) with 1 water, heading to main fire (41,59). AGENT_2 and AGENT_4 continue to main fire. AGENT_3, after refilling at (8,24), go to second fire (70,70) to assist AGENT_5. Report fire status upon arrival.",
+          "assignment_clause": "AGENT_3, after refilling at (8,24), go to second fire (70,70) to assist AGENT_5",
+          "coordinates": [
+            [
+              8.0,
+              24.0
+            ],
+            [
+              70.0,
+              70.0
+            ]
+          ],
+          "initial_water": 1,
+          "observed_water_capacity": 5,
+          "water_source": [
+            8.0,
+            24.0
+          ],
+          "downstream_targets": [
+            [
+              70.0,
+              70.0
+            ]
+          ],
+          "refill_evidenced_step": null,
+          "premature_downstream_action_steps": [
+            75,
+            79,
+            81
+          ],
+          "downstream_action_after_refill_steps": [],
+          "observations": [
+            {
+              "step": 74,
+              "water": 1,
+              "action": [
+                4,
+                8.0,
+                24.0
+              ],
+              "target_match": null
+            },
+            {
+              "step": 75,
+              "water": 1,
+              "action": [
+                0,
+                70,
+                70
+              ],
+              "target_match": [
+                70.0,
+                70.0
+              ]
+            },
+            {
+              "step": 76,
+              "water": 1,
+              "action": [
+                0,
+                8,
+                24
+              ],
+              "target_match": null
+            },
+            {
+              "step": 77,
+              "water": 1,
+              "action": [
+                4,
+                8.0,
+                24.0
+              ],
+              "target_match": null
+            },
+            {
+              "step": 78,
+              "water": 1,
+              "action": [
+                4,
+                8.0,
+                24.0
+              ],
+              "target_match": null
+            },
+            {
+              "step": 79,
+              "water": 1,
+              "action": [
+                0,
+                70,
+                70
+              ],
+              "target_match": [
+                70.0,
+                70.0
+              ]
+            },
+            {
+              "step": 80,
+              "water": 1,
+              "action": [
+                0,
+                8,
+                24
+              ],
+              "target_match": null
+            },
+            {
+              "step": 81,
+              "water": 1,
+              "action": [
+                0,
+                70,
+                70
+              ],
+              "target_match": [
+                70.0,
+                70.0
+              ]
+            },
+            {
+              "step": 82,
+              "water": 1,
+              "action": [
+                0,
+                8,
+                24
+              ],
+              "target_match": null
+            },
+            {
+              "step": 83,
+              "water": 1,
+              "action": [
+                4,
+                8.0,
+                24.0
+              ],
+              "target_match": null
+            },
+            {
+              "step": 84,
+              "water": 1,
+              "action": [
+                4,
+                8.0,
+                24.0
+              ],
+              "target_match": null
+            }
+          ]
+        },
+        {
+          "event_id": 5592,
+          "step": 74,
+          "agent": "3",
+          "content": "AGENT_3, after refilling, head to second fire at (70,70) to support AGENT_5. Main fire will be handled by AGENT_2, AGENT_4, and me.",
+          "assignment_clause": "AGENT_3, after refilling, head to second fire at (70,70) to support AGENT_5",
+          "coordinates": [
+            [
+              70.0,
+              70.0
+            ]
+          ],
+          "initial_water": 1,
+          "observed_water_capacity": 5,
+          "water_source": [
+            8.0,
+            24.0
+          ],
+          "downstream_targets": [
+            [
+              70.0,
+              70.0
+            ]
+          ],
+          "refill_evidenced_step": null,
+          "premature_downstream_action_steps": [
+            75,
+            79,
+            81
+          ],
+          "downstream_action_after_refill_steps": [],
+          "observations": [
+            {
+              "step": 74,
+              "water": 1,
+              "action": [
+                4,
+                8.0,
+                24.0
+              ],
+              "target_match": null
+            },
+            {
+              "step": 75,
+              "water": 1,
+              "action": [
+                0,
+                70,
+                70
+              ],
+              "target_match": [
+                70.0,
+                70.0
+              ]
+            },
+            {
+              "step": 76,
+              "water": 1,
+              "action": [
+                0,
+                8,
+                24
+              ],
+              "target_match": null
+            },
+            {
+              "step": 77,
+              "water": 1,
+              "action": [
+                4,
+                8.0,
+                24.0
+              ],
+              "target_match": null
+            },
+            {
+              "step": 78,
+              "water": 1,
+              "action": [
+                4,
+                8.0,
+                24.0
+              ],
+              "target_match": null
+            },
+            {
+              "step": 79,
+              "water": 1,
+              "action": [
+                0,
+                70,
+                70
+              ],
+              "target_match": [
+                70.0,
+                70.0
+              ]
+            },
+            {
+              "step": 80,
+              "water": 1,
+              "action": [
+                0,
+                8,
+                24
+              ],
+              "target_match": null
+            },
+            {
+              "step": 81,
+              "water": 1,
+              "action": [
+                0,
+                70,
+                70
+              ],
+              "target_match": [
+                70.0,
+                70.0
+              ]
+            },
+            {
+              "step": 82,
+              "water": 1,
+              "action": [
+                0,
+                8,
+                24
+              ],
+              "target_match": null
+            },
+            {
+              "step": 83,
+              "water": 1,
+              "action": [
+                4,
+                8.0,
+                24.0
+              ],
+              "target_match": null
+            },
+            {
+              "step": 84,
+              "water": 1,
+              "action": [
+                4,
+                8.0,
+                24.0
+              ],
+              "target_match": null
+            }
+          ]
+        },
+        {
+          "event_id": 6173,
+          "step": 85,
+          "agent": "3",
+          "content": "AGENT_1 at (8,24) with 5 water, refilled. AGENT_2 and AGENT_3, refill quickly. AGENT_4, continue to main fire (41,59) and report status. AGENT_3, after refill, head to second fire (70,70) to assist AGENT_5. AGENT_2, after refill, head to main fire to support AGENT_4.",
+          "assignment_clause": "AGENT_3, after refill, head to second fire (70,70) to assist AGENT_5",
+          "coordinates": [
+            [
+              70.0,
+              70.0
+            ]
+          ],
+          "initial_water": 1,
+          "observed_water_capacity": 5,
+          "water_source": [
+            8.0,
+            24.0
+          ],
+          "downstream_targets": [
+            [
+              70.0,
+              70.0
+            ]
+          ],
+          "refill_evidenced_step": null,
+          "premature_downstream_action_steps": [],
+          "downstream_action_after_refill_steps": [],
+          "observations": [
+            {
+              "step": 85,
+              "water": 1,
+              "action": [
+                4,
+                8.0,
+                24.0
+              ],
+              "target_match": null
+            },
+            {
+              "step": 86,
+              "water": 1,
+              "action": [
+                4,
+                8.0,
+                24.0
+              ],
+              "target_match": null
+            },
+            {
+              "step": 87,
+              "water": 1,
+              "action": [
+                4,
+                8.0,
+                24.0
+              ],
+              "target_match": null
+            },
+            {
+              "step": 88,
+              "water": 1,
+              "action": [
+                0,
+                41,
+                59
+              ],
+              "target_match": null
+            },
+            {
+              "step": 89,
+              "water": 1,
+              "action": [
+                0,
+                8,
+                24
+              ],
+              "target_match": null
+            },
+            {
+              "step": 90,
+              "water": 1,
+              "action": [
+                4,
+                8.0,
+                24.0
+              ],
+              "target_match": null
+            },
+            {
+              "step": 91,
+              "water": 1,
+              "action": [
+                4,
+                8.0,
+                24.0
+              ],
+              "target_match": null
+            },
+            {
+              "step": 92,
+              "water": 1,
+              "action": [
+                0,
+                41,
+                59
+              ],
+              "target_match": null
+            },
+            {
+              "step": 93,
+              "water": 1,
+              "action": [
+                0,
+                8,
+                24
+              ],
+              "target_match": null
+            },
+            {
+              "step": 94,
+              "water": 1,
+              "action": [
+                4,
+                8.0,
+                24.0
+              ],
+              "target_match": null
+            },
+            {
+              "step": 95,
+              "water": 1,
+              "action": [
+                4,
+                8.0,
+                24.0
+              ],
+              "target_match": null
+            }
+          ]
+        },
+        {
+          "event_id": 6224,
+          "step": 86,
+          "agent": "2",
+          "content": "AGENT_1 at (11,27) with 5 water, heading to main fire (41,59). AGENT_4, continue local suppression at (57-59,66-67) if safe; report if you need refill. AGENT_2, after refill head to (57-59,66-67) to support AGENT_4. AGENT_3, proceed to second fire (70,70) as planned.",
+          "assignment_clause": "AGENT_2, after refill head to (57-59,66-67) to support AGENT_4",
+          "coordinates": [
+            [
+              59.0,
+              66.0
+            ]
+          ],
+          "initial_water": 2,
+          "observed_water_capacity": 5,
+          "water_source": [
+            8.0,
+            24.0
+          ],
+          "downstream_targets": [
+            [
+              59.0,
+              66.0
+            ]
+          ],
+          "refill_evidenced_step": null,
+          "premature_downstream_action_steps": [],
+          "downstream_action_after_refill_steps": [],
+          "observations": [
+            {
+              "step": 86,
+              "water": 2,
+              "action": [
+                4,
+                8.0,
+                24.0
+              ],
+              "target_match": null
+            },
+            {
+              "step": 87,
+              "water": 2,
+              "action": [
+                4,
+                8.0,
+                24.0
+              ],
+              "target_match": null
+            },
+            {
+              "step": 88,
+              "water": 2,
+              "action": [
+                4,
+                8.0,
+                24.0
+              ],
+              "target_match": null
+            },
+            {
+              "step": 89,
+              "water": 2,
+              "action": [
+                4,
+                8.0,
+                24.0
+              ],
+              "target_match": null
+            },
+            {
+              "step": 90,
+              "water": 2,
+              "action": [
+                4,
+                8.0,
+                24.0
+              ],
+              "target_match": null
+            },
+            {
+              "step": 91,
+              "water": 2,
+              "action": [
+                4,
+                8.0,
+                24.0
+              ],
+              "target_match": null
+            },
+            {
+              "step": 92,
+              "water": 2,
+              "action": [
+                4,
+                8.0,
+                24.0
+              ],
+              "target_match": null
+            },
+            {
+              "step": 93,
+              "water": 2,
+              "action": [
+                4,
+                8.0,
+                24.0
+              ],
+              "target_match": null
+            },
+            {
+              "step": 94,
+              "water": 2,
+              "action": [
+                4,
+                8.0,
+                24.0
+              ],
+              "target_match": null
+            },
+            {
+              "step": 95,
+              "water": 2,
+              "action": [
+                4,
+                8.0,
+                24.0
+              ],
+              "target_match": null
+            },
+            {
+              "step": 96,
+              "water": 2,
+              "action": [
+                4,
+                8.0,
+                24.0
+              ],
+              "target_match": null
+            }
+          ]
+        },
+        {
+          "event_id": 6374,
+          "step": 89,
+          "agent": "2",
+          "content": "AGENT_1 at (31,46), moving to main fire near (41,59). AGENT_2 and AGENT_3 refill at (8,24) then head to main fire perimeter. AGENT_3, stay on main fire suppression; do not divert to (70,70) unless second fire escalates. AGENT_2, after refill, proceed to (41,59) area and spray active cells. I will coordinate from near fire perimeter.",
+          "assignment_clause": "AGENT_2, after refill, proceed to (41,59) area and spray active cells",
+          "coordinates": [
+            [
+              41.0,
+              59.0
+            ]
+          ],
+          "initial_water": 2,
+          "observed_water_capacity": 5,
+          "water_source": [
+            8.0,
+            24.0
+          ],
+          "downstream_targets": [
+            [
+              41.0,
+              59.0
+            ]
+          ],
+          "refill_evidenced_step": null,
+          "premature_downstream_action_steps": [],
+          "downstream_action_after_refill_steps": [],
+          "observations": [
+            {
+              "step": 89,
+              "water": 2,
+              "action": [
+                4,
+                8.0,
+                24.0
+              ],
+              "target_match": null
+            },
+            {
+              "step": 90,
+              "water": 2,
+              "action": [
+                4,
+                8.0,
+                24.0
+              ],
+              "target_match": null
+            },
+            {
+              "step": 91,
+              "water": 2,
+              "action": [
+                4,
+                8.0,
+                24.0
+              ],
+              "target_match": null
+            },
+            {
+              "step": 92,
+              "water": 2,
+              "action": [
+                4,
+                8.0,
+                24.0
+              ],
+              "target_match": null
+            },
+            {
+              "step": 93,
+              "water": 2,
+              "action": [
+                4,
+                8.0,
+                24.0
+              ],
+              "target_match": null
+            },
+            {
+              "step": 94,
+              "water": 2,
+              "action": [
+                4,
+                8.0,
+                24.0
+              ],
+              "target_match": null
+            },
+            {
+              "step": 95,
+              "water": 2,
+              "action": [
+                4,
+                8.0,
+                24.0
+              ],
+              "target_match": null
+            },
+            {
+              "step": 96,
+              "water": 2,
+              "action": [
+                4,
+                8.0,
+                24.0
+              ],
+              "target_match": null
+            },
+            {
+              "step": 97,
+              "water": 2,
+              "action": [
+                4,
+                8.0,
+                24.0
+              ],
+              "target_match": null
+            },
+            {
+              "step": 98,
+              "water": 2,
+              "action": [
+                4,
+                8.0,
+                24.0
+              ],
+              "target_match": null
+            },
+            {
+              "step": 99,
+              "water": 2,
+              "action": [
+                4,
+                8.0,
+                24.0
+              ],
+              "target_match": null
+            }
+          ]
+        },
+        {
+          "event_id": 6419,
+          "step": 90,
+          "agent": "2",
+          "content": "AGENT_1 at (36,52) with 5 water. I am moving to main fire perimeter near (41,59) to spray active cells. AGENT_2 and AGENT_3, after refilling, proceed to (41,59) and coordinate spraying from safe distances. Avoid direct fire contact. Report any new fire spread or obstacles.",
+          "assignment_clause": "AGENT_2 and AGENT_3, after refilling, proceed to (41,59) and coordinate spraying from safe distances",
+          "coordinates": [
+            [
+              41.0,
+              59.0
+            ]
+          ],
+          "initial_water": 2,
+          "observed_water_capacity": 5,
+          "water_source": [
+            8.0,
+            24.0
+          ],
+          "downstream_targets": [
+            [
+              41.0,
+              59.0
+            ]
+          ],
+          "refill_evidenced_step": null,
+          "premature_downstream_action_steps": [],
+          "downstream_action_after_refill_steps": [],
+          "observations": [
+            {
+              "step": 90,
+              "water": 2,
+              "action": [
+                4,
+                8.0,
+                24.0
+              ],
+              "target_match": null
+            },
+            {
+              "step": 91,
+              "water": 2,
+              "action": [
+                4,
+                8.0,
+                24.0
+              ],
+              "target_match": null
+            },
+            {
+              "step": 92,
+              "water": 2,
+              "action": [
+                4,
+                8.0,
+                24.0
+              ],
+              "target_match": null
+            },
+            {
+              "step": 93,
+              "water": 2,
+              "action": [
+                4,
+                8.0,
+                24.0
+              ],
+              "target_match": null
+            },
+            {
+              "step": 94,
+              "water": 2,
+              "action": [
+                4,
+                8.0,
+                24.0
+              ],
+              "target_match": null
+            },
+            {
+              "step": 95,
+              "water": 2,
+              "action": [
+                4,
+                8.0,
+                24.0
+              ],
+              "target_match": null
+            },
+            {
+              "step": 96,
+              "water": 2,
+              "action": [
+                4,
+                8.0,
+                24.0
+              ],
+              "target_match": null
+            },
+            {
+              "step": 97,
+              "water": 2,
+              "action": [
+                4,
+                8.0,
+                24.0
+              ],
+              "target_match": null
+            },
+            {
+              "step": 98,
+              "water": 2,
+              "action": [
+                4,
+                8.0,
+                24.0
+              ],
+              "target_match": null
+            },
+            {
+              "step": 99,
+              "water": 2,
+              "action": [
+                4,
+                8.0,
+                24.0
+              ],
+              "target_match": null
+            }
+          ]
+        },
+        {
+          "event_id": 6420,
+          "step": 90,
+          "agent": "3",
+          "content": "AGENT_1 at (36,52) with 5 water. I am moving to main fire perimeter near (41,59) to spray active cells. AGENT_2 and AGENT_3, after refilling, proceed to (41,59) and coordinate spraying from safe distances. Avoid direct fire contact. Report any new fire spread or obstacles.",
+          "assignment_clause": "AGENT_3, after refilling, proceed to (41,59) and coordinate spraying from safe distances",
+          "coordinates": [
+            [
+              41.0,
+              59.0
+            ]
+          ],
+          "initial_water": 1,
+          "observed_water_capacity": 5,
+          "water_source": [
+            8.0,
+            24.0
+          ],
+          "downstream_targets": [
+            [
+              41.0,
+              59.0
+            ]
+          ],
+          "refill_evidenced_step": null,
+          "premature_downstream_action_steps": [
+            92,
+            96,
+            98,
+            99
+          ],
+          "downstream_action_after_refill_steps": [],
+          "observations": [
+            {
+              "step": 90,
+              "water": 1,
+              "action": [
+                4,
+                8.0,
+                24.0
+              ],
+              "target_match": null
+            },
+            {
+              "step": 91,
+              "water": 1,
+              "action": [
+                4,
+                8.0,
+                24.0
+              ],
+              "target_match": null
+            },
+            {
+              "step": 92,
+              "water": 1,
+              "action": [
+                0,
+                41,
+                59
+              ],
+              "target_match": [
+                41.0,
+                59.0
+              ]
+            },
+            {
+              "step": 93,
+              "water": 1,
+              "action": [
+                0,
+                8,
+                24
+              ],
+              "target_match": null
+            },
+            {
+              "step": 94,
+              "water": 1,
+              "action": [
+                4,
+                8.0,
+                24.0
+              ],
+              "target_match": null
+            },
+            {
+              "step": 95,
+              "water": 1,
+              "action": [
+                4,
+                8.0,
+                24.0
+              ],
+              "target_match": null
+            },
+            {
+              "step": 96,
+              "water": 1,
+              "action": [
+                0,
+                43,
+                61
+              ],
+              "target_match": [
+                41.0,
+                59.0
+              ]
+            },
+            {
+              "step": 97,
+              "water": 1,
+              "action": [
+                0,
+                8,
+                24
+              ],
+              "target_match": null
+            },
+            {
+              "step": 98,
+              "water": 1,
+              "action": [
+                0,
+                43,
+                61
+              ],
+              "target_match": [
+                41.0,
+                59.0
+              ]
+            },
+            {
+              "step": 99,
+              "water": 1,
+              "action": [
+                0,
+                43,
+                61
+              ],
+              "target_match": [
+                41.0,
+                59.0
+              ]
+            }
+          ]
+        },
+        {
+          "event_id": 6460,
+          "step": 91,
+          "agent": "2",
+          "content": "AGENT_1 at (39,56). I see no active fire in my immediate view; large extinguished zone to south. I will continue spraying around (41,59) and monitor for flare-ups. AGENT_2 and AGENT_3, after refilling, head to (41,59) and spread out to cover north and east sectors of the fire perimeter. Avoid direct contact with fire. Report any active fire cells you see.",
+          "assignment_clause": "AGENT_2 and AGENT_3, after refilling, head to (41,59) and spread out to cover north and east sectors of the fire perimeter",
+          "coordinates": [
+            [
+              41.0,
+              59.0
+            ]
+          ],
+          "initial_water": 2,
+          "observed_water_capacity": 5,
+          "water_source": [
+            8.0,
+            24.0
+          ],
+          "downstream_targets": [
+            [
+              41.0,
+              59.0
+            ]
+          ],
+          "refill_evidenced_step": null,
+          "premature_downstream_action_steps": [],
+          "downstream_action_after_refill_steps": [],
+          "observations": [
+            {
+              "step": 91,
+              "water": 2,
+              "action": [
+                4,
+                8.0,
+                24.0
+              ],
+              "target_match": null
+            },
+            {
+              "step": 92,
+              "water": 2,
+              "action": [
+                4,
+                8.0,
+                24.0
+              ],
+              "target_match": null
+            },
+            {
+              "step": 93,
+              "water": 2,
+              "action": [
+                4,
+                8.0,
+                24.0
+              ],
+              "target_match": null
+            },
+            {
+              "step": 94,
+              "water": 2,
+              "action": [
+                4,
+                8.0,
+                24.0
+              ],
+              "target_match": null
+            },
+            {
+              "step": 95,
+              "water": 2,
+              "action": [
+                4,
+                8.0,
+                24.0
+              ],
+              "target_match": null
+            },
+            {
+              "step": 96,
+              "water": 2,
+              "action": [
+                4,
+                8.0,
+                24.0
+              ],
+              "target_match": null
+            },
+            {
+              "step": 97,
+              "water": 2,
+              "action": [
+                4,
+                8.0,
+                24.0
+              ],
+              "target_match": null
+            },
+            {
+              "step": 98,
+              "water": 2,
+              "action": [
+                4,
+                8.0,
+                24.0
+              ],
+              "target_match": null
+            },
+            {
+              "step": 99,
+              "water": 2,
+              "action": [
+                4,
+                8.0,
+                24.0
+              ],
+              "target_match": null
+            }
+          ]
+        },
+        {
+          "event_id": 6461,
+          "step": 91,
+          "agent": "3",
+          "content": "AGENT_1 at (39,56). I see no active fire in my immediate view; large extinguished zone to south. I will continue spraying around (41,59) and monitor for flare-ups. AGENT_2 and AGENT_3, after refilling, head to (41,59) and spread out to cover north and east sectors of the fire perimeter. Avoid direct contact with fire. Report any active fire cells you see.",
+          "assignment_clause": "AGENT_3, after refilling, head to (41,59) and spread out to cover north and east sectors of the fire perimeter",
+          "coordinates": [
+            [
+              41.0,
+              59.0
+            ]
+          ],
+          "initial_water": 1,
+          "observed_water_capacity": 5,
+          "water_source": [
+            8.0,
+            24.0
+          ],
+          "downstream_targets": [
+            [
+              41.0,
+              59.0
+            ]
+          ],
+          "refill_evidenced_step": null,
+          "premature_downstream_action_steps": [
+            92,
+            96,
+            98,
+            99
+          ],
+          "downstream_action_after_refill_steps": [],
+          "observations": [
+            {
+              "step": 91,
+              "water": 1,
+              "action": [
+                4,
+                8.0,
+                24.0
+              ],
+              "target_match": null
+            },
+            {
+              "step": 92,
+              "water": 1,
+              "action": [
+                0,
+                41,
+                59
+              ],
+              "target_match": [
+                41.0,
+                59.0
+              ]
+            },
+            {
+              "step": 93,
+              "water": 1,
+              "action": [
+                0,
+                8,
+                24
+              ],
+              "target_match": null
+            },
+            {
+              "step": 94,
+              "water": 1,
+              "action": [
+                4,
+                8.0,
+                24.0
+              ],
+              "target_match": null
+            },
+            {
+              "step": 95,
+              "water": 1,
+              "action": [
+                4,
+                8.0,
+                24.0
+              ],
+              "target_match": null
+            },
+            {
+              "step": 96,
+              "water": 1,
+              "action": [
+                0,
+                43,
+                61
+              ],
+              "target_match": [
+                41.0,
+                59.0
+              ]
+            },
+            {
+              "step": 97,
+              "water": 1,
+              "action": [
+                0,
+                8,
+                24
+              ],
+              "target_match": null
+            },
+            {
+              "step": 98,
+              "water": 1,
+              "action": [
+                0,
+                43,
+                61
+              ],
+              "target_match": [
+                41.0,
+                59.0
+              ]
+            },
+            {
+              "step": 99,
+              "water": 1,
+              "action": [
+                0,
+                43,
+                61
+              ],
+              "target_match": [
+                41.0,
+                59.0
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "/data1/gzy/crew_ht_r3_orch_knowledge_flash_20261102/runs/flash_transport_down/run/events.jsonl": {
+      "summary": {
+        "explicit_assignments": 0,
+        "with_observed_water_increase": 0,
+        "with_premature_downstream_action": 0,
+        "with_downstream_action_after_refill": 0
+      },
+      "cases": []
+    },
+    "/data1/gzy/crew_ht_r3_orch_knowledge_flash_20261102/runs/flash_sparse_seed42/run/events.jsonl": {
+      "summary": {
+        "explicit_assignments": 0,
+        "with_observed_water_increase": 0,
+        "with_premature_downstream_action": 0,
+        "with_downstream_action_after_refill": 0
+      },
+      "cases": []
+    },
+    "/data1/gzy/crew_ht_r3_orch_knowledge_flash_20261102/runs/flash_rapid_growth/run/events.jsonl": {
+      "summary": {
+        "explicit_assignments": 1,
+        "with_observed_water_increase": 1,
+        "with_premature_downstream_action": 0,
+        "with_downstream_action_after_refill": 1
+      },
+      "cases": [
+        {
+          "event_id": 51,
+          "step": 0,
+          "agent": "5",
+          "content": "AGENT_5: after refill, hold as reserve near (18,34) and confirm fire extent/edges from a safe distance (>=5 cells). Report exact ignited cell coordinates so we can finalize the north segment.",
+          "assignment_clause": "AGENT_5: after refill, hold as reserve near (18,34) and confirm fire extent/edges from a safe distance (>=5 cells)",
+          "coordinates": [
+            [
+              18.0,
+              34.0
+            ]
+          ],
+          "initial_water": 0,
+          "observed_water_capacity": 5,
+          "water_source": [
+            15.0,
+            22.0
+          ],
+          "downstream_targets": [
+            [
+              18.0,
+              34.0
+            ]
+          ],
+          "refill_evidenced_step": 5,
+          "premature_downstream_action_steps": [],
+          "downstream_action_after_refill_steps": [
+            5,
+            6,
+            7,
+            8,
+            10
+          ],
+          "observations": [
+            {
+              "step": 0,
+              "water": 0,
+              "action": [
+                0,
+                15,
+                22
+              ],
+              "target_match": null
+            },
+            {
+              "step": 1,
+              "water": 0,
+              "action": [
+                0,
+                15,
+                22
+              ],
+              "target_match": null
+            },
+            {
+              "step": 2,
+              "water": 0,
+              "action": [
+                0,
+                15,
+                22
+              ],
+              "target_match": null
+            },
+            {
+              "step": 3,
+              "water": 0,
+              "action": [
+                0,
+                15,
+                22
+              ],
+              "target_match": null
+            },
+            {
+              "step": 4,
+              "water": 0,
+              "action": [
+                4,
+                15.0,
+                22.0
+              ],
+              "target_match": null
+            },
+            {
+              "step": 5,
+              "water": 5,
+              "action": [
+                0,
+                18,
+                34
+              ],
+              "target_match": [
+                18.0,
+                34.0
+              ]
+            },
+            {
+              "step": 6,
+              "water": 5,
+              "action": [
+                0,
+                19,
+                32
+              ],
+              "target_match": [
+                18.0,
+                34.0
+              ]
+            },
+            {
+              "step": 7,
+              "water": 5,
+              "action": [
+                0,
+                21,
+                37
+              ],
+              "target_match": [
+                18.0,
+                34.0
+              ]
+            },
+            {
+              "step": 8,
+              "water": 5,
+              "action": [
+                0,
+                16,
+                36
+              ],
+              "target_match": [
+                18.0,
+                34.0
+              ]
+            },
+            {
+              "step": 9,
+              "water": 5,
+              "action": [
+                3,
+                16,
+                38
+              ],
+              "target_match": null
+            },
+            {
+              "step": 10,
+              "water": 4,
+              "action": [
+                0,
+                17,
+                37
+              ],
+              "target_match": [
+                18.0,
+                34.0
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "/data1/gzy/crew_ht_r3_orch_knowledge_flash_20261102/runs/flash_rescue/run/events.jsonl": {
+      "summary": {
+        "explicit_assignments": 0,
+        "with_observed_water_increase": 0,
+        "with_premature_downstream_action": 0,
+        "with_downstream_action_after_refill": 0
+      },
+      "cases": []
+    },
+    "/data1/gzy/crew_ht_r3_orch_knowledge_flash_second_fire_retry_20261103/runs/flash_second_fire_retry_after_recharge/run/events.jsonl": {
+      "summary": {
+        "explicit_assignments": 2,
+        "with_observed_water_increase": 2,
+        "with_premature_downstream_action": 0,
+        "with_downstream_action_after_refill": 2
+      },
+      "cases": [
+        {
+          "event_id": 83,
+          "step": 0,
+          "agent": "5",
+          "content": "AGENT_5: after refill, you own the EAST firebreak segment near [41,59]. Coordinate with 7 (west) and 4 (north) to avoid redundant spraying. Spray only on directly observed fire cells, ≥5 cells standoff.",
+          "assignment_clause": "AGENT_5: after refill, you own the EAST firebreak segment near [41,59]",
+          "coordinates": [
+            [
+              41.0,
+              59.0
+            ]
+          ],
+          "initial_water": 0,
+          "observed_water_capacity": 5,
+          "water_source": [
+            8.0,
+            24.0
+          ],
+          "downstream_targets": [
+            [
+              41.0,
+              59.0
+            ]
+          ],
+          "refill_evidenced_step": 4,
+          "premature_downstream_action_steps": [],
+          "downstream_action_after_refill_steps": [
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "observations": [
+            {
+              "step": 0,
+              "water": 0,
+              "action": [
+                0,
+                8,
+                24
+              ],
+              "target_match": null
+            },
+            {
+              "step": 1,
+              "water": 0,
+              "action": [
+                0,
+                8,
+                24
+              ],
+              "target_match": null
+            },
+            {
+              "step": 2,
+              "water": 0,
+              "action": [
+                0,
+                8,
+                24
+              ],
+              "target_match": null
+            },
+            {
+              "step": 3,
+              "water": 0,
+              "action": [
+                4,
+                9.0,
+                23.0
+              ],
+              "target_match": null
+            },
+            {
+              "step": 4,
+              "water": 5,
+              "action": [
+                0,
+                41,
+                59
+              ],
+              "target_match": [
+                41.0,
+                59.0
+              ]
+            },
+            {
+              "step": 5,
+              "water": 5,
+              "action": [
+                0,
+                41,
+                59
+              ],
+              "target_match": [
+                41.0,
+                59.0
+              ]
+            },
+            {
+              "step": 6,
+              "water": 5,
+              "action": [
+                0,
+                41,
+                59
+              ],
+              "target_match": [
+                41.0,
+                59.0
+              ]
+            },
+            {
+              "step": 7,
+              "water": 5,
+              "action": [
+                0,
+                41,
+                59
+              ],
+              "target_match": [
+                41.0,
+                59.0
+              ]
+            },
+            {
+              "step": 8,
+              "water": 5,
+              "action": [
+                0,
+                41,
+                59
+              ],
+              "target_match": [
+                41.0,
+                59.0
+              ]
+            },
+            {
+              "step": 9,
+              "water": 5,
+              "action": [
+                0,
+                41,
+                59
+              ],
+              "target_match": [
+                41.0,
+                59.0
+              ]
+            },
+            {
+              "step": 10,
+              "water": 5,
+              "action": [
+                0,
+                48,
+                66
+              ],
+              "target_match": null
+            }
+          ]
+        },
+        {
+          "event_id": 84,
+          "step": 0,
+          "agent": "7",
+          "content": "AGENT_7: after refill, you own the WEST firebreak segment near [41,59]. Coordinate with 5 (east) and 4 (north). Spray only on directly observed fire cells, ≥5 cells standoff.",
+          "assignment_clause": "AGENT_7: after refill, you own the WEST firebreak segment near [41,59]",
+          "coordinates": [
+            [
+              41.0,
+              59.0
+            ]
+          ],
+          "initial_water": 0,
+          "observed_water_capacity": 5,
+          "water_source": [
+            8.0,
+            24.0
+          ],
+          "downstream_targets": [
+            [
+              41.0,
+              59.0
+            ]
+          ],
+          "refill_evidenced_step": 5,
+          "premature_downstream_action_steps": [],
+          "downstream_action_after_refill_steps": [
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "observations": [
+            {
+              "step": 0,
+              "water": 0,
+              "action": [
+                0,
+                8,
+                24
+              ],
+              "target_match": null
+            },
+            {
+              "step": 1,
+              "water": 0,
+              "action": [
+                0,
+                8,
+                24
+              ],
+              "target_match": null
+            },
+            {
+              "step": 2,
+              "water": 0,
+              "action": [
+                0,
+                8,
+                24
+              ],
+              "target_match": null
+            },
+            {
+              "step": 3,
+              "water": 0,
+              "action": [
+                0,
+                8,
+                24
+              ],
+              "target_match": null
+            },
+            {
+              "step": 4,
+              "water": 0,
+              "action": [
+                4,
+                8.0,
+                24.0
+              ],
+              "target_match": null
+            },
+            {
+              "step": 5,
+              "water": 5,
+              "action": [
+                0,
+                41,
+                59
+              ],
+              "target_match": [
+                41.0,
+                59.0
+              ]
+            },
+            {
+              "step": 6,
+              "water": 5,
+              "action": [
+                0,
+                41,
+                59
+              ],
+              "target_match": [
+                41.0,
+                59.0
+              ]
+            },
+            {
+              "step": 7,
+              "water": 5,
+              "action": [
+                0,
+                41,
+                59
+              ],
+              "target_match": [
+                41.0,
+                59.0
+              ]
+            },
+            {
+              "step": 8,
+              "water": 5,
+              "action": [
+                0,
+                41,
+                59
+              ],
+              "target_match": [
+                41.0,
+                59.0
+              ]
+            },
+            {
+              "step": 9,
+              "water": 5,
+              "action": [
+                0,
+                41,
+                59
+              ],
+              "target_match": [
+                41.0,
+                59.0
+              ]
+            },
+            {
+              "step": 10,
+              "water": 5,
+              "action": [
+                0,
+                34,
+                64
+              ],
+              "target_match": null
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

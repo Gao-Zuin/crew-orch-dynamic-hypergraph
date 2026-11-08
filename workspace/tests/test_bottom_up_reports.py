@@ -103,4 +103,18 @@ class BottomUpTests(unittest.TestCase):
         self.assertEqual({m['source'] for m in overlap['received_messages']},{'scout','support'})
         self.assertEqual(self.bridge.graph.active,self.proposal['active'])
 
+    def test_leader_report_to_self_gets_local_correction(self):
+        leader = self.agents['1']
+        before = len(self.bridge.graph.reports)
+        self.bridge.dispatch(
+            leader,
+            '<REPORT edge="scout">Fire at 70,70 needs another group.</REPORT>', {})
+        self.assertEqual(len(self.bridge.graph.reports), before)
+        self.assertIn('sent to yourself', leader.chat_history['ENVIRONMENT'][-1][1])
+        self.assertIn('ORGANIZER', leader.chat_history['ENVIRONMENT'][-1][1])
+        invalid = [event for event in self.bridge.c.events
+                   if event['event_type'] == 'TASK_MESSAGE_INVALID']
+        self.assertTrue(invalid)
+        self.assertEqual(invalid[-1]['payload']['message_type'], 'REPORT')
+
 if __name__=='__main__':unittest.main()

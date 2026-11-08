@@ -1,0 +1,757 @@
+{
+  "scope": {
+    "run_count": 15,
+    "selection": "all 15 complete HT mainline runs; no short gates or interrupted runs"
+  },
+  "totals": {
+    "communication_turns": 7029,
+    "organizer_reports": 21,
+    "organizer_reports_with_any_same_step_commit": 21,
+    "graph_commits": 202,
+    "structural_change_commits_after_initial": 33,
+    "structural_change_commits_same_step_as_organizer_report": 12,
+    "structural_change_commits_marked_attrition": 3,
+    "structural_change_commits_without_same_step_report_or_attrition": 18,
+    "generated_report_tags_silently_addressed_to_self": 256,
+    "generated_typed_tags": {
+      "REPORT": 1165,
+      "GROUP": 7985,
+      "LEADER": 714,
+      "ORGANIZER": 21
+    },
+    "delivered_recipient_events": {
+      "REPORT": 894,
+      "GROUP": 19380,
+      "LEADER": 690
+    },
+    "invalid_typed_tags": {
+      "GROUP": 358,
+      "LEADER": 22,
+      "REPORT": 15
+    },
+    "report_delivery_followup_proxy": {
+      "GROUP": 894,
+      "LEADER": 518,
+      "REPORT": 181,
+      "ORGANIZER": 63
+    },
+    "leader_delivery_followup_proxy": {
+      "GROUP": 676,
+      "LEADER": 502,
+      "REPORT": 170,
+      "ORGANIZER": 18
+    },
+    "coordinate_chain_proxy": {
+      "coordinate_reports_delivered": 886,
+      "coordinate_reports_with_outward_escalation": 536,
+      "coordinate_reports_preserved_outward": 357,
+      "coordinate_leader_messages_delivered": 659,
+      "coordinate_leader_messages_with_local_or_center_followup": 641,
+      "coordinate_leader_messages_preserved_followup": 451
+    }
+  },
+  "runs": {
+    "flash_r2_transport": {
+      "path": "/data1/gzy/crew_bottom_up_20261029_attrition_fix/runs/large_transport_down/run/events.jsonl",
+      "task_id": "Transport_Helicopter_Down",
+      "communication_turns": 192,
+      "generated_typed_tags": {
+        "REPORT": 19,
+        "GROUP": 186,
+        "LEADER": 19
+      },
+      "delivered_recipient_events": {
+        "REPORT": 19,
+        "GROUP": 697,
+        "LEADER": 19
+      },
+      "invalid_typed_tags": {},
+      "generated_report_tags_silently_addressed_to_self": 0,
+      "report_delivery_followup_proxy": {
+        "GROUP": 19,
+        "LEADER": 18
+      },
+      "leader_delivery_followup_proxy": {
+        "GROUP": 19,
+        "LEADER": 17
+      },
+      "coordinate_chain_proxy": {
+        "coordinate_reports_delivered": 19,
+        "coordinate_reports_with_outward_escalation": 18,
+        "coordinate_reports_preserved_outward": 17,
+        "coordinate_leader_messages_delivered": 18,
+        "coordinate_leader_messages_with_local_or_center_followup": 17,
+        "coordinate_leader_messages_preserved_followup": 17
+      },
+      "organizer_reports": 0,
+      "organizer_reports_with_any_same_step_commit": 0,
+      "graph_commits": 4,
+      "structural_change_commits_after_initial": 1,
+      "structural_change_commits_same_step_as_organizer_report": 0,
+      "structural_change_commits_marked_attrition": 0,
+      "structural_change_commits_without_same_step_report_or_attrition": 1,
+      "structural_change_steps": [
+        5
+      ],
+      "limitations": "Follow-up is same-recipient typed output within 0-1 steps; semantic preservation and action effects are not inferred."
+    },
+    "flash_r2_sparse": {
+      "path": "/data1/gzy/crew_bottom_up_20261029_attrition_fix/runs/large_sparse_clearance/run/events.jsonl",
+      "task_id": "Cut_Trees_Sparse_large",
+      "communication_turns": 500,
+      "generated_typed_tags": {
+        "REPORT": 61,
+        "GROUP": 596,
+        "LEADER": 18,
+        "ORGANIZER": 2
+      },
+      "delivered_recipient_events": {
+        "REPORT": 48,
+        "GROUP": 1296,
+        "LEADER": 17
+      },
+      "invalid_typed_tags": {
+        "GROUP": 10,
+        "LEADER": 1
+      },
+      "generated_report_tags_silently_addressed_to_self": 13,
+      "report_delivery_followup_proxy": {
+        "GROUP": 48,
+        "REPORT": 17,
+        "LEADER": 13,
+        "ORGANIZER": 2
+      },
+      "leader_delivery_followup_proxy": {
+        "GROUP": 17,
+        "LEADER": 9,
+        "REPORT": 5
+      },
+      "coordinate_chain_proxy": {
+        "coordinate_reports_delivered": 48,
+        "coordinate_reports_with_outward_escalation": 14,
+        "coordinate_leader_messages_delivered": 17,
+        "coordinate_leader_messages_with_local_or_center_followup": 17,
+        "coordinate_leader_messages_preserved_followup": 13,
+        "coordinate_reports_preserved_outward": 12
+      },
+      "organizer_reports": 2,
+      "organizer_reports_with_any_same_step_commit": 2,
+      "graph_commits": 12,
+      "structural_change_commits_after_initial": 1,
+      "structural_change_commits_same_step_as_organizer_report": 1,
+      "structural_change_commits_marked_attrition": 0,
+      "structural_change_commits_without_same_step_report_or_attrition": 0,
+      "structural_change_steps": [
+        38
+      ],
+      "limitations": "Follow-up is same-recipient typed output within 0-1 steps; semantic preservation and action effects are not inferred."
+    },
+    "flash_r2_rapid": {
+      "path": "/data1/gzy/crew_bottom_up_20261029_cell_guard/runs/large_rapid_growth/run/events.jsonl",
+      "task_id": "Suppress_Fire_Extinguish_Rapid_Growth",
+      "communication_turns": 438,
+      "generated_typed_tags": {
+        "REPORT": 165,
+        "GROUP": 577,
+        "LEADER": 127,
+        "ORGANIZER": 3
+      },
+      "delivered_recipient_events": {
+        "REPORT": 55,
+        "GROUP": 395,
+        "LEADER": 124
+      },
+      "invalid_typed_tags": {
+        "GROUP": 217,
+        "LEADER": 3,
+        "REPORT": 1
+      },
+      "generated_report_tags_silently_addressed_to_self": 109,
+      "report_delivery_followup_proxy": {
+        "GROUP": 55,
+        "LEADER": 41,
+        "REPORT": 38,
+        "ORGANIZER": 3
+      },
+      "leader_delivery_followup_proxy": {
+        "GROUP": 124,
+        "LEADER": 76,
+        "REPORT": 70,
+        "ORGANIZER": 5
+      },
+      "coordinate_chain_proxy": {
+        "coordinate_reports_delivered": 55,
+        "coordinate_reports_with_outward_escalation": 41,
+        "coordinate_reports_preserved_outward": 26,
+        "coordinate_leader_messages_delivered": 124,
+        "coordinate_leader_messages_with_local_or_center_followup": 122,
+        "coordinate_leader_messages_preserved_followup": 98
+      },
+      "organizer_reports": 3,
+      "organizer_reports_with_any_same_step_commit": 3,
+      "graph_commits": 24,
+      "structural_change_commits_after_initial": 4,
+      "structural_change_commits_same_step_as_organizer_report": 3,
+      "structural_change_commits_marked_attrition": 0,
+      "structural_change_commits_without_same_step_report_or_attrition": 1,
+      "structural_change_steps": [
+        11,
+        16,
+        16,
+        17
+      ],
+      "limitations": "Follow-up is same-recipient typed output within 0-1 steps; semantic preservation and action effects are not inferred."
+    },
+    "flash_r2_rescue": {
+      "path": "/data1/gzy/crew_bottom_up_20261029_cell_guard/runs/large_rescue/run/events.jsonl",
+      "task_id": "Rescue_Civilians_Search_Rescue_Transport",
+      "communication_turns": 840,
+      "generated_typed_tags": {
+        "GROUP": 1084,
+        "REPORT": 251,
+        "LEADER": 233,
+        "ORGANIZER": 2
+      },
+      "delivered_recipient_events": {
+        "GROUP": 2217,
+        "REPORT": 211,
+        "LEADER": 224
+      },
+      "invalid_typed_tags": {
+        "GROUP": 25,
+        "LEADER": 9,
+        "REPORT": 3
+      },
+      "generated_report_tags_silently_addressed_to_self": 37,
+      "report_delivery_followup_proxy": {
+        "GROUP": 211,
+        "LEADER": 166,
+        "REPORT": 72,
+        "ORGANIZER": 1
+      },
+      "leader_delivery_followup_proxy": {
+        "GROUP": 224,
+        "LEADER": 178,
+        "REPORT": 67,
+        "ORGANIZER": 4
+      },
+      "coordinate_chain_proxy": {
+        "coordinate_reports_delivered": 211,
+        "coordinate_reports_with_outward_escalation": 166,
+        "coordinate_reports_preserved_outward": 126,
+        "coordinate_leader_messages_delivered": 224,
+        "coordinate_leader_messages_with_local_or_center_followup": 221,
+        "coordinate_leader_messages_preserved_followup": 171
+      },
+      "organizer_reports": 2,
+      "organizer_reports_with_any_same_step_commit": 2,
+      "graph_commits": 13,
+      "structural_change_commits_after_initial": 2,
+      "structural_change_commits_same_step_as_organizer_report": 1,
+      "structural_change_commits_marked_attrition": 0,
+      "structural_change_commits_without_same_step_report_or_attrition": 1,
+      "structural_change_steps": [
+        25,
+        30
+      ],
+      "limitations": "Follow-up is same-recipient typed output within 0-1 steps; semantic preservation and action effects are not inferred."
+    },
+    "flash_r2_second_fire": {
+      "path": "/data1/gzy/crew_bottom_up_20261029_cell_guard/runs/large_second_fire/run/events.jsonl",
+      "task_id": "Suppress_Fire_Extinguish_Second_Fire",
+      "communication_turns": 320,
+      "generated_typed_tags": {
+        "REPORT": 104,
+        "GROUP": 419,
+        "LEADER": 33
+      },
+      "delivered_recipient_events": {
+        "REPORT": 46,
+        "GROUP": 588,
+        "LEADER": 30
+      },
+      "invalid_typed_tags": {
+        "LEADER": 3,
+        "GROUP": 70
+      },
+      "generated_report_tags_silently_addressed_to_self": 58,
+      "report_delivery_followup_proxy": {
+        "GROUP": 46,
+        "LEADER": 20,
+        "REPORT": 27
+      },
+      "leader_delivery_followup_proxy": {
+        "GROUP": 30,
+        "LEADER": 21,
+        "REPORT": 14
+      },
+      "coordinate_chain_proxy": {
+        "coordinate_reports_delivered": 46,
+        "coordinate_leader_messages_delivered": 30,
+        "coordinate_leader_messages_with_local_or_center_followup": 30,
+        "coordinate_leader_messages_preserved_followup": 28,
+        "coordinate_reports_with_outward_escalation": 20,
+        "coordinate_reports_preserved_outward": 8
+      },
+      "organizer_reports": 0,
+      "organizer_reports_with_any_same_step_commit": 0,
+      "graph_commits": 24,
+      "structural_change_commits_after_initial": 7,
+      "structural_change_commits_same_step_as_organizer_report": 0,
+      "structural_change_commits_marked_attrition": 0,
+      "structural_change_commits_without_same_step_report_or_attrition": 7,
+      "structural_change_steps": [
+        13,
+        15,
+        24,
+        27,
+        43,
+        46,
+        52
+      ],
+      "limitations": "Follow-up is same-recipient typed output within 0-1 steps; semantic preservation and action effects are not inferred."
+    },
+    "pro_r2_transport": {
+      "path": "/data1/gzy/crew_ht_r2_pro_campaign_20261030/runs/pro_transport_down/run/events.jsonl",
+      "task_id": "Transport_Helicopter_Down",
+      "communication_turns": 181,
+      "generated_typed_tags": {
+        "GROUP": 144,
+        "REPORT": 3
+      },
+      "delivered_recipient_events": {
+        "GROUP": 700,
+        "REPORT": 3
+      },
+      "invalid_typed_tags": {},
+      "generated_report_tags_silently_addressed_to_self": 0,
+      "report_delivery_followup_proxy": {
+        "GROUP": 3
+      },
+      "leader_delivery_followup_proxy": {},
+      "coordinate_chain_proxy": {
+        "coordinate_reports_delivered": 3
+      },
+      "organizer_reports": 0,
+      "organizer_reports_with_any_same_step_commit": 0,
+      "graph_commits": 4,
+      "structural_change_commits_after_initial": 1,
+      "structural_change_commits_same_step_as_organizer_report": 0,
+      "structural_change_commits_marked_attrition": 0,
+      "structural_change_commits_without_same_step_report_or_attrition": 1,
+      "structural_change_steps": [
+        5
+      ],
+      "limitations": "Follow-up is same-recipient typed output within 0-1 steps; semantic preservation and action effects are not inferred."
+    },
+    "pro_r2_sparse": {
+      "path": "/data1/gzy/crew_ht_r2_pro_sparse_20261030/runs/pro_sparse_seed42/run/events.jsonl",
+      "task_id": "Cut_Trees_Sparse_large",
+      "communication_turns": 500,
+      "generated_typed_tags": {
+        "GROUP": 488,
+        "REPORT": 3
+      },
+      "delivered_recipient_events": {
+        "GROUP": 488,
+        "REPORT": 3
+      },
+      "invalid_typed_tags": {},
+      "generated_report_tags_silently_addressed_to_self": 0,
+      "report_delivery_followup_proxy": {
+        "GROUP": 3
+      },
+      "leader_delivery_followup_proxy": {},
+      "coordinate_chain_proxy": {
+        "coordinate_reports_delivered": 3
+      },
+      "organizer_reports": 0,
+      "organizer_reports_with_any_same_step_commit": 0,
+      "graph_commits": 10,
+      "structural_change_commits_after_initial": 0,
+      "structural_change_commits_same_step_as_organizer_report": 0,
+      "structural_change_commits_marked_attrition": 0,
+      "structural_change_commits_without_same_step_report_or_attrition": 0,
+      "structural_change_steps": [],
+      "limitations": "Follow-up is same-recipient typed output within 0-1 steps; semantic preservation and action effects are not inferred."
+    },
+    "pro_r2_rapid": {
+      "path": "/data1/gzy/crew_ht_r2_pro_campaign_20261030/runs/pro_rapid_growth/run/events.jsonl",
+      "task_id": "Suppress_Fire_Extinguish_Rapid_Growth",
+      "communication_turns": 700,
+      "generated_typed_tags": {
+        "GROUP": 487,
+        "LEADER": 85,
+        "REPORT": 47
+      },
+      "delivered_recipient_events": {
+        "GROUP": 944,
+        "LEADER": 80,
+        "REPORT": 5
+      },
+      "invalid_typed_tags": {
+        "REPORT": 11,
+        "LEADER": 3
+      },
+      "generated_report_tags_silently_addressed_to_self": 31,
+      "report_delivery_followup_proxy": {
+        "GROUP": 5
+      },
+      "leader_delivery_followup_proxy": {
+        "GROUP": 69,
+        "REPORT": 9,
+        "LEADER": 41
+      },
+      "coordinate_chain_proxy": {
+        "coordinate_leader_messages_delivered": 65,
+        "coordinate_leader_messages_with_local_or_center_followup": 59,
+        "coordinate_leader_messages_preserved_followup": 20,
+        "coordinate_reports_delivered": 5
+      },
+      "organizer_reports": 0,
+      "organizer_reports_with_any_same_step_commit": 0,
+      "graph_commits": 20,
+      "structural_change_commits_after_initial": 0,
+      "structural_change_commits_same_step_as_organizer_report": 0,
+      "structural_change_commits_marked_attrition": 0,
+      "structural_change_commits_without_same_step_report_or_attrition": 0,
+      "structural_change_steps": [],
+      "limitations": "Follow-up is same-recipient typed output within 0-1 steps; semantic preservation and action effects are not inferred."
+    },
+    "pro_r2_rescue": {
+      "path": "/data1/gzy/crew_ht_r2_pro_campaign_20261030/runs/pro_rescue/run/events.jsonl",
+      "task_id": "Rescue_Civilians_Search_Rescue_Transport",
+      "communication_turns": 840,
+      "generated_typed_tags": {
+        "GROUP": 813,
+        "LEADER": 51,
+        "REPORT": 43
+      },
+      "delivered_recipient_events": {
+        "GROUP": 3371,
+        "LEADER": 51,
+        "REPORT": 43
+      },
+      "invalid_typed_tags": {
+        "GROUP": 2
+      },
+      "generated_report_tags_silently_addressed_to_self": 0,
+      "report_delivery_followup_proxy": {
+        "GROUP": 43,
+        "LEADER": 15
+      },
+      "leader_delivery_followup_proxy": {
+        "GROUP": 51,
+        "LEADER": 30
+      },
+      "coordinate_chain_proxy": {
+        "coordinate_reports_delivered": 43,
+        "coordinate_reports_with_outward_escalation": 15,
+        "coordinate_reports_preserved_outward": 8,
+        "coordinate_leader_messages_delivered": 47,
+        "coordinate_leader_messages_with_local_or_center_followup": 46,
+        "coordinate_leader_messages_preserved_followup": 19
+      },
+      "organizer_reports": 0,
+      "organizer_reports_with_any_same_step_commit": 0,
+      "graph_commits": 12,
+      "structural_change_commits_after_initial": 0,
+      "structural_change_commits_same_step_as_organizer_report": 0,
+      "structural_change_commits_marked_attrition": 0,
+      "structural_change_commits_without_same_step_report_or_attrition": 0,
+      "structural_change_steps": [],
+      "limitations": "Follow-up is same-recipient typed output within 0-1 steps; semantic preservation and action effects are not inferred."
+    },
+    "pro_r2_second_fire": {
+      "path": "/data1/gzy/crew_ht_r2_pro_campaign_20261030/runs/pro_second_fire/run/events.jsonl",
+      "task_id": "Suppress_Fire_Extinguish_Second_Fire",
+      "communication_turns": 612,
+      "generated_typed_tags": {
+        "GROUP": 607,
+        "REPORT": 9,
+        "ORGANIZER": 2,
+        "LEADER": 37
+      },
+      "delivered_recipient_events": {
+        "GROUP": 2143,
+        "REPORT": 9,
+        "LEADER": 37
+      },
+      "invalid_typed_tags": {
+        "GROUP": 4
+      },
+      "generated_report_tags_silently_addressed_to_self": 0,
+      "report_delivery_followup_proxy": {
+        "GROUP": 9,
+        "ORGANIZER": 7
+      },
+      "leader_delivery_followup_proxy": {
+        "GROUP": 34,
+        "LEADER": 30,
+        "ORGANIZER": 2
+      },
+      "coordinate_chain_proxy": {
+        "coordinate_reports_delivered": 9,
+        "coordinate_reports_with_outward_escalation": 7,
+        "coordinate_reports_preserved_outward": 7,
+        "coordinate_leader_messages_delivered": 37,
+        "coordinate_leader_messages_with_local_or_center_followup": 34,
+        "coordinate_leader_messages_preserved_followup": 27
+      },
+      "organizer_reports": 2,
+      "organizer_reports_with_any_same_step_commit": 2,
+      "graph_commits": 24,
+      "structural_change_commits_after_initial": 5,
+      "structural_change_commits_same_step_as_organizer_report": 1,
+      "structural_change_commits_marked_attrition": 1,
+      "structural_change_commits_without_same_step_report_or_attrition": 3,
+      "structural_change_steps": [
+        19,
+        40,
+        42,
+        88,
+        94
+      ],
+      "limitations": "Follow-up is same-recipient typed output within 0-1 steps; semantic preservation and action effects are not inferred."
+    },
+    "flash_r3_transport": {
+      "path": "/data1/gzy/crew_ht_r3_orch_knowledge_flash_20261102/runs/flash_transport_down/run/events.jsonl",
+      "task_id": "Transport_Helicopter_Down",
+      "communication_turns": 181,
+      "generated_typed_tags": {
+        "REPORT": 41,
+        "GROUP": 181,
+        "LEADER": 1
+      },
+      "delivered_recipient_events": {
+        "REPORT": 41,
+        "GROUP": 846
+      },
+      "invalid_typed_tags": {
+        "LEADER": 1
+      },
+      "generated_report_tags_silently_addressed_to_self": 0,
+      "report_delivery_followup_proxy": {
+        "GROUP": 41
+      },
+      "leader_delivery_followup_proxy": {},
+      "coordinate_chain_proxy": {
+        "coordinate_reports_delivered": 41
+      },
+      "organizer_reports": 0,
+      "organizer_reports_with_any_same_step_commit": 0,
+      "graph_commits": 4,
+      "structural_change_commits_after_initial": 1,
+      "structural_change_commits_same_step_as_organizer_report": 0,
+      "structural_change_commits_marked_attrition": 0,
+      "structural_change_commits_without_same_step_report_or_attrition": 1,
+      "structural_change_steps": [
+        5
+      ],
+      "limitations": "Follow-up is same-recipient typed output within 0-1 steps; semantic preservation and action effects are not inferred."
+    },
+    "flash_r3_sparse": {
+      "path": "/data1/gzy/crew_ht_r3_orch_knowledge_flash_20261102/runs/flash_sparse_seed42/run/events.jsonl",
+      "task_id": "Cut_Trees_Sparse_large",
+      "communication_turns": 190,
+      "generated_typed_tags": {
+        "GROUP": 231,
+        "REPORT": 43,
+        "LEADER": 3
+      },
+      "delivered_recipient_events": {
+        "GROUP": 501,
+        "REPORT": 40,
+        "LEADER": 3
+      },
+      "invalid_typed_tags": {},
+      "generated_report_tags_silently_addressed_to_self": 3,
+      "report_delivery_followup_proxy": {
+        "GROUP": 40,
+        "LEADER": 6,
+        "REPORT": 13
+      },
+      "leader_delivery_followup_proxy": {
+        "GROUP": 3,
+        "LEADER": 3
+      },
+      "coordinate_chain_proxy": {
+        "coordinate_reports_delivered": 40,
+        "coordinate_reports_with_outward_escalation": 6,
+        "coordinate_reports_preserved_outward": 6,
+        "coordinate_leader_messages_delivered": 3,
+        "coordinate_leader_messages_with_local_or_center_followup": 3,
+        "coordinate_leader_messages_preserved_followup": 3
+      },
+      "organizer_reports": 0,
+      "organizer_reports_with_any_same_step_commit": 0,
+      "graph_commits": 4,
+      "structural_change_commits_after_initial": 0,
+      "structural_change_commits_same_step_as_organizer_report": 0,
+      "structural_change_commits_marked_attrition": 0,
+      "structural_change_commits_without_same_step_report_or_attrition": 0,
+      "structural_change_steps": [],
+      "limitations": "Follow-up is same-recipient typed output within 0-1 steps; semantic preservation and action effects are not inferred."
+    },
+    "flash_r3_rapid": {
+      "path": "/data1/gzy/crew_ht_r3_orch_knowledge_flash_20261102/runs/flash_rapid_growth/run/events.jsonl",
+      "task_id": "Suppress_Fire_Extinguish_Rapid_Growth",
+      "communication_turns": 179,
+      "generated_typed_tags": {
+        "REPORT": 40,
+        "GROUP": 222,
+        "LEADER": 38,
+        "ORGANIZER": 1
+      },
+      "delivered_recipient_events": {
+        "REPORT": 40,
+        "GROUP": 336,
+        "LEADER": 37
+      },
+      "invalid_typed_tags": {
+        "LEADER": 1,
+        "GROUP": 2
+      },
+      "generated_report_tags_silently_addressed_to_self": 0,
+      "report_delivery_followup_proxy": {
+        "GROUP": 40,
+        "LEADER": 28,
+        "ORGANIZER": 5,
+        "REPORT": 2
+      },
+      "leader_delivery_followup_proxy": {
+        "GROUP": 37,
+        "LEADER": 36,
+        "ORGANIZER": 2
+      },
+      "coordinate_chain_proxy": {
+        "coordinate_reports_delivered": 39,
+        "coordinate_reports_with_outward_escalation": 27,
+        "coordinate_reports_preserved_outward": 20,
+        "coordinate_leader_messages_delivered": 33,
+        "coordinate_leader_messages_with_local_or_center_followup": 33,
+        "coordinate_leader_messages_preserved_followup": 21
+      },
+      "organizer_reports": 1,
+      "organizer_reports_with_any_same_step_commit": 1,
+      "graph_commits": 7,
+      "structural_change_commits_after_initial": 2,
+      "structural_change_commits_same_step_as_organizer_report": 1,
+      "structural_change_commits_marked_attrition": 0,
+      "structural_change_commits_without_same_step_report_or_attrition": 1,
+      "structural_change_steps": [
+        16,
+        23
+      ],
+      "limitations": "Follow-up is same-recipient typed output within 0-1 steps; semantic preservation and action effects are not inferred."
+    },
+    "flash_r3_rescue": {
+      "path": "/data1/gzy/crew_ht_r3_orch_knowledge_flash_20261102/runs/flash_rescue/run/events.jsonl",
+      "task_id": "Rescue_Civilians_Search_Rescue_Transport",
+      "communication_turns": 840,
+      "generated_typed_tags": {
+        "REPORT": 270,
+        "GROUP": 1178,
+        "LEADER": 67,
+        "ORGANIZER": 5
+      },
+      "delivered_recipient_events": {
+        "REPORT": 269,
+        "GROUP": 3054,
+        "LEADER": 66
+      },
+      "invalid_typed_tags": {
+        "LEADER": 1,
+        "GROUP": 28
+      },
+      "generated_report_tags_silently_addressed_to_self": 1,
+      "report_delivery_followup_proxy": {
+        "GROUP": 269,
+        "LEADER": 209,
+        "ORGANIZER": 28,
+        "REPORT": 8
+      },
+      "leader_delivery_followup_proxy": {
+        "GROUP": 66,
+        "LEADER": 59,
+        "ORGANIZER": 3,
+        "REPORT": 4
+      },
+      "coordinate_chain_proxy": {
+        "coordinate_reports_delivered": 262,
+        "coordinate_reports_with_outward_escalation": 205,
+        "coordinate_reports_preserved_outward": 113,
+        "coordinate_leader_messages_delivered": 59,
+        "coordinate_leader_messages_with_local_or_center_followup": 57,
+        "coordinate_leader_messages_preserved_followup": 33
+      },
+      "organizer_reports": 5,
+      "organizer_reports_with_any_same_step_commit": 5,
+      "graph_commits": 15,
+      "structural_change_commits_after_initial": 4,
+      "structural_change_commits_same_step_as_organizer_report": 2,
+      "structural_change_commits_marked_attrition": 0,
+      "structural_change_commits_without_same_step_report_or_attrition": 2,
+      "structural_change_steps": [
+        27,
+        29,
+        50,
+        55
+      ],
+      "limitations": "Follow-up is same-recipient typed output within 0-1 steps; semantic preservation and action effects are not inferred."
+    },
+    "flash_r3_second_fire": {
+      "path": "/data1/gzy/crew_ht_r3_orch_knowledge_flash_second_fire_retry_20261103/runs/flash_second_fire_retry_after_recharge/run/events.jsonl",
+      "task_id": "Suppress_Fire_Extinguish_Second_Fire",
+      "communication_turns": 516,
+      "generated_typed_tags": {
+        "REPORT": 66,
+        "GROUP": 772,
+        "ORGANIZER": 6,
+        "LEADER": 2
+      },
+      "delivered_recipient_events": {
+        "REPORT": 62,
+        "GROUP": 1804,
+        "LEADER": 2
+      },
+      "invalid_typed_tags": {},
+      "generated_report_tags_silently_addressed_to_self": 4,
+      "report_delivery_followup_proxy": {
+        "GROUP": 62,
+        "ORGANIZER": 17,
+        "LEADER": 2,
+        "REPORT": 4
+      },
+      "leader_delivery_followup_proxy": {
+        "GROUP": 2,
+        "LEADER": 2,
+        "ORGANIZER": 2,
+        "REPORT": 1
+      },
+      "coordinate_chain_proxy": {
+        "coordinate_reports_delivered": 62,
+        "coordinate_reports_with_outward_escalation": 17,
+        "coordinate_reports_preserved_outward": 14,
+        "coordinate_leader_messages_delivered": 2,
+        "coordinate_leader_messages_with_local_or_center_followup": 2,
+        "coordinate_leader_messages_preserved_followup": 1
+      },
+      "organizer_reports": 6,
+      "organizer_reports_with_any_same_step_commit": 6,
+      "graph_commits": 25,
+      "structural_change_commits_after_initial": 5,
+      "structural_change_commits_same_step_as_organizer_report": 3,
+      "structural_change_commits_marked_attrition": 2,
+      "structural_change_commits_without_same_step_report_or_attrition": 0,
+      "structural_change_steps": [
+        11,
+        28,
+        66,
+        74,
+        75
+      ],
+      "limitations": "Follow-up is same-recipient typed output within 0-1 steps; semantic preservation and action effects are not inferred."
+    }
+  }
+}

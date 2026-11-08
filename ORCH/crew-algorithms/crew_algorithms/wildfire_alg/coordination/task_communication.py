@@ -72,7 +72,12 @@ def dispatch(bridge, agent, content):
             bridge.deliver_organizer_report(sender, source, text)
             continue
         elif kind == 'REPORT':
-            recipients = [edge['leader']]
+            if edge['leader'] == sender:
+                reason = ('REPORT addresses this edge leader, so it would be sent to yourself; '
+                          'use GROUP for members, LEADER for another group leader, or ORGANIZER '
+                          'when an organizational change is actually needed')
+            else:
+                recipients = [edge['leader']]
         elif kind == 'LEADER':
             target = attrs.get('to'); other = bridge.graph.edges.get(target)
             if not other or target == source:

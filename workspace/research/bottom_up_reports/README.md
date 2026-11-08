@@ -1,3 +1,5 @@
+2026-11-08完成[15条完整主线消息链审计](MESSAGE_CHAIN_AUDIT_15_RUNS_20261108.md)：不是案例抽样。1165个REPORT中894送达、15无效、256个由当前leader发给自己并被旧运行时静默吞掉；坐标事实跨跳保留和33次结构变化来源已统一统计。根据全量证据，当前运行时已对leader自REPORT返回本地纠错，不自动升级或重发；130项项目环境测试通过。协议因果校准另见 `../structure_calibration/PROTOCOL_CAUSALITY_AUDIT_20261108.md`，当前候选机制从“必然少一拍”修正为“预先共享可减少连续LLM交接次数”。
+
 2026-11-04已按用户指令接入[环境事件直达中心再下发](CENTRAL_ENVIRONMENT_EVENTS_20261104.md)，输入profile为task_hypergraph_reports_v5，同一超图实现。worker现场发现的上报保留；旧五任务仍是v4。99项离线测试及旧轨迹审计通过，真实短接线状态见STATE.json。
 
 重叠成员的非active边leader反应已核实，见[人力可用性审计](OVERLAP_AVAILABILITY_AUDIT_20261104.md)：Rapid有实际释放协商但未到岗，救援全组能力不足上报，第二火点原边仍获回应。
